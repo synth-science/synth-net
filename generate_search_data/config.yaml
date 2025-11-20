@@ -1,0 +1,7 @@
+meta_data_load_path: "/home/research/synth-net/data/preprocessed_records.json"
+pdf_data_load_path: "/home/research/synth-net/data/records.parquet"
+item_model_path: "/home/models/published/surveybot3000"
+construct_model_path: "/home/models/pretrained/sentence-transformers/all-MiniLM-L6-v2"
+key_path: "/home/research/synth-net/data/search_data.key"
+save_item_search_data_path: "/home/research/synth-net/data/item_search_data.parquet"
+save_centroid_search_data_path: "/home/research/synth-net/data/centroid_search_data.parquet"

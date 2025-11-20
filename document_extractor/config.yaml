@@ -1,0 +1,33 @@
+input_dir: "/home/research/data/apa-psyctests/pdf"
+save_parquet_path: "/home/research/synth-net/data/records.parquet"
+overwrite_save_files: false
+vl_extractor:
+  model_path: "/home/models/pretrained/Qwen/Qwen2.5-VL-7B-Instruct"
+  timeout_seconds: 420
+api_extractor:
+  model_name: "qwen3:32b"
+  timeout_seconds: 1200
+  max_reprompt_attempts: 3
+  options:
+    seed: 42
+    temperature: 0.6
+    top_k: 20
+    top_p: 0.95
+seed: 1337
+do_sample: false
+n_samples: 10
+max_megapixels: 1.8
+test_mode: false
+test_files_first: false
+test_files:
+  - "999971030_full_001.pdf"
+  - "999900454_full_001.pdf"
+  - "999911389_full_001.pdf"
+  - "999918696_full_001.pdf"
+  - "999969366_full_001.pdf"
+  - "999985149_full_001.pdf"
+  - "999963619_full_001.pdf"
+  - "999925905_full_001.pdf"
+  - "999912772_full_001.pdf"
+  - "999965878_full_001.pdf"
+  - "999916067_full_001.pdf"
