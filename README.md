@@ -1,5 +1,7 @@
 # The Synthetic Nomological Net
 
+![SynthNet Preview](./assets/synthnet-preview.gif)
+
 This repository contains code and resources related to the Synthetic Nomological Net (SynthNet) project. The APp is currently hostet on Huggingface Spaces at [https://huggingface.co/spaces/magnolia-psychometrics/synth-net](https://huggingface.co/spaces/magnolia-psychometrics/synth-net). 
 
 `document_extractor` is a module for extracting structured data from unstructured documents using language models.
