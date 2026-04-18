@@ -1,4 +1,7 @@
 input_dir: "/home/research/data/apa-psyctests/pdf"
+output_path: "/home/research/synth-net-pipline/extractor-00/records.parquet"
+seed: 1337
+
 # save_parquet_path: "/home/research/synth-net/data/records.parquet"
 # overwrite_save_files: false
 # vl_extractor:
@@ -13,7 +16,6 @@ input_dir: "/home/research/data/apa-psyctests/pdf"
 #     temperature: 0.6
 #     top_k: 20
 #     top_p: 0.95
-# seed: 1337
 # do_sample: false
 # n_samples: 10
 # max_megapixels: 1.8

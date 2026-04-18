@@ -1,0 +1,23 @@
+[project]
+name = "synth-net-pipline"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Björn E. Hommel",email = "bjorn.hommel@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ollama (>=0.6.1,<0.7.0)",
+    "pydantic (>=2.13.2,<3.0.0)",
+    "pypdf (>=6.10.2,<7.0.0)",
+    "pymupdf (>=1.27.2.2,<2.0.0.0)",
+    "pandas (>=3.0.2,<4.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
