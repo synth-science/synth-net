@@ -87,20 +87,25 @@ class AuxiliaryItem(BaseModel):
         description="True if item_text is an English translation rather than the original.",
     )
 
-
-class ScaleItemMembership(BaseModel):
-    """Link from a Scale to one Item, carrying scale-specific scoring metadata."""
+class ScoredItem(BaseModel):
+    """An item's contribution to a single scale."""
     item_id: int = Field(
-        description="item_id of the referenced Item."
+        description="item_id of the Item contributing to this scale."
     )
     reverse_keyed: bool = Field(
         default=False,
-        description="True if the response must be reversed before contributing to this scale's score.",
+        description="True if the response is reversed before scoring this scale.",
     )
 
-
 class Scale(BaseModel):
-    """A scale, subscale, or composite construct within the survey."""
+    """A scale, subscale, or composite construct.
+
+    Scales form a tree: top-level scales appear in Survey.scales, and any
+    finer-grained facets are nested under their parent via `subscales`.
+    A scale may have `scored_items`, `subscales`, or both. A purely
+    composite scale (e.g. a domain scored as the mean of its facets) has
+    `subscales` but no `scored_items`.
+    """
     scale_id: int = Field(
         description="Unique integer id within the survey."
     )
@@ -114,10 +119,6 @@ class Scale(BaseModel):
         default="self-report",
         description="Whether the scale is intended for respondents to report on themselves or on someone else (e.g. a child, patient, or friend).",
     )
-    parent_scale_id: Optional[int] = Field(
-        default=None,
-        description="scale_id of the parent scale for subscales/facets; None for top-level scales.",
-    )
     instructions: Optional[str] = Field(
         default=None,
         description="Scale-specific instructions if printed separately from survey-level ones.",
@@ -130,9 +131,16 @@ class Scale(BaseModel):
         default=None,
         description="Contextual information about the items contributing to this scale, e.g. 'In the past two weeks, how often have you felt...'.",
     )
-    items: List[ScaleItemMembership] = Field(
+    scored_items: List[ScoredItem] = Field(
         default_factory=list,
-        description="Items directly contributing to this scale; empty for purely composite scales.",
+        description=(
+            "Items directly scored into this scale. Leave empty only if "
+            "this scale is purely composed of subscales."
+        ),
+    )
+    subscales: List["Scale"] = Field(
+        default_factory=list,
+        description="Facets or subscales nested under this scale.",
     )
     language: str = Field(
         description="ISO 639-1 code of the original scale name/instructions."
@@ -171,16 +179,22 @@ class Survey(BaseModel):
         description="All response formats used anywhere in the survey."
     )
     items: List[Item] = Field(
-        description="All psychometric items; each item appears once regardless of how many scales reference it."
+        description=(
+            "All psychometric items, listed once. Scales reference these "
+            "by item_id; every item here MUST be referenced by at least "
+            "one scale (or subscale) in `scales`."
+        ),
     )
     auxiliary_items: List[AuxiliaryItem] = Field(
         default_factory=list,
         description="Non-scored questions (demographics, admin, clinical context) kept separate from `items`.",
     )
     scales: List[Scale] = Field(
-        description="All scales and subscales, linked to items via ScaleItemMembership."
+        description=(
+            "Top-level scales only. Facets/subscales are nested inside "
+            "their parent via `Scale.subscales`."
+        ),
     )
-
     language: str = Field(
         description="ISO 639-1 code of the original instrument (e.g. 'en', 'de', 'es')."
     )
@@ -191,20 +205,60 @@ class Survey(BaseModel):
     )
 
     @model_validator(mode="after")
-    def _check_unique_ids(self):
-        format_ids = [f.format_id for f in self.response_formats]
-        if len(format_ids) != len(set(format_ids)):
+    def _validate(self):
+        # Collect scales recursively
+        def walk(scales: List[Scale]):
+            for s in scales:
+                yield s
+                yield from walk(s.subscales)
+
+        all_scales = list(walk(self.scales))
+
+        # Unique scale_ids across the whole tree
+        scale_ids = [s.scale_id for s in all_scales]
+        if len(scale_ids) != len(set(scale_ids)):
+            raise ValueError("scale_ids must be unique across the scale tree")
+
+        # Unique format ids
+        fmt_ids = [f.format_id for f in self.response_formats]
+        if len(fmt_ids) != len(set(fmt_ids)):
             raise ValueError("response_format ids must be unique")
 
-        item_ids = (
-            [i.item_id for i in self.items]
-            + [a.item_id for a in self.auxiliary_items]
-        )
+        # Unique item ids across items + auxiliary_items
+        item_ids = [i.item_id for i in self.items] + [a.item_id for a in self.auxiliary_items]
         if len(item_ids) != len(set(item_ids)):
             raise ValueError("item_ids must be unique across items and auxiliary_items")
 
-        scale_ids = [s.scale_id for s in self.scales]
-        if len(scale_ids) != len(set(scale_ids)):
-            raise ValueError("scale_ids must be unique")
+        # Every Item must be referenced by at least one scale
+        valid_item_ids = {i.item_id for i in self.items}
+        referenced = {si.item_id for s in all_scales for si in s.scored_items}
+
+        unknown = referenced - valid_item_ids
+        if unknown:
+            raise ValueError(f"Scales reference unknown item_ids: {sorted(unknown)}")
+
+        orphans = valid_item_ids - referenced
+        if orphans:
+            raise ValueError(
+                f"Psychometric items must belong to at least one scale; "
+                f"orphan item_ids: {sorted(orphans)}"
+            )
+
+        # Item response_format_ids must exist
+        valid_fmt_ids = {f.format_id for f in self.response_formats}
+        for i in self.items:
+            if i.response_format_id not in valid_fmt_ids:
+                raise ValueError(f"Item {i.item_id} references unknown response_format_id")
+
+        # A scale must either score items directly or have subscales
+        for s in all_scales:
+            if not s.scored_items and not s.subscales:
+                raise ValueError(
+                    f"Scale {s.scale_id} ({s.scale_name}) has neither "
+                    f"scored_items nor subscales; nothing to score."
+                )
 
         return self
+
+
+Scale.model_rebuild()
