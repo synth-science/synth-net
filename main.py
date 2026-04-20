@@ -20,7 +20,9 @@ def load_config(config_path: str) -> dict:
     return config
 
 def setup_logging():
-    log_file_path = Path(__file__).parent / "logfile.log"
+    logs_dir = Path(__file__).parent / "logs"
+    logs_dir.mkdir(exist_ok=True)
+    log_file_path = logs_dir / f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
@@ -104,14 +106,14 @@ for filename in tqdm(filenames):
     pdf_path = os.path.join(config['input_dir'], filename)
     pdf_images = convert_pdf_to_image(pdf_path)
 
-    template_dir = Path(__file__).parent / "../templates/"
+    template_dir = Path(__file__).parent / "./templates/"
 
     system_prompt_dict = {
         "role": "system",
         "content": f'{read_file(template_dir / "system.md")}'
     }
 
-    datamodel_path = Path(__file__).parent / "../models.py"
+    datamodel_path = Path(__file__).parent / "./models.py"
     datamodel_docs = load_datamodel_docs(datamodel_path)
 
     user_prompt = "{prompt}\n\n{documentation}".format(

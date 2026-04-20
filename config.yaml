@@ -1,6 +1,6 @@
 input_dir: "/home/research/data/apa-psyctests/pdf"
 output_path: "/home/research/synth-net-pipline/extractor-00/records.parquet"
-seed: 1337
+seed: 133
 
 # save_parquet_path: "/home/research/synth-net/data/records.parquet"
 # overwrite_save_files: false

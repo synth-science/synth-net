@@ -4,3 +4,8 @@ Important: This repository is experimental and meant to replace this repository:
 The goal is to optimize the information extraction pipeline and reduce errors in the SynthNet Corpus.
 
 Currently testing various extraction scripts, prefixed `extractor-`.
+
+
+```
+poetry run python -m extractor-00.main
+```
