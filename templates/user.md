@@ -1,0 +1,1 @@
+The images show scanned pages of a questionnaire or survey. Extract the survey structure using the following schema and **stricly** adhere to the documentation. If no English translation of the content of the questionnaire or survey is supplied, translate the content before extracting it.

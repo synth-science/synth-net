@@ -1,0 +1,1 @@
+Your extraction resulted in an invalid survey structure. Please fix this error:

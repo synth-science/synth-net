@@ -1,1 +1,0 @@
-The images show scanned pages of a questionnaire or survey. Extract the survey structure using the following schema and **stricly** adhere to the documentation.
