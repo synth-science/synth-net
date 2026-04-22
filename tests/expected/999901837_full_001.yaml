@@ -1,23 +1,11 @@
 pdf: 999901837_full_001.pdf
 notes: |
-  Listed in tests/README.md as a passing example for reverse-coded items:
-  single scale, reverse-coded items noted below items.
+  Single-scale instrument with reverse-coded items. Structure is known to
+  be a single top-level leaf scale; item count should be pinned from the
+  PDF before relying on the `structure:` assertion. Until then, only
+  extraction-success and language assertions run for this case.
 
-  Use this case to verify that the extractor correctly flags reverse-keyed
-  items. Item keywords below are placeholders — replace with 2–3 content
-  words from actual items in the PDF (an affirmative item that is NOT
-  reverse-keyed, and one that IS).
+exclude_from_testing: true
+language: en
 
-language:
-  source: en
-
-counts:
-  scales_top_level: {exact: 1}
-
-items:
-  # Placeholder: replace the keywords with content words from real items.
-  # Keep the shape; the harness handles the rest.
-  - find_by_keywords: ["PLACEHOLDER_positive_item_keyword"]
-    reverse_keyed: false
-  - find_by_keywords: ["PLACEHOLDER_reversed_item_keyword"]
-    reverse_keyed: true
+# structure: [N]        # fill in once the actual item count is confirmed

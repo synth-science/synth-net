@@ -1,68 +1,62 @@
 # Expected-value fixtures
 
-Each `.yaml` file in this directory is one test case. The filename is cosmetic;
-the `pdf:` field is authoritative and must match a file in `config.input_dir`.
+Each `.yaml` file is one test case. The filename is cosmetic; `pdf:` is
+authoritative and must match a file in `config.input_dir`.
 
-All sections other than `pdf:` are **optional**. If a section is absent, the
-corresponding assertion test is skipped for that case. This lets you add
-cases incrementally — start with counts, add scales/items later.
+Three assertions run per case: extraction success, language, structure.
 
-## Full shape
+## Shape
 
 ```yaml
-pdf: 999979446_full_001.pdf
-notes: "Free-text memo. Not consumed by tests."
+pdf: 999967007_full_001.pdf        # required
+exclude_from_testing: false        # optional; true skips the case
 
-language:
-  source: it                          # ISO 639-1 of the source document
-  expect_translated_to: en            # omit if no translation is expected
-  langdetect_threshold: 0.8           # optional per-case override
+notes: |                           # optional; free text, ignored by tests
+  Anything useful about the case.
 
-counts:
-  # Each value is a range spec: {min: N}, {max: N}, {min, max}, or {exact: N}.
-  items: {min: 20, max: 24}
-  scales_top_level: {exact: 4}
-  scales_total: {min: 4, max: 8}      # includes nested subscales
-  auxiliary_items: {max: 3}
-  response_formats: {min: 1, max: 2}
+language: en                       # optional; defaults to "en". Survey.language must equal this.
 
-scales:
-  - name_keywords_any_of: ["extraversion", "estroversione"]
-    scored_items_count: {min: 4, max: 8}
-  - name_keywords_any_of: ["neuroticism"]
-    # scored_items_count is optional; omit to assert only existence.
-
-items:
-  - find_by_keywords: ["talkative"]
-    in_scale_keywords_any_of: ["extraversion"]
-    reverse_keyed: false
-  - find_by_keywords: ["reserved", "quiet"]
-    in_scale_keywords_any_of: ["extraversion"]
-    reverse_keyed: true
+structure:                         # optional; if omitted, test_structure is skipped
+  - 3                              # top scale A: leaf with 3 items
+  - [4, 5]                         # top scale B: 2 subscales (leaves of 4, 5 items)
 ```
 
-## Matching rules
+## Structure DSL
 
-- `find_by_keywords`: **all** keywords must appear as substrings in
-  `item_text` after lowercase + whitespace-normalization. The match must be
-  unique — "no match" and "ambiguous match" both fail with a diagnostic
-  listing candidate items.
-- `in_scale_keywords_any_of`: after finding the item, collect every scale
-  (at any depth) whose `scored_items` references the item's `item_id` and
-  assert **at least one** scale name contains one of the keywords.
-- `name_keywords_any_of` (for `scales:`): any scale in the tree whose name
-  contains one of the keywords satisfies the entry.
-- `reverse_keyed`: after finding the item, collect its `ScoredItem`
-  entries across all scales; passes if any entry matches the expected flag.
-  Fails if the item has no `ScoredItem` entries at all (cannot verify).
+At any node position the spec is one of:
 
-Keep keyword lists short (2–3 items). They should uniquely identify the item
-by content, not test transcription fidelity — exact wording varies across
-translations and runs.
+| Form | Meaning |
+|------|---------|
+| `N` (int) | Leaf scale with `N` items, no subscales. |
+| `[...]` (list) | Composite scale with `0` own items and those entries as subscales. |
+| `{items: N, subscales: [...]}` | Composite with `N` own items plus those subscales. |
+
+The root of `structure:` is the list of top-level scales.
+
+### Example
+
+The shape "two top-level scales; the first has 3 items; the second has two
+subscales of 4 and 5 items":
+
+```yaml
+structure: [3, [4, 5]]
+```
+
+### Matching
+
+Comparison is via canonical form: both expected and actual trees are
+reduced to sorted nested tuples `(own_items, sorted(children))`. Sibling
+order doesn't matter; scale names are never consulted. Any mismatch
+(own-item counts or child shapes) fails the assertion with a pretty-printed
+expected/actual diff.
+
+## Disabling a case
+
+Set `exclude_from_testing: true` at the top of the file. The harness skips
+the case during discovery — it won't appear in any test output or report.
 
 ## Running
 
-- `poetry run pytest tests/ -v` — runs all cases × `tests.runs_per_case`
-  runs. The per-assertion pass rate matrix prints in the terminal summary.
-- Set `tests.runs_per_case` in `config.yaml` to control repetition.
-- Set `tests.ollama_temperature` to encourage output variance across runs.
+- `poetry run pytest tests/ -v` — runs all non-excluded cases × `tests.runs_per_case`.
+- Two summary tables print after the run (by-document and by-assertion).
+- A copy of the report is written to `logs/test-report_<timestamp>.log`.

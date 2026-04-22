@@ -1,16 +1,18 @@
-"""Matching helpers + test-case types used by conftest.py and test_extraction.py.
+"""Helpers + case type used by conftest.py and test_extraction.py.
 
-All matchers return a (value, diagnostic) tuple. Tests assert on the value
-and surface the message in the failure output.
+The structural assertion is an unordered tree-isomorphism check: both the
+expected spec and the extracted `Survey.scales` are reduced to the same
+canonical nested-tuple form, so sibling order and scale names never leak
+into the comparison.
 """
 from __future__ import annotations
 
 import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, Optional
+from typing import Any
 
-from models import Scale, ScoredItem, Survey
+from models import Scale, Survey
 
 
 @dataclass
@@ -26,18 +28,8 @@ class ExpectedCase:
 
 
 def normalize(text: str) -> str:
-    """Lowercase + collapse whitespace for substring matching."""
+    """Lowercase + collapse whitespace."""
     return re.sub(r"\s+", " ", text.lower()).strip()
-
-
-def contains_all(haystack: str, keywords: Iterable[str]) -> bool:
-    h = normalize(haystack)
-    return all(normalize(k) in h for k in keywords)
-
-
-def contains_any(haystack: str, keywords: Iterable[str]) -> bool:
-    h = normalize(haystack)
-    return any(normalize(k) in h for k in keywords)
 
 
 def walk_scales(scales: list[Scale]):
@@ -47,88 +39,80 @@ def walk_scales(scales: list[Scale]):
         yield from walk_scales(s.subscales)
 
 
-def walk_items(survey: Survey):
-    """Yield every unique item across the scale tree, in first-seen DFS order.
+# ---------------------------------------------------------------------------
+# Structural canonicalization
+# ---------------------------------------------------------------------------
+#
+# A canonical node is (own_items_count, tuple(sorted(canonical(child) for child in subscales))).
+# Sorting the children at each level makes the form order-insensitive.
+# Two trees are structurally equivalent iff their canonical forms are equal.
 
-    A logical item lives inside one or more scales (via `Scale.items`); the
-    same item may appear in multiple scales if it's scored into both a facet
-    and its parent composite. Survey validation assigns the same synthetic
-    `item_id` to those duplicates, so we dedupe on `item_id` here.
+
+CanonNode = tuple[int, tuple]  # (own_items, children)
+
+
+def canonicalize_spec(node: Any) -> CanonNode:
+    """Convert one node of an expected `structure:` spec to canonical form.
+
+    Node grammar:
+      - int N        -> leaf with N items, 0 subscales
+      - list [...]   -> composite with 0 own items and those entries as subscales
+      - dict         -> {items: N, subscales: [...]} composite with N own items
     """
-    seen: set[int] = set()
-    for s in walk_scales(survey.scales):
-        for si in s.items:
-            if si.item_id not in seen:
-                seen.add(si.item_id)
-                yield si
+    if isinstance(node, bool):
+        raise ValueError(f"structure spec: bool is not a valid node: {node!r}")
+    if isinstance(node, int):
+        return (node, ())
+    if isinstance(node, list):
+        children = tuple(sorted(canonicalize_spec(c) for c in node))
+        return (0, children)
+    if isinstance(node, dict):
+        items = node.get("items", 0)
+        subs = node.get("subscales", [])
+        if not isinstance(items, int) or isinstance(items, bool):
+            raise ValueError(f"structure spec: 'items' must be an int, got {items!r}")
+        if not isinstance(subs, list):
+            raise ValueError(f"structure spec: 'subscales' must be a list, got {subs!r}")
+        children = tuple(sorted(canonicalize_spec(c) for c in subs))
+        return (items, children)
+    raise ValueError(f"structure spec: unsupported node {node!r} ({type(node).__name__})")
 
 
-def find_item_by_keywords(
-    survey: Survey, keywords: list[str]
-) -> tuple[Optional[ScoredItem], str]:
-    """Return (item, diagnostic). Item is None unless exactly one item matches."""
-    items = list(walk_items(survey))
-    matches = [i for i in items if contains_all(i.item_text, keywords)]
-    if len(matches) == 1:
-        return matches[0], ""
-    if not matches:
-        candidates = "; ".join(f"#{i.item_id}: {i.item_text[:80]}" for i in items[:10])
-        return None, (
-            f"no item matched keywords {keywords!r}. "
-            f"First candidates: {candidates or '(no items in survey)'}"
+def canonicalize_expected(spec: Any) -> CanonNode:
+    """Canonicalize the top-level `structure:` value (a list of top-level scales)."""
+    if not isinstance(spec, list):
+        raise ValueError(
+            f"top-level structure: must be a list of top-level scales, got {type(spec).__name__}"
         )
-    matched = "; ".join(f"#{m.item_id}: {m.item_text[:80]}" for m in matches)
-    return None, f"ambiguous match for {keywords!r} — {len(matches)} items matched: {matched}"
+    children = tuple(sorted(canonicalize_spec(c) for c in spec))
+    return (0, children)
 
 
-def scales_containing_item(survey: Survey, item_id: int) -> list[Scale]:
-    """Every scale in the tree whose `items` references this item_id."""
-    return [
-        s for s in walk_scales(survey.scales)
-        if any(si.item_id == item_id for si in s.items)
-    ]
+def canonicalize_scale(scale: Scale) -> CanonNode:
+    own_items = len(scale.items) if not scale.subscales else 0
+    children = tuple(sorted(canonicalize_scale(s) for s in scale.subscales))
+    return (own_items, children)
 
 
-def scales_matching_keywords(survey: Survey, keywords_any_of: list[str]) -> list[Scale]:
-    """Every scale in the tree whose scale_name contains any of the keywords."""
-    return [s for s in walk_scales(survey.scales) if contains_any(s.scale_name, keywords_any_of)]
+def canonicalize_actual(survey: Survey) -> CanonNode:
+    """Canonicalize the extracted Survey's scale tree the same way as the spec.
+
+    A scale is treated as a 'leaf' (own_items = len(scale.items)) iff it has
+    no subscales. Composite scales re-list their facets' items per the model
+    docstring; counting those as own_items would double-count, so composites
+    report own_items = 0. Match this rule when writing specs: use dict form
+    only if a composite genuinely carries its own items separate from its
+    subscales' items.
+    """
+    children = tuple(sorted(canonicalize_scale(s) for s in survey.scales))
+    return (0, children)
 
 
-def check_range(value: int | float, spec: dict) -> tuple[bool, str]:
-    """Evaluate a numeric spec of the form {min: N}, {max: N}, {min, max}, or {exact: N}."""
-    if spec is None:
-        return True, ""
-    if "exact" in spec:
-        ok = value == spec["exact"]
-        return ok, f"got {value}, expected exactly {spec['exact']}"
-    lo = spec.get("min")
-    hi = spec.get("max")
-    if lo is not None and value < lo:
-        return False, f"got {value}, expected >= {lo}"
-    if hi is not None and value > hi:
-        return False, f"got {value}, expected <= {hi}"
-    return True, ""
-
-
-def detect_english_fraction(texts: list[str]) -> float:
-    """Fraction of non-empty texts where langdetect classifies the text as English."""
-    try:
-        from langdetect import detect, DetectorFactory, LangDetectException
-    except ImportError:  # pragma: no cover
-        raise RuntimeError(
-            "langdetect is required for language assertions. "
-            "Install test dependencies: poetry install --with test"
-        )
-
-    DetectorFactory.seed = 0
-    non_empty = [t for t in texts if t and t.strip()]
-    if not non_empty:
-        return 0.0
-    english = 0
-    for t in non_empty:
-        try:
-            if detect(t) == "en":
-                english += 1
-        except LangDetectException:
-            pass
-    return english / len(non_empty)
+def format_tree(node: CanonNode, indent: int = 0) -> str:
+    """Human-readable rendering of a canonical tree."""
+    own, children = node
+    pad = "  " * indent
+    if not children:
+        return f"{pad}leaf({own})"
+    body = "\n".join(format_tree(c, indent + 1) for c in children)
+    return f"{pad}node(items={own}):\n{body}"

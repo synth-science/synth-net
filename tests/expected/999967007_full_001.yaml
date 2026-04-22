@@ -1,19 +1,16 @@
 pdf: 999967007_full_001.pdf
 notes: |
-  Listed in tests/README.md as an excellently-parsed nested hierarchy:
-  parent scale 'Antecedents of Legitimacy' with child 'Police Effectiveness'.
+  Nested hierarchy: a parent scale 'Antecedents of Legitimacy' with a child
+  'Police Effectiveness'. Exact per-node item counts should be filled in
+  from the PDF; the `structure:` value below is a placeholder shape
+  (one top-level scale with one subscale) and will need refinement once
+  item counts are confirmed.
 
-  Use this case to verify that extraction preserves the nested scale
-  structure (scales_total > scales_top_level).
+exclude_from_testing: true
+language: en
 
-language:
-  source: en
-
-counts:
-  # At least one top-level scale with at least one nested subscale.
-  scales_top_level: {min: 1}
-  scales_total: {min: 2}
-
-scales:
-  - name_keywords_any_of: ["legitimacy", "antecedents"]
-  - name_keywords_any_of: ["police effectiveness", "effectiveness"]
+# Placeholder — replace with actual item counts before treating this as a
+# real structural assertion. Current shape: 1 top-level composite with
+# 1 subscale; fill in leaf item counts.
+structure:
+  - [1]

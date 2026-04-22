@@ -1,0 +1,8 @@
+pdf: 999941280_full_001.pdf
+notes: |
+  add notes here
+
+exclude_from_testing: false
+language: en
+structure:
+  - [5, 5] # two scales á 5 items
