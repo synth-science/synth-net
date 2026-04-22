@@ -157,8 +157,9 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
     validation_error: Optional[str] = None
     try:
         survey_obj = Survey.model_validate_json(response_message)
-        survey_json = json.loads(response_message)
-        survey_json.pop("thinking", None)
+        # Dump the validated model so the parquet carries synthetic item_ids
+        # (Survey validation stamps the same id onto duplicate ScoredItems).
+        survey_json = survey_obj.model_dump(exclude={"thinking"})
     except json.JSONDecodeError as e:
         validation_error = f"JSON decoding error: {e}"
     except Exception as e:

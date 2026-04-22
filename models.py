@@ -1,5 +1,11 @@
+import re
 from typing import List, Literal, Optional, Union
-from pydantic import BaseModel, Field, model_validator
+
+from pydantic import BaseModel, Field, PrivateAttr, computed_field, model_validator
+
+
+def _normalize(text: str) -> str:
+    return re.sub(r"\s+", " ", text.lower()).strip()
 
 
 class ResponseOption(BaseModel):
@@ -32,17 +38,20 @@ class ResponseFormat(BaseModel):
     )
 
 
-class Item(BaseModel):
-    """A psychometric item that is scored into one or more scales."""
-    item_id: int = Field(
-        description="Unique id, not shared with any AuxiliaryItem."
-    )
+class ScoredItem(BaseModel):
+    """A psychometric item, listed inline inside the Scale that scores it.
+
+    The same item may appear inside more than one scale (e.g. a facet item
+    that also rolls up into a parent composite). Duplicate ScoredItems with
+    identical item_text are collapsed into a single logical item by Survey
+    validation, which also stamps a stable `item_id` shared by all duplicates.
+    """
     item_text: str = Field(
         description="Verbatim wording of the question."
     )
     item_comments: Optional[str] = Field(
         default=None,
-        description="Information not intended for display to the respondent e.g., instructor notes."
+        description="Information not intended for display to the respondent e.g., instructor notes.",
     )
     response_format_id: int = Field(
         description="format_id of the ResponseFormat this item uses."
@@ -62,15 +71,28 @@ class Item(BaseModel):
         default=None,
         description="Description of the image, if `has_image` is True.",
     )
+    reverse_keyed: bool = Field(
+        default=False,
+        description="True if the response is reversed before scoring this scale.",
+    )
+
+    # Synthetic id assigned post-extraction; hidden from the LLM-facing schema.
+    _item_id: int = PrivateAttr(default=0)
+
+    @computed_field
+    @property
+    def item_id(self) -> int:
+        return self._item_id
 
 
 class AuxiliaryItem(BaseModel):
     """A non-psychometric question (demographics, admin, clinical context) excluded from scoring."""
     item_id: int = Field(
-        description="Unique id, not shared with any Item."
+        description="Unique integer id within auxiliary_items."
     )
     item_text: str = Field(
-        description="Verbatim wording of the question.")
+        description="Verbatim wording of the question."
+    )
     response_format_id: Optional[int] = Field(
         default=None,
         description="format_id of the ResponseFormat, or None for free-text/date fields without fixed options.",
@@ -87,24 +109,17 @@ class AuxiliaryItem(BaseModel):
         description="True if item_text is an English translation rather than the original.",
     )
 
-class ScoredItem(BaseModel):
-    """An item's contribution to a single scale."""
-    item_id: int = Field(
-        description="item_id of the Item contributing to this scale."
-    )
-    reverse_keyed: bool = Field(
-        default=False,
-        description="True if the response is reversed before scoring this scale.",
-    )
 
 class Scale(BaseModel):
     """A scale, subscale, or composite construct.
 
     Scales form a tree: top-level scales appear in Survey.scales, and any
     finer-grained facets are nested under their parent via `subscales`.
-    A scale may have `scored_items`, `subscales`, or both. A purely
-    composite scale (e.g. a domain scored as the mean of its facets) has
-    `subscales` but no `scored_items`.
+    Every scale lists the items it scores inline in `items`. A purely
+    composite scale (e.g. a domain whose total = sum of its facets) re-lists
+    those items here; identical item_text across scales is collapsed to a
+    single logical item by Survey validation (same synthetic item_id),
+    so the duplication is logical, not data.
     """
     scale_id: int = Field(
         description="Unique integer id within the survey."
@@ -131,11 +146,13 @@ class Scale(BaseModel):
         default=None,
         description="Contextual information about the items contributing to this scale, e.g. 'In the past two weeks, how often have you felt...'.",
     )
-    scored_items: List[ScoredItem] = Field(
-        default_factory=list,
+    items: List[ScoredItem] = Field(
+        min_length=1,
         description=(
-            "Items directly scored into this scale. Leave empty only if "
-            "this scale is purely composed of subscales."
+            "Items scored into this scale, listed inline. MUST contain at "
+            "least one item. If the same item is also scored into another "
+            "scale, list it inside that scale too with identical item_text — "
+            "duplicates are collapsed to a single logical item by validation."
         ),
     )
     subscales: List["Scale"] = Field(
@@ -178,27 +195,21 @@ class Survey(BaseModel):
     response_formats: List[ResponseFormat] = Field(
         description="All response formats used anywhere in the survey."
     )
-    items: List[Item] = Field(
-        description=(
-            "All psychometric items, listed once. Scales reference these "
-            "by item_id; every item here MUST be referenced by at least "
-            "one scale (or subscale) in `scales`."
-        ),
-    )
     auxiliary_items: List[AuxiliaryItem] = Field(
         default_factory=list,
-        description="Non-scored questions (demographics, admin, clinical context) kept separate from `items`.",
+        description="Non-scored questions (demographics, admin, clinical context) kept separate from scale items.",
     )
     scales: List[Scale] = Field(
         description=(
-            "Top-level scales only. Facets/subscales are nested inside "
-            "their parent via `Scale.subscales`."
+            "Top-level scales only; facets/subscales are nested inside "
+            "their parent via `Scale.subscales`. Items live inside each "
+            "scale via `Scale.items` — there is no separate top-level "
+            "items list. Items only exist in the context of a scale."
         ),
     )
     language: str = Field(
         description="ISO 639-1 code of the original instrument (e.g. 'en', 'de', 'es')."
     )
-
     is_translated: bool = Field(
         default=False,
         description="True if any text in the survey has been transcribed as an English translation.",
@@ -206,7 +217,6 @@ class Survey(BaseModel):
 
     @model_validator(mode="after")
     def _validate(self):
-        # Collect scales recursively
         def walk(scales: List[Scale]):
             for s in scales:
                 yield s
@@ -214,49 +224,58 @@ class Survey(BaseModel):
 
         all_scales = list(walk(self.scales))
 
-        # Unique scale_ids across the whole tree
         scale_ids = [s.scale_id for s in all_scales]
         if len(scale_ids) != len(set(scale_ids)):
             raise ValueError("scale_ids must be unique across the scale tree")
 
-        # Unique format ids
         fmt_ids = [f.format_id for f in self.response_formats]
         if len(fmt_ids) != len(set(fmt_ids)):
             raise ValueError("response_format ids must be unique")
-
-        # Unique item ids across items + auxiliary_items
-        item_ids = [i.item_id for i in self.items] + [a.item_id for a in self.auxiliary_items]
-        if len(item_ids) != len(set(item_ids)):
-            raise ValueError("item_ids must be unique across items and auxiliary_items")
-
-        # Every Item must be referenced by at least one scale
-        valid_item_ids = {i.item_id for i in self.items}
-        referenced = {si.item_id for s in all_scales for si in s.scored_items}
-
-        unknown = referenced - valid_item_ids
-        if unknown:
-            raise ValueError(f"Scales reference unknown item_ids: {sorted(unknown)}")
-
-        orphans = valid_item_ids - referenced
-        if orphans:
-            raise ValueError(
-                f"Psychometric items must belong to at least one scale; "
-                f"orphan item_ids: {sorted(orphans)}"
-            )
-
-        # Item response_format_ids must exist
         valid_fmt_ids = {f.format_id for f in self.response_formats}
-        for i in self.items:
-            if i.response_format_id not in valid_fmt_ids:
-                raise ValueError(f"Item {i.item_id} references unknown response_format_id")
 
-        # A scale must either score items directly or have subscales
+        # Assign synthetic item_ids by deduping on normalized item_text. The
+        # LLM never sees these ids — they're materialised here so downstream
+        # code (tests/utils, parquet consumers) can refer to a logical item.
+        text_to_id: dict[str, int] = {}
+        groups: dict[str, list[ScoredItem]] = {}
+        next_id = 1
         for s in all_scales:
-            if not s.scored_items and not s.subscales:
-                raise ValueError(
-                    f"Scale {s.scale_id} ({s.scale_name}) has neither "
-                    f"scored_items nor subscales; nothing to score."
-                )
+            for si in s.items:
+                if si.response_format_id not in valid_fmt_ids:
+                    raise ValueError(
+                        f"item in scale {s.scale_id} ({s.scale_name!r}) "
+                        f"references unknown response_format_id {si.response_format_id}"
+                    )
+                key = _normalize(si.item_text)
+                if key not in text_to_id:
+                    text_to_id[key] = next_id
+                    next_id += 1
+                si._item_id = text_to_id[key]
+                groups.setdefault(key, []).append(si)
+
+        # Cross-scale consistency: a logical item must look identical
+        # everywhere it's listed. Diverging attributes almost always mean
+        # the LLM transcribed the same item slightly differently in two
+        # scales; surface that loudly rather than silently corrupting data.
+        shared_fields = (
+            "response_format_id",
+            "language",
+            "is_translated",
+            "has_image",
+            "image_description",
+        )
+        for key, group in groups.items():
+            if len(group) < 2:
+                continue
+            head = group[0]
+            for other in group[1:]:
+                for field_name in shared_fields:
+                    if getattr(head, field_name) != getattr(other, field_name):
+                        raise ValueError(
+                            f"item {head.item_text!r} appears in multiple scales but "
+                            f"{field_name!r} differs across occurrences "
+                            f"({getattr(head, field_name)!r} vs {getattr(other, field_name)!r})"
+                        )
 
         return self
 

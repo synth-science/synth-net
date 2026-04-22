@@ -10,7 +10,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable, Optional
 
-from models import Item, Scale, Survey
+from models import Scale, ScoredItem, Survey
 
 
 @dataclass
@@ -47,15 +47,32 @@ def walk_scales(scales: list[Scale]):
         yield from walk_scales(s.subscales)
 
 
+def walk_items(survey: Survey):
+    """Yield every unique item across the scale tree, in first-seen DFS order.
+
+    A logical item lives inside one or more scales (via `Scale.items`); the
+    same item may appear in multiple scales if it's scored into both a facet
+    and its parent composite. Survey validation assigns the same synthetic
+    `item_id` to those duplicates, so we dedupe on `item_id` here.
+    """
+    seen: set[int] = set()
+    for s in walk_scales(survey.scales):
+        for si in s.items:
+            if si.item_id not in seen:
+                seen.add(si.item_id)
+                yield si
+
+
 def find_item_by_keywords(
     survey: Survey, keywords: list[str]
-) -> tuple[Optional[Item], str]:
+) -> tuple[Optional[ScoredItem], str]:
     """Return (item, diagnostic). Item is None unless exactly one item matches."""
-    matches = [i for i in survey.items if contains_all(i.item_text, keywords)]
+    items = list(walk_items(survey))
+    matches = [i for i in items if contains_all(i.item_text, keywords)]
     if len(matches) == 1:
         return matches[0], ""
     if not matches:
-        candidates = "; ".join(f"#{i.item_id}: {i.item_text[:80]}" for i in survey.items[:10])
+        candidates = "; ".join(f"#{i.item_id}: {i.item_text[:80]}" for i in items[:10])
         return None, (
             f"no item matched keywords {keywords!r}. "
             f"First candidates: {candidates or '(no items in survey)'}"
@@ -65,10 +82,10 @@ def find_item_by_keywords(
 
 
 def scales_containing_item(survey: Survey, item_id: int) -> list[Scale]:
-    """Every scale in the tree whose scored_items directly references this item_id."""
+    """Every scale in the tree whose `items` references this item_id."""
     return [
         s for s in walk_scales(survey.scales)
-        if any(si.item_id == item_id for si in s.scored_items)
+        if any(si.item_id == item_id for si in s.items)
     ]
 
 

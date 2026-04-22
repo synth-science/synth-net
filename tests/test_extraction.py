@@ -21,6 +21,7 @@ from utils import (
     normalize,
     scales_containing_item,
     scales_matching_keywords,
+    walk_items,
     walk_scales,
 )
 
@@ -67,7 +68,7 @@ def test_lang(case: ExpectedCase, run_index: int, config, get_extraction):
                 (config.get("tests") or {}).get("langdetect_threshold", 0.8),
             )
         )
-        item_texts = [i.item_text for i in survey.items]
+        item_texts = [i.item_text for i in walk_items(survey)]
         fraction = detect_english_fraction(item_texts)
         assert fraction >= threshold, (
             f"only {fraction:.2f} of item texts detected as English "
@@ -98,7 +99,7 @@ def test_counts(case: ExpectedCase, run_index: int, get_extraction):
     all_scales = len(list(walk_scales(survey.scales)))
 
     checks = {
-        "items": (len(survey.items), spec.get("items")),
+        "items": (sum(1 for _ in walk_items(survey)), spec.get("items")),
         "scales_top_level": (top_level_scales, spec.get("scales_top_level")),
         "scales_total": (all_scales, spec.get("scales_total")),
         "auxiliary_items": (len(survey.auxiliary_items), spec.get("auxiliary_items")),
@@ -141,10 +142,10 @@ def test_scales(case: ExpectedCase, run_index: int, get_extraction):
         count_spec = spec.get("scored_items_count")
         if count_spec is not None:
             # Prefer the match with the most scored items (handles the composite case).
-            best = max(matches, key=lambda s: len(s.scored_items))
-            ok, msg = check_range(len(best.scored_items), count_spec)
+            best = max(matches, key=lambda s: len(s.items))
+            ok, msg = check_range(len(best.items), count_spec)
             if not ok:
-                failures.append(f"scale {best.scale_name!r} scored_items: {msg}")
+                failures.append(f"scale {best.scale_name!r} items: {msg}")
     assert not failures, "scale mismatches: " + "; ".join(failures)
 
 
@@ -235,18 +236,18 @@ def test_reverse_keyed(case: ExpectedCase, run_index: int, get_extraction):
         scored_refs = [
             si
             for s in walk_scales(survey.scales)
-            for si in s.scored_items
+            for si in s.items
             if si.item_id == item.item_id
         ]
         if not scored_refs:
             failures.append(
-                f"item #{item.item_id} has no scored_items entries; "
+                f"item #{item.item_id} has no entries in any scale; "
                 f"cannot verify reverse_keyed"
             )
             continue
-        # Pass if any scored_items entry matches expected — a reverse-keyed item
-        # is usually reverse-keyed in every scale that scores it, but the spec
-        # is satisfied as soon as one match is found.
+        # Pass if any entry matches expected — a reverse-keyed item is usually
+        # reverse-keyed in every scale that scores it, but the spec is
+        # satisfied as soon as one match is found.
         if not any(si.reverse_keyed == expected for si in scored_refs):
             observed = [si.reverse_keyed for si in scored_refs]
             failures.append(
