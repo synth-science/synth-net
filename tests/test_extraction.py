@@ -13,6 +13,8 @@ from utils import (
     ExpectedCase,
     canonicalize_actual,
     canonicalize_expected,
+    check_property,
+    collect_property,
     format_as_yaml_structure,
 )
 
@@ -56,3 +58,12 @@ def test_structure(case: ExpectedCase, run_index: int, get_extraction):
         f"expected:\n{format_as_yaml_structure(expected)}\n"
         f"actual:\n{format_as_yaml_structure(actual)}"
     )
+
+
+def test_property(case: ExpectedCase, run_index: int, property_check: dict, get_extraction):
+    result = _get_result(case, run_index, get_extraction)
+    if result.survey is None:
+        pytest.fail(f"extraction failed, cannot check property: {result.validation_error}")
+    values = collect_property(result.survey, property_check["name"])
+    ok, diag = check_property(values, property_check)
+    assert ok, f"{property_check['name']}: {diag}"

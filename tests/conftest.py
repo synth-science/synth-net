@@ -78,11 +78,39 @@ def get_extraction(extraction_cache, config):
 # Parametrization
 # --------------------------------------------------------------------------
 
+_PROPERTY_OPS = ("equals", "not_null", "contains", "in")
+
+
+def _check_id(check: dict) -> str:
+    name = check.get("name", "?")
+    op = next((k for k in _PROPERTY_OPS if k in check), None)
+    if op is None:
+        return f"{name}:no-op"
+    val = check[op]
+    if op == "not_null":
+        return f"{name}:not_null"
+    val_repr = str(val)
+    if len(val_repr) > 20:
+        val_repr = val_repr[:17] + "..."
+    return f"{name}:{op}={val_repr}"
+
+
 def pytest_generate_tests(metafunc):
-    if "case" in metafunc.fixturenames and "run_index" in metafunc.fixturenames:
-        config = load_config(str(REPO_ROOT / "config.yaml"))
-        runs = int((config.get("tests") or {}).get("runs_per_case", 1))
-        cases = _load_expected_cases(config)
+    if "case" not in metafunc.fixturenames or "run_index" not in metafunc.fixturenames:
+        return
+    config = load_config(str(REPO_ROOT / "config.yaml"))
+    runs = int((config.get("tests") or {}).get("runs_per_case", 1))
+    cases = _load_expected_cases(config)
+
+    if "property_check" in metafunc.fixturenames:
+        params, ids = [], []
+        for c in cases:
+            for check in (c.spec.get("properties") or []):
+                for r in range(runs):
+                    params.append((c, r, check))
+                    ids.append(f"{c.pdf}-run{r}-{_check_id(check)}")
+        metafunc.parametrize(("case", "run_index", "property_check"), params, ids=ids)
+    else:
         params = [(c, r) for c in cases for r in range(runs)]
         ids = [f"{c.pdf}-run{r}" for c, r in params]
         metafunc.parametrize(("case", "run_index"), params, ids=ids)
@@ -98,6 +126,7 @@ _ASSERTION_LABELS = {
     "test_extraction_succeeded": "succeeded",
     "test_language": "language",
     "test_structure": "structure",
+    "test_property": "property",
 }
 
 # Collected results: list of (pdf, assertion, passed, diagnostic)

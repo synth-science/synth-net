@@ -3,7 +3,8 @@
 Each `.yaml` file is one test case. The filename is cosmetic; `pdf:` is
 authoritative and must match a file in `config.input_dir`.
 
-Three assertions run per case: extraction success, language, structure.
+Per case: three baseline assertions (extraction success, language, structure)
+plus one additional assertion per entry in the optional `properties:` list.
 
 ## Shape
 
@@ -19,6 +20,12 @@ language: en                       # optional; defaults to "en". Survey.language
 structure:                         # optional; if omitted, test_structure is skipped
   - 3                              # top scale A: leaf with 3 items
   - [4, 5]                         # top scale B: 2 subscales (leaves of 4, 5 items)
+
+properties:                        # optional; one assertion per entry
+  - name: items_prefix
+    not_null: true
+  - name: report_type
+    equals: "other-report"
 ```
 
 ## Structure DSL
@@ -49,6 +56,47 @@ reduced to sorted nested tuples `(own_items, sorted(children))`. Sibling
 order doesn't matter; scale names are never consulted. Any mismatch
 (own-item counts or child shapes) fails the assertion with a pretty-printed
 expected/actual diff.
+
+## Property assertions
+
+Use `properties:` to assert on individual fields (e.g. `items_prefix`,
+`report_type`, `language`, `is_translated`) without caring where in the
+hierarchy they live. The harness walks the entire extracted survey
+(Survey → scales → subscales → items → response_formats → auxiliary_items)
+and collects every value bound to `name`. The check passes if **any**
+collected value satisfies the operator (any-of matching).
+
+Each entry is `{name, <one operator>}`. Multiple checks on the same
+property name are allowed — each becomes its own pytest node.
+
+### Operators
+
+| Operator | Passes when... | Example |
+|----------|----------------|---------|
+| `equals: V` | some value `== V` | `equals: "other-report"` |
+| `not_null: true` | some value is non-empty (not `None`/`""`/`[]`/`{}`) | `not_null: true` |
+| `contains: S` | some string value contains substring `S` | `contains: "rate"` |
+| `in: [...]` | some value is in the allowed list | `in: ["en", "de"]` |
+
+### Example
+
+```yaml
+properties:
+  - name: items_prefix          # any node has items_prefix set
+    not_null: true
+  - name: items_prefix          # ...and at least one mentions "rate"
+    contains: "rate"
+  - name: report_type           # any scale's report_type matches
+    equals: "other-report"
+  - name: language              # survey/scale/item language is en or de
+    in: ["en", "de"]
+```
+
+### Failure diagnostic
+
+On failure the assertion prints the operator, the expected value, and the
+list of values actually collected from the hierarchy — so you can tell
+whether the property was missing entirely or just had the wrong value.
 
 ## Disabling a case
 

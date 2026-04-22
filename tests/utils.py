@@ -143,3 +143,51 @@ def format_as_yaml_structure(node: CanonNode) -> str:
     """Render a CanonNode in the same block-outer/flow-inner YAML syntax used in .yaml fixtures."""
     _, children = node
     return "\n".join("- " + _spec_to_flow(_canon_to_spec(c)) for c in children)
+
+
+# ---------------------------------------------------------------------------
+# Property-level assertions
+# ---------------------------------------------------------------------------
+#
+# Walk the dumped survey dict and pick up every value bound to a given key
+# anywhere in the hierarchy (Survey / Scale / subscale / ScoredItem /
+# ResponseFormat / AuxiliaryItem). Any-of matching: the assertion passes if
+# any collected value satisfies the operator.
+
+
+PROPERTY_OPS = ("equals", "not_null", "contains", "in")
+
+
+def collect_property(survey: Survey, name: str) -> list:
+    out: list = []
+
+    def visit(obj: Any) -> None:
+        if isinstance(obj, dict):
+            if name in obj and obj[name] is not None:
+                out.append(obj[name])
+            for v in obj.values():
+                visit(v)
+        elif isinstance(obj, list):
+            for v in obj:
+                visit(v)
+
+    visit(survey.model_dump())
+    return out
+
+
+def check_property(values: list, spec: dict) -> tuple[bool, str]:
+    op = next((k for k in PROPERTY_OPS if k in spec), None)
+    if op is None:
+        return False, f"no operator (expected one of {PROPERTY_OPS})"
+    expected = spec[op]
+    if op == "not_null":
+        ok = any(v not in (None, "", [], {}) for v in values)
+    elif op == "equals":
+        ok = any(v == expected for v in values)
+    elif op == "contains":
+        ok = any(isinstance(v, str) and expected in v for v in values)
+    elif op == "in":
+        ok = any(v in expected for v in values)
+    else:
+        ok = False
+    return ok, f"{op}={expected!r}; found {values!r}"
