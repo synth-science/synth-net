@@ -13,7 +13,7 @@ from utils import (
     ExpectedCase,
     canonicalize_actual,
     canonicalize_expected,
-    format_tree,
+    format_as_yaml_structure,
 )
 
 
@@ -53,6 +53,6 @@ def test_structure(case: ExpectedCase, run_index: int, get_extraction):
     actual = canonicalize_actual(result.survey)
     assert actual == expected, (
         "scale tree does not match expected structure.\n"
-        f"expected:\n{format_tree(expected)}\n"
-        f"actual:\n{format_tree(actual)}"
+        f"expected:\n{format_as_yaml_structure(expected)}\n"
+        f"actual:\n{format_as_yaml_structure(actual)}"
     )

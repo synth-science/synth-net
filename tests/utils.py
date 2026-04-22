@@ -116,3 +116,30 @@ def format_tree(node: CanonNode, indent: int = 0) -> str:
         return f"{pad}leaf({own})"
     body = "\n".join(format_tree(c, indent + 1) for c in children)
     return f"{pad}node(items={own}):\n{body}"
+
+
+def _canon_to_spec(node: CanonNode) -> Any:
+    own_items, children = node
+    if not children:
+        return own_items
+    child_specs = [_canon_to_spec(c) for c in children]
+    if own_items == 0:
+        return child_specs
+    return {"items": own_items, "subscales": child_specs}
+
+
+def _spec_to_flow(spec: Any) -> str:
+    if isinstance(spec, int):
+        return str(spec)
+    if isinstance(spec, list):
+        return "[" + ", ".join(_spec_to_flow(x) for x in spec) + "]"
+    if isinstance(spec, dict):
+        subs = "[" + ", ".join(_spec_to_flow(x) for x in spec.get("subscales", [])) + "]"
+        return "{items: " + str(spec["items"]) + ", subscales: " + subs + "}"
+    return repr(spec)
+
+
+def format_as_yaml_structure(node: CanonNode) -> str:
+    """Render a CanonNode in the same block-outer/flow-inner YAML syntax used in .yaml fixtures."""
+    _, children = node
+    return "\n".join("- " + _spec_to_flow(_canon_to_spec(c)) for c in children)
