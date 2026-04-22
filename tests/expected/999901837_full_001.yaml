@@ -1,0 +1,23 @@
+pdf: 999901837_full_001.pdf
+notes: |
+  Listed in tests/README.md as a passing example for reverse-coded items:
+  single scale, reverse-coded items noted below items.
+
+  Use this case to verify that the extractor correctly flags reverse-keyed
+  items. Item keywords below are placeholders — replace with 2–3 content
+  words from actual items in the PDF (an affirmative item that is NOT
+  reverse-keyed, and one that IS).
+
+language:
+  source: en
+
+counts:
+  scales_top_level: {exact: 1}
+
+items:
+  # Placeholder: replace the keywords with content words from real items.
+  # Keep the shape; the harness handles the rest.
+  - find_by_keywords: ["PLACEHOLDER_positive_item_keyword"]
+    reverse_keyed: false
+  - find_by_keywords: ["PLACEHOLDER_reversed_item_keyword"]
+    reverse_keyed: true

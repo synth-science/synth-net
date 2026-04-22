@@ -1,0 +1,19 @@
+pdf: 999967007_full_001.pdf
+notes: |
+  Listed in tests/README.md as an excellently-parsed nested hierarchy:
+  parent scale 'Antecedents of Legitimacy' with child 'Police Effectiveness'.
+
+  Use this case to verify that extraction preserves the nested scale
+  structure (scales_total > scales_top_level).
+
+language:
+  source: en
+
+counts:
+  # At least one top-level scale with at least one nested subscale.
+  scales_top_level: {min: 1}
+  scales_total: {min: 2}
+
+scales:
+  - name_keywords_any_of: ["legitimacy", "antecedents"]
+  - name_keywords_any_of: ["police effectiveness", "effectiveness"]

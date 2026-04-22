@@ -1,6 +1,12 @@
 input_dir: "/home/research/data/apa-psyctests/pdf"
 output_path: "/home/research/synth-net-pipline/extractor-00/records.parquet"
 seed: 133
+model: "gemma4:31b"
+
+tests:
+  runs_per_case: 1
+  expected_dir: tests/expected
+  langdetect_threshold: 0.8  # fraction of non-empty item texts that must detect as English on translated docs
 
 # save_parquet_path: "/home/research/synth-net/data/records.parquet"
 # overwrite_save_files: false

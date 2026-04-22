@@ -15,11 +15,16 @@ dependencies = [
     "pandas (>=3.0.2,<4.0.0)",
     "pyaml (>=26.2.1,<27.0.0)",
     "tqdm (>=4.67.3,<5.0.0)",
-    "pyarrow (>=23.0.1,<24.0.0)"
+    "pyarrow (>=23.0.1,<24.0.0)",
+    "rapidfuzz (>=3.14.5,<4.0.0)"
 ]
 
 [tool.poetry]
 package-mode = false
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0"
+langdetect = "^1.0.9"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

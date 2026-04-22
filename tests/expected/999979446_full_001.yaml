@@ -1,0 +1,15 @@
+pdf: 999979446_full_001.pdf
+notes: |
+  Italian-language instrument with poor scan resolution. The harness should
+  verify that the extraction both flags the translation (language='en',
+  is_translated=True) and actually produces English item text (langdetect).
+
+  Counts, scale names, and item-level expectations are placeholders — fill
+  in after inspecting the PDF. The language assertions alone are meaningful.
+
+language:
+  source: it
+  expect_translated_to: en
+  # Lower threshold because OCR of a low-res scan often leaks a few
+  # untranslated fragments. Raise once extraction quality improves.
+  langdetect_threshold: 0.7

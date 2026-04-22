@@ -6,6 +6,12 @@ The goal is to optimize the information extraction pipeline and reduce errors in
 Currently testing various extraction scripts, prefixed `extractor-`.
 
 
+## Running Extractions
 ```
-poetry run python -m extractor-00.main
+poetry run python main.py
+```
+
+## Running Tests
+```
+poetry run pytest tests/ -v
 ```

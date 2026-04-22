@@ -6,18 +6,23 @@ import json
 import fitz
 import ollama
 import logging
+from dataclasses import dataclass, field
 from datetime import datetime
-import pandas as pd
 from pathlib import Path
+from typing import Any, Optional
+
+import pandas as pd
 from tqdm import tqdm
 
 from models import Survey
 from pdb import set_trace as trace
 
+
 def load_config(config_path: str) -> dict:
     with open(config_path) as stream:
         config = yaml.safe_load(stream)
     return config
+
 
 def setup_logging():
     logs_dir = Path(__file__).parent / "logs"
@@ -31,6 +36,7 @@ def setup_logging():
             logging.StreamHandler()
         ]
     )
+
 
 def load_datamodel_docs(documentation_path=None) -> str:
     """Distils the survey data-model documentation to a simplified form for prompting."""
@@ -70,14 +76,6 @@ def load_datamodel_docs(documentation_path=None) -> str:
     return ast.unparse(tree)
 
 
-setup_logging()
-config = load_config(config_path="./config.yaml")
-
-input_files = os.listdir(path=config['input_dir'])
-random.seed(config['seed'])
-random.shuffle(input_files)
-filenames = [x for x in input_files if x.endswith('.pdf')]
-
 def convert_pdf_to_image(pdf_path):
 
     pdf_document = fitz.open(pdf_path)
@@ -93,84 +91,141 @@ def convert_pdf_to_image(pdf_path):
 
     return pdf_images
 
+
 def read_file(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         content = file.read()
     return content
 
-records = []
 
-for filename in tqdm(filenames):
+@dataclass
+class ExtractionResult:
+    """Result of a single extract_survey() call.
 
-    logging.info(f"Processing file: {filename}")
-    pdf_path = os.path.join(config['input_dir'], filename)
-    pdf_images = convert_pdf_to_image(pdf_path)
+    `survey` is None if the LLM response failed schema validation.
+    Metadata is always populated so callers can persist timing / raw output
+    even when validation fails.
+    """
+    filename: str
+    survey: Optional[Survey]
+    survey_json: Optional[dict]
+    raw_response: str
+    ollama_metrics: dict = field(default_factory=dict)
+    validation_error: Optional[str] = None
+    timestamp: str = ""
 
-    template_dir = Path(__file__).parent / "./templates/"
+
+def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
+    """Run one extraction pass on a PDF. Pure function — no logging setup,
+    no filesystem writes. Callable from both main() and the test harness.
+    """
+    pdf_path = Path(pdf_path)
+    filename = pdf_path.name
+
+    pdf_images = convert_pdf_to_image(str(pdf_path))
+
+    template_dir = Path(__file__).parent / "templates"
+    datamodel_path = Path(__file__).parent / "models.py"
+    datamodel_docs = load_datamodel_docs(datamodel_path)
 
     system_prompt_dict = {
         "role": "system",
-        "content": f'{read_file(template_dir / "system.md")}'
+        "content": read_file(template_dir / "system.md"),
     }
-
-    datamodel_path = Path(__file__).parent / "./models.py"
-    datamodel_docs = load_datamodel_docs(datamodel_path)
-
     user_prompt = "{prompt}\n\n{documentation}".format(
-        prompt=f'{read_file(template_dir / "user.md")}',
-        documentation=datamodel_docs
+        prompt=read_file(template_dir / "user.md"),
+        documentation=datamodel_docs,
     )
-
     user_prompt_dict = {
         "role": "user",
         "content": user_prompt,
-        "images": pdf_images
+        "images": pdf_images,
     }
 
-    logging.info(f"Sending document to model for extraction...")
-    trace()
-    try:
-        response = ollama.chat(
-            model='gemma4:31b',
-            messages=[
-                system_prompt_dict, 
-                user_prompt_dict
-            ],
-            format=Survey.model_json_schema()
-        )
-    except Exception as e:
-        logging.error(f"Error during model inference for file {filename}: {e}")
-        continue
+    chat_kwargs: dict[str, Any] = {
+        "model": config.get("model", None),
+        "messages": [system_prompt_dict, user_prompt_dict],
+        "format": Survey.model_json_schema(),
+    }
 
-    logging.info(f"Received response from model for file {filename}")
-    response_message = response.message['content']
-    thinking = response.message.get('thinking', '')
-    survey_json = None
+    response = ollama.chat(**chat_kwargs)
 
+    response_message = response.message["content"]
+
+    survey_obj: Optional[Survey] = None
+    survey_json: Optional[dict] = None
+    validation_error: Optional[str] = None
     try:
-        if Survey.model_validate_json(response_message):
-            survey_json = json.loads(response_message)
-            survey_json.pop("thinking", None)
-        else:
-            raise ValueError("Response does not conform to Survey schema")
+        survey_obj = Survey.model_validate_json(response_message)
+        survey_json = json.loads(response_message)
+        survey_json.pop("thinking", None)
     except json.JSONDecodeError as e:
-        logging.error(f"JSON decoding error for file {filename}: {e}")
+        validation_error = f"JSON decoding error: {e}"
     except Exception as e:
-        logging.error(f"Unexpected error for file {filename}: {e}")
+        validation_error = f"Schema validation error: {e}"
 
-    records.append({
-        "filename": filename,
-        "survey_json": json.dumps(survey_json),
-        "response": response_message,
-        "response_created_at": response.created_at,
-        "response_total_duration": response.total_duration,
-        "response_load_duration": response.load_duration,
-        "response_prompt_eval_duration": response.prompt_eval_duration,
-        "response_eval_duration": response.eval_duration,
-        "timestamp": datetime.now().isoformat(),        
-    })
+    return ExtractionResult(
+        filename=filename,
+        survey=survey_obj,
+        survey_json=survey_json,
+        raw_response=response_message,
+        ollama_metrics={
+            "created_at": response.created_at,
+            "total_duration": response.total_duration,
+            "load_duration": response.load_duration,
+            "prompt_eval_duration": response.prompt_eval_duration,
+            "eval_duration": response.eval_duration,
+        },
+        validation_error=validation_error,
+        timestamp=datetime.now().isoformat(),
+    )
 
-    try:
-        pd.DataFrame(records).to_parquet(config["output_path"])
-    except Exception as e:
-        logging.error(f"Failed saving records as .parquet: {e}")
+
+def main():
+    setup_logging()
+    config = load_config(config_path="./config.yaml")
+
+    input_files = os.listdir(path=config['input_dir'])
+    random.seed(config['seed'])
+    random.shuffle(input_files)
+    filenames = [x for x in input_files if x.endswith('.pdf')]
+
+    records = []
+
+    filenames = ["999941280_full_001.pdf"] # debug
+    for filename in tqdm(filenames):
+        logging.info(f"Processing file: {filename}")
+        pdf_path = os.path.join(config['input_dir'], filename)
+
+        logging.info(f"Sending document to model for extraction...")
+        trace() # debug
+        try:
+            result = extract_survey(pdf_path, config)
+        except Exception as e:
+            logging.error(f"Error during model inference for file {filename}: {e}")
+            continue
+
+        logging.info(f"Received response from model for file {filename}")
+        if result.validation_error:
+            logging.error(f"{filename}: {result.validation_error}")
+        trace() # debug
+        records.append({
+            "filename": result.filename,
+            "survey_json": json.dumps(result.survey_json),
+            "response": result.raw_response,
+            "response_created_at": result.ollama_metrics["created_at"],
+            "response_total_duration": result.ollama_metrics["total_duration"],
+            "response_load_duration": result.ollama_metrics["load_duration"],
+            "response_prompt_eval_duration": result.ollama_metrics["prompt_eval_duration"],
+            "response_eval_duration": result.ollama_metrics["eval_duration"],
+            "timestamp": result.timestamp,
+        })
+
+        try:
+            pd.DataFrame(records).to_parquet(config["output_path"])
+        except Exception as e:
+            logging.error(f"Failed saving records as .parquet: {e}")
+
+
+if __name__ == "__main__":
+    main()
