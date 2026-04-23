@@ -11,6 +11,7 @@ session two summary tables are printed and also written to
 """
 from __future__ import annotations
 
+import re
 import sys
 from collections import defaultdict
 from datetime import datetime
@@ -19,6 +20,8 @@ from typing import Any
 
 import pytest
 import yaml
+
+_ANSI_RE = re.compile(r"\x1b\[[0-9;]*m")
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(REPO_ROOT) not in sys.path:
@@ -57,9 +60,15 @@ def config() -> dict:
     return load_config(str(REPO_ROOT / "config.yaml"))
 
 
+_extraction_cache_ref: dict[tuple[str, int], ExtractionResult] | None = None
+
+
 @pytest.fixture(scope="session")
 def extraction_cache() -> dict[tuple[str, int], ExtractionResult]:
-    return {}
+    global _extraction_cache_ref
+    cache: dict[tuple[str, int], ExtractionResult] = {}
+    _extraction_cache_ref = cache
+    return cache
 
 
 @pytest.fixture
@@ -120,7 +129,6 @@ def pytest_generate_tests(metafunc):
 # Per-run reporting
 # --------------------------------------------------------------------------
 
-# Assertion label derived from the test function name suffix (after "test_").
 # Kept in sync with tests/test_extraction.py.
 _ASSERTION_LABELS = {
     "test_extraction_succeeded": "succeeded",
@@ -129,42 +137,64 @@ _ASSERTION_LABELS = {
     "test_property": "property",
 }
 
-# Collected results: list of (pdf, assertion, passed, diagnostic)
-_records: list[tuple[str, str, bool, str]] = []
+_records: list[tuple[str, int, str, bool, str]] = []
+_extractions: list[tuple[str, int, ExtractionResult]] = []
+_seen_extractions: set[tuple[str, int]] = set()
 
 
-def _parse_nodeid(nodeid: str) -> tuple[str | None, str | None]:
-    # nodeid: tests/test_extraction.py::test_structure[999967007_full_001.pdf-run0]
+def _parse_nodeid(nodeid: str) -> tuple[str | None, int, str | None]:
+
     func_part, _, param_part = nodeid.partition("[")
     func_name = func_part.rsplit("::", 1)[-1]
     assertion = _ASSERTION_LABELS.get(func_name)
     pdf = None
+    run_index = 0
     if param_part:
         bracket = param_part.rstrip("]")
-        pdf = bracket.rsplit("-run", 1)[0] if "-run" in bracket else bracket
-    return pdf, assertion
+        if "-run" in bracket:
+            pdf, run_str = bracket.rsplit("-run", 1)
+            try:
+                run_index = int(run_str.split("-")[0])
+            except ValueError:
+                run_index = 0
+        else:
+            pdf = bracket
+    return pdf, run_index, assertion
 
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
     outcome = yield
     report = outcome.get_result()
-    if report.when != "call":
+    if report.when != "call" or report.skipped:
         return
-    if report.skipped:
-        return
-    pdf, assertion = _parse_nodeid(report.nodeid)
+    pdf, run_index, assertion = _parse_nodeid(report.nodeid)
     if not pdf or not assertion:
         return
+
     diagnostic = ""
     if not report.passed:
-        diagnostic = (str(report.longrepr).splitlines() or [""])[-1].strip()
-    _records.append((pdf, assertion, bool(report.passed), diagnostic))
+        if hasattr(report.longrepr, "reprcrash"):
+            diagnostic = report.longrepr.reprcrash.message
+        else:
+            diagnostic = (str(report.longrepr).splitlines() or [""])[-1].strip()
+
+    _records.append((pdf, run_index, assertion, bool(report.passed), diagnostic))
+
+    if _extraction_cache_ref and "case" in item.funcargs:
+        case = item.funcargs["case"]
+        run_index = item.funcargs.get("run_index", 0)
+        key = (case.pdf, run_index)
+        if key not in _seen_extractions:
+            result = _extraction_cache_ref.get(key)
+            if result is not None:
+                _seen_extractions.add(key)
+                _extractions.append((case.pdf, run_index, result))
 
 
 def _render_by_document() -> list[str]:
     by_doc: dict[str, list[tuple[str, bool]]] = defaultdict(list)
-    for pdf, assertion, passed, _ in _records:
+    for pdf, _run, assertion, passed, _ in _records:
         by_doc[pdf].append((assertion, passed))
 
     lines = []
@@ -182,14 +212,14 @@ def _render_by_document() -> list[str]:
 
 def _render_by_assertion() -> list[str]:
     by_assertion: dict[str, list[bool]] = defaultdict(list)
-    for _, assertion, passed, _ in _records:
+    for _, _run, assertion, passed, _ in _records:
         by_assertion[assertion].append(passed)
 
     lines = []
     header = f"{'assertion':<14}{'passed':>10}{'total':>8}"
     lines.append(header)
     lines.append("-" * len(header))
-    # Preserve the declared order from _ASSERTION_LABELS.
+    
     ordered = [lbl for lbl in _ASSERTION_LABELS.values() if lbl in by_assertion]
     for assertion in ordered:
         outcomes = by_assertion[assertion]
@@ -199,14 +229,57 @@ def _render_by_assertion() -> list[str]:
     return lines
 
 
+def _filter_structure_diag(diag: str) -> str:
+    """Strip pytest assertion-rewriting noise; keep only the YAML expected/actual block."""
+    diag = _ANSI_RE.sub("", diag)
+    lines = diag.splitlines()
+    start = next((i for i, ln in enumerate(lines) if ln.strip().startswith("expected:")), None)
+    if start is None:
+        marker = "scale tree does not match expected structure."
+        idx = diag.find(marker)
+        return diag[idx + len(marker):].lstrip("\n") if idx != -1 else diag
+    end = next(
+        (i for i, ln in enumerate(lines[start:], start) if ln.strip().startswith("assert ")),
+        len(lines),
+    )
+    return "\n".join(lines[start:end]).rstrip()
+
+
 def _render_failures() -> list[str]:
-    fails = [(pdf, a, d) for pdf, a, p, d in _records if not p]
+    fails = [(pdf, run, a, d) for pdf, run, a, p, d in _records if not p]
     if not fails:
         return ["(no failures)"]
-    return [f"{pdf} :: {a}  —  {d or '(no diagnostic)'}" for pdf, a, d in sorted(fails)]
+    lines = []
+    for pdf, run_index, assertion, diag in sorted(fails):
+        lines.append(f"{pdf} :: run{run_index} :: {assertion}")
+        if diag:
+            if assertion == "structure":
+                diag = _filter_structure_diag(diag)
+            for diag_line in diag.splitlines():
+                lines.append(f"  {diag_line}")
+        else:
+            lines.append("  (no diagnostic)")
+        lines.append("")
+    return lines
 
 
-def _build_report(timestamp: str) -> str:
+def _render_extracted_surveys() -> list[str]:
+    if not _extractions:
+        return ["(no extractions recorded)"]
+    lines = []
+    for pdf, run_index, result in _extractions:
+        lines.append(f"### {pdf} :: run{run_index}")
+        if result.survey is None:
+            lines.append(f"  extraction failed: {result.validation_error}")
+        else:
+            data = result.survey.model_dump(exclude={"thinking"})
+            dump = yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=100)
+            lines.extend(f"  {line}" for line in dump.rstrip().splitlines())
+        lines.append("")
+    return lines
+
+
+def _build_report(timestamp: str, include_surveys: bool = False) -> str:
     parts = [f"test-report  {timestamp}", ""]
     parts.append("## By document")
     parts.extend(_render_by_document())
@@ -216,7 +289,9 @@ def _build_report(timestamp: str) -> str:
     parts.append("")
     parts.append("## Failures")
     parts.extend(_render_failures())
-    parts.append("")
+    if include_surveys:
+        parts.append("## Extracted surveys")
+        parts.extend(_render_extracted_surveys())
     return "\n".join(parts)
 
 
@@ -224,15 +299,14 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config: Any):
     if not _records:
         return
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    report = _build_report(timestamp)
 
     tr = terminalreporter
     tr.write_sep("=", "extraction test report")
-    for line in report.splitlines():
+    for line in _build_report(timestamp).splitlines():
         tr.write_line(line)
 
     logs_dir = REPO_ROOT / "logs"
     logs_dir.mkdir(exist_ok=True)
     log_path = logs_dir / f"test-report_{timestamp}.log"
-    log_path.write_text(report)
+    log_path.write_text(_build_report(timestamp, include_surveys=True))
     tr.write_line(f"report written to {log_path}")

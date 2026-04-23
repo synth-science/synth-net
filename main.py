@@ -108,9 +108,9 @@ class ExtractionResult:
     """
     filename: str
     survey: Optional[Survey]
-    survey_json: Optional[dict]
+    # survey_json: Optional[dict]
     raw_response: str
-    ollama_metrics: dict = field(default_factory=dict)
+    response_metrics: dict = field(default_factory=dict)
     validation_error: Optional[str] = None
     timestamp: str = ""
 
@@ -147,35 +147,43 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
         "messages": [system_prompt_dict, user_prompt_dict],
         "format": Survey.model_json_schema(),
     }
+    if config.get("options"):
+        chat_kwargs["options"] = config["options"]
 
     response = ollama.chat(**chat_kwargs)
 
     response_message = response.message["content"]
 
     survey_obj: Optional[Survey] = None
-    survey_json: Optional[dict] = None
+    # survey_json: Optional[dict] = None
     validation_error: Optional[str] = None
     try:
         survey_obj = Survey.model_validate_json(response_message)
         # Dump the validated model so the parquet carries synthetic item_ids
         # (Survey validation stamps the same id onto duplicate ScoredItems).
-        survey_json = survey_obj.model_dump(exclude={"thinking"})
+        # survey_json = survey_obj.model_dump(exclude={"thinking"})
     except json.JSONDecodeError as e:
         validation_error = f"JSON decoding error: {e}"
     except Exception as e:
         validation_error = f"Schema validation error: {e}"
 
+    input_token_count = response.get('prompt_eval_count', 0)
+    output_token_count = response.get('eval_count', 0)
+    total_token_count = input_token_count + output_token_count
     return ExtractionResult(
         filename=filename,
         survey=survey_obj,
-        survey_json=survey_json,
+        # survey_json=survey_json,
         raw_response=response_message,
-        ollama_metrics={
+        response_metrics={
             "created_at": response.created_at,
             "total_duration": response.total_duration,
             "load_duration": response.load_duration,
             "prompt_eval_duration": response.prompt_eval_duration,
             "eval_duration": response.eval_duration,
+            "input_token_count": input_token_count,
+            "output_token_count": output_token_count,
+            "total_token_count": total_token_count,
         },
         validation_error=validation_error,
         timestamp=datetime.now().isoformat(),
@@ -212,13 +220,13 @@ def main():
         trace() # debug
         records.append({
             "filename": result.filename,
-            "survey_json": json.dumps(result.survey_json),
+            # "survey_json": json.dumps(result.survey_json),
             "response": result.raw_response,
-            "response_created_at": result.ollama_metrics["created_at"],
-            "response_total_duration": result.ollama_metrics["total_duration"],
-            "response_load_duration": result.ollama_metrics["load_duration"],
-            "response_prompt_eval_duration": result.ollama_metrics["prompt_eval_duration"],
-            "response_eval_duration": result.ollama_metrics["eval_duration"],
+            "response_created_at": result.response_metrics["created_at"],
+            "response_total_duration": result.response_metrics["total_duration"],
+            "response_load_duration": result.response_metrics["load_duration"],
+            "response_prompt_eval_duration": result.response_metrics["prompt_eval_duration"],
+            "response_eval_duration": result.response_metrics["eval_duration"],
             "timestamp": result.timestamp,
         })
 
