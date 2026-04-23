@@ -130,9 +130,9 @@ class Scale(BaseModel):
     construct_name: str = Field(
         description="Underlying psychological construct the scale measures."
     )
-    report_type: Literal["self-report", "other-report"] = Field(
+    report_type: Literal["self-report", "other-report", "mixed"] = Field(
         default="self-report",
-        description="Whether the scale is intended for respondents to report on themselves or on someone else (e.g. a child, patient, or friend).",
+        description="Whether the scale is intended for respondents to report on themselves or on someone else (e.g. a child, patient, or friend). `mixed` for scales with items of both types.",
     )
     instructions: Optional[str] = Field(
         default=None,
