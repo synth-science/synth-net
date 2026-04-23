@@ -13,8 +13,10 @@ from utils import (
     ExpectedCase,
     canonicalize_actual,
     canonicalize_expected,
+    check_item,
     check_property,
     collect_property,
+    find_items_by_text,
     format_as_yaml_structure,
 )
 
@@ -67,3 +69,12 @@ def test_property(case: ExpectedCase, run_index: int, property_check: dict, get_
     values = collect_property(result.survey, property_check["name"])
     ok, diag = check_property(values, property_check)
     assert ok, f"{property_check['name']}: {diag}"
+
+
+def test_item(case: ExpectedCase, run_index: int, item_check: dict, get_extraction):
+    result = _get_result(case, run_index, get_extraction)
+    if result.survey is None:
+        pytest.fail(f"extraction failed, cannot check item: {result.validation_error}")
+    matches = find_items_by_text(result.survey, item_check["text"])
+    ok, diag = check_item(matches, item_check)
+    assert ok, f"item[text~={item_check['text']!r}]: {diag}"

@@ -104,6 +104,14 @@ def _check_id(check: dict) -> str:
     return f"{name}:{op}={val_repr}"
 
 
+def _item_id(check: dict) -> str:
+    text = str(check.get("text", "?"))
+    if len(text) > 30:
+        text = text[:27] + "..."
+    fields = ",".join(f"{k}={check[k]}" for k in check if k != "text")
+    return f"{fields or 'no-fields'}:{text}"
+
+
 def pytest_generate_tests(metafunc):
     if "case" not in metafunc.fixturenames or "run_index" not in metafunc.fixturenames:
         return
@@ -119,6 +127,14 @@ def pytest_generate_tests(metafunc):
                     params.append((c, r, check))
                     ids.append(f"{c.pdf}-run{r}-{_check_id(check)}")
         metafunc.parametrize(("case", "run_index", "property_check"), params, ids=ids)
+    elif "item_check" in metafunc.fixturenames:
+        params, ids = [], []
+        for c in cases:
+            for check in (c.spec.get("items") or []):
+                for r in range(runs):
+                    params.append((c, r, check))
+                    ids.append(f"{c.pdf}-run{r}-{_item_id(check)}")
+        metafunc.parametrize(("case", "run_index", "item_check"), params, ids=ids)
     else:
         params = [(c, r) for c in cases for r in range(runs)]
         ids = [f"{c.pdf}-run{r}" for c, r in params]
@@ -135,6 +151,7 @@ _ASSERTION_LABELS = {
     "test_language": "language",
     "test_structure": "structure",
     "test_property": "property",
+    "test_item": "item",
 }
 
 _records: list[tuple[str, int, str, bool, str]] = []

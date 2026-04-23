@@ -191,3 +191,48 @@ def check_property(values: list, spec: dict) -> tuple[bool, str]:
     else:
         ok = False
     return ok, f"{op}={expected!r}; found {values!r}"
+
+
+# ---------------------------------------------------------------------------
+# Item-level assertions
+# ---------------------------------------------------------------------------
+#
+# Pick ScoredItems out of the survey by an item_text substring, then assert
+# equality on any remaining fields declared in the spec (e.g. reverse_keyed).
+# Any-of matching: at least one matching item must satisfy all field checks.
+
+
+def find_items_by_text(survey: Survey, text: str) -> list[dict]:
+    """Return every ScoredItem dict in the dumped survey whose item_text contains `text`."""
+    needle = normalize(text)
+    out: list[dict] = []
+
+    def visit(obj: Any) -> None:
+        if isinstance(obj, dict):
+            if "item_text" in obj and "reverse_keyed" in obj:
+                if needle in normalize(obj.get("item_text") or ""):
+                    out.append(obj)
+            for v in obj.values():
+                visit(v)
+        elif isinstance(obj, list):
+            for v in obj:
+                visit(v)
+
+    visit(survey.model_dump())
+    return out
+
+
+def check_item(matches: list[dict], spec: dict) -> tuple[bool, str]:
+    fields = {k: v for k, v in spec.items() if k != "text"}
+    if not fields:
+        return False, f"no field assertions declared (need at least one besides 'text')"
+    if not matches:
+        return False, f"no item contains text {spec['text']!r}"
+    ok = any(all(m.get(f) == v for f, v in fields.items()) for m in matches)
+    if not ok:
+        seen = [{k: m.get(k) for k in fields} for m in matches]
+        return False, (
+            f"{len(matches)} item(s) matched text {spec['text']!r}; "
+            f"none satisfy {fields}; got {seen}"
+        )
+    return True, f"{fields} satisfied by one of {len(matches)} match(es)"
