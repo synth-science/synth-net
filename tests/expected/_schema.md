@@ -26,6 +26,12 @@ properties:                        # optional; one assertion per entry
     not_null: true
   - name: report_type
     equals: "other-report"
+
+items:                             # optional; one assertion per entry
+  - text: "I worry about being alone"
+    reverse_keyed: true
+  - text: "I enjoy meeting new people"
+    reverse_keyed: false
 ```
 
 ## Structure DSL
@@ -98,9 +104,41 @@ On failure the assertion prints the operator, the expected value, and the
 list of values actually collected from the hierarchy — so you can tell
 whether the property was missing entirely or just had the wrong value.
 
+## Item assertions
+
+Use `items:` to pin claims to a specific ScoredItem identified by an
+`item_text` substring. Each entry is one pytest node.
+
+```yaml
+items:
+  - text: "I worry about being alone"   # substring, case-insensitive, whitespace-normalized
+    reverse_keyed: true
+  - text: "I enjoy meeting new people"
+    reverse_keyed: false
+```
+
+- `text`: required. Normalized (lowercase + collapsed whitespace) substring
+  match against `item_text`. AuxiliaryItems are not considered.
+- Every other key is an equality check against that field on the matched
+  item (e.g. `reverse_keyed`, `has_image`, `language`, `is_translated`).
+- **Any-of matching**: the assertion passes if at least one item whose text
+  matches satisfies **all** declared field checks. Since `reverse_keyed` is
+  per-scale, the same item_text may appear with different values across
+  scales; use a longer substring to disambiguate if that matters.
+
+### Failure diagnostic
+
+Two distinct failure modes, each with its own message:
+
+- **No item found**: `no item contains text "<text>"`.
+- **Fields mismatch**: `N item(s) matched text "<text>"; none satisfy {...};
+  got [{...}, {...}]` — the collected field values are printed so you can
+  see whether the extractor put the right item in the wrong state or the
+  wrong item got the text match.
+
 ## Disabling a case
 
-Set `exclude_from_testing: true` at the top of the file. The harness skips
+Set `exclude_from_testing: false` at the top of the file. The harness skips
 the case during discovery — it won't appear in any test output or report.
 
 ## Running

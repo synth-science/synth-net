@@ -286,6 +286,7 @@ def _render_extracted_surveys() -> list[str]:
     lines = []
     for pdf, run_index, result in _extractions:
         lines.append(f"### {pdf} :: run{run_index}")
+        lines.append(f"  retries={result.retry_count} success={result.success}")
         if result.survey is None:
             lines.append(f"  extraction failed: {result.validation_error}")
         else:

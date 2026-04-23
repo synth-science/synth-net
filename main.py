@@ -104,14 +104,16 @@ class ExtractionResult:
 
     `survey` is None if the LLM response failed schema validation.
     Metadata is always populated so callers can persist timing / raw output
-    even when validation fails.
+    even when validation fails. `retry_count` is the number of extra
+    ollama.chat rounds beyond the first (0 on a clean first-shot).
     """
     filename: str
     survey: Optional[Survey]
-    # survey_json: Optional[dict]
     raw_response: str
     response_metrics: dict = field(default_factory=dict)
     validation_error: Optional[str] = None
+    retry_count: int = 0
+    success: bool = False
     timestamp: str = ""
 
 
@@ -142,50 +144,82 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
         "images": pdf_images,
     }
 
-    chat_kwargs: dict[str, Any] = {
-        "model": config.get("model", None),
-        "messages": [system_prompt_dict, user_prompt_dict],
-        "format": Survey.model_json_schema(),
+    error_preamble = read_file(template_dir / "error.md")
+    max_retries = int(config.get("max_retries", 0))
+
+    messages: list[dict[str, Any]] = [system_prompt_dict, user_prompt_dict]
+    metrics: dict[str, Any] = {
+        "created_at": None,
+        "total_duration": 0,
+        "load_duration": 0,
+        "prompt_eval_duration": 0,
+        "eval_duration": 0,
+        "input_token_count": 0,
+        "output_token_count": 0,
+        "total_token_count": 0,
     }
-    if config.get("options"):
-        chat_kwargs["options"] = config["options"]
-
-    response = ollama.chat(**chat_kwargs)
-
-    response_message = response.message["content"]
-
     survey_obj: Optional[Survey] = None
-    # survey_json: Optional[dict] = None
     validation_error: Optional[str] = None
-    try:
-        survey_obj = Survey.model_validate_json(response_message)
-        # Dump the validated model so the parquet carries synthetic item_ids
-        # (Survey validation stamps the same id onto duplicate ScoredItems).
-        # survey_json = survey_obj.model_dump(exclude={"thinking"})
-    except json.JSONDecodeError as e:
-        validation_error = f"JSON decoding error: {e}"
-    except Exception as e:
-        validation_error = f"Schema validation error: {e}"
+    raw_response: str = ""
+    attempt = 0
 
-    input_token_count = response.get('prompt_eval_count', 0)
-    output_token_count = response.get('eval_count', 0)
-    total_token_count = input_token_count + output_token_count
+    for attempt in range(max_retries + 1):
+        chat_kwargs: dict[str, Any] = {
+            "model": config.get("model", None),
+            "messages": messages,
+            "format": Survey.model_json_schema(),
+        }
+        if config.get("options"):
+            chat_kwargs["options"] = config["options"]
+
+        response = ollama.chat(**chat_kwargs)
+        raw_response = response.message["content"]
+
+        metrics["created_at"] = response.created_at
+        metrics["total_duration"] += response.total_duration or 0
+        metrics["load_duration"] += response.load_duration or 0
+        metrics["prompt_eval_duration"] += response.prompt_eval_duration or 0
+        metrics["eval_duration"] += response.eval_duration or 0
+        in_tok = response.get("prompt_eval_count", 0) or 0
+        out_tok = response.get("eval_count", 0) or 0
+        metrics["input_token_count"] += in_tok
+        metrics["output_token_count"] += out_tok
+        metrics["total_token_count"] += in_tok + out_tok
+
+        try:
+            survey_obj = Survey.model_validate_json(raw_response)
+            validation_error = None
+            break
+        except json.JSONDecodeError as e:
+            validation_error = f"JSON decoding error: {e}"
+        except Exception as e:
+            validation_error = f"Schema validation error: {e}"
+
+        if attempt == max_retries:
+            break
+
+        # Replay the model's own output as an assistant turn, with the
+        # `thinking` sink stripped out of the JSON payload. `thinking=None`
+        # on the message keeps ollama from re-injecting prior reasoning.
+        try:
+            resp_dict = json.loads(raw_response)
+            resp_dict.pop("thinking", None)
+            cleaned = json.dumps(resp_dict)
+        except json.JSONDecodeError:
+            cleaned = raw_response
+        messages = messages + [
+            {"role": "assistant", "content": cleaned, "thinking": None},
+            {"role": "user", "content": f"{error_preamble}\n\n{validation_error}"},
+        ]
+
     return ExtractionResult(
         filename=filename,
         survey=survey_obj,
-        # survey_json=survey_json,
-        raw_response=response_message,
-        response_metrics={
-            "created_at": response.created_at,
-            "total_duration": response.total_duration,
-            "load_duration": response.load_duration,
-            "prompt_eval_duration": response.prompt_eval_duration,
-            "eval_duration": response.eval_duration,
-            "input_token_count": input_token_count,
-            "output_token_count": output_token_count,
-            "total_token_count": total_token_count,
-        },
+        raw_response=raw_response,
+        response_metrics=metrics,
         validation_error=validation_error,
+        retry_count=attempt,
+        success=survey_obj is not None,
         timestamp=datetime.now().isoformat(),
     )
 
@@ -202,6 +236,8 @@ def main():
     records = []
 
     filenames = ["999941280_full_001.pdf"] # debug
+    filenames = ["999979446_full_001.pdf"] # debug
+    filenames = ["999971030_full_001.pdf"] # debug
     for filename in tqdm(filenames):
         logging.info(f"Processing file: {filename}")
         pdf_path = os.path.join(config['input_dir'], filename)
@@ -220,13 +256,15 @@ def main():
         trace() # debug
         records.append({
             "filename": result.filename,
-            # "survey_json": json.dumps(result.survey_json),
             "response": result.raw_response,
             "response_created_at": result.response_metrics["created_at"],
             "response_total_duration": result.response_metrics["total_duration"],
             "response_load_duration": result.response_metrics["load_duration"],
             "response_prompt_eval_duration": result.response_metrics["prompt_eval_duration"],
             "response_eval_duration": result.response_metrics["eval_duration"],
+            "retry_count": result.retry_count,
+            "success": result.success,
+            "validation_error": result.validation_error,
             "timestamp": result.timestamp,
         })
 
