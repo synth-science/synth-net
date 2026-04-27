@@ -185,7 +185,7 @@ def check_property(values: list, spec: dict) -> tuple[bool, str]:
     elif op == "equals":
         ok = any(v == expected for v in values)
     elif op == "contains":
-        ok = any(isinstance(v, str) and expected in v for v in values)
+        ok = any(isinstance(v, str) and expected.lower() in v.lower() for v in values)
     elif op == "in":
         ok = any(v in expected for v in values)
     else:
