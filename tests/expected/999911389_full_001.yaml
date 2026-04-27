@@ -3,8 +3,8 @@ notes: |
   Items ID's are prefixed with codes for scale membership and when reversed.
 exclude_from_testing: false
 structure:
-  - 15
-  - 15
+  - 14
+  - 16
 items:
   - text: "usually influence the degree to which a situation"
     reverse_keyed: false
