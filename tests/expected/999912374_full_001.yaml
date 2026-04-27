@@ -1,0 +1,13 @@
+pdf: 999912374_full_001.pdf
+notes: |
+  Questionnaire consists of vignettes in a structure that may be difficult to
+  parse. In the item table, the columns "clicincal vignette" should be transcribed 
+  as part of the item context, together with the "and you find" column.
+
+exclude_from_testing: false
+language: en
+properties:
+  - name: items_context
+    not_null: true
+structure:
+  - 7

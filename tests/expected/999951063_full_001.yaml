@@ -1,0 +1,16 @@
+pdf: 999951063_full_001.pdf
+notes: |
+  Each scale shares the same context, i.e., a fictional account which needs to be
+  evaluated before responding to any of the items.
+
+exclude_from_testing: false
+language: en
+structure:
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+properties:
+  - name: items_context
+    not_null: true

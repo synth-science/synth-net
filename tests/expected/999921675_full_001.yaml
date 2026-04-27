@@ -1,0 +1,37 @@
+pdf: 999921675_full_001.pdf
+notes: |
+  Document mentions a four scale/factor structure, but items are not labeled by 
+  factor in the text. Structure therefore needs to be inferred from item content, 
+  which is extremely challenging and error prone, even for human experts. Ground
+  truth is based on the original paper. Items are prefixed.
+
+exclude_from_testing: false
+language: en
+structure:
+  - 4
+  - 4
+  - 3
+  - 3
+properties:
+  - name: items_prefix
+    not_null: true
+
+# implement test / assertion for this:
+# # Positive Reinforcement
+# gives me important information 
+# makes me feel good about myself
+# helps me realize I am competent
+# rewards me for good performance 
+# # Evaluation
+# compares me with other people 
+# compares my performance standards or goals
+# shows me how my performance has changed over time 
+# helps me understand how others view my performance 
+# # Threat
+# sometimes makes me feel I’m a bad person
+# sometimes threatens me
+# makes me feel like I need to defend myself 
+# # Development Focus
+# says nothing when I do a good job
+# says nothing when I don’t do something well
+# determines the areas in which I need education and development

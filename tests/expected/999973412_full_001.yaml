@@ -1,0 +1,12 @@
+pdf: 999973412_full_001.pdf
+notes: |
+  Questionnaire contains a large number of items. German version should be ignored
+  in favor of English translation.
+
+exclude_from_testing: false
+structure:
+  - 36
+  - 11
+  - 12
+  - 14
+  - 13

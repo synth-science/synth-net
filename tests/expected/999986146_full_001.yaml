@@ -1,0 +1,10 @@
+pdf: 999986146_full_001.pdf
+notes: |
+  Two-level scale hierachy. Scale structure is illogical as "higher-order" and 
+  "first-order" scales are recursively nested within each other. The only way
+  to make sense of this structure is to transcribe each item twice, once for 
+  each scale it belongs to.
+exclude_from_testing: false
+structure:
+  - [3, 3, 3, 3, 2, 3] # "Higher-order" structure
+  - [1, 1, 1, 1, 1, 1, 1, 1, 1, 8] # "First-order" structure

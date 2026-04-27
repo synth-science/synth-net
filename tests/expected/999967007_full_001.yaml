@@ -1,16 +1,16 @@
 pdf: 999967007_full_001.pdf
 notes: |
-  Nested hierarchy: a parent scale 'Antecedents of Legitimacy' with a child
-  'Police Effectiveness'. Exact per-node item counts should be filled in
-  from the PDF; the `structure:` value below is a placeholder shape
-  (one top-level scale with one subscale) and will need refinement once
-  item counts are confirmed.
+  Large number of items and scales, including subscales. Items are contextualized
+  by additional information in each scale section.
 
-exclude_from_testing: true
-language: en
-
-# Placeholder — replace with actual item counts before treating this as a
-# real structural assertion. Current shape: 1 top-level composite with
-# 1 subscale; fill in leaf item counts.
+exclude_from_testing: false
 structure:
-  - [1]
+  - 8
+  - 4
+  - 9
+  - 8
+  - 8
+  - [11, 3, 3]
+properties:
+  - name: items_context
+    not_null: true

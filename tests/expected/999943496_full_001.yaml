@@ -1,0 +1,10 @@
+pdf: 999943496_full_001.pdf
+notes: |
+  Semantic differential may pose a challenge for extraction, as response options may be mistaken for item stems.
+
+exclude_from_testing: false
+language: en
+structure:
+  - 6
+  - 6
+  - 6

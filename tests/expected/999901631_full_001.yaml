@@ -1,0 +1,8 @@
+pdf: 999901631_full_001.pdf
+notes: |
+  Items with implicit string interpolation. May be very challenging for extraction,
+  as the first item contains a full item stem, following by a "template" for subsequent
+  items. Scale structure is ambigious. Scanned page, mediocre quality.
+
+exclude_from_testing: false
+language: en

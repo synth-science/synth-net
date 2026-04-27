@@ -1,0 +1,32 @@
+pdf: 999917708_full_001.pdf
+notes: |
+  Questionnaire consists of many items and scales. Items are prefixed.
+
+exclude_from_testing: false
+language: en
+structure:
+  - 3
+  - 3
+  - 5
+  - 6
+  - 5
+  - 3
+  - 3
+  - 3
+  - 3
+  - 4
+  - 4
+  - 3
+  - 4
+  - 3
+  - 4
+properties:
+  - name: items_prefix
+    not_null: true
+  - name: scale_name
+    contains: "personal treatment"
+  - name: scale_name
+    contains: "medical personnel"
+items:
+  - text: "adjustments during competitions"
+    reverse_keyed: false

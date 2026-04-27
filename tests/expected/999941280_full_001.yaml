@@ -4,5 +4,12 @@ notes: |
 
 exclude_from_testing: false
 language: en
-structure:
-  - [5, 5] # two scales á 5 items
+structure: # two scales á 5 items
+  - 5
+  - 5
+properties:
+  - name: min_value
+    equals: 1
+  - name: language
+    in: ["en"]
+  

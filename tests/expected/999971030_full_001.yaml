@@ -1,0 +1,10 @@
+pdf: 999971030_full_001.pdf
+notes: |
+  Questionnaire needs to be translated from Sinhala to English. Document in poor
+  resolution.
+
+exclude_from_testing: false
+language: si
+properties:
+- name: is_translated
+  equals: true

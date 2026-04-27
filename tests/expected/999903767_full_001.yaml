@@ -1,0 +1,16 @@
+pdf: 999903767_full_001.pdf
+notes: |
+  Single-choice items, without any item stem. Difficult case for extraction, 
+  as the response options may be mistaken for item stems
+
+exclude_from_testing: false
+language: en
+structure:
+  - 8
+properties:
+  - name: label
+    contains: "feel discouraged about my future"
+  - name: label
+    contains: "I try to stay hopeful but sometimes"
+  - name: label
+    contains: "I am looking forward to many things"

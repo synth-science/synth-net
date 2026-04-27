@@ -1,9 +1,12 @@
 pdf: 999979446_full_001.pdf
 notes: |
-  Italian-language instrument with poor scan resolution. The pipeline is
-  expected to produce an English-translated Survey, so `language.expect`
-  is `en` (the post-translation target language). Structure is not pinned
-  yet — add a `structure:` entry once item counts are confirmed.
+  Questionnaire needs to be translated from Italian to English. Document in poor
+  resolution.
 
-exclude_from_testing: true
-language: en
+exclude_from_testing: false
+language: it
+structure:
+  - 26
+properties:
+- name: is_translated
+  equals: true

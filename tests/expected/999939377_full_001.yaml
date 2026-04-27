@@ -1,0 +1,19 @@
+pdf: 999939377_full_001.pdf
+notes: |
+  Items are consist of emotions contextualized in setting of family mealtimes.
+  Hierachical structure witha global factor that requires reverse coding of an
+  entire subscale.
+
+exclude_from_testing: false
+language: en
+properties:
+  - name: items_context
+    not_null: true
+  - name: scale_name
+    contains: "anxiety"
+  - name: scale_name
+    contains: "anger"
+  - name: scale_name
+    contains: "positive"
+structure:
+  - [6, 3, 4]

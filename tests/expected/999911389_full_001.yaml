@@ -1,0 +1,16 @@
+pdf: 999911389_full_001.pdf
+notes: |
+  Items ID's are prefixed with codes for scale membership and when reversed.
+exclude_from_testing: false
+structure:
+  - 15
+  - 15
+items:
+  - text: "usually influence the degree to which a situation"
+    reverse_keyed: false
+  - text: "is little I can do to change"
+    reverse_keyed: true
+  - text: "cope as effectively as with unexpected anxiety"
+    reverse_keyed: false
+  - text: "shake uncontrollably"
+    reverse_keyed: true

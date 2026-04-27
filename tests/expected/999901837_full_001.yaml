@@ -1,11 +1,12 @@
 pdf: 999901837_full_001.pdf
 notes: |
-  Single-scale instrument with reverse-coded items. Structure is known to
-  be a single top-level leaf scale; item count should be pinned from the
-  PDF before relying on the `structure:` assertion. Until then, only
-  extraction-success and language assertions run for this case.
+  Footer contains information about reverse coded items.
 
-exclude_from_testing: true
-language: en
-
-# structure: [N]        # fill in once the actual item count is confirmed
+exclude_from_testing: false
+structure:
+  - 6
+items:
+  - text: "when I look at the world"
+    reverse_keyed: true
+  - text: "time can go by before I feel grateful"
+    reverse_keyed: true

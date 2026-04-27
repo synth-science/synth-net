@@ -1,0 +1,17 @@
+pdf: 999900454_full_001.pdf
+notes: |
+  Scale names (anxiety, avoidance, and security) are not explicitly mentioned in 
+  document, only abbrevations. Ground truth is based on the original paper.
+
+exclude_from_testing: false
+structure:
+  - 7
+  - 7
+  - 7
+properties:
+  - name: scale_name
+    contains: "anx"
+  - name: scale_name
+    contains: "avo"
+  - name: scale_name
+    contains: "sec"

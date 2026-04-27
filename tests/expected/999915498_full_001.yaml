@@ -1,0 +1,11 @@
+pdf: 999915498_full_001.pdf
+notes: |
+  No textual item stem, only images.
+exclude_from_testing: false
+structure:
+  - 5
+properties:
+  - name: has_image
+    equals: true
+  - name: image_description
+    not_null: true
