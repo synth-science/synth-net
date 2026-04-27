@@ -1,8 +1,8 @@
 pdf: 999912374_full_001.pdf
 notes: |
-  Questionnaire consists of vignettes in a structure that may be difficult to
-  parse. In the item table, the columns "clicincal vignette" should be transcribed 
-  as part of the item context, together with the "and you find" column.
+  Cognitive subscale: 5 stems x 4 response options (popular, smart, cool,
+  good-looking) must be interpolated into 20 separate items. Prototype-Willingness
+  scenario stems should be captured as items_context.
 
 exclude_from_testing: false
 language: en
@@ -10,4 +10,13 @@ properties:
   - name: items_context
     not_null: true
 structure:
-  - 7
+  - 20
+  - 6
+  - 17
+  - 9
+  - 2
+items:
+  - text: "good-looking are the type of kids your age who frequently"
+    reverse_keyed: false
+  - text: "smart are the type of girls/boys your age who choose NOT to have sex"
+    reverse_keyed: true
