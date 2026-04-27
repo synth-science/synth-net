@@ -94,7 +94,7 @@ def canonicalize_scale(scale: Scale) -> CanonNode:
     return (own_items, children)
 
 
-def canonicalize_actual(survey: Survey) -> CanonNode:
+def canonicalize_observed(survey: Survey) -> CanonNode:
     """Canonicalize the extracted Survey's scale tree the same way as the spec.
 
     A scale is treated as a 'leaf' (own_items = len(scale.items)) iff it has

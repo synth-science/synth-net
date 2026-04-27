@@ -57,11 +57,11 @@ structure: [3, [4, 5]]
 
 ### Matching
 
-Comparison is via canonical form: both expected and actual trees are
+Comparison is via canonical form: both expected and observed trees are
 reduced to sorted nested tuples `(own_items, sorted(children))`. Sibling
 order doesn't matter; scale names are never consulted. Any mismatch
 (own-item counts or child shapes) fails the assertion with a pretty-printed
-expected/actual diff.
+expected/observed diff.
 
 ## Property assertions
 

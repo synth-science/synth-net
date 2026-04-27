@@ -247,7 +247,7 @@ def _render_by_assertion() -> list[str]:
 
 
 def _filter_structure_diag(diag: str) -> str:
-    """Strip pytest assertion-rewriting noise; keep only the YAML expected/actual block."""
+    """Strip pytest assertion-rewriting noise; keep only the YAML expected/observed block."""
     diag = _ANSI_RE.sub("", diag)
     lines = diag.splitlines()
     start = next((i for i, ln in enumerate(lines) if ln.strip().startswith("expected:")), None)

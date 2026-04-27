@@ -11,7 +11,7 @@ import pytest
 
 from utils import (
     ExpectedCase,
-    canonicalize_actual,
+    canonicalize_observed,
     canonicalize_expected,
     check_item,
     check_property,
@@ -54,11 +54,11 @@ def test_structure(case: ExpectedCase, run_index: int, get_extraction):
         pytest.fail(f"extraction failed, cannot check structure: {result.validation_error}")
 
     expected = canonicalize_expected(spec)
-    actual = canonicalize_actual(result.survey)
-    assert actual == expected, (
+    observed = canonicalize_observed(result.survey)
+    assert observed == expected, (
         "scale tree does not match expected structure.\n"
         f"expected:\n{format_as_yaml_structure(expected)}\n"
-        f"actual:\n{format_as_yaml_structure(actual)}"
+        f"observed:\n{format_as_yaml_structure(observed)}"
     )
 
 

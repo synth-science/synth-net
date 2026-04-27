@@ -16,5 +16,5 @@ options:
   repeat_last_n: 64
 
 tests:
-  runs_per_case: 1
+  runs_per_case: 4
   expected_dir: tests/expected
