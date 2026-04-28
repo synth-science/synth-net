@@ -75,6 +75,10 @@ class ScoredItem(BaseModel):
         default=False,
         description="True if the response is reversed before scoring this scale.",
     )
+    keying_corrected: bool = Field(
+        default=False,
+        description="True if reverse_keyed was changed from the initially extracted value after reasoning about item phrasing.",
+    )
 
     # Synthetic id assigned post-extraction; hidden from the LLM-facing schema.
     _item_id: int = PrivateAttr(default=0)
@@ -213,6 +217,15 @@ class Survey(BaseModel):
     is_translated: bool = Field(
         default=False,
         description="True if any text in the survey has been transcribed as an English translation.",
+    )
+    scale_inference: bool = Field(
+        default=False,
+        description=(
+            "Survey-level flag. True if the overall structure of which items belong to which scale "
+            "was absent or ambiguous in the source document and had to be inferred by reasoning "
+            "(e.g. scales are named but no item-to-scale mapping is given, or the mapping is "
+            "unclear/contradictory). False if the document unambiguously specifies item-to-scale assignment."
+        ),
     )
 
     @model_validator(mode="after")
