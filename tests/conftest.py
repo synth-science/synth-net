@@ -141,7 +141,9 @@ def pytest_generate_tests(metafunc):
             for check in (c.spec.get("scales") or []):
                 for r in range(runs):
                     params.append((c, r, check))
-                    ids.append(f"{c.pdf}-run{r}-scale:{check.get('scale_name', '?')[:25]}")
+                    sn = check.get("scale_name", "?")
+                    sn_str = (sn if isinstance(sn, str) else repr(sn))[:25]
+                    ids.append(f"{c.pdf}-run{r}-scale:{sn_str}")
         metafunc.parametrize(("case", "run_index", "scale_check"), params, ids=ids)
     else:
         params = [(c, r) for c in cases for r in range(runs)]
