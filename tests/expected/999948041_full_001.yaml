@@ -1,16 +1,51 @@
 pdf: 999948041_full_001.pdf
 notes: |
-  Document contains potentially conflicting or at least ambiguous information, 
+  Document contains potentially conflicting or at least ambiguous information,
   as it suggests that items are rated on a scale from 1 to 7, while at the same
   time providing instructions that the scale ranges from 0 to 3.
-  Instructions note that items should be evaluated in a contextualized manner, 
-  with the context being the individual's moods over the past **day**.
+  Structure: one single happiness/sadness item (1-7 scale), plus 7 positive
+  state items and 8 negative state items (both 0-3 scale).
+  Items are contextualized as mood states experienced throughout the day.
 
 exclude_from_testing: false
 language: en
-structure: # two scales with 7 vs 8 items
-  - 7
-  - 8
 properties:
   - name: items_context
     not_null: true
+scales:
+  - scale_name:
+      contains: "positive"
+    items:
+      - item_text:
+          contains: "Happy"
+      - item_text:
+          contains: "Cheerful"
+      - item_text:
+          contains: "Proud"
+      - item_text:
+          contains: "Relaxed"
+      - item_text:
+          contains: "Cooperative"
+      - item_text:
+          contains: "Caring"
+      - item_text:
+          contains: "Friendly"
+  - scale_name:
+      contains: "negative"
+    items:
+      - item_text:
+          contains: "Angry"
+      - item_text:
+          contains: "Nervous"
+      - item_text:
+          contains: "Lonely"
+      - item_text:
+          contains: "Frustrated"
+      - item_text:
+          contains: "Strained"
+      - item_text:
+          contains: "Worried"
+      - item_text:
+          contains: "Irritated"
+      - item_text:
+          contains: "Stressed"

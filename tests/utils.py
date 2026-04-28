@@ -248,9 +248,13 @@ def check_scale(survey: Survey, spec: dict) -> tuple[bool, str]:
             continue
         failures = []
         for ispec in item_specs:
-            text = ispec.get("item_text", "")
+            item_text_spec = ispec.get("item_text", "")
             extra = {k: v for k, v in ispec.items() if k != "item_text"}
-            hits = [it for it in d.get("items", []) if normalize(text) in normalize(it.get("item_text") or "")]
+            hits = [
+                it for it in d.get("items", [])
+                if _match_scale_name(it.get("item_text") or "", item_text_spec)
+            ]
+            text = item_text_spec if isinstance(item_text_spec, str) else repr(item_text_spec)
             if not hits:
                 failures.append(f"item {text!r} not found in scale {name!r}")
             elif extra and not any(all(h.get(f) == v for f, v in extra.items()) for h in hits):
