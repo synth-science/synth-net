@@ -218,13 +218,11 @@ class Survey(BaseModel):
         default=False,
         description="True if any text in the survey has been transcribed as an English translation.",
     )
-    scale_inference: bool = Field(
+    is_inferred: bool = Field(
         default=False,
         description=(
-            "Survey-level flag. True if the overall structure of which items belong to which scale "
-            "was absent or ambiguous in the source document and had to be inferred by reasoning "
-            "(e.g. scales are named but no item-to-scale mapping is given, or the mapping is "
-            "unclear/contradictory). False if the document unambiguously specifies item-to-scale assignment."
+            "True if the overall structure of which items belong to which scale "
+            "was absent or ambiguous in the source document and had to be inferred by reasoning. "
         ),
     )
 
