@@ -34,12 +34,10 @@ scales:
   - scale_name: "Threat"
     items_context: null
     items:
-    - item_text: "sometimes makes me feel I’m a bad person"
     - item_text: "sometimes threatens me"
     - item_text: "makes me feel like I need to defend myself"
   - scale_name: "Development Focus"
     items_context: null
     items:
     - item_text: "says nothing when I do a good job"
-    - item_text: "says nothing when I don’t do something well"
     - item_text: "determines the areas in which I need education and development"
