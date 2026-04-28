@@ -222,6 +222,32 @@ def find_items_by_text(survey: Survey, text: str) -> list[dict]:
     return out
 
 
+def check_scale(survey: Survey, spec: dict) -> tuple[bool, str]:
+    needle = normalize(spec.get("scale_name", ""))
+    name = spec.get("scale_name", "")
+    matches = [s for s in walk_scales(survey.scales) if normalize(s.scale_name) == needle]
+    if not matches:
+        return False, f"no scale found with name {name!r}"
+    scale_fields = {k: v for k, v in spec.items() if k not in ("scale_name", "items")}
+    item_specs = spec.get("items") or []
+    for scale in matches:
+        d = scale.model_dump()
+        if any(d.get(f) != ev for f, ev in scale_fields.items()):
+            continue
+        failures = []
+        for ispec in item_specs:
+            text = ispec.get("item_text", "")
+            extra = {k: v for k, v in ispec.items() if k != "item_text"}
+            hits = [it for it in d.get("items", []) if normalize(text) in normalize(it.get("item_text") or "")]
+            if not hits:
+                failures.append(f"item {text!r} not found in scale {name!r}")
+            elif extra and not any(all(h.get(f) == v for f, v in extra.items()) for h in hits):
+                failures.append(f"item {text!r}: none satisfy {extra}")
+        if not failures:
+            return True, f"scale {name!r} matches"
+    return False, f"scale {name!r}: field or item assertions failed"
+
+
 def check_item(matches: list[dict], spec: dict) -> tuple[bool, str]:
     fields = {k: v for k, v in spec.items() if k != "text"}
     if not fields:

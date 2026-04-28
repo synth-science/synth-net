@@ -16,22 +16,30 @@ properties:
   - name: items_prefix
     not_null: true
 
-# implement test / assertion for this:
-# # Positive Reinforcement
-# gives me important information 
-# makes me feel good about myself
-# helps me realize I am competent
-# rewards me for good performance 
-# # Evaluation
-# compares me with other people 
-# compares my performance standards or goals
-# shows me how my performance has changed over time 
-# helps me understand how others view my performance 
-# # Threat
-# sometimes makes me feel I’m a bad person
-# sometimes threatens me
-# makes me feel like I need to defend myself 
-# # Development Focus
-# says nothing when I do a good job
-# says nothing when I don’t do something well
-# determines the areas in which I need education and development
+scales:
+  - scale_name: "Positive Reinforcement"
+    items_context: null
+    items:
+    - item_text: "gives me important information"
+    - item_text: "makes me feel good about myself"
+    - item_text: "helps me realize I am competent"
+    - item_text: "rewards me for good performance"
+  - scale_name: "Evaluation"
+    items_context: null
+    items:
+    - item_text: "compares me with other people"
+    - item_text: "compares my performance standards or goals"
+    - item_text: "shows me how my performance has changed over time"
+    - item_text: "helps me understand how others view my performance"
+  - scale_name: "Threat"
+    items_context: null
+    items:
+    - item_text: "sometimes makes me feel I’m a bad person"
+    - item_text: "sometimes threatens me"
+    - item_text: "makes me feel like I need to defend myself"
+  - scale_name: "Development Focus"
+    items_context: null
+    items:
+    - item_text: "says nothing when I do a good job"
+    - item_text: "says nothing when I don’t do something well"
+    - item_text: "determines the areas in which I need education and development"

@@ -135,6 +135,14 @@ def pytest_generate_tests(metafunc):
                     params.append((c, r, check))
                     ids.append(f"{c.pdf}-run{r}-{_item_id(check)}")
         metafunc.parametrize(("case", "run_index", "item_check"), params, ids=ids)
+    elif "scale_check" in metafunc.fixturenames:
+        params, ids = [], []
+        for c in cases:
+            for check in (c.spec.get("scales") or []):
+                for r in range(runs):
+                    params.append((c, r, check))
+                    ids.append(f"{c.pdf}-run{r}-scale:{check.get('scale_name', '?')[:25]}")
+        metafunc.parametrize(("case", "run_index", "scale_check"), params, ids=ids)
     else:
         params = [(c, r) for c in cases for r in range(runs)]
         ids = [f"{c.pdf}-run{r}" for c, r in params]
@@ -152,6 +160,7 @@ _ASSERTION_LABELS = {
     "test_structure": "structure",
     "test_property": "property",
     "test_item": "item",
+    "test_scale": "scale",
 }
 
 _records: list[tuple[str, int, str, bool, str]] = []
