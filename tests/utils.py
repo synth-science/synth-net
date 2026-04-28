@@ -222,10 +222,22 @@ def find_items_by_text(survey: Survey, text: str) -> list[dict]:
     return out
 
 
+def _match_scale_name(scale_name: str, spec_name: Any) -> bool:
+    """Match a scale name against a spec: exact (str) or contains/equals dict."""
+    if isinstance(spec_name, str):
+        return normalize(scale_name) == normalize(spec_name)
+    if isinstance(spec_name, dict):
+        if "contains" in spec_name:
+            return spec_name["contains"].lower() in scale_name.lower()
+        if "equals" in spec_name:
+            return normalize(scale_name) == normalize(spec_name["equals"])
+    return False
+
+
 def check_scale(survey: Survey, spec: dict) -> tuple[bool, str]:
-    needle = normalize(spec.get("scale_name", ""))
-    name = spec.get("scale_name", "")
-    matches = [s for s in walk_scales(survey.scales) if normalize(s.scale_name) == needle]
+    spec_name = spec.get("scale_name", "")
+    name = spec_name if isinstance(spec_name, str) else repr(spec_name)
+    matches = [s for s in walk_scales(survey.scales) if _match_scale_name(s.scale_name, spec_name)]
     if not matches:
         return False, f"no scale found with name {name!r}"
     scale_fields = {k: v for k, v in spec.items() if k not in ("scale_name", "items")}
