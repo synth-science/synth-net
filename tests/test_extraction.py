@@ -15,6 +15,7 @@ from utils import (
     canonicalize_expected,
     check_item,
     check_property,
+    check_scale,
     collect_property,
     find_items_by_text,
     format_as_yaml_structure,
@@ -78,3 +79,11 @@ def test_item(case: ExpectedCase, run_index: int, item_check: dict, get_extracti
     matches = find_items_by_text(result.survey, item_check["text"])
     ok, diag = check_item(matches, item_check)
     assert ok, f"item[text~={item_check['text']!r}]: {diag}"
+
+
+def test_scale(case: ExpectedCase, run_index: int, scale_check: dict, get_extraction):
+    result = _get_result(case, run_index, get_extraction)
+    if result.survey is None:
+        pytest.fail(f"extraction failed, cannot check scale: {result.validation_error}")
+    ok, diag = check_scale(result.survey, scale_check)
+    assert ok, f"scale[name={scale_check.get('scale_name')!r}]: {diag}"
