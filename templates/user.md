@@ -3,3 +3,4 @@ Also consider these rules:
 - If no English translation of the content of the questionnaire or survey is supplied, translate the content before extracting it. 
 - Also exctract drafted items which did not make it to the final version of a questionnaire, if available.
 - Copy all item and label texts verbatim from the source - do not paraphrase, correct spelling, fix grammar, or alter wording in any way, even if the text appears to contain typos or grammatically incorrect sentences
+- After assigning reverse_keyed for each item, use your thinking field to reason about whether the overall pattern of reverse-keyed items makes sense given their phrasing. If you are strongly confident that one or more items are incorrectly labeled, correct the reverse_keyed value and set keying_corrected to true for those items only. Leave keying_corrected as false for all other items.

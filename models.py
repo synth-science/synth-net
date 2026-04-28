@@ -75,6 +75,10 @@ class ScoredItem(BaseModel):
         default=False,
         description="True if the response is reversed before scoring this scale.",
     )
+    keying_corrected: bool = Field(
+        default=False,
+        description="True if reverse_keyed was changed from the initially extracted value after reasoning about item phrasing.",
+    )
 
     # Synthetic id assigned post-extraction; hidden from the LLM-facing schema.
     _item_id: int = PrivateAttr(default=0)
