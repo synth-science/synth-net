@@ -1,10 +1,44 @@
 pdf: 999986146_full_001.pdf
 notes: |
-  Two-level scale hierachy. Scale structure is illogical as "higher-order" and 
+  Two-level scale hierarchy. Scale structure is illogical as "higher-order" and
   "first-order" scales are recursively nested within each other. The only way
-  to make sense of this structure is to transcribe each item twice, once for 
-  each scale it belongs to.
+  to make sense of this structure is to transcribe each item twice, once for
+  each scale it belongs to. Structure test replaced by item existence checks.
+
 exclude_from_testing: false
-structure:
-  - [3, 3, 3, 3, 2, 3] # "Higher-order" structure
-  - [1, 1, 1, 1, 1, 1, 1, 1, 1, 8] # "First-order" structure
+language: en
+items:
+  - text: "If I try hard"
+    language: en
+  - text: "Learning at school is"
+    language: en
+  - text: "I feel very pleased"
+    language: en
+  - text: "Before I start an"
+    language: en
+  - text: "When I study I"
+    language: en
+  - text: "If I cannot understand"
+    language: en
+  - text: "I'm unsure how I"
+    language: en
+  - text: "I sometimes do study"
+    language: en
+  - text: "I often feel like"
+    language: en
+  - text: "My parents push me"
+    language: en
+  - text: "My parents make me"
+    language: en
+  - text: "My parents allow me"
+    language: en
+  - text: "My friends treat me"
+    language: en
+  - text: "My friends will help"
+    language: en
+  - text: "My teachers really care"
+    language: en
+  - text: "Teachers at school push"
+    language: en
+  - text: "I get a lot"
+    language: en
