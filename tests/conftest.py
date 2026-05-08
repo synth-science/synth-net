@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import re
 import sys
+import time
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -61,6 +62,50 @@ def config() -> dict:
 
 
 _extraction_cache_ref: dict[tuple[str, int], ExtractionResult] | None = None
+_extraction_times: list[float] = []
+_extraction_walls: dict[tuple[str, int], float] = {}
+_total_extractions: int = 0
+_pytest_config_ref = None
+
+
+def pytest_configure(config):
+    global _pytest_config_ref
+    _pytest_config_ref = config
+
+
+def pytest_sessionstart(session):
+    global _total_extractions
+    cfg = load_config(str(REPO_ROOT / "config.yaml"))
+    runs = int((cfg.get("tests") or {}).get("runs_per_case", 1))
+    cases = _load_expected_cases(cfg)
+    _total_extractions = len(cases) * runs
+
+
+def _print_eta(pdf: str, run_index: int, elapsed: float) -> None:
+    n_done = len(_extraction_times)
+    n_total = _total_extractions or n_done
+    avg = sum(_extraction_times) / n_done
+    n_remaining = max(0, n_total - n_done)
+    eta_secs = avg * n_remaining
+
+    if eta_secs < 60:
+        eta_str = f"{eta_secs:.0f}s"
+    elif eta_secs < 3600:
+        eta_str = f"{eta_secs / 60:.1f}min"
+    else:
+        eta_str = f"{eta_secs / 3600:.1f}h"
+
+    remaining_str = f"~{eta_str} remaining" if n_remaining > 0 else "done"
+    msg = (
+        f"[{n_done}/{n_total}] {pdf} run{run_index}: {elapsed:.1f}s"
+        f"  ·  avg {avg:.1f}s  ·  {remaining_str}"
+    )
+    if _pytest_config_ref is not None:
+        tr = _pytest_config_ref.pluginmanager.get_plugin("terminalreporter")
+        if tr is not None:
+            tr.write_line(msg)
+            return
+    print(msg, flush=True)
 
 
 @pytest.fixture(scope="session")
@@ -78,7 +123,12 @@ def get_extraction(extraction_cache, config):
         key = (pdf, run_index)
         if key not in extraction_cache:
             pdf_path = Path(config["input_dir"]) / pdf
+            t0 = time.monotonic()
             extraction_cache[key] = extract_survey(pdf_path, config)
+            elapsed = time.monotonic() - t0
+            _extraction_times.append(elapsed)
+            _extraction_walls[key] = elapsed
+            _print_eta(pdf, run_index, elapsed)
         return extraction_cache[key]
     return _fetch
 
@@ -297,7 +347,16 @@ def _render_extracted_surveys() -> list[str]:
     lines = []
     for pdf, run_index, result in _extractions:
         lines.append(f"### {pdf} :: run{run_index}")
-        lines.append(f"  retries={result.retry_count} success={result.success}")
+        m = result.response_metrics
+        wall = _extraction_walls.get((pdf, run_index))
+        wall_str = f"{wall:.1f}s" if wall is not None else "?"
+        lines.append(
+            f"  retries={result.retry_count} success={result.success} "
+            f"wall={wall_str} "
+            f"prompt_tok={m.get('input_token_count', 0)} "
+            f"eval_tok={m.get('output_token_count', 0)} "
+            f"gen_ms={(m.get('eval_duration', 0) or 0) / 1e6:.0f}"
+        )
         if result.survey is None:
             lines.append(f"  extraction failed: {result.validation_error}")
         else:

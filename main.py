@@ -1,6 +1,7 @@
 import os
 import ast
 import random
+import time
 import yaml
 import json
 import fitz
@@ -171,8 +172,20 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
         }
         if config.get("options"):
             chat_kwargs["options"] = config["options"]
+        if config.get("keep_alive") is not None:
+            chat_kwargs["keep_alive"] = config["keep_alive"]
 
+        t0 = time.monotonic()
         response = ollama.chat(**chat_kwargs)
+        wall = time.monotonic() - t0
+        logging.info(
+            f"chat attempt={attempt} wall={wall:.1f}s "
+            f"prompt_tok={response.get('prompt_eval_count', 0)} "
+            f"eval_tok={response.get('eval_count', 0)} "
+            f"load_ms={(response.load_duration or 0) / 1e6:.0f} "
+            f"prefill_ms={(response.prompt_eval_duration or 0) / 1e6:.0f} "
+            f"gen_ms={(response.eval_duration or 0) / 1e6:.0f}"
+        )
         raw_response = response.message["content"]
 
         metrics["created_at"] = response.created_at
@@ -207,7 +220,12 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
             cleaned = json.dumps(resp_dict)
         except json.JSONDecodeError:
             cleaned = raw_response
-        messages = messages + [
+        # Retry without re-sending the PDF page images. The model already
+        # consumed them on attempt 0; re-prefilling 20 PNGs is the dominant
+        # cost on hard documents.
+        messages = [
+            system_prompt_dict,
+            {"role": "user", "content": user_prompt},
             {"role": "assistant", "content": cleaned, "thinking": None},
             {"role": "user", "content": f"{error_preamble}\n\n{validation_error}"},
         ]
@@ -237,6 +255,7 @@ def main():
 
     filenames = ["999941280_full_001.pdf"] # debug
     filenames = ["999979446_full_001.pdf"] # debug
+    filenames = ["999971030_full_001.pdf"] # debug
     filenames = ["999971030_full_001.pdf"] # debug
     for filename in tqdm(filenames):
         logging.info(f"Processing file: {filename}")

@@ -1,7 +1,9 @@
 The images show scanned pages of a questionnaire or survey. Extract the survey structure using the following schema and **strictly** adhere to the documentation. 
-Also consider these rules:
+
+**Important**: Also consider these rules:
 - If no English translation of the content of the questionnaire or survey is supplied, translate the content before extracting it. 
+- Don't put item numbers into the `item_text´ field.
 - Also exctract drafted items which did not make it to the final version of a questionnaire, if available.
-- Copy all item and label texts verbatim from the source - do not paraphrase, correct spelling, fix grammar, or alter wording in any way, even if the text appears to contain typos or grammatically incorrect sentences
-- After assigning reverse_keyed for each item, use your thinking field to reason about whether the overall pattern of reverse-keyed items makes sense given their phrasing. If you are strongly confident that one or more items are incorrectly labeled, correct the reverse_keyed value and set keying_corrected to true for those items only. Leave keying_corrected as false for all other items.
-- If the document names or describes multiple scales but the assignment of items to scales is absent or ambiguous use your thinking field to reason carefully about the most likely assignment based on all available cues. Assign items to the scale that best fits and set is_inferred to true. Only set is_inferred to true when the item-to-scale mapping genuinely required inference; leave it false when the document makes the assignment unambiguous.
+- Copy all `item_text` item and `scale_names` verbatim from the source - do not paraphrase, correct spelling, fix grammar, or alter wording in any way, even if the text appears to contain typos or grammatically incorrect sentences
+- After assigning `reverse_keyed` for each item, reason about whether the overall pattern of reverse-keyed items makes sense given their phrasing. If you are strongly confident that one or more items are incorrectly labeled, correct the `reverse_keyed` value and set `keying_corrected` to true for those items only.
+- If a document mentions or describes multiple scales but does not clearly assign items to them, use reasoning to determine the most likely assignment per item. Set `is_inferred` to true only when the mapping required active inference; leave `is_inferred` false if the assignment is unambiguous.

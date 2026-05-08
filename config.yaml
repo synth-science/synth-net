@@ -2,7 +2,8 @@ input_dir: "/home/research/data/apa-psyctests/pdf"
 output_path: "/home/research/synth-net-pipline/extractor-00/records.parquet"
 seed: 42
 model: "gemma4:31b"
-max_retries: 3
+max_retries: 1
+keep_alive: "30m"
 
 options:
   seed: null
@@ -10,7 +11,7 @@ options:
   top_k: 64
   top_p: 0.95
   min_p: 0.0
-  num_ctx: 256000
+  num_ctx: null
   num_predict: -1
   repeat_penalty: 1.1
   repeat_last_n: 64
