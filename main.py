@@ -25,7 +25,7 @@ def load_config(config_path: str) -> dict:
     return config
 
 
-def setup_logging():
+def setup_logging() -> Path:
     logs_dir = Path(__file__).parent / "logs"
     logs_dir.mkdir(exist_ok=True)
     log_file_path = logs_dir / f"{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
@@ -35,8 +35,10 @@ def setup_logging():
         handlers=[
             logging.FileHandler(log_file_path),
             logging.StreamHandler()
-        ]
+        ],
+        force=True,
     )
+    return log_file_path
 
 
 def load_datamodel_docs(documentation_path=None) -> str:
@@ -126,6 +128,7 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
     filename = pdf_path.name
 
     pdf_images = convert_pdf_to_image(str(pdf_path))
+    logging.info(f"converted {filename}: {len(pdf_images)} pages")
 
     template_dir = Path(__file__).parent / "templates"
     datamodel_path = Path(__file__).parent / "models.py"
@@ -164,6 +167,7 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
     raw_response: str = ""
     attempt = 0
 
+    logging.info(f"starting extraction for {filename} (max_retries={max_retries})")
     for attempt in range(max_retries + 1):
         chat_kwargs: dict[str, Any] = {
             "model": config.get("model", None),
@@ -202,14 +206,20 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
         try:
             survey_obj = Survey.model_validate_json(raw_response)
             validation_error = None
+            logging.info(f"attempt={attempt} validated successfully")
             break
         except json.JSONDecodeError as e:
             validation_error = f"JSON decoding error: {e}"
+            logging.warning(f"attempt={attempt} JSON decode failed: {e}")
         except Exception as e:
             validation_error = f"Schema validation error: {e}"
+            short_err = str(e).splitlines()[0][:200]
+            logging.warning(f"attempt={attempt} schema validation failed: {short_err}")
 
         if attempt == max_retries:
             break
+
+        logging.info(f"retrying without re-sending images (attempt {attempt + 1}/{max_retries})")
 
         # Replay the model's own output as an assistant turn, with the
         # `thinking` sink stripped out of the JSON payload. `thinking=None`
@@ -230,6 +240,9 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
             {"role": "user", "content": f"{error_preamble}\n\n{validation_error}"},
         ]
 
+    if survey_obj is None:
+        logging.error(f"extraction failed for {filename} after {attempt + 1} attempts")
+
     return ExtractionResult(
         filename=filename,
         survey=survey_obj,
@@ -243,36 +256,52 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
 
 
 def main():
-    setup_logging()
+    log_file_path = setup_logging()
+    logging.info(f"logging to {log_file_path}")
     config = load_config(config_path="./config.yaml")
+    logging.info(
+        f"config: model={config.get('model')} input_dir={config.get('input_dir')} "
+        f"output_path={config.get('output_path')} max_retries={config.get('max_retries')} "
+        f"keep_alive={config.get('keep_alive')} seed={config.get('seed')}"
+    )
 
     input_files = os.listdir(path=config['input_dir'])
+    logging.info(f"found {len(input_files)} entries in {config['input_dir']}")
     random.seed(config['seed'])
     random.shuffle(input_files)
     filenames = [x for x in input_files if x.endswith('.pdf')]
+    logging.info(f"{len(filenames)} PDFs queued (shuffled with seed={config['seed']})")
 
     records = []
 
     filenames = ["999941280_full_001.pdf"] # debug
     filenames = ["999979446_full_001.pdf"] # debug
     filenames = ["999971030_full_001.pdf"] # debug
-    filenames = ["999971030_full_001.pdf"] # debug
-    for filename in tqdm(filenames):
-        logging.info(f"Processing file: {filename}")
+    filenames = ["999973412_full_001.pdf"] # debug
+    total = len(filenames)
+    successes = 0
+    failures = 0
+    for idx, filename in enumerate(tqdm(filenames), start=1):
+        logging.info(f"[{idx}/{total}] processing {filename}")
         pdf_path = os.path.join(config['input_dir'], filename)
 
-        logging.info(f"Sending document to model for extraction...")
+        logging.info(f"sending document to model for extraction...")
         trace() # debug
         try:
             result = extract_survey(pdf_path, config)
         except Exception as e:
             logging.error(f"Error during model inference for file {filename}: {e}")
+            failures += 1
             continue
 
-        logging.info(f"Received response from model for file {filename}")
+        logging.info(f"received response from model for file {filename}")
         if result.validation_error:
             logging.error(f"{filename}: {result.validation_error}")
-        trace() # debug
+        if result.success:
+            successes += 1
+        else:
+            failures += 1
+
         records.append({
             "filename": result.filename,
             "response": result.raw_response,
@@ -287,10 +316,17 @@ def main():
             "timestamp": result.timestamp,
         })
 
+        logging.info(f"completed extraction for file {filename}")
+        trace() # debug
         try:
             pd.DataFrame(records).to_parquet(config["output_path"])
+            logging.info(f"saved {len(records)} records to {config['output_path']}")
         except Exception as e:
             logging.error(f"Failed saving records as .parquet: {e}")
+
+    logging.info(
+        f"session complete: processed={total} successes={successes} failures={failures}"
+    )
 
 
 if __name__ == "__main__":

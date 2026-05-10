@@ -10,7 +10,7 @@ plus one additional assertion per entry in the optional `properties:` list.
 
 ```yaml
 pdf: 999967007_full_001.pdf        # required
-exclude_from_testing: true        # optional; true skips the case
+exclude_from_testing: false        # optional; true skips the case
 
 notes: |                           # optional; free text, ignored by tests
   Anything useful about the case.
@@ -138,7 +138,7 @@ Two distinct failure modes, each with its own message:
 
 ## Disabling a case
 
-Set `exclude_from_testing: true` at the top of the file. The harness skips
+Set `exclude_from_testing: false` at the top of the file. The harness skips
 the case during discovery — it won't appear in any test output or report.
 
 ## Running

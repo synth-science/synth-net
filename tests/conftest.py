@@ -11,6 +11,7 @@ session two summary tables are printed and also written to
 """
 from __future__ import annotations
 
+import logging
 import re
 import sys
 import time
@@ -28,7 +29,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from main import extract_survey, load_config, ExtractionResult  # noqa: E402
+from main import extract_survey, load_config, ExtractionResult, setup_logging  # noqa: E402
 from utils import ExpectedCase  # noqa: E402
 
 
@@ -66,6 +67,7 @@ _extraction_times: list[float] = []
 _extraction_walls: dict[tuple[str, int], float] = {}
 _total_extractions: int = 0
 _pytest_config_ref = None
+_runtime_log_path: Path | None = None
 
 
 def pytest_configure(config):
@@ -74,11 +76,16 @@ def pytest_configure(config):
 
 
 def pytest_sessionstart(session):
-    global _total_extractions
+    global _total_extractions, _runtime_log_path
     cfg = load_config(str(REPO_ROOT / "config.yaml"))
     runs = int((cfg.get("tests") or {}).get("runs_per_case", 1))
     cases = _load_expected_cases(cfg)
     _total_extractions = len(cases) * runs
+    _runtime_log_path = setup_logging()
+    logging.info(
+        f"pytest session start: {len(cases)} cases × {runs} runs = "
+        f"{_total_extractions} extractions  ·  model={cfg.get('model')}"
+    )
 
 
 def _print_eta(pdf: str, run_index: int, elapsed: float) -> None:
@@ -123,11 +130,17 @@ def get_extraction(extraction_cache, config):
         key = (pdf, run_index)
         if key not in extraction_cache:
             pdf_path = Path(config["input_dir"]) / pdf
+            logging.info(f"extracting {pdf} run{run_index}")
             t0 = time.monotonic()
             extraction_cache[key] = extract_survey(pdf_path, config)
             elapsed = time.monotonic() - t0
             _extraction_times.append(elapsed)
             _extraction_walls[key] = elapsed
+            result = extraction_cache[key]
+            logging.info(
+                f"extracted {pdf} run{run_index}: success={result.success} "
+                f"retries={result.retry_count} wall={elapsed:.1f}s"
+            )
             _print_eta(pdf, run_index, elapsed)
         return extraction_cache[key]
     return _fetch
@@ -398,3 +411,6 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config: Any):
     log_path = logs_dir / f"test-report_{timestamp}.log"
     log_path.write_text(_build_report(timestamp, include_surveys=True))
     tr.write_line(f"report written to {log_path}")
+    if _runtime_log_path is not None:
+        tr.write_line(f"runtime log written to {_runtime_log_path}")
+        logging.info(f"pytest session complete: report at {log_path}")
