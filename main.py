@@ -167,12 +167,18 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
     raw_response: str = ""
     attempt = 0
 
-    logging.info(f"starting extraction for {filename} (max_retries={max_retries})")
+    attempt_timeout = float(config.get("attempt_timeout_secs", 1200))
+    rate_log_secs = float(config.get("rate_log_secs", 10))
+    logging.info(
+        f"starting extraction for {filename} (max_retries={max_retries}, "
+        f"timeout={attempt_timeout:.0f}s)"
+    )
     for attempt in range(max_retries + 1):
         chat_kwargs: dict[str, Any] = {
             "model": config.get("model", None),
             "messages": messages,
             "format": Survey.model_json_schema(),
+            "stream": True,
         }
         if config.get("options"):
             chat_kwargs["options"] = config["options"]
@@ -180,25 +186,91 @@ def extract_survey(pdf_path: Path | str, config: dict) -> ExtractionResult:
             chat_kwargs["keep_alive"] = config["keep_alive"]
 
         t0 = time.monotonic()
-        response = ollama.chat(**chat_kwargs)
+        # Stream chunks so we can (a) log generation rate during long calls,
+        # (b) bail out cleanly if the call runs past the per-attempt cap, and
+        # (c) dump the partial output for offline inspection on timeout.
+        chunks: list[str] = []
+        chars = 0
+        chunk_count = 0
+        last_log = t0
+        final_chunk: Any = None
+        timed_out = False
+        stream = ollama.chat(**chat_kwargs)
+        try:
+            for chunk in stream:
+                chunk_count += 1
+                msg = getattr(chunk, "message", None)
+                content = getattr(msg, "content", "") or "" if msg is not None else ""
+                if content:
+                    chunks.append(content)
+                    chars += len(content)
+                if chunk.done:
+                    final_chunk = chunk
+                now = time.monotonic()
+                if now - t0 > attempt_timeout:
+                    timed_out = True
+                    break
+                if now - last_log >= rate_log_secs:
+                    elapsed = now - t0
+                    rate = chars / elapsed if elapsed > 0 else 0.0
+                    tail = "".join(chunks)[-50:].replace("\n", "\\n")
+                    logging.info(
+                        f"stream attempt={attempt} t={elapsed:.0f}s "
+                        f"chunks={chunk_count} chars={chars} rate={rate:.1f}c/s "
+                        f"tail={tail!r}"
+                    )
+                    last_log = now
+        finally:
+            close = getattr(stream, "close", None)
+            if callable(close):
+                try:
+                    close()
+                except Exception:
+                    pass
+
         wall = time.monotonic() - t0
+        raw_response = "".join(chunks)
+
+        if timed_out:
+            diag_dir = Path(__file__).parent / "logs" / "diag"
+            diag_dir.mkdir(parents=True, exist_ok=True)
+            ts = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            stem = Path(filename).stem
+            partial_path = diag_dir / f"{ts}_{stem}_attempt{attempt}.partial.json"
+            partial_path.write_text(raw_response, encoding="utf-8")
+            logging.error(
+                f"attempt={attempt} TIMED OUT after {wall:.1f}s "
+                f"(cap={attempt_timeout:.0f}s) "
+                f"chunks={chunk_count} chars={chars} "
+                f"partial saved at {partial_path}"
+            )
+            raise TimeoutError(
+                f"extraction timeout after {wall:.0f}s "
+                f"(cap {attempt_timeout:.0f}s); partial at {partial_path}"
+            )
+
+        in_tok = (getattr(final_chunk, "prompt_eval_count", 0) or 0) if final_chunk else 0
+        out_tok = (getattr(final_chunk, "eval_count", 0) or 0) if final_chunk else 0
+        load_dur = (getattr(final_chunk, "load_duration", 0) or 0) if final_chunk else 0
+        prefill_dur = (getattr(final_chunk, "prompt_eval_duration", 0) or 0) if final_chunk else 0
+        gen_dur = (getattr(final_chunk, "eval_duration", 0) or 0) if final_chunk else 0
+        total_dur = (getattr(final_chunk, "total_duration", 0) or 0) if final_chunk else 0
         logging.info(
             f"chat attempt={attempt} wall={wall:.1f}s "
-            f"prompt_tok={response.get('prompt_eval_count', 0)} "
-            f"eval_tok={response.get('eval_count', 0)} "
-            f"load_ms={(response.load_duration or 0) / 1e6:.0f} "
-            f"prefill_ms={(response.prompt_eval_duration or 0) / 1e6:.0f} "
-            f"gen_ms={(response.eval_duration or 0) / 1e6:.0f}"
+            f"prompt_tok={in_tok} "
+            f"eval_tok={out_tok} "
+            f"chunks={chunk_count} "
+            f"load_ms={load_dur / 1e6:.0f} "
+            f"prefill_ms={prefill_dur / 1e6:.0f} "
+            f"gen_ms={gen_dur / 1e6:.0f}"
         )
-        raw_response = response.message["content"]
 
-        metrics["created_at"] = response.created_at
-        metrics["total_duration"] += response.total_duration or 0
-        metrics["load_duration"] += response.load_duration or 0
-        metrics["prompt_eval_duration"] += response.prompt_eval_duration or 0
-        metrics["eval_duration"] += response.eval_duration or 0
-        in_tok = response.get("prompt_eval_count", 0) or 0
-        out_tok = response.get("eval_count", 0) or 0
+        if final_chunk is not None:
+            metrics["created_at"] = getattr(final_chunk, "created_at", None)
+        metrics["total_duration"] += total_dur
+        metrics["load_duration"] += load_dur
+        metrics["prompt_eval_duration"] += prefill_dur
+        metrics["eval_duration"] += gen_dur
         metrics["input_token_count"] += in_tok
         metrics["output_token_count"] += out_tok
         metrics["total_token_count"] += in_tok + out_tok
