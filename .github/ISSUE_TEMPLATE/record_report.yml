@@ -1,0 +1,118 @@
+name: "Record Report"
+description: "Report a problem with an instrument in the search results — wrong metadata, items, scales or keying."
+title: "Record: [Instrument Name]"
+labels: ["record-report", "triage"]
+# The fields under "Record" and "Search" are filled in from the search page's
+# "Report a problem" link, which passes each one as a URL parameter named after
+# its `id` — rename an id here and the matching key in
+# src/templates/pages/search/partials/_search_results.jinja (reportUrl) with it.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us keep the corpus accurate! Tell us what is wrong in your own words below.
+        If you came here from the search page, the record and your search are already filled in further down — please leave them as they are.
+
+  - type: dropdown
+    id: problem_type
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Wrong or missing metadata (title, DOI, year, language, version)
+        - Items are wrong, missing or garbled
+        - Scale structure is wrong (scale names, hierarchy, item assignment)
+        - Reverse-keying is wrong
+        - Duplicate record
+        - The record should not match this search
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is wrong?
+      description: Describe the problem in your own words. Which items or scales are affected?
+      placeholder: "e.g., Item 4 is cut off after the first sentence; the source PDF has the full text."
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: What would be correct? (optional)
+      description: If you know the correct information, or where to find it (a paper, page number, link), add it here.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: "### Record"
+
+  - type: input
+    id: record_title
+    attributes:
+      label: Instrument
+    validations:
+      required: true
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+
+  - type: input
+    id: source
+    attributes:
+      label: Source catalogue
+
+  - type: input
+    id: year
+    attributes:
+      label: Year
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+
+  - type: input
+    id: size
+    attributes:
+      label: Items / scales
+
+  - type: input
+    id: warnings
+    attributes:
+      label: Data quality flags
+
+  - type: markdown
+    attributes:
+      value: "### Search"
+
+  - type: input
+    id: query_mode
+    attributes:
+      label: Search mode
+
+  - type: textarea
+    id: query
+    attributes:
+      label: Query
+      description: The items or construct that were searched for.
+
+  - type: input
+    id: permalink
+    attributes:
+      label: Link to the search
+      description: Re-runs the exact search (empty if the search was not recorded).
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
