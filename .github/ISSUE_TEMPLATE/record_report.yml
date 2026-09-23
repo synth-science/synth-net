@@ -18,12 +18,12 @@ body:
     attributes:
       label: What kind of problem is it?
       options:
+        - Similarity estimate is wrong (my query should either return a substantially higher or lower similarity score)
         - Wrong or missing metadata (title, DOI, year, language, version)
-        - Items are wrong, missing or garbled
-        - Scale structure is wrong (scale names, hierarchy, item assignment)
-        - Reverse-keying is wrong
-        - Duplicate record
-        - The record should not match this search
+        - Scale structure is wrong (scale names, hierarchy)
+        - Item count is wrong (items missing, extra items)
+        - Scale count is wrong (scales missing, extra scales)
+        - Warnings are wrong (data quality flags are missing or incorrect)
         - Other
     validations:
       required: true
@@ -32,8 +32,8 @@ body:
     id: description
     attributes:
       label: What is wrong?
-      description: Describe the problem in your own words. Which items or scales are affected?
-      placeholder: "e.g., Item 4 is cut off after the first sentence; the source PDF has the full text."
+      description: Describe the problem in your own words. What content is affected?
+      placeholder: "e.g., Scale `Anxiety` is missing."
     validations:
       required: true
 
