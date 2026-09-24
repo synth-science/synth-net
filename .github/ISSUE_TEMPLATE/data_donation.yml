@@ -2,15 +2,11 @@ name: "Data Donation"
 description: "Contribute a questionnaire, scale, survey or test that is missing from the Synthometricon."
 title: "Donation: [Instrument Name]"
 labels: ["data-donation", "triage"]
-# One issue = one instrument (one language, one version). The issue is PUBLIC:
-# anything typed or attached here can be read by everyone. Items that may not be
-# published are sent privately (see `items_delivery`); the issue then only
-# tracks the donation and carries the metadata.
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping the Synthometricon grow! One issue per instrument, please — a translation or a short form counts as its own instrument.
+        Thanks for helping the Synthometricon grow! One issue per instrument, please! A translation or a short form counts as its own instrument.
 
         **This issue is public.** Items are only used to compute similarity estimates; the Synthometricon never displays or redistributes them. If the items are copyrighted or you would rather not post them here, choose *"Send privately"* below and we will reply with a private upload link. Only the metadata then appears on this page.
 
@@ -63,7 +59,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: Short form, revision, translation/adaptation — anything that distinguishes it from other versions.
+      description: Short form, revision, translation/adaptation; anything that distinguishes it from other versions.
       placeholder: "e.g., 10-item short form; German adaptation"
 
   - type: markdown
@@ -77,13 +73,10 @@ body:
       options:
         - Pasted below (publicly visible)
         - Attached below as a file (publicly visible)
-        - Send privately — reply with an upload link
-        - Metadata only — I cannot share the items
+        - Send privately (we'll reply with an upload link)
     validations:
       required: true
 
-  # No `render:` here — it would turn the box into a code block and switch off
-  # file attachments, which is how spreadsheets and PDFs come in.
   - type: textarea
     id: items
     attributes:
@@ -106,8 +99,8 @@ body:
       description: What is the licence of the items? If unsure, pick the last option and we will check.
       options:
         - Openly licensed or public domain (e.g., CC BY, IPIP)
-        - Copyrighted — I am the author / rights holder
-        - Copyrighted — the rights holder permits this donation
+        - Copyrighted; I am the author / rights holder
+        - Copyrighted; the rights holder permits this donation
         - I am not sure
     validations:
       required: true
@@ -116,7 +109,7 @@ body:
     id: additional
     attributes:
       label: Anything else?
-      description: Response format, scoring notes, known issues, related instruments — whatever helps.
+      description: Response format, scoring notes, known issues, related instruments; whatever helps.
 
   - type: checkboxes
     id: consent
