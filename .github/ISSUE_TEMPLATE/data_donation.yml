@@ -66,13 +66,6 @@ body:
       description: Short form, revision, translation/adaptation — anything that distinguishes it from other versions.
       placeholder: "e.g., 10-item short form; German adaptation"
 
-  - type: input
-    id: size
-    attributes:
-      label: Items / scales
-      description: How many items and scales the instrument has according to its documentation. We use it to check the import.
-      placeholder: "24 items / 4 scales"
-
   - type: markdown
     attributes:
       value: "### Items"
