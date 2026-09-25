@@ -1,0 +1,194 @@
+dataset,scale,n_items,n_reverse,all_reverse,degenerate,n_reflected,n_reverse_not_reflected,unreflected_items,unreflected_cos_to_pos_c
+pilot_holdout,Barratt_Impulsiveness_Scale_Short_Form_Impulsiveness,15,5,False,False,5,0,,
+pilot_holdout,Barratt_Impulsiveness_Scale_Short_Form_Impulsiveness_Attention_impulsivity,5,1,False,False,1,0,,
+pilot_holdout,Barratt_Impulsiveness_Scale_Short_Form_Impulsiveness_Motor_Impulsivity,5,0,False,True,0,0,,
+pilot_holdout,Barratt_Impulsiveness_Scale_Short_Form_Impulsiveness_Non_planning,5,5,True,True,0,5,imp_np_1; imp_np_2; imp_np_3; imp_np_4; imp_np_5,nan; nan; nan; nan; nan
+pilot_holdout,Behavioral_Activation_System_Scale_behavioral_activation,13,0,False,True,0,0,,
+pilot_holdout,Behavioral_Activation_System_Scale_behavioral_activation_Drive,4,0,False,True,0,0,,
+pilot_holdout,Behavioral_Activation_System_Scale_behavioral_activation_Fun_Seeking,4,0,False,True,0,0,,
+pilot_holdout,Behavioral_Activation_System_Scale_behavioral_activation_Reward_Responsiveness,5,0,False,True,0,0,,
+pilot_holdout,Behavioral_Inhibition_System_Scale_behavioral_inhibition,7,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_agreeableness,12,6,False,False,5,1,bfi_a2_3,0.055
+pilot_holdout,Big_Five_Inventory_2_agreeableness_compassion,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_agreeableness_respectfulness,4,2,False,False,1,1,bfi_a2_3,0.181
+pilot_holdout,Big_Five_Inventory_2_agreeableness_trust,4,2,False,False,0,2,bfi_a3_1; bfi_a3_3,0.107; 0.052
+pilot_holdout,Big_Five_Inventory_2_conscientiousness,12,6,False,False,6,0,,
+pilot_holdout,Big_Five_Inventory_2_conscientiousness_organization,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_conscientiousness_productiveness,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_conscientiousness_responsibility,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_extraversion,12,6,False,False,5,1,bfi_e2_4,0.038
+pilot_holdout,Big_Five_Inventory_2_extraversion_assertiveness,4,2,False,False,1,1,bfi_e2_4,0.181
+pilot_holdout,Big_Five_Inventory_2_extraversion_energy_level,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_extraversion_sociability,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_neuroticism,12,6,False,False,6,0,,
+pilot_holdout,Big_Five_Inventory_2_neuroticism_anxiety,4,2,False,False,1,1,bfi_n1_1,0.113
+pilot_holdout,Big_Five_Inventory_2_neuroticism_depression,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_neuroticism_emotional_volatility,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_openness,12,6,False,False,6,0,,
+pilot_holdout,Big_Five_Inventory_2_openness_aesthetic_sensitivity,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_openness_creative_imagination,4,2,False,False,2,0,,
+pilot_holdout,Big_Five_Inventory_2_openness_intellectual_curiosity,4,2,False,False,2,0,,
+pilot_holdout,Buss_Perry_Aggression_Questionnaire_Aggression,12,0,False,True,0,0,,
+pilot_holdout,Buss_Perry_Aggression_Questionnaire_Aggression_Anger,3,0,False,True,0,0,,
+pilot_holdout,Buss_Perry_Aggression_Questionnaire_Aggression_Hostility,3,0,False,True,0,0,,
+pilot_holdout,Buss_Perry_Aggression_Questionnaire_Aggression_Physical_aggression,3,0,False,True,0,0,,
+pilot_holdout,Buss_Perry_Aggression_Questionnaire_Aggression_Verbal_aggression,3,0,False,True,0,0,,
+pilot_holdout,Emotion_Regulation_Questionnaire_Emotion_Regulation,10,3,False,False,0,3,ersup_1; ersup_2; ersup_3,0.017; 0.239; 0.117
+pilot_holdout,Emotion_Regulation_Questionnaire_Emotion_Regulation_Reappraisal,6,0,False,True,0,0,,
+pilot_holdout,Emotion_Regulation_Questionnaire_Emotion_Regulation_Suppression,4,0,False,True,0,0,,
+pilot_holdout,Hope_Scale_Hope,8,0,False,True,0,0,,
+pilot_holdout,Hope_Scale_Hope_Agency,4,0,False,True,0,0,,
+pilot_holdout,Hope_Scale_Hope_Pathways,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_agreeableness,24,13,False,False,9,4,ip_a2_1; ip_a2_3; ip_a5_1; ip_a5_4,0.064; 0.056; 0.318; 0.360
+pilot_holdout,International_Personality_Item_Pool_120_agreeableness_altruism,4,1,False,False,1,0,,
+pilot_holdout,International_Personality_Item_Pool_120_agreeableness_cooperation,4,4,True,True,0,4,ip_a4_1; ip_a4_2; ip_a4_3; ip_a4_4,nan; nan; nan; nan
+pilot_holdout,International_Personality_Item_Pool_120_agreeableness_modesty,4,4,True,True,0,4,ip_a5_1; ip_a5_2; ip_a5_3; ip_a5_4,nan; nan; nan; nan
+pilot_holdout,International_Personality_Item_Pool_120_agreeableness_morality,4,4,True,True,0,4,ip_a2_1; ip_a2_2; ip_a2_3; ip_a2_4,nan; nan; nan; nan
+pilot_holdout,International_Personality_Item_Pool_120_agreeableness_sympathy,4,1,False,False,1,0,,
+pilot_holdout,International_Personality_Item_Pool_120_agreeableness_trust,4,1,False,False,1,0,,
+pilot_holdout,International_Personality_Item_Pool_120_conscientiousness,24,12,False,False,9,3,ip_c3_4; ip_c5_3; ip_c6_3,0.547; 0.245; 0.415
+pilot_holdout,International_Personality_Item_Pool_120_conscientiousness_achievement_striving,4,1,False,False,1,0,,
+pilot_holdout,International_Personality_Item_Pool_120_conscientiousness_cautiousness,4,4,True,True,0,4,ip_c6_1; ip_c6_2; ip_c6_3; ip_c6_4,nan; nan; nan; nan
+pilot_holdout,International_Personality_Item_Pool_120_conscientiousness_dutifulness,4,2,False,False,0,2,ip_c3_3; ip_c3_4,0.216; 0.178
+pilot_holdout,International_Personality_Item_Pool_120_conscientiousness_orderliness,4,2,False,False,1,1,ip_c2_4,0.004
+pilot_holdout,International_Personality_Item_Pool_120_conscientiousness_self_discipline,4,3,False,False,2,1,ip_c5_3,0.289
+pilot_holdout,International_Personality_Item_Pool_120_conscientiousness_self_efficacy,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_extraversion,24,3,False,False,3,0,,
+pilot_holdout,International_Personality_Item_Pool_120_extraversion_activiity_level,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_extraversion_assertiveness,4,1,False,False,1,0,,
+pilot_holdout,International_Personality_Item_Pool_120_extraversion_cheerfulness,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_extraversion_excitement_seeking,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_extraversion_friendliness,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_extraversion_gregariousness,4,2,False,False,2,0,,
+pilot_holdout,International_Personality_Item_Pool_120_neuroticism,24,8,False,False,8,0,,
+pilot_holdout,International_Personality_Item_Pool_120_neuroticism_anger,4,1,False,False,1,0,,
+pilot_holdout,International_Personality_Item_Pool_120_neuroticism_anxiety,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_neuroticism_depression,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_neuroticism_immoderation,4,2,False,False,0,2,ip_n5_3; ip_n5_4,0.015; 0.138
+pilot_holdout,International_Personality_Item_Pool_120_neuroticism_self_consciousness,4,2,False,False,2,0,,
+pilot_holdout,International_Personality_Item_Pool_120_neuroticism_vulnerability,4,3,False,False,3,0,,
+pilot_holdout,International_Personality_Item_Pool_120_openness,24,15,False,False,13,2,ip_o6_1; ip_o6_4,0.071; 0.163
+pilot_holdout,International_Personality_Item_Pool_120_openness_adventurousness,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_openness_artistic_interests,4,3,False,False,3,0,,
+pilot_holdout,International_Personality_Item_Pool_120_openness_emotionality,4,2,False,False,2,0,,
+pilot_holdout,International_Personality_Item_Pool_120_openness_imagination,4,0,False,True,0,0,,
+pilot_holdout,International_Personality_Item_Pool_120_openness_intellect,4,4,True,True,0,4,ip_o5_1; ip_o5_2; ip_o5_3; ip_o5_4,nan; nan; nan; nan
+pilot_holdout,International_Personality_Item_Pool_120_openness_liberalism,4,2,False,False,0,2,ip_o6_1; ip_o6_4,0.051; 0.224
+pilot_holdout,Interpersonal_Reactivity_Index_Brief_Empathy,16,1,False,False,0,1,emppd_3,0.258
+pilot_holdout,Interpersonal_Reactivity_Index_Brief_Empathy_Empathic_Concern,4,0,False,True,0,0,,
+pilot_holdout,Interpersonal_Reactivity_Index_Brief_Empathy_Fantasy,4,0,False,True,0,0,,
+pilot_holdout,Interpersonal_Reactivity_Index_Brief_Empathy_Personal_Distress,4,0,False,True,0,0,,
+pilot_holdout,Interpersonal_Reactivity_Index_Brief_Empathy_Perspective_Taking,4,0,False,True,0,0,,
+pilot_holdout,Life_Orientation_Test_Optimism,6,3,False,False,0,3,opt_2; opt_4; opt_5,0.312; 0.199; 0.152
+pilot_holdout,Mastery_Scale_Self_Mastery,7,5,False,False,0,5,smast_1; smast_2; smast_3; smast_4; smast_5,0.264; 0.150; 0.260; 0.115; 0.161
+pilot_holdout,Mindful_Attention_Awareness_Scale_Mindful_Attention_Awareness,15,15,True,True,0,15,mndfn_1; mndfn_2; mndfn_3; mndfn_4; mndfn_5; mndfn_6; mndfn_7; mndfn_8; mndfn_9; mndfn_10; mndfn_11; mndfn_12; mndfn_13; mndfn_14; mndfn_15,nan; nan; nan; nan; nan; nan; nan; nan; nan; nan; nan; nan; nan; nan; nan
+pilot_holdout,Multidimensional_Scale_of_Perceived_Social_Support_Perceived_Social_Support,12,0,False,True,0,0,,
+pilot_holdout,Multidimensional_Scale_of_Perceived_Social_Support_Perceived_Social_Support_Family,4,0,False,True,0,0,,
+pilot_holdout,Multidimensional_Scale_of_Perceived_Social_Support_Perceived_Social_Support_Friends,4,0,False,True,0,0,,
+pilot_holdout,Multidimensional_Scale_of_Perceived_Social_Support_Perceived_Social_Support_Significant_Other,4,0,False,True,0,0,,
+pilot_holdout,Need_for_Cognition_Scale_Need_for_Cognition,18,9,False,False,2,7,nfc_4; nfc_5; nfc_7; nfc_8; nfc_9; nfc_16; nfc_17,0.202; 0.181; 0.095; 0.093; 0.241; 0.312; 0.151
+pilot_holdout,Pain_Catastrophizing_Scale_Pain_Catastrophizing,13,0,False,True,0,0,,
+pilot_holdout,Pain_Catastrophizing_Scale_Pain_Catastrophizing_Helplessness,6,0,False,True,0,0,,
+pilot_holdout,Pain_Catastrophizing_Scale_Pain_Catastrophizing_Magnification,3,0,False,True,0,0,,
+pilot_holdout,Pain_Catastrophizing_Scale_Pain_Catastrophizing_Rumination,4,0,False,True,0,0,,
+pilot_holdout,Penn_State_Worry_Questionnaire_Worry,16,5,False,False,3,2,worry_1; worry_11,0.128; 0.051
+pilot_holdout,Psychological_Well_Being_Scales_Well_being,18,7,False,False,6,1,pwb_a_1,0.001
+pilot_holdout,Psychological_Well_Being_Scales_Well_being_autonomy,3,1,False,False,0,1,pwb_a_1,0.118
+pilot_holdout,Psychological_Well_Being_Scales_Well_being_environmental_mastery,3,1,False,False,1,0,,
+pilot_holdout,Psychological_Well_Being_Scales_Well_being_personal_growth,3,1,False,False,1,0,,
+pilot_holdout,Psychological_Well_Being_Scales_Well_being_positive_relations_with_others,3,2,False,False,2,0,,
+pilot_holdout,Psychological_Well_Being_Scales_Well_being_purpose_in_life,3,2,False,False,0,2,pwb_pl_2; pwb_pl_3,0.110; 0.244
+pilot_holdout,Psychological_Well_Being_Scales_Well_being_self_acceptance,3,1,False,False,1,0,,
+pilot_holdout,Rosenberg_Self_Esteem_Scale_Self_Esteem,10,5,False,False,5,0,,
+pilot_holdout,Satisfaction_with_Life_Scale_Satisfaction_with_Life,5,0,False,True,0,0,,
+pilot_holdout,Self_Compassion_Scale___Short_Form_Self_Compassion,12,6,False,False,1,5,scomp_1; scomp_4; scomp_8; scomp_9; scomp_11,0.191; 0.190; 0.195; 0.131; 0.088
+pilot_holdout,Self_Compassion_Scale___Short_Form_Self_Compassion_Common_Humanity,2,0,False,True,0,0,,
+pilot_holdout,Self_Compassion_Scale___Short_Form_Self_Compassion_Isolation,2,0,False,True,0,0,,
+pilot_holdout,Self_Compassion_Scale___Short_Form_Self_Compassion_Mindfulness,2,0,False,True,0,0,,
+pilot_holdout,Self_Compassion_Scale___Short_Form_Self_Compassion_Over_Identification,2,0,False,True,0,0,,
+pilot_holdout,Self_Compassion_Scale___Short_Form_Self_Compassion_Self_Judgement,2,0,False,True,0,0,,
+pilot_holdout,Self_Compassion_Scale___Short_Form_Self_Compassion_Self_Kindness,2,0,False,True,0,0,,
+pilot_holdout,Self_Control_Scale_Self_Control,13,9,False,False,6,3,scont_5; scont_7; scont_12,0.081; 0.105; 0.173
+pilot_holdout,Short_Grit_Scale_Grit,12,6,False,False,4,2,grit_c_1; grit_c_3,0.004; 0.223
+pilot_holdout,Short_Grit_Scale_Grit_Consistency_of_Interest,6,6,True,True,0,6,grit_c_1; grit_c_2; grit_c_3; grit_c_4; grit_c_5; grit_c_6,nan; nan; nan; nan; nan; nan
+pilot_holdout,Short_Grit_Scale_Grit_Perseverance_of_Effort,6,0,False,True,0,0,,
+validation_prolific,Attitudes_Toward_AI_in_Defense_Scale_negative_attitude_toward_ai_in_defense,3,0,False,True,0,0,,
+validation_prolific,Attitudes_Toward_AI_in_Defense_Scale_positive_attitude_toward_ai_in_defense,3,0,False,True,0,0,,
+validation_prolific,Authoritarianism_Short_Scale_authoritarianism,9,0,False,True,0,0,,
+validation_prolific,Authoritarianism_Short_Scale_authoritarianismauthoritarian_aggression,4,0,False,True,0,0,,
+validation_prolific,Authoritarianism_Short_Scale_authoritarianismauthoritarian_submissiveness,2,0,False,True,0,0,,
+validation_prolific,Authoritarianism_Short_Scale_authoritarianismconventionalism,3,0,False,True,0,0,,
+validation_prolific,Center_for_Epidemiological_Studies_Depression_Scale_depression,20,4,False,False,2,2,CESD_04; CESD_16,0.023; 0.037
+validation_prolific,Center_for_Epidemiological_Studies_Depression_Scale_depressiondepressive_affect,7,0,False,True,0,0,,
+validation_prolific,Center_for_Epidemiological_Studies_Depression_Scale_depressioninterpersonal,2,0,False,True,0,0,,
+validation_prolific,Center_for_Epidemiological_Studies_Depression_Scale_depressionsomatic,7,0,False,True,0,0,,
+validation_prolific,Center_for_Epidemiological_Studies_Depression_Scale_depressionwell_being,4,4,True,True,0,4,CESD_04; CESD_08; CESD_12; CESD_16,nan; nan; nan; nan
+validation_prolific,Chronotype_Questionnaire_distinctness,8,5,False,False,1,4,CQ_06; CQ_08; CQ_10; CQ_12,0.268; 0.147; 0.037; 0.112
+validation_prolific,Chronotype_Questionnaire_morningness_eveningness,8,4,False,False,0,4,CQ_02; CQ_07; CQ_11; CQ_13,0.213; 0.216; 0.121; 0.378
+validation_prolific,Disgust_Avoidance_Questionnaire_behavioral_escape,4,0,False,True,0,0,,
+validation_prolific,Disgust_Avoidance_Questionnaire_behavioral_prevention,5,0,False,True,0,0,,
+validation_prolific,Disgust_Avoidance_Questionnaire_cognitive_escape,4,0,False,True,0,0,,
+validation_prolific,Disgust_Avoidance_Questionnaire_cognitive_prevention,4,0,False,True,0,0,,
+validation_prolific,Fear_of_COVID_19_Scale_fear_of_covid_19,7,0,False,True,0,0,,
+validation_prolific,HEXACO_60_agreeableness,10,4,False,False,0,4,HEXACO_05; HEXACO_19; HEXACO_03; HEXACO_07,0.027; 0.136; 0.066; 0.208
+validation_prolific,HEXACO_60_agreeablenessflexibility,3,2,False,False,0,2,HEXACO_05; HEXACO_19,0.093; 0.134
+validation_prolific,HEXACO_60_agreeablenessforgiveness,2,0,False,True,0,0,,
+validation_prolific,HEXACO_60_agreeablenessgentleness,3,1,False,False,0,1,HEXACO_03,0.094
+validation_prolific,HEXACO_60_agreeablenesspatience,2,1,False,False,0,1,HEXACO_07,0.512
+validation_prolific,HEXACO_60_conscientiousness,10,6,False,False,4,2,HEXACO_25; HEXACO_24,0.008; 0.043
+validation_prolific,HEXACO_60_conscientiousnessdiligence,2,1,False,False,1,0,,
+validation_prolific,HEXACO_60_conscientiousnessorganization,2,1,False,False,0,1,HEXACO_25,0.064
+validation_prolific,HEXACO_60_conscientiousnessperfectionism,3,1,False,False,1,0,,
+validation_prolific,HEXACO_60_conscientiousnessprudence,3,3,True,True,0,3,HEXACO_28; HEXACO_30; HEXACO_24,nan; nan; nan
+validation_prolific,HEXACO_60_honesty_humility,10,6,False,False,1,5,HEXACO_04; HEXACO_20; HEXACO_14; HEXACO_08; HEXACO_10,0.232; 0.288; 0.042; 0.097; 0.105
+validation_prolific,HEXACO_60_honesty_humilityfairness__hexaco_,3,2,False,False,0,2,HEXACO_04; HEXACO_20,0.174; 0.136
+validation_prolific,HEXACO_60_honesty_humilitygreed_avoidance,2,1,False,False,0,1,HEXACO_14,0.171
+validation_prolific,HEXACO_60_honesty_humilitymodesty,2,2,True,True,0,2,HEXACO_08; HEXACO_16,nan; nan
+validation_prolific,HEXACO_60_honesty_humilitysincerity,3,1,False,False,0,1,HEXACO_10,0.178
+validation_prolific,Moral_Foundations_Questionnaire_authority,2,0,False,True,0,0,,
+validation_prolific,Moral_Foundations_Questionnaire_fairness,2,0,False,True,0,0,,
+validation_prolific,Moral_Foundations_Questionnaire_harm,2,0,False,True,0,0,,
+validation_prolific,Moral_Foundations_Questionnaire_ingroup,2,0,False,True,0,0,,
+validation_prolific,Moral_Foundations_Questionnaire_purity,2,0,False,True,0,0,,
+validation_prolific,New_Ecological_Paradigm_Scale_antiexemptionalism,2,1,False,False,0,1,NEPS_04,0.142
+validation_prolific,New_Ecological_Paradigm_Scale_balance_of_nature,2,1,False,False,0,1,NEPS_08,0.028
+validation_prolific,New_Ecological_Paradigm_Scale_eco_crisis,2,1,False,False,0,1,NEPS_10,0.325
+validation_prolific,New_Ecological_Paradigm_Scale_human_domination,2,1,False,False,0,1,NEPS_12,0.268
+validation_prolific,New_Ecological_Paradigm_Scale_limits_to_growth,2,1,False,False,0,1,NEPS_06,0.202
+validation_prolific,Obsessive_Compulsive_Inventory__Revised__obsessiveness_compulsiveness,18,0,False,True,0,0,,
+validation_prolific,Obsessive_Compulsive_Inventory__Revised__obsessiveness_compulsivenesschecking,3,0,False,True,0,0,,
+validation_prolific,Obsessive_Compulsive_Inventory__Revised__obsessiveness_compulsivenesshoarding,3,0,False,True,0,0,,
+validation_prolific,Obsessive_Compulsive_Inventory__Revised__obsessiveness_compulsivenessneutralizing,3,0,False,True,0,0,,
+validation_prolific,Obsessive_Compulsive_Inventory__Revised__obsessiveness_compulsivenessobsessing,3,0,False,True,0,0,,
+validation_prolific,Obsessive_Compulsive_Inventory__Revised__obsessiveness_compulsivenessordering,3,0,False,True,0,0,,
+validation_prolific,Obsessive_Compulsive_Inventory__Revised__obsessiveness_compulsivenesswashing,3,0,False,True,0,0,,
+validation_prolific,Oldenburg_Burnout_Inventory__English_Translation__burnout,8,4,False,False,3,1,OLBI_12,0.032
+validation_prolific,Oldenburg_Burnout_Inventory__English_Translation__burnoutdisengagement,4,2,False,False,2,0,,
+validation_prolific,Oldenburg_Burnout_Inventory__English_Translation__burnoutexhaustion,4,2,False,False,0,2,OLBI_12; OLBI_08,0.138; 0.002
+validation_prolific,Perceived_Stress_Scale_perceived_stress,14,7,False,False,0,7,PSS_04; PSS_05; PSS_06; PSS_07; PSS_09; PSS_10; PSS_13,0.495; 0.443; 0.375; 0.676; 0.349; 0.494; 0.466
+validation_prolific,Perseverative_Thinking_Questionnaire_perseverative_thinking,15,0,False,True,0,0,,
+validation_prolific,Perseverative_Thinking_Questionnaire_perseverative_thinkingcore_characteristics_of_repetitive_negative_thinking,9,0,False,True,0,0,,
+validation_prolific,Perseverative_Thinking_Questionnaire_perseverative_thinkingrepetitive_negative_thinking_capturing_mental_capacity,3,0,False,True,0,0,,
+validation_prolific,Perseverative_Thinking_Questionnaire_perseverative_thinkingunproductiveness_of_repetitive_negative_thinking,3,0,False,True,0,0,,
+validation_prolific,Perth_Alexithymia_Questionnaire_alexithymia,10,0,False,True,0,0,,
+validation_prolific,Perth_Alexithymia_Questionnaire_alexithymiageneral_externally_orientated_thinking,2,0,False,True,0,0,,
+validation_prolific,Perth_Alexithymia_Questionnaire_alexithymianegative_difficulty_describing_feelings,2,0,False,True,0,0,,
+validation_prolific,Perth_Alexithymia_Questionnaire_alexithymianegative_difficulty_identifying_feelings,2,0,False,True,0,0,,
+validation_prolific,Perth_Alexithymia_Questionnaire_alexithymiapositive_difficulty_describing_feelings,2,0,False,True,0,0,,
+validation_prolific,Perth_Alexithymia_Questionnaire_alexithymiapositive_difficulty_identifying_feelings,2,0,False,True,0,0,,
+validation_prolific,Positive_and_Negative_Affect_Schedule_negative_affect,4,0,False,True,0,0,,
+validation_prolific,Positive_and_Negative_Affect_Schedule_positive_affect,4,0,False,True,0,0,,
+validation_prolific,Revised_Adult_Attachment_Scale_close,6,3,False,False,2,1,RAAS_17,0.008
+validation_prolific,Revised_Adult_Attachment_Scale_depend,5,3,False,False,2,1,RAAS_07,0.027
+validation_prolific,Survey_Attitude_Scale_survey_burden,3,0,False,True,0,0,,
+validation_prolific,Survey_Attitude_Scale_survey_enjoyment,3,0,False,True,0,0,,
+validation_prolific,Survey_Attitude_Scale_survey_value,3,1,False,False,0,1,SAS_06,0.002
+validation_prolific,UCLA_Loneliness_Scale__Short_Form__loneliness,8,2,False,False,2,0,,
+validation_prolific,Utrecht_Work_Engagement_Scale__Short_Version__engagement,9,0,False,True,0,0,,
+validation_prolific,Utrecht_Work_Engagement_Scale__Short_Version__engagementabsorption,3,0,False,True,0,0,,
+validation_prolific,Utrecht_Work_Engagement_Scale__Short_Version__engagementdedication,3,0,False,True,0,0,,
+validation_prolific,Utrecht_Work_Engagement_Scale__Short_Version__engagementvigor,3,0,False,True,0,0,,
+validation_prolific,Work_Gratitude_Scale_work_gratitude,10,0,False,True,0,0,,
+validation_prolific,Work_Gratitude_Scale_work_gratitudegrateful_appraisals,3,0,False,True,0,0,,
+validation_prolific,Work_Gratitude_Scale_work_gratitudegratitude_toward_others,4,0,False,True,0,0,,
+validation_prolific,Work_Gratitude_Scale_work_gratitudeintentional_attitude_of_gratitude,3,0,False,True,0,0,,

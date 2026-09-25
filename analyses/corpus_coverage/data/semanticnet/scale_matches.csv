@@ -1,0 +1,2636 @@
+semanticnet_scale,n_items,match_type,n_dois,dois
+10_item_personality_inventory,10,none,0,
+ability,6,none,0,
+ability2,6,none,0,
+academic performance rating,19,core_exact,4,10.1037/t11269-000;10.1037/t18996-000;10.1037/t20551-000;10.1037/t37840-000
+acceptance of blog usage,23,none,0,
+acceptance of chronic pain,19,none,0,
+acceptance of cosmetic surgery,15,core_exact,5,10.1037/t21011-000;10.1037/t21036-000;10.1037/t76076-000;10.1037/t80188-000;10.1037/t83148-000
+acceptance of disability,10,core_exact,1,10.1037/t15375-000
+acceptance of hedonic information systems,12,none,0,
+acceptance of interpersonal violence,6,core_exact,1,10.1037/t06664-000
+acceptance of modern myths about sexual aggression,30,exact,2,10.1037/t02749-000;10.1037/t74102-000
+acceptance of myths about partner violence women,15,none,0,
+acceptance of stereotyping,12,core_exact,1,10.1037/t09367-000
+achievement-seeking,10,none,0,
+achievement-striving,10,none,0,
+achievement-striving2,10,none,0,
+achievement-striving3,10,none,0,
+action control,71,core_exact,2,10.1037/t08546-000;10.1037/t42415-000
+action control - hesitation,37,none,0,
+action control - preoccupation,42,none,0,
+action control - volatility,37,none,0,
+actively open-minded thinking,7,core_exact,3,10.1037/t12030-000;10.1037/t41728-000;10.1037/t69074-000
+activism orientation,35,core_exact,1,10.1037/t81933-000
+activities of daily living - hoarding,15,fuzzy,1,10.1037/t61642-000
+activity level,10,core_exact,1,10.1037/t75313-000
+activity level2,10,none,0,
+adaptability,8,core_exact,1,10.1037/t79470-000
+addiction mobile phone - anxious,5,none,0,
+addiction mobile phone - control,7,none,0,
+addiction mobile phone - productivity,2,none,0,
+addiction mobile phone - withdrawal,3,none,0,
+adhd,12,core_exact,4,10.1037/t05638-000;10.1037/t16494-000;10.1037/t23496-000;10.1037/t49323-000
+adhd2,6,none,0,
+adofo racial discrimination,10,none,0,
+adolescent alcohol & drug involvement scale,8,fuzzy,1,10.1037/t00850-000
+adolescent femininity ideology,20,core_exact,2,10.1037/t16889-000;10.1037/t49924-000
+adolescent friendship attachment - anxious,9,none,0,
+adolescent friendship attachment - avoidant,8,none,0,
+adolescent friendship attachment - secure,13,none,0,
+adolescent masculinity ideology in relationships,12,core_exact,1,10.1037/t68737-000
+adolescent pain – parent - concerns,8,none,0,
+adolescent pain – parent - feelings,9,none,0,
+adolescent pain – parent - partner,7,none,0,
+adolescent pain – parent - relation,9,none,0,
+adolescent pain – parent - social,8,none,0,
+adolescent pain – parent - thoughts,5,none,0,
+adolescent pain – parent - thoughts2,11,none,0,
+adolescent pain – parent - worries,6,none,0,
+adolescent therapeutic alliance,14,none,0,
+adult attachment - anxiety,6,none,0,
+adult attachment - close,6,none,0,
+adult attachment - depend,6,none,0,
+adult hope,12,core_exact,1,10.1037/t61710-000
+adult separation anxiety,27,core_exact,3,10.1037/t75651-000;10.1037/t82822-000;10.1037/t82996-000
+adventure,10,none,0,
+adventurousness,10,none,0,
+adventurousness2,10,none,0,
+adventurousness3,10,none,0,
+aesthetic appreciation,10,none,0,
+affect balance,10,core_exact,1,10.1037/t10829-000
+affect based trust colquitt,6,none,0,
+affect intensity,50,core_exact,4,10.1037/t06142-000;10.1037/t14695-000;10.1037/t15563-000;10.1037/t34251-000
+affective commitment colquitt,6,none,0,
+affective lability,6,core_exact,2,10.1037/t08045-000;10.1037/t09592-000
+affective learning - classes,5,none,0,
+affective learning - classxinstructor,6,none,0,
+affective learning - content,5,none,0,
+affective learning - instructor,5,none,0,
+affectometer,40,exact,3,10.1037/t67968-000;10.1037/t74539-000;10.1037/t82097-000
+affects,20,none,0,
+aggression - anger,7,none,0,
+aggression - hostility,8,none,0,
+aggression - physical aggression,9,none,0,
+aggression - verbal aggression,5,none,0,
+aggressive provocation,12,none,0,
+agoraphobic cognitions,14,core_exact,3,10.1037/t02003-000;10.1037/t03726-000;10.1037/t60147-000
+agreeableness,10,core_exact,2,10.1037/t32969-000;10.1037/t46146-000
+agreeableness 10 item,10,none,0,
+agreeableness 10 item2,10,none,0,
+agreeableness 20 item,20,none,0,
+agreeableness 20 item2,20,none,0,
+agreeableness2,10,none,0,
+alabama parenting - discipline,6,none,0,
+alabama parenting - involvement,10,none,0,
+alabama parenting - positive,16,none,0,
+alabama parenting - practices,7,none,0,
+alabama parenting - punishment,3,none,0,
+alabama parenting s,9,fuzzy,5,10.1037/t07327-000;10.1037/t49227-000;10.1037/t57517-000;10.1037/t58031-000;10.1037/t80816-000
+alcohol expectancy adolsescent,7,fuzzy,2,10.1037/t01506-000;10.1037/t65367-000
+alcohol ladder,10,exact,1,10.1037/t17165-000
+alcohol responsibility,62,none,0,
+alcoholics anonymous involvement,13,core_exact,1,10.1037/t04019-000
+alcoholism,17,none,0,
+alexithymia - describing feelings,5,none,0,
+alexithymia - externally oriented,8,none,0,
+alexithymia - identifying feelings,7,none,0,
+alienation,20,core_exact,1,10.1037/t06232-000
+allophilia,17,core_exact,2,10.1037/t02162-000;10.1037/t45462-000
+almost perfect,23,core_exact,7,10.1037/t02161-000;10.1037/t52034-000;10.1037/t73941-000;10.1037/t74544-000;10.1037/t75297-000;10.1037/t79056-000;10.1037/t83305-000
+aloof-introverted,4,none,0,
+altman self-rating scale for mania,6,none,0,
+altruism,10,core_exact,9,10.1037/t10772-000;10.1037/t15204-000;10.1037/t19159-000;10.1037/t26667-000;10.1037/t50716-000;10.1037/t62374-000;10.1037/t69941-000;10.1037/t75686-000
+altruism2,13,none,0,
+ambiguity tolerance,21,core_exact,2,10.1037/t18894-000;10.1037/t35219-000
+ambivalence toward homosexuality,5,none,0,
+ambivalent sexism - men,8,none,0,
+ambivalent sexism - women,8,none,0,
+amiability,10,none,0,
+amorality,14,none,0,
+analysis,10,none,0,
+anger,10,core_exact,6,10.1037/t11127-000;10.1037/t15471-000;10.1037/t41950-000;10.1037/t42222-000;10.1037/t42368-000;10.1037/t60041-000
+anger cognitions,27,core_exact,1,10.1037/t85705-000
+anger expression children,26,fuzzy,2,10.1037/t81079-000;10.1037/t81081-000
+anger inventory,25,core_exact,6,10.1037/t11127-000;10.1037/t15471-000;10.1037/t41950-000;10.1037/t42222-000;10.1037/t42368-000;10.1037/t60041-000
+anger2,6,none,0,
+anhedonia,6,core_exact,2,10.1037/t28042-000;10.1037/t79671-000
+anomie alienation,12,none,0,
+anomy,9,none,0,
+anti?arab prejudice,42,none,0,
+antifat attitude,13,none,0,
+antisemitism,66,none,0,
+anxiety,10,core_exact,24,10.1037/t01390-000;10.1037/t02010-000;10.1037/t04191-000;10.1037/t06075-000;10.1037/t08002-000;10.1037/t09922-000;10.1037/t11129-000;10.1037/t11330-000
+anxiety and preoccupation w sleep,10,none,0,
+anxiety control children,30,fuzzy,1,10.1037/t72165-000
+anxiety disorder,11,none,0,
+anxiety sensitivity index-revised,36,exact,1,10.1037/t10350-000
+anxiety sensitivity profile,60,exact,1,10.1037/t10721-000
+anxiety2,10,none,0,
+anxiety3,10,none,0,
+anxiety4,10,none,0,
+anxiety5,10,none,0,
+anxious self-statements,20,core_exact,1,10.1037/t02011-000
+anxiousness,7,none,0,
+apathy evaluation,18,core_exact,4,10.1037/t28570-000;10.1037/t62658-000;10.1037/t64226-000;10.1037/t77775-000
+appearance,4,none,0,
+appearance-based rejection sensitivity,29,none,0,
+appraisal of diabetes,7,core_exact,2,10.1037/t45988-000;10.1037/t46783-000
+appreciation of beauty,8,none,0,
+ar - angry afterthoughts,6,none,0,
+ar - angry memories,5,none,0,
+ar - thoughts of revenge,4,none,0,
+ar - understanding of causes,4,none,0,
+arizona sexual experiences,5,fuzzy,6,10.1037/t30328-000;10.1037/t63423-000;10.1037/t64448-000;10.1037/t65234-000;10.1037/t66985-000;10.1037/t83269-000
+arrogant-calculating,4,none,0,
+arthritis self-efficacy - function,9,none,0,
+arthritis self-efficacy - pain,5,none,0,
+arthritis self-efficacy - symptoms,7,none,0,
+artistic interests,10,none,0,
+aspects of identity,86,core_exact,1,10.1037/t14426-000
+assertiveness,10,core_exact,3,10.1037/t02014-000;10.1037/t16098-000;10.1037/t85121-000
+assertiveness2,10,none,0,
+assertiveness3,10,none,0,
+assertiveness4,10,none,0,
+assertiveness5,12,none,0,
+assessment of disruptive symptoms - parent,33,none,0,
+assessment of disruptive symptoms - teacher,29,none,0,
+assured-dominant,4,none,0,
+athens insomnia,8,core_exact,2,10.1037/t16796-000;10.1037/t69272-000
+athletic coping skills,28,core_exact,1,10.1037/t69043-000
+athletic identity - appearance,6,none,0,
+athletic identity - competence,4,none,0,
+athletic identity - importance,5,none,0,
+athletic skills coping - adversity,4,none,0,
+athletic skills coping - coachability,4,none,0,
+athletic skills coping - concentration,4,none,0,
+athletic skills coping - confidence,4,none,0,
+athletic skills coping - freedom from worry,4,none,0,
+athletic skills coping - goal setting,4,none,0,
+athletic skills coping - pressure,4,none,0,
+attachment qualities,14,fuzzy,1,10.1037/t08654-000
+attachment style,15,core_exact,7,10.1037/t14508-000;10.1037/t28559-000;10.1037/t29439-000;10.1037/t36428-000;10.1037/t58974-000;10.1037/t75708-000;10.1037/t79493-000
+attending to emotions,10,none,0,
+attention/persistence,9,none,0,
+attentional resource allocation,15,core_exact,1,10.1037/t14348-000
+attitude follow-up,19,none,0,
+attitude toward posthumous organ donation,17,none,0,
+attitude towards persons with intellectual disability cp,6,fuzzy,1,10.1037/t70737-000
+attitude towards persons with intellectual disability pr,4,fuzzy,1,10.1037/t70737-000
+attitude towards persons with intellectual disability sl,11,fuzzy,1,10.1037/t70737-000
+attitude towards research,20,fuzzy,1,10.1037/t45959-000
+attitudes to surgical checklist,25,none,0,
+attitudes toward homosexuals in the military,14,none,0,
+attitudes toward self,10,core_exact,1,10.1037/t14471-000
+attitudes toward women - adolescents,12,fuzzy,1,10.1037/t04905-000
+attitudes towards christianity,24,none,0,
+attitudes towards guns & violence,23,none,0,
+attitudes towards mental illness,39,fuzzy,1,10.1037/t19754-000
+attitudes towards organizational change,35,none,0,
+attitudes twds women,25,fuzzy,1,10.1037/t57565-000
+attractiveness,10,core_exact,2,10.1037/t21556-000;10.1037/t49931-000
+audience anxiousness,12,core_exact,1,10.1037/t09943-000
+authentic pride,7,none,0,
+authoritarianism-rebellion,55,none,0,
+autism checklist toddlers,25,none,0,
+autism parenting stress,13,core_exact,1,10.1037/t15283-000
+autism quotient,50,none,0,
+autonomic nervous system,5,none,0,
+avoidance strategy,24,none,0,
+avoids trouble,6,none,0,
+awe experience,30,core_exact,1,10.1037/t74363-000
+barratt impulsiveness,30,core_exact,12,10.1037/t05661-000;10.1037/t21455-000;10.1037/t36210-000;10.1037/t45936-000;10.1037/t61859-000;10.1037/t63911-000;10.1037/t65474-000;10.1037/t71828-000
+bcfpi - adhd,6,none,0,
+bcfpi - cd,6,none,0,
+bcfpi - gad,6,none,0,
+bcfpi - mdd,6,none,0,
+bcfpi - odd,6,none,0,
+bcfpi - sad,6,none,0,
+beck anxiety,23,core_exact,4,10.1037/t02025-000;10.1037/t32778-000;10.1037/t47227-000;10.1037/t59172-000
+beck depression - appetite,4,none,0,
+beck depression - body,4,none,0,
+beck depression - crying,4,none,0,
+beck depression - failure,5,none,0,
+beck depression - fatigability,4,none,0,
+beck depression - guilty,5,none,0,
+beck depression - indecisiveness,4,none,0,
+beck depression - irritability,4,none,0,
+beck depression - libido,4,none,0,
+beck depression - mood,5,none,0,
+beck depression - pessimism,5,none,0,
+beck depression - punishment,5,none,0,
+beck depression - satisfaction,5,none,0,
+beck depression - self accusations,4,none,0,
+beck depression - self hate,5,none,0,
+beck depression - self punitive,6,none,0,
+beck depression - sleep,4,none,0,
+beck depression - somatic,4,none,0,
+beck depression - weight,2,none,0,
+beck depression - withdrawal,4,none,0,
+beck depression - work,5,none,0,
+beck insight,15,none,0,
+beck youth anger,20,none,0,
+beck youth self-concept,20,none,0,
+behavior_rating_inventory_of_executive_function,34,exact,2,10.1037/t73087-000;10.1037/t86244-000
+behavioral actiovation for depression,25,none,0,
+behavioral health screening,21,fuzzy,1,10.1037/t68973-000
+behavioral inhibition,30,core_exact,1,10.1037/t81812-000
+behavioral peer-rating of depression,9,none,0,
+being alone,6,none,0,
+belief in a just world,6,core_exact,7,10.1037/t11444-000;10.1037/t15579-000;10.1037/t19124-000;10.1037/t51553-000;10.1037/t59692-000;10.1037/t64486-000;10.1037/t65551-000
+belief in a just world - others,8,core_exact,1,10.1037/t65551-000
+belief in a just world - self,8,core_exact,1,10.1037/t64486-000
+belief in climate change,23,none,0,
+belief in collective emotions,5,none,0,
+beliefs about women,75,none,0,
+beliefs about women managers,6,none,0,
+beliefs and values,4,core_exact,2,10.1037/t06169-000;10.1037/t84378-000
+belligerence,10,none,0,
+benefit finding breast cancer,18,none,0,
+benign/malicious envy,10,none,0,
+bergen insomnia,6,core_exact,1,10.1037/t33900-000
+bergen yale sex addiction,6,core_exact,3,10.1037/t70204-000;10.1037/t79647-000;10.1037/t83482-000
+berkeley expressivity,16,core_exact,4,10.1037/t00749-000;10.1037/t50628-000;10.1037/t75430-000;10.1037/t86582-000
+betrayal trauma,12,core_exact,3,10.1037/t02624-000;10.1037/t54936-000;10.1037/t56077-000
+bicultural self-efficacy,26,core_exact,1,10.1037/t00044-000
+bidr - impression management,10,none,0,
+bidr - self-deception,10,none,0,
+big three perfectionism,45,core_exact,6,10.1037/t57685-000;10.1037/t73386-000;10.1037/t74074-000;10.1037/t78590-000;10.1037/t78598-000;10.1037/t84875-000
+binge eating adjective - apathy,9,none,0,
+binge eating adjective - arousal,8,none,0,
+binge eating adjective - fatigue,4,none,0,
+binge eating adjective - hunger,4,none,0,
+binge eating adjective - negative affect,31,none,0,
+binge eating adjective - positive affect,15,none,0,
+binge eating adjective - self-criticism,25,none,0,
+bipolar recovery,36,core_exact,1,10.1037/t62236-000
+black identity - assimilation,9,none,0,
+black identity - centrality,8,none,0,
+black identity - humanist,9,none,0,
+black identity - nationalist,9,none,0,
+black identity - opressed,9,none,0,
+black identity - private regard,6,none,0,
+black identity - public regard,6,none,0,
+blushing propensity,14,core_exact,2,10.1037/t12061-000;10.1037/t12062-000
+body awareness,18,core_exact,3,10.1037/t15504-000;10.1037/t70006-000;10.1037/t72030-000
+body esteem,28,core_exact,4,10.1037/t07728-000;10.1037/t57096-000;10.1037/t58570-000;10.1037/t79434-000
+body odor disgust,12,core_exact,1,10.1037/t65708-000
+body-centred countertransference,16,none,0,
+bodyparts dissatisfaction,8,none,0,
+brief compassion,5,core_exact,6,10.1037/t01681-000;10.1037/t10177-000;10.1037/t73519-000;10.1037/t74760-000;10.1037/t85005-000;10.1037/t85006-000
+brief experience of caregiving,21,core_exact,2,10.1037/t36496-000;10.1037/t71304-000
+brief outpatient psychopathology,15,none,0,
+brief psychiatric rating - children,21,none,0,
+brief screen for depression,4,exact,1,10.1037/t00762-000
+brief_cope,28,exact,3,10.1037/t17177-000;10.1037/t42294-000;10.1037/t49769-000
+brief_self_control_survey,13,core_exact,40,10.1037/t01116-000;10.1037/t03590-000;10.1037/t06131-000;10.1037/t08509-000;10.1037/t11661-000;10.1037/t11991-000;10.1037/t15065-000;10.1037/t18078-000
+bsad - anxiety,9,none,0,
+bsad - depression,9,none,0,
+bsri - feminine,20,none,0,
+bsri - masculine,20,none,0,
+bsri - neutral,20,none,0,
+bsss need for support,4,none,0,
+bsss perceived emotional support,4,none,0,
+bsss perceived instrumental support,4,fuzzy,2,10.1037/t12388-000;10.1037/t31714-000
+bsss protective buffering,6,none,0,
+bsss received support emotional,9,none,0,
+bsss received support informational,2,none,0,
+bsss received support instrumental,3,none,0,
+bsss support seeking,5,none,0,
+burden childcare,5,none,0,
+burden houshold,7,none,0,
+burnout s,10,none,0,
+burt's sexual attitudes - adversarial sexual beliefs,9,none,0,
+burt's sexual attitudes - rape myth acceptance,12,none,0,
+burt's sexual attitudes - sex role satisfaction,10,none,0,
+burt's sexual attitudes - sex role stereotyping,9,none,0,
+burt's sexual attitudes - sexual conservatism,10,none,0,
+calculated thrill-seeking,10,none,0,
+calling,12,core_exact,4,10.1037/t20320-000;10.1037/t52234-000;10.1037/t81291-000;10.1037/t81292-000
+callousness,7,none,0,
+calmness,10,none,0,
+calmness2,10,none,0,
+calmness3,6,none,0,
+calmness4,10,none,0,
+calmness5,10,none,0,
+cancer treatment,29,core_exact,1,10.1037/t69217-000
+capacity for love,9,none,0,
+caregiver burden,15,core_exact,8,10.1037/t10682-000;10.1037/t15656-000;10.1037/t38871-000;10.1037/t43460-000;10.1037/t46512-000;10.1037/t50539-000;10.1037/t64093-000;10.1037/t70451-000
+caregiver empowerment,60,core_exact,1,10.1037/t05664-000
+caregiver quality of life cancer,35,core_exact,3,10.1037/t37318-000;10.1037/t37319-000;10.1037/t66729-000
+caring,6,none,0,
+carninism,8,none,0,
+carroll depression - agitation,4,none,0,
+carroll depression - anxiety,4,none,0,
+carroll depression - depression,4,none,0,
+carroll depression - gastrointestinal,2,none,0,
+carroll depression - generalsomatic,2,none,0,
+carroll depression - guilt,4,none,0,
+carroll depression - hypochondriasis,4,none,0,
+carroll depression - insomnia,6,none,0,
+carroll depression - libido,2,none,0,
+carroll depression - loss of insight,2,none,0,
+carroll depression - loss of weight,2,none,0,
+carroll depression - retardation,4,none,0,
+carroll depression - somatic,4,none,0,
+carroll depression - suicide,4,none,0,
+carroll depression - work and interests,4,none,0,
+cautiousness,18,none,0,
+ces - depression,20,core_exact,1,10.1037/t25577-000
+chance loc,10,none,0,
+change cynicism,8,none,0,
+characteristics desired in friend,87,none,0,
+cheerfulness,10,none,0,
+chicago multiscale depression - evaluative,6,none,0,
+chicago multiscale depression - mood,9,fuzzy,1,10.1037/t28268-000
+chicago multiscale depression - vegetative,9,none,0,
+child adolescent support,43,none,0,
+child anxiety related emotional disorders,38,none,0,
+child control of parents,7,none,0,
+child eating behaviour,35,core_exact,1,10.1037/t86718-000
+child mania,21,core_exact,1,10.1037/t62607-000
+child psychological distress screener,5,fuzzy,1,10.1037/t00363-000
+child ptsd,17,none,0,
+child sexual abuse attitude and belief,36,core_exact,1,10.1037/t47878-000
+child-related,6,none,0,
+childhood autism syndrome,37,none,0,
+childhood trauma,19,core_exact,13,10.1037/t02080-000;10.1037/t09716-000;10.1037/t16616-000;10.1037/t19269-000;10.1037/t25412-000;10.1037/t27251-000;10.1037/t33468-000;10.1037/t43674-000
+children loneliness,24,none,0,
+children's impact of traumatic events,78,fuzzy,1,10.1037/t02083-000
+children's manifest anxiety,42,core_exact,4,10.1037/t00514-000;10.1037/t05391-000;10.1037/t16261-000;10.1037/t73392-000
+children's perception of interparental conflict,52,core_exact,1,10.1037/t83689-000
+children's perception of others' depression,21,none,0,
+children's rejection sensitivity,46,core_exact,1,10.1037/t87408-000
+children's yale brown ocd,9,none,0,
+childrens attribution and perception,18,none,0,
+childrens sleep habits,6,none,0,
+childrens' attitudes towards down syndrome,20,none,0,
+children’s relationship attribution,6,none,0,
+church involvement,2,core_exact,1,10.1037/t12581-000
+citizenship/teamwork,9,none,0,
+civic participation,5,core_exact,1,10.1037/t44215-000
+civil liberties,4,none,0,
+civil restrictions for muslim americans,6,none,0,
+classroom anxiety,20,core_exact,1,10.1037/t54485-000
+climate for sexual harassment,9,none,0,
+clinical anger,84,none,0,
+clinical decision making,12,none,0,
+clinical features of depression,12,none,0,
+clinical interview - abnormalities,12,none,0,
+clinical interview - symptoms,10,none,0,
+clinically useful depression,18,none,0,
+clinically useful depression outcome,18,core_exact,1,10.1037/t62654-000
+clinician-administered ptsd,30,core_exact,2,10.1037/t00072-000;10.1037/t08962-000
+codependency,16,none,0,
+cognition based trust colquitt,6,none,0,
+cognitive and affective mindfulness,12,core_exact,2,10.1037/t49653-000;10.1037/t51219-000
+cognitive avoidance,25,core_exact,4,10.1037/t13018-000;10.1037/t32747-000;10.1037/t60074-000;10.1037/t82294-000
+cognitive failures,35,core_exact,3,10.1037/t00791-000;10.1037/t05702-000;10.1037/t74856-000
+cognitive functioning,18,none,0,
+cognitive problems,8,none,0,
+cognitive processing of trauma,17,core_exact,1,10.1037/t14711-000
+cognitive style - creating,7,none,0,
+cognitive style - knowing,4,none,0,
+cognitive style - planning,7,none,0,
+cognitive-somatic anxiety,14,core_exact,2,10.1037/t20915-000;10.1037/t67386-000
+cohen-hoberman physical symptoms,33,fuzzy,2,10.1037/t06617-000;10.1037/t48814-000
+cold-hearted,4,none,0,
+collaborative parent involvement (diabetes),12,none,0,
+collecting,5,none,0,
+collective existential (extinction) threat,13,none,0,
+collective self-esteem,16,core_exact,8,10.1037/t03003-000;10.1037/t16793-000;10.1037/t19364-000;10.1037/t36714-000;10.1037/t46293-000;10.1037/t46941-000;10.1037/t50083-000;10.1037/t61180-000
+college activities,14,none,0,
+college adjustment,19,core_exact,1,10.1037/t66464-000
+college alcohol problems - personal,4,none,0,
+college alcohol problems - social,4,none,0,
+color-blind racial attitudes,20,core_exact,2,10.1037/t00078-000;10.1037/t45749-000
+columbia suicide severity,60,core_exact,3,10.1037/t52667-000;10.1037/t78632-000;10.1037/t79435-000
+"columbia suicide severity, responsibility to family or others; living with family, www.psychologytools.com, ; columbia suicide severity",1,none,0,
+command safety - cc,26,none,0,
+command safety - pa,9,none,0,
+command safety - qa,4,none,0,
+command safety - rm,13,none,0,
+command safety - rssc,9,none,0,
+commitment,3,core_exact,11,10.1037/t03503-000;10.1037/t04602-000;10.1037/t09210-000;10.1037/t12518-000;10.1037/t17973-000;10.1037/t23211-000;10.1037/t24224-000;10.1037/t35442-000
+communication apprehension,24,core_exact,1,10.1037/t67373-000
+communication competence,12,core_exact,2,10.1037/t41381-000;10.1037/t63715-000
+communication systems,4,none,0,
+community attitudes toward sex offenders,20,exact,1,10.1037/t58830-000
+community participation and leisure,52,none,0,
+companionate love - decision,4,none,0,
+companionate love - intimacy,4,none,0,
+comparison orientation,11,none,0,
+compassion,20,core_exact,6,10.1037/t01681-000;10.1037/t10177-000;10.1037/t73519-000;10.1037/t74760-000;10.1037/t85005-000;10.1037/t85006-000
+compassionate and self-image goals - friend,13,none,0,
+compassionate and self-image goals - roommate,16,none,0,
+compensatory health belief,17,fuzzy,1,10.1037/t03171-000
+competence,24,core_exact,3,10.1037/t10252-000;10.1037/t12798-000;10.1037/t41330-000
+competence2,10,none,0,
+competitive,6,none,0,
+competitive state anxiety - cognitive anxiety,5,none,0,
+competitive state anxiety - self-confidence,5,none,0,
+competitive state anxiety - somatic anxiety,7,none,0,
+complexity,13,core_exact,1,10.1037/t37717-000
+complexity2,10,none,0,
+compliance in an interrogative situation,19,none,0,
+composite international diagnostic interview - insomnia,6,none,0,
+comprehension,10,core_exact,3,10.1037/t15489-000;10.1037/t40796-000;10.1037/t51926-000
+comprehension2,10,none,0,
+compulsive hoarding,23,none,0,
+computer anxiety,19,core_exact,11,10.1037/t05810-000;10.1037/t05811-000;10.1037/t05812-000;10.1037/t05814-000;10.1037/t13260-000;10.1037/t13631-000;10.1037/t13662-000;10.1037/t13663-000
+computing,6,none,0,
+concerns,9,core_exact,1,10.1037/t15384-000
+condensed memorial symptom,14,core_exact,3,10.1037/t18770-000;10.1037/t73558-000;10.1037/t73560-000
+conduct disorder - parent,20,core_exact,1,10.1037/t62210-000
+conduct disorder - teacher,13,core_exact,1,10.1037/t62210-000
+conflict between sexes,149,none,0,
+conformity,10,none,0,
+connectedness to nature,14,core_exact,2,10.1037/t10022-000;10.1037/t70452-000
+connectedness to nature scale,14,exact,2,10.1037/t10022-000;10.1037/t70452-000
+connectivity with nature,5,none,0,
+connor-davidson resilience,25,core_exact,16,10.1037/t06346-000;10.1037/t09624-000;10.1037/t29769-000;10.1037/t38872-000;10.1037/t49550-000;10.1037/t60027-000;10.1037/t60477-000;10.1037/t61049-000
+conscientiousness,10,core_exact,3,10.1037/t09325-000;10.1037/t44406-000;10.1037/t73197-000
+conscientiousness 10 item,10,none,0,
+conscientiousness 10 item2,10,none,0,
+conscientiousness 20 item,20,none,0,
+conscientiousness 20 item2,20,none,0,
+conscientiousness2,9,none,0,
+consciousness of social face,11,core_exact,1,10.1037/t41957-000
+conservatism,9,core_exact,2,10.1037/t06085-000;10.1037/t49189-000
+conservatism2,10,none,0,
+conservatism3,8,none,0,
+consideration of future consequences,12,exact,1,10.1037/t36853-000
+consideration_of_future_consequences_scale,14,exact,8,10.1037/t00869-000;10.1037/t23020-000;10.1037/t48195-000;10.1037/t48885-000;10.1037/t65979-000;10.1037/t75726-000;10.1037/t85493-000;10.1037/t85712-000
+conspiracy mentality,12,core_exact,2,10.1037/t31566-000;10.1037/t73004-000
+consumer aggression - aggressiveness,6,none,0,
+consumer aggression - requesting info,5,none,0,
+consumer aggression - resisting,5,none,0,
+consumer aggression - seeking redress,5,none,0,
+consumer ethnocentrism,17,exact,1,10.1037/t78566-000
+consumer motivation - convenience,4,none,0,
+consumer motivation - ethics,5,none,0,
+consumer motivation - quality,5,none,0,
+consumer motivation - safety,5,none,0,
+consumer motivation - social acceptance,5,none,0,
+consumer motivation - stimulation,5,none,0,
+consumer motivation - value/money,5,none,0,
+consumer perceived value - emotional,5,none,0,
+consumer perceived value - price,4,none,0,
+consumer perceived value - quality,6,none,0,
+consumer perceived value - social,5,none,0,
+consumers need for uniqueness,31,core_exact,2,10.1037/t68547-000;10.1037/t69013-000
+contentment with life,5,none,0,
+context,6,none,0,
+context2,6,none,0,
+contingencies of self-worth,35,core_exact,2,10.1037/t00082-000;10.1037/t67721-000
+controllability of poverty beliefs,10,none,0,
+cool-headedness,10,none,0,
+cooperation,10,none,0,
+cooperation2,10,none,0,
+cooperation3,12,none,0,
+coparenting gay/lesbian - affection,6,none,0,
+coparenting gay/lesbian - alone,5,none,0,
+coparenting gay/lesbian - opinions,5,none,0,
+coparenting relationship,35,core_exact,6,10.1037/t32893-000;10.1037/t71843-000;10.1037/t73333-000;10.1037/t79163-000;10.1037/t85469-000;10.1037/t85470-000
+cope - acceptance,4,none,0,
+cope - active coping,4,none,0,
+cope - behavioral disengagement,4,none,0,
+cope - denial,4,none,0,
+cope - emotional social support,4,none,0,
+cope - emotions,4,none,0,
+cope - growth,4,none,0,
+cope - instrumental social support,4,none,0,
+cope - mental disengagement,4,none,0,
+cope - planning,4,none,0,
+cope - religion,4,none,0,
+cope - restraint coping,4,none,0,
+cope - suppression of competing activities,4,none,0,
+cope inventory,60,exact,1,10.1037/t10027-000
+cope with discrimination - detachment,5,none,0,
+cope with discrimination - drugs,5,none,0,
+cope with discrimination - education,5,none,0,
+cope with discrimination - internalization,5,none,0,
+cope with discrimination - resistance,5,none,0,
+coping,6,core_exact,10,10.1037/t00911-000;10.1037/t01555-000;10.1037/t02051-000;10.1037/t05400-000;10.1037/t08055-000;10.1037/t08720-000;10.1037/t20819-000;10.1037/t28531-000
+coping strategies in sport - disengagement resignation,4,none,0,
+coping strategies in sport - effort expenditure,3,none,0,
+coping strategies in sport - logical analysis,4,none,0,
+coping strategies in sport - mental distraction,4,none,0,
+coping strategies in sport - mental imagery,4,none,0,
+coping strategies in sport - relaxation,4,none,0,
+coping strategies in sport - seeking support,4,none,0,
+coping strategies in sport - social withdrawal,4,none,0,
+coping strategies in sport - thought control,4,none,0,
+coping strategies in sport - venting,4,none,0,
+coping with children's negative emotions,12,core_exact,4,10.1037/t36426-000;10.1037/t36591-000;10.1037/t52123-000;10.1037/t70319-000
+core self-evaluations,12,core_exact,7,10.1037/t11289-000;10.1037/t22106-000;10.1037/t40016-000;10.1037/t46333-000;10.1037/t60166-000;10.1037/t65610-000;10.1037/t72276-000
+core self-evaluatoins,11,fuzzy,7,10.1037/t11289-000;10.1037/t22106-000;10.1037/t40016-000;10.1037/t46333-000;10.1037/t60166-000;10.1037/t65610-000;10.1037/t72276-000
+cornell depression in dementia - behavioral,3,none,0,
+cornell depression in dementia - cyclic functions,4,none,0,
+cornell depression in dementia - ideational disturbance,4,none,0,
+cornell depression in dementia - mood,4,none,0,
+cornell depression in dementia - physical,3,none,0,
+cornell dysthymia,20,none,0,
+cosmopolitanism,3,none,0,
+costello-comrey anxiety,11,none,0,
+costello-comrey depression,11,none,0,
+costs and benefits of friendship,115,none,0,
+couple_self_report_coercion_scale,9,none,0,
+craig handicap assessment -,1,none,0,
+craig handicap assessment - assistance,3,none,0,
+craig handicap assessment - financial,1,none,0,
+craig handicap assessment - social,6,none,0,
+craig handicap assessment - time,7,none,0,
+craig handicap assessment - transport,4,none,0,
+craig handicap assessment - upandabout,3,none,0,
+creativity,31,core_exact,6,10.1037/t38696-000;10.1037/t44741-000;10.1037/t58821-000;10.1037/t58879-000;10.1037/t63102-000;10.1037/t68312-000
+creativity2,10,none,0,
+creativity3,10,none,0,
+critical processing of beauty images,22,core_exact,1,10.1037/t46344-000
+cross racial identity,50,core_exact,1,10.1037/t01825-000
+csss - approach cognitive,3,none,0,
+csss - avoidance cognitive,3,none,0,
+csss - behavior,4,none,0,
+csss - coach,3,none,0,
+csss - performance,4,none,0,
+cultural cognition - hierarchy,13,none,0,
+cultural cognition - individualism,9,none,0,
+cultural estrangement,10,core_exact,1,10.1037/t18293-000
+cultural participation,14,none,0,
+culture,10,core_exact,3,10.1037/t26693-000;10.1037/t57802-000;10.1037/t57803-000
+culture2,6,none,0,
+culture3,6,none,0,
+curiosity,16,none,0,
+curiosity and exploration,10,core_exact,2,10.1037/t04257-000;10.1037/t09556-000
+curiosity and exploration2,7,none,0,
+current status a,13,none,0,
+current status b,10,none,0,
+customer inspiration,10,core_exact,1,10.1037/t65978-000
+cvc - intimiate relations,11,none,0,
+cvc - sex role expectations,13,none,0,
+cynical distrust,8,core_exact,1,10.1037/t75606-000
+d scale,28,none,0,
+daily living,5,none,0,
+daily stress,59,core_exact,2,10.1037/t04751-000;10.1037/t09089-000
+dangerous thrill-seeking,10,none,0,
+dark triad m,9,none,0,
+dark triad n,9,none,0,
+dark triad p,9,none,0,
+davidson trauma,17,core_exact,2,10.1037/t04973-000;10.1037/t46167-000
+death acceptance,7,core_exact,1,10.1037/t04678-000
+death anxiety,15,core_exact,10,10.1037/t00866-000;10.1037/t03806-000;10.1037/t04680-000;10.1037/t06813-000;10.1037/t55943-000;10.1037/t60246-000;10.1037/t63176-000;10.1037/t65895-000
+death depression,17,core_exact,3,10.1037/t14461-000;10.1037/t86236-000;10.1037/t86237-000
+decision regret,5,core_exact,2,10.1037/t28680-000;10.1037/t55394-000
+decisional balance exercise,10,fuzzy,2,10.1037/t81217-000;10.1037/t81236-000
+decisiveness facet,6,none,0,
+deferment_of_gratification_scale,12,core_exact,2,10.1037/t11789-000;10.1037/t50216-000
+deliberateness,10,none,0,
+delinquent activities,40,core_exact,1,10.1037/t32628-000
+dementia mood - cognition,7,none,0,
+dementia mood - mood,17,none,0,
+dementia severity - activities,5,none,0,
+dementia severity - cleanliness,4,none,0,
+dementia severity - decisions,5,none,0,
+dementia severity - eating,4,none,0,
+dementia severity - memory,7,none,0,
+dementia severity - orientation,5,none,0,
+dementia severity - placetoplace,7,none,0,
+dementia severity - recognition,6,none,0,
+dementia severity - social,7,none,0,
+dementia severity - speech,7,none,0,
+dementia severity - time,5,none,0,
+dementia severity - urination,5,none,0,
+dependence,10,none,0,
+dependence2,10,none,0,
+depressed mood - sleep,6,none,0,
+depression,22,core_exact,13,10.1037/t11128-000;10.1037/t11182-000;10.1037/t11328-000;10.1037/t17319-000;10.1037/t24506-000;10.1037/t26103-000;10.1037/t56071-000;10.1037/t58137-000
+depression arkansas,11,none,0,
+depression information - knowledge,18,none,0,
+depression information - knowledge causes,16,none,0,
+depression information - treatments,12,none,0,
+depression-happiness,25,core_exact,4,10.1037/t56048-000;10.1037/t56208-000;10.1037/t56444-000;10.1037/t87200-000
+depression2,22,none,0,
+depressiveness,6,none,0,
+depth,19,none,0,
+derogation of competitors,84,none,0,
+derogatis sexual functioning - satisfaction,7,none,0,
+deservingness of bad outcomes,9,core_exact,2,10.1037/t36174-000;10.1037/t36241-000
+desirability of control,20,core_exact,4,10.1037/t04509-000;10.1037/t17274-000;10.1037/t38168-000;10.1037/t57521-000
+desire for control,11,core_exact,1,10.1037/t53814-000
+desire for status,9,none,0,
+devotionalism,3,none,0,
+diagnostic inventory for depression,22,exact,1,10.1037/t21815-000
+dickman impulsivity - dysfunctional,12,none,0,
+dickman impulsivity - functional,11,none,0,
+dickman_functional_and_dysfunctional_impulsivity_survey,23,none,0,
+diet self efficacy,11,fuzzy,1,10.1037/t23679-000
+dieting beliefs,16,core_exact,1,10.1037/t62732-000
+difficulties in emotion regulation - awareness,9,none,0,
+difficulties in emotion regulation - clarity,6,none,0,
+difficulties in emotion regulation - goal,5,fuzzy,17,10.1037/t01029-000;10.1037/t38610-000;10.1037/t42068-000;10.1037/t49572-000;10.1037/t50878-000;10.1037/t57299-000;10.1037/t65313-000;10.1037/t65314-000
+difficulties in emotion regulation - goals,5,none,0,
+difficulties in emotion regulation - impulse,6,none,0,
+difficulties in emotion regulation - impulsivity,6,none,0,
+difficulties in emotion regulation - non-acceptance,7,none,0,
+difficulties in emotion regulation - nonacceptance,6,none,0,
+difficulties in emotion regulation - strategies,16,none,0,
+diligence,10,none,0,
+dimensional obsessive compulsive scale,18,exact,11,10.1037/t01031-000;10.1037/t60794-000;10.1037/t61478-000;10.1037/t66519-000;10.1037/t67910-000;10.1037/t72755-000;10.1037/t74578-000;10.1037/t77212-000
+"dimensional obsessive compulsive scale, how difficult is it for you to disregard thoughts about the lack of symmetry and order",1,none,0,
+dimensions of emerging adulthood,31,none,0,
+directiveness,26,none,0,
+dirty dozen m,4,none,0,
+dirty dozen n,4,none,0,
+dirty dozen p,4,none,0,
+disgust,20,core_exact,8,10.1037/t01043-000;10.1037/t09518-000;10.1037/t12177-000;10.1037/t14510-000;10.1037/t14550-000;10.1037/t33848-000;10.1037/t35311-000;10.1037/t73028-000
+disorder,10,none,0,
+disordered eating attitude,26,core_exact,1,10.1037/t68994-000
+dispos. positive emotion,21,none,0,
+dispositional contempt,10,core_exact,1,10.1037/t63820-000
+dispositional cynicism,5,none,0,
+disruptive behavior stress,40,none,0,
+dissociation absorption,8,none,0,
+dissociation amnesia,5,none,0,
+dissociation depersonalization,8,none,0,
+dissociation l,31,none,0,
+dissociation s,17,none,0,
+dissociative processes - general sleep,15,none,0,
+dissociative processes - lucid,3,none,0,
+dissonance of purchase - concern,3,none,0,
+dissonance of purchase - emotional,16,none,0,
+dissonance of purchase - wisdom,4,none,0,
+distress tolerance,16,core_exact,3,10.1037/t13498-000;10.1037/t67563-000;10.1037/t68244-000
+distrust,10,none,0,
+distrust of others,11,none,0,
+distrust of people,3,none,0,
+distrust2,10,none,0,
+diversity of friendship,10,none,0,
+docility,8,none,0,
+dogmatism,22,none,0,
+domain specific risk taking - ethical,5,none,0,
+domain specific risk taking - financial,6,none,0,
+domain specific risk taking - health safety,6,none,0,
+domain specific risk taking - recreation,6,none,0,
+domain specific risk taking - social,6,none,0,
+domestic battering,11,none,0,
+dominance,18,core_exact,2,10.1037/t35622-000;10.1037/t64763-000
+dominance - authority,14,none,0,
+dominance - disparagement,11,none,0,
+dominance - restrictiveness,12,none,0,
+domineering,6,none,0,
+dospert_eb_survey,30,none,0,
+dospert_rp_survey,30,none,0,
+dospert_rt_survey,30,none,0,
+drinker inventory of consequences - control questions,5,none,0,
+drinker inventory of consequences - impulse control,12,none,0,
+drinker inventory of consequences - interpersonal,10,none,0,
+drinker inventory of consequences - intrapersonal,8,none,0,
+drinker inventory of consequences - physical,8,none,0,
+drinker inventory of consequences - responsibility,7,none,0,
+drinking,5,none,0,
+drinking locus of control,25,none,0,
+drive,10,exact,1,10.1037/t70597-000
+drive for muscularity,23,core_exact,11,10.1037/t38608-000;10.1037/t39771-000;10.1037/t43209-000;10.1037/t49702-000;10.1037/t58466-000;10.1037/t63934-000;10.1037/t64053-000;10.1037/t69523-000
+driver stress - general,11,none,0,
+driver stress - state,26,none,0,
+driver stress - state coping,26,none,0,
+driver stress - trait coping,20,none,0,
+driving anger,14,core_exact,2,10.1037/t16551-000;10.1037/t56874-000
+drug use,30,core_exact,4,10.1037/t12202-000;10.1037/t31524-000;10.1037/t31887-000;10.1037/t61800-000
+drug-taking confidence - alcohol,8,none,0,
+dunbar activity walking,14,none,0,
+dunedin depression,21,none,0,
+dutch sleep disorders,34,none,0,
+dutifulness,10,none,0,
+dutifulness2,10,none,0,
+dutifulness3,10,none,0,
+dutifulness4,10,none,0,
+dutifulness5,13,none,0,
+dyadic interactional harmony,50,none,0,
+dyadic trust,8,none,0,
+dysfunctional beliefs and attitudes about sleep,22,core_exact,4,10.1037/t07113-000;10.1037/t11904-000;10.1037/t24607-000;10.1037/t54663-000
+dysfunctional beliefs and attitudes about sleep2,30,fuzzy,4,10.1037/t07113-000;10.1037/t11904-000;10.1037/t24607-000;10.1037/t54663-000
+dysphoria in youth,12,none,0,
+early memories of warmth and safeness,21,core_exact,3,10.1037/t67078-000;10.1037/t67079-000;10.1037/t79282-000
+easy to live with,6,none,0,
+eating behavior,11,core_exact,8,10.1037/t04413-000;10.1037/t08453-000;10.1037/t12263-000;10.1037/t18587-000;10.1037/t28955-000;10.1037/t32220-000;10.1037/t70357-000;10.1037/t80807-000
+eating disorder edi - awareness,10,none,0,
+eating disorder edi - body dissatisfaction,9,none,0,
+eating disorder edi - bulimia,7,none,0,
+eating disorder edi - ineffectiveness,10,none,0,
+eating disorder edi - interpersonal distrust,7,none,0,
+eating disorder edi - maturity fears,8,none,0,
+eating disorder edi - perfectionism,6,none,0,
+eating disorder edi - thinness,7,none,0,
+eating disorder examination,28,exact,2,10.1037/t03975-000;10.1037/t77067-000
+economic loc,40,none,0,
+economic system justification,16,core_exact,2,10.1037/t68538-000;10.1037/t72199-000
+ed15,13,none,0,
+edinburgh depression,6,core_exact,1,10.1037/t10761-000
+edinburgh post natal depression,10,none,0,
+edinburgh postnatal depression,10,core_exact,16,10.1037/t01756-000;10.1037/t11109-000;10.1037/t11281-000;10.1037/t12304-000;10.1037/t29094-000;10.1037/t34457-000;10.1037/t38904-000;10.1037/t41466-000
+education,7,core_exact,3,10.1037/t13769-000;10.1037/t16946-000;10.1037/t21660-000
+eesc - expression reluctance,8,none,0,
+eesc - poor awareness,8,none,0,
+efficiency,11,core_exact,1,10.1037/t31528-000
+effort,6,exact,1,10.1037/t60694-000
+effort2,6,none,0,
+egoism,17,none,0,
+elaboration potential outcomes - generation,6,none,0,
+elaboration potential outcomes - negative,4,none,0,
+elaboration potential outcomes - positive,3,none,0,
+emotio regulation,10,none,0,
+emotion cognition,15,core_exact,1,10.1037/t05926-000
+emotion regulation of self - increase pleasant,6,none,0,
+emotion regulation of self - increase unpleasant,6,none,0,
+emotion-based decision-making,9,none,0,
+emotion_regulation_questionnaire,10,exact,13,10.1037/t03783-000;10.1037/t06463-000;10.1037/t07563-000;10.1037/t27857-000;10.1037/t32200-000;10.1037/t52041-000;10.1037/t60386-000;10.1037/t75304-000
+emotion_regulation_strategies_scale,21,exact,1,10.1037/t81549-000
+emotional contagion,14,core_exact,8,10.1037/t07986-000;10.1037/t07987-000;10.1037/t07988-000;10.1037/t47269-000;10.1037/t52406-000;10.1037/t59378-000;10.1037/t63003-000;10.1037/t75968-000
+emotional cost,6,none,0,
+emotional detachment,7,none,0,
+emotional empathy,33,core_exact,1,10.1037/t06852-000
+emotional instability,10,core_exact,1,10.1037/t14649-000
+emotional labour,15,core_exact,1,10.1037/t44754-000
+emotional self- disclosure - anger,5,none,0,
+emotional self- disclosure - anxiety,5,none,0,
+emotional self- disclosure - apathy,5,none,0,
+emotional self- disclosure - calmness,5,none,0,
+emotional self- disclosure - depression,5,none,0,
+emotional self- disclosure - fear,5,none,0,
+emotional self- disclosure - happiness,5,none,0,
+emotional self- disclosure - jealousy,5,none,0,
+emotional stability,14,none,0,
+emotional stability 10 item,10,none,0,
+emotional stability 20 item,20,none,0,
+emotional state - agoraphobia–panic,5,none,0,
+emotional state - anxiety,6,none,0,
+emotional state - depression,8,none,0,
+emotional state - fatigue,5,none,0,
+emotional state - insomnia,3,none,0,
+emotionality,10,core_exact,1,10.1037/t25785-000
+emotionality2,10,none,0,
+empathic concern,10,none,0,
+empathizing,60,none,0,
+empathy,16,core_exact,13,10.1037/t05874-000;10.1037/t08097-000;10.1037/t09862-000;10.1037/t11543-000;10.1037/t14879-000;10.1037/t27109-000;10.1037/t42239-000;10.1037/t59982-000
+empathy/systemizing quotient (child),55,exact,1,10.1037/t00385-000
+empathy2,6,none,0,
+empathy3,10,none,0,
+empathy4,9,none,0,
+employee resilience,13,none,0,
+employment hope,13,core_exact,4,10.1037/t47103-000;10.1037/t47107-000;10.1037/t64111-000;10.1037/t79295-000
+end of life curriculum,22,none,0,
+enforced social dependency - bathing,8,none,0,
+enforced social dependency - communication,3,none,0,
+enforced social dependency - dressing,5,none,0,
+enforced social dependency - eating,7,none,0,
+enforced social dependency - recreation social,7,none,0,
+enforced social dependency - role home,8,none,0,
+enforced social dependency - role work,9,none,0,
+enforced social dependency - toileting,5,none,0,
+enforced social dependency - travel,5,none,0,
+enforced social dependency - walking,7,none,0,
+entertaining,5,none,0,
+enthusiasm,10,core_exact,2,10.1037/t49078-000;10.1037/t67524-000
+entitlement,9,none,0,
+environment preference,16,none,0,
+environmental action,18,core_exact,2,10.1037/t47310-000;10.1037/t79130-000
+environmental behavior,7,exact,1,10.1037/t79343-000
+environmental concern,5,core_exact,4,10.1037/t26025-000;10.1037/t30423-000;10.1037/t59262-000;10.1037/t62368-000
+environmental perceptions,48,none,0,
+environmental symptom-attribution,40,none,0,
+epworth sleepiness,9,core_exact,6,10.1037/t07081-000;10.1037/t07082-000;10.1037/t07083-000;10.1037/t51599-000;10.1037/t78797-000;10.1037/t83321-000
+equity fairness,9,none,0,
+erectyle disfunction,15,none,0,
+erudition,10,none,0,
+ethics position,28,core_exact,2,10.1037/t45699-000;10.1037/t87351-000
+ethnocentrism,22,core_exact,1,10.1037/t00464-000
+even-tempered,6,none,0,
+everyday discrimination revised,5,none,0,
+ex-relationship,19,none,0,
+exchange quality colquitt,7,none,0,
+excitement-seeking,10,none,0,
+exercise,7,none,0,
+exhibitionism,10,none,0,
+exhibitionism2,6,none,0,
+exhibitionistic,6,none,0,
+experience of shame,25,core_exact,6,10.1037/t38619-000;10.1037/t39071-000;10.1037/t45111-000;10.1037/t60109-000;10.1037/t60473-000;10.1037/t79832-000
+experience-seeking,6,none,0,
+experiences in close relationships,36,exact,8,10.1037/t03724-000;10.1037/t05655-000;10.1037/t10508-000;10.1037/t14663-000;10.1037/t51913-000;10.1037/t69033-000;10.1037/t72986-000;10.1037/t84749-000
+experiences of caregiving - backup,6,none,0,
+experiences of caregiving - dependency,5,none,0,
+experiences of caregiving - difficult,8,none,0,
+experiences of caregiving - family,7,none,0,
+experiences of caregiving - loss,7,none,0,
+experiences of caregiving - negative,6,none,0,
+experiences of caregiving - positive,8,none,0,
+experiences of caregiving - relationship,6,none,0,
+experiences of caregiving - services,8,none,0,
+experiences of caregiving - stigma,5,none,0,
+exposure to negative news about muslims,4,none,0,
+expressiveness,10,none,0,
+extended satisfaction with life,50,none,0,
+extravagance,4,none,0,
+extraversion,10,core_exact,1,10.1037/t11449-000
+extraversion 10 item,10,none,0,
+extraversion 20 item,20,none,0,
+extraversion/introversion,22,none,0,
+extraversion2,10,none,0,
+extrinsic contingency focus,20,core_exact,1,10.1037/t33694-000
+face valid depression adolescents,35,none,0,
+faces of fatigue and sleepiness - anergy,10,none,0,
+faces of fatigue and sleepiness - consciousness,5,none,0,
+faces of fatigue and sleepiness - energized,10,none,0,
+faces of fatigue and sleepiness - fatigue,15,none,0,
+faces of fatigue and sleepiness - sleepiness,10,none,0,
+fair market ideology,24,none,0,
+fairness,10,core_exact,2,10.1037/t00779-000;10.1037/t19355-000
+faith in intuition,15,none,0,
+faith-based social capital,4,none,0,
+famha - community,5,none,0,
+famha - health,10,none,0,
+famha - interpersonal,6,none,0,
+famha - mood,5,none,0,
+famha - state,13,none,0,
+famha - substance misuse & criminality,7,none,0,
+familism,9,core_exact,6,10.1037/t15264-000;10.1037/t18627-000;10.1037/t19146-000;10.1037/t33287-000;10.1037/t34396-000;10.1037/t61921-000
+familiy quality of life,25,none,0,
+family almost perfect,17,core_exact,1,10.1037/t03500-000
+family asthma management system,3,core_exact,1,10.1037/t05269-000
+family distress s,9,fuzzy,3,10.1037/t10330-000;10.1037/t35495-000;10.1037/t67934-000
+family pain,16,none,0,
+family role performance,8,core_exact,1,10.1037/t41976-000
+family violence,3,none,0,
+family's quality of life - family,14,none,0,
+family's quality of life - family health,12,none,0,
+family's quality of life - financial,15,none,0,
+fanship,11,core_exact,1,10.1037/t43537-000
+fantasy engagement,8,core_exact,1,10.1037/t63420-000
+fantasy proneness,6,none,0,
+farsi mood,24,core_exact,1,10.1037/t41343-000
+fascism,5,none,0,
+fashion,5,core_exact,1,10.1037/t18752-000
+fatalism,24,core_exact,4,10.1037/t44850-000;10.1037/t58824-000;10.1037/t61956-000;10.1037/t62897-000
+fatigue - mental,6,none,0,
+fatigue - physical,8,none,0,
+fear,24,core_exact,16,10.1037/t05463-000;10.1037/t05694-000;10.1037/t05695-000;10.1037/t06624-000;10.1037/t08168-000;10.1037/t08203-000;10.1037/t09924-000;10.1037/t13760-000
+fear fss,72,none,0,
+fear of crime,4,core_exact,16,10.1037/t02222-000;10.1037/t06078-000;10.1037/t18243-000;10.1037/t21253-000;10.1037/t24135-000;10.1037/t25526-000;10.1037/t25735-000;10.1037/t35151-000
+fear of happiness,5,core_exact,3,10.1037/t26388-000;10.1037/t39250-000;10.1037/t65400-000
+fear of loss of vigilance,14,core_exact,1,10.1037/t69946-000
+fear of missing out,10,exact,1,10.1037/t77574-000
+fear of negative evaluation,12,core_exact,7,10.1037/t00048-000;10.1037/t00794-000;10.1037/t07769-000;10.1037/t12259-000;10.1037/t12831-000;10.1037/t41457-000;10.1037/t60145-000
+fear of negative evaluation - fne,30,fuzzy,7,10.1037/t00048-000;10.1037/t00794-000;10.1037/t07769-000;10.1037/t12259-000;10.1037/t12831-000;10.1037/t41457-000;10.1037/t60145-000
+fear of negative evaluation - straightforward,8,core_exact,1,10.1037/t41452-000
+fear of physician,5,none,0,
+fearfulness,10,none,0,
+feeling and attitude - e,11,none,0,
+feeling and attitude - f,21,none,0,
+feeling and attitude - m,8,none,0,
+feeling and attitude - o,10,none,0,
+feeling and attitude - p,17,none,0,
+feeling and attitude - w,10,none,0,
+feighner criteria group,62,none,0,
+female phys dating violence,12,none,0,
+female psych dating violence,13,none,0,
+female sexu dating violence,12,none,0,
+femininity,8,core_exact,1,10.1037/t75702-000
+femininity ideology - caretaking,7,none,0,
+femininity ideology - dependency,10,none,0,
+femininity ideology - emotionality,8,none,0,
+femininity ideology - purity,9,none,0,
+femininity ideology - stereotypic,11,none,0,
+ferrans and powers quality of life,50,none,0,
+fetal health loc,18,none,0,
+fibrofatigue,11,core_exact,1,10.1037/t12560-000
+financial,6,none,0,
+financial shame,7,none,0,
+finding meaning through caregiving - loss,19,none,0,
+finding meaning through caregiving - provisional,19,none,0,
+finding meaning through caregiving - ultimate,5,none,0,
+firesetting risk,17,none,0,
+five_facets_of_mindfulness_survey,39,core_exact,2,10.1037/t73171-000;10.1037/t73172-000
+flexibility,10,core_exact,2,10.1037/t41179-000;10.1037/t51987-000
+florida obsessive inventory,26,none,0,
+flourishing,8,core_exact,8,10.1037/t03126-000;10.1037/t46056-000;10.1037/t65584-000;10.1037/t70222-000;10.1037/t72154-000;10.1037/t72598-000;10.1037/t79796-000;10.1037/t84663-000
+flow state,36,core_exact,9,10.1037/t03190-000;10.1037/t29085-000;10.1037/t39584-000;10.1037/t54346-000;10.1037/t54382-000;10.1037/t68633-000;10.1037/t69534-000;10.1037/t79527-000
+following affective states,16,core_exact,1,10.1037/t10148-000
+food acceptance and awareness,10,core_exact,1,10.1037/t34494-000
+food environment,39,core_exact,1,10.1037/t21779-000
+food preoccupation,26,core_exact,1,10.1037/t03345-000
+food-related,7,none,0,
+forcefulness,10,none,0,
+forensic evidence evaluation bias,10,core_exact,1,10.1037/t62636-000
+forgiveness,13,core_exact,8,10.1037/t04687-000;10.1037/t12860-000;10.1037/t47751-000;10.1037/t48846-000;10.1037/t49886-000;10.1037/t50498-000;10.1037/t52010-000;10.1037/t74812-000
+forgiveness mercy,9,none,0,
+four dimen. symptoms,50,none,0,
+fragility of happiness,4,none,0,
+friendliness,10,core_exact,2,10.1037/t13580-000;10.1037/t20876-000
+friendliness2,10,none,0,
+friendliness3,10,none,0,
+friendliness4,10,none,0,
+friendliness5,10,none,0,
+friendliness6,10,none,0,
+friendship and relationship quotient,35,exact,1,10.1037/t00392-000
+friendship quality - companionship,5,none,0,
+friendship quality - conflict,7,none,0,
+friendship quality - conflict resolution,3,none,0,
+friendship quality - help,9,none,0,
+friendship quality - intimate,6,none,0,
+friendship quality - validation,10,none,0,
+"fruit, juice and vegetable availability shopping",25,none,0,
+fun-seeking,10,none,0,
+functional behavior profile,27,exact,1,10.1037/t14647-000
+functional outcomes of sleep - activity,9,none,0,
+functional outcomes of sleep - intimacy,4,none,0,
+functional outcomes of sleep - productivity,8,none,0,
+functional outcomes of sleep - social,2,none,0,
+functional outcomes of sleep - vigilance,7,none,0,
+furnham parental loc,61,none,0,
+future time orientation,6,none,0,
+future_orientation_scale_of_the_time_perspective_survey,13,none,0,
+future_time_perspective_survey,10,core_exact,11,10.1037/t09704-000;10.1037/t10770-000;10.1037/t14476-000;10.1037/t21897-000;10.1037/t31314-000;10.1037/t47108-000;10.1037/t54975-000;10.1037/t65550-000
+gad,8,none,0,
+gambling,6,core_exact,2,10.1037/t23934-000;10.1037/t47791-000
+game addiction - conflict,3,none,0,
+game addiction - mood,3,none,0,
+game addiction - problems,3,none,0,
+game addiction - relapse,3,none,0,
+game addiction - salience,3,none,0,
+game addiction - tolerance,3,none,0,
+game addiction - withdrawal,3,none,0,
+game-playing,5,none,0,
+gardening,6,none,0,
+gender role conflict - affectionate men,8,none,0,
+gender role conflict - deviance embarassement,3,none,0,
+gender role conflict - emotional response,3,none,0,
+gender role conflict - emotionality,10,none,0,
+gender role conflict - homophobia,4,none,0,
+gender role conflict - success,13,none,0,
+gender role conflict - success2,6,none,0,
+gender role conflict - work vs family,6,none,0,
+gender stereotypes feminine cognitive,6,none,0,
+gender stereotypes feminine negative personality,8,none,0,
+gender stereotypes feminine personality,8,none,0,
+gender stereotypes feminine physical,6,none,0,
+gender stereotypes masculine cognitive,6,none,0,
+gender stereotypes masculine negative personality,8,none,0,
+gender stereotypes masculine personality,8,none,0,
+gender stereotypes masculine physical,6,none,0,
+general -spectrum - eating,12,none,0,
+general -spectrum - mood depressive,9,none,0,
+general -spectrum - mood manic,5,none,0,
+general -spectrum - oc,9,none,0,
+general -spectrum - panic,9,none,0,
+general -spectrum - social phobia,11,none,0,
+general decision making style,25,core_exact,2,10.1037/t08399-000;10.1037/t80001-000
+general ethnocentrism,21,none,0,
+general procrastination,20,core_exact,5,10.1037/t10343-000;10.1037/t10344-000;10.1037/t51312-000;10.1037/t72706-000;10.1037/t75377-000
+general regulatory focus,18,core_exact,1,10.1037/t52112-000
+general self-efficacy,10,core_exact,18,10.1037/t00393-000;10.1037/t03070-000;10.1037/t11404-000;10.1037/t11407-000;10.1037/t11409-000;10.1037/t11412-000;10.1037/t11413-000;10.1037/t11415-000
+generalised attitude,6,none,0,
+generalized anxiety disorder - cognitive,7,none,0,
+generalized anxiety disorder - sleep,2,none,0,
+generalized anxiety disorder - somatic,9,none,0,
+generalized contentment,20,none,0,
+generalized expectancy for success,31,core_exact,2,10.1037/t01292-000;10.1037/t06051-000
+generalized opinion leadership,20,core_exact,1,10.1037/t58343-000
+generalized_self_efficacy_scale,12,exact,1,10.1037/t82099-000
+generates ideas,6,none,0,
+generic job satisfaction,10,none,0,
+gentleness,10,none,0,
+geriatric depression,31,core_exact,14,10.1037/t00930-000;10.1037/t01786-000;10.1037/t03807-000;10.1037/t31463-000;10.1037/t45644-000;10.1037/t55661-000;10.1037/t65266-000;10.1037/t68727-000
+geriatric hopelessness,30,core_exact,1,10.1037/t04305-000
+glasgow content of thoughts,25,core_exact,2,10.1037/t35957-000;10.1037/t66432-000
+global citizen,22,none,0,
+god's engagement,15,none,0,
+good attachment,6,none,0,
+good memory,5,none,0,
+good-nature,10,none,0,
+goodness,7,none,0,
+government favoritism of religion,4,none,0,
+government regulation of religion,6,none,0,
+grandiosity,7,core_exact,2,10.1037/t20570-000;10.1037/t72897-000
+gratitude,14,core_exact,12,10.1037/t01837-000;10.1037/t37920-000;10.1037/t54922-000;10.1037/t61735-000;10.1037/t66518-000;10.1037/t66600-000;10.1037/t74642-000;10.1037/t76148-000
+gratitude resentment appreciation,44,fuzzy,2,10.1037/t60787-000;10.1037/t60955-000
+greed,7,none,0,
+greed avoidance,10,none,0,
+green activities,7,none,0,
+gregarious-extraverted,4,none,0,
+gregariousness,10,none,0,
+gregariousness2,10,none,0,
+gregariousness3,10,none,0,
+gregariousness4,10,none,0,
+gregariousness5,10,none,0,
+grit - consistency of efforts,6,none,0,
+grit - perseverance,6,none,0,
+grit_scale_survey,8,core_exact,10,10.1037/t01598-000;10.1037/t07051-000;10.1037/t55479-000;10.1037/t67559-000;10.1037/t69594-000;10.1037/t73774-000;10.1037/t75508-000;10.1037/t79106-000
+group affiliation with homosexuality,7,none,0,
+guilt and shame proneness,23,core_exact,2,10.1037/t03395-000;10.1037/t84605-000
+gun attitude,20,core_exact,1,10.1037/t76484-000
+hamilton anxiety,28,core_exact,2,10.1037/t02824-000;10.1037/t72908-000
+hamilton depression,38,core_exact,7,10.1037/t04100-000;10.1037/t41553-000;10.1037/t52320-000;10.1037/t66135-000;10.1037/t75000-000;10.1037/t84770-000;10.1037/t86132-000
+hangover symptom,12,none,0,
+happiness,22,core_exact,1,10.1037/t59445-000
+happiness and affect,12,none,0,
+happiness measures - emotions,3,none,0,
+hare psychopathy,20,core_exact,4,10.1037/t01167-000;10.1037/t02503-000;10.1037/t04993-000;10.1037/t69559-000
+harm avoidance,10,none,0,
+harmonious passion,7,none,0,
+harvard national depression screening,10,none,0,
+hayes and lohse non-verbal depression - observation,11,none,0,
+hayes and lohse non-verbal depression - question,9,none,0,
+headache specific locus of control,33,core_exact,3,10.1037/t85122-000;10.1037/t85130-000;10.1037/t87084-000
+health anxiety,82,core_exact,5,10.1037/t14108-000;10.1037/t44341-000;10.1037/t52973-000;10.1037/t59068-000;10.1037/t59604-000
+health behavior,6,core_exact,7,10.1037/t03217-000;10.1037/t29918-000;10.1037/t39763-000;10.1037/t43708-000;10.1037/t72216-000;10.1037/t72432-000;10.1037/t82936-000
+health climate,10,none,0,
+health loc children,21,none,0,
+health locus of control,11,core_exact,2,10.1037/t00950-000;10.1037/t15553-000
+health locus of control2,54,none,0,
+health orientation - ha,5,fuzzy,1,10.1037/t61218-000
+health orientation - he,5,fuzzy,1,10.1037/t61218-000
+health orientation - hec,5,none,0,
+health orientation - hec2,5,none,0,
+health orientation - hic,5,none,0,
+health orientation - hic2,5,none,0,
+health orientation - hs,5,fuzzy,1,10.1037/t61218-000
+health orientation - mau,5,none,0,
+health orientation - mh,5,fuzzy,1,10.1037/t61218-000
+health orientation - pho,5,none,0,
+hemispheric brain dominance,20,none,0,
+hemispheric preference,12,none,0,
+heroes and heroines,50,none,0,
+herth hope,30,core_exact,7,10.1037/t03629-000;10.1037/t05480-000;10.1037/t21563-000;10.1037/t66245-000;10.1037/t78963-000;10.1037/t78964-000;10.1037/t82693-000
+hetero attitudes towards homosexuals,20,none,0,
+heteronormative attitudes - norm behavior,7,none,0,
+heteronormative attitudes - seks/gender,7,none,0,
+hexaco brief,24,core_exact,2,10.1037/t29626-000;10.1037/t72790-000
+hiv / aids knowledge,26,core_exact,1,10.1037/t20964-000
+hiv disclosure cognition and affect,18,none,0,
+hiv stigma,40,core_exact,12,10.1037/t17293-000;10.1037/t19334-000;10.1037/t44484-000;10.1037/t48015-000;10.1037/t48969-000;10.1037/t64550-000;10.1037/t70177-000;10.1037/t72117-000
+holistic complementary and alternative health,12,none,0,
+homeless engagement and acceptance,5,core_exact,1,10.1037/t37704-000
+homophily,8,core_exact,1,10.1037/t43970-000
+homophobia,25,core_exact,7,10.1037/t07010-000;10.1037/t08106-000;10.1037/t13716-000;10.1037/t25067-000;10.1037/t30690-000;10.1037/t41369-000;10.1037/t80583-000
+homophobia - gay men,10,none,0,
+homophobia - lesbians,10,none,0,
+hong psychological reactance,14,core_exact,3,10.1037/t01605-000;10.1037/t08336-000;10.1037/t79970-000
+hope,19,exact,1,10.1037/t05239-000
+hope children,6,none,0,
+hope/optimism,8,none,0,
+hopelessness,31,core_exact,5,10.1037/t00966-000;10.1037/t00967-000;10.1037/t25773-000;10.1037/t56860-000;10.1037/t84610-000
+hopelessness depression symptom,32,core_exact,1,10.1037/t59143-000
+horizontal collectivism,7,none,0,
+horizontal individualism,8,none,0,
+hospital anxiety and depression,14,core_exact,13,10.1037/t03589-000;10.1037/t05677-000;10.1037/t28428-000;10.1037/t49628-000;10.1037/t55265-000;10.1037/t60478-000;10.1037/t70975-000;10.1037/t72233-000
+hostile aggression,8,none,0,
+hotel dieu - cognitive,8,none,0,
+hotel dieu - energy,8,none,0,
+hotel dieu - physical,7,none,0,
+hotel dieu - psychological,9,none,0,
+hotel dieu - social,11,none,0,
+housekeeping,7,none,0,
+hubristic pride,7,none,0,
+humor playfulness,9,none,0,
+humor styles,32,core_exact,6,10.1037/t07239-000;10.1037/t56940-000;10.1037/t65356-000;10.1037/t69146-000;10.1037/t69648-000;10.1037/t72912-000
+hurt feelings,6,core_exact,1,10.1037/t61889-000
+hyperarousal,26,core_exact,1,10.1037/t86833-000
+hypersensitive narcissism,10,core_exact,2,10.1037/t09484-000;10.1037/t51495-000
+hypomanic exhibitionism,12,none,0,
+hypomanic mood,12,none,0,
+i-7_impulsiveness_venturesomeness_questionnaire,34,none,0,
+icu coordination,11,none,0,
+icu effectiveness,9,none,0,
+icu learning,7,none,0,
+icu management,14,none,0,
+icu organizational culture,13,none,0,
+icu psych conditions,13,none,0,
+icu reactions,2,none,0,
+icu relations,26,none,0,
+icu satisfaction,2,none,0,
+identity,6,core_exact,2,10.1037/t07960-000;10.1037/t29716-000
+illness/injury sensitivity,9,core_exact,3,10.1037/t03551-000;10.1037/t14351-000;10.1037/t40317-000
+imagination,10,core_exact,1,10.1037/t17438-000
+imagination2,11,none,0,
+imagination3,10,none,0,
+imagination4,10,none,0,
+imagination5,10,none,0,
+immoderation,10,none,0,
+immorality,7,core_exact,1,10.1037/t23901-000
+impact of event - aversion,9,none,0,
+impact of event - intrusion,7,none,0,
+impersonal trust - capability,18,none,0,
+impersonal trust - fairness,13,none,0,
+imperturbability,9,none,0,
+implicit theories of sexuality,24,none,0,
+imposterism,7,none,0,
+impression management,6,core_exact,6,10.1037/t16493-000;10.1037/t28629-000;10.1037/t46692-000;10.1037/t57147-000;10.1037/t70120-000;10.1037/t72497-000
+impression-management,20,core_exact,6,10.1037/t16493-000;10.1037/t28629-000;10.1037/t46692-000;10.1037/t57147-000;10.1037/t70120-000;10.1037/t72497-000
+impulse control,10,core_exact,2,10.1037/t55128-000;10.1037/t56263-000
+impulse control2,6,none,0,
+impulse control3,11,none,0,
+impulsive thrill-seeking,10,none,0,
+impulsive/premeditated aggression,26,core_exact,3,10.1037/t20283-000;10.1037/t21582-000;10.1037/t70454-000
+incident and accident reporting,12,none,0,
+inclusion attitude - teacher,27,none,0,
+indecisiveness,20,core_exact,4,10.1037/t03755-000;10.1037/t11520-000;10.1037/t73036-000;10.1037/t80563-000
+independence,10,none,0,
+indiana job satisfaction - advancement,2,none,0,
+indiana job satisfaction - ambiguity,9,none,0,
+indiana job satisfaction - general,15,none,0,
+indiana job satisfaction - recognition,2,none,0,
+individual innovativeness,20,none,0,
+individualized trust,15,core_exact,1,10.1037/t66413-000
+industriousness,10,none,0,
+industriousness2,20,none,0,
+industry/perseverance/persistence,8,none,0,
+infant behavioural summarized evaluation,132,none,0,
+informal social interactions,5,none,0,
+information avoidance,8,core_exact,2,10.1037/t58427-000;10.1037/t64743-000
+ingenuity,12,core_exact,1,10.1037/t01888-000
+initiative,10,none,0,
+inquisitiveness,10,none,0,
+insight,10,core_exact,3,10.1037/t02828-000;10.1037/t11190-000;10.1037/t80888-000
+insomnia severity index,5,exact,9,10.1037/t07115-000;10.1037/t07117-000;10.1037/t36221-000;10.1037/t56165-000;10.1037/t59146-000;10.1037/t66933-000;10.1037/t71779-000;10.1037/t79152-000
+inspiration,4,core_exact,1,10.1037/t01835-000
+integrative hope - lack perspective,6,none,0,
+integrative hope - positive future,4,none,0,
+integrative hope - social,4,none,0,
+integrative hope - trust,8,none,0,
+integrative self-knowledge,12,core_exact,1,10.1037/t61807-000
+integrity/honesty/authenticity,9,none,0,
+intellect,10,none,0,
+intellect/imagination 10 item,10,none,0,
+intellect/imagination 20 item,20,none,0,
+intellect2,10,none,0,
+intellect3,10,none,0,
+intellect4,10,none,0,
+intellect5,13,none,0,
+intellect6,11,none,0,
+intellectual achievement responsibility,104,core_exact,2,10.1037/t05729-000;10.1037/t05975-000
+intellectual breadth,10,none,0,
+intellectual complexity,10,none,0,
+intellectual games,7,none,0,
+intellectual openness,10,none,0,
+interaction anxiousness,15,core_exact,2,10.1037/t09290-000;10.1037/t41377-000
+interethnic communication apprehension,14,none,0,
+intergroup effectiveness - resource exchange,4,none,0,
+intergroup effectiveness - system responsiveness,4,none,0,
+intergroup effectiveness - transaction cost,4,none,0,
+intergroup effectiveness - viability,4,none,0,
+internal locus of control,3,core_exact,1,10.1037/t20877-000
+internal state,17,core_exact,2,10.1037/t03729-000;10.1037/t62704-000
+internal-external control,24,core_exact,1,10.1037/t01671-000
+internality loc,10,none,0,
+internalized homonegativity,23,core_exact,4,10.1037/t05505-000;10.1037/t31847-000;10.1037/t58790-000;10.1037/t64189-000
+internalized racism in asian americans,14,none,0,
+internalized stigma of mental illness - alienation,5,none,0,
+internalized stigma of mental illness - discrimination,5,none,0,
+internalized stigma of mental illness - social withdrawal,6,none,0,
+internalized stigma of mental illness - stereotype endorsement,7,none,0,
+internalized stigma of mental illness - stigma,5,fuzzy,1,10.1037/t38001-000
+international restless legs severity,10,none,0,
+internet self efficacy,8,core_exact,6,10.1037/t12972-000;10.1037/t23893-000;10.1037/t41328-000;10.1037/t51067-000;10.1037/t60678-000;10.1037/t60685-000
+interpersonal deviance,7,none,0,
+interpersonal efficacy,32,none,0,
+interpersonal emotion management - attentional deployment,5,none,0,
+interpersonal emotion management - cognitive change,5,none,0,
+interpersonal emotion management - modifying response,5,none,0,
+interpersonal emotion management - situation modification,5,none,0,
+interpersonal reactivity,47,core_exact,13,10.1037/t01093-000;10.1037/t01594-000;10.1037/t18922-000;10.1037/t36222-000;10.1037/t48248-000;10.1037/t50014-000;10.1037/t51181-000;10.1037/t55322-000
+interpersonal support evaluation,40,fuzzy,3,10.1037/t06207-000;10.1037/t48933-000;10.1037/t50773-000
+interpersonal trust,18,core_exact,2,10.1037/t02271-000;10.1037/t40655-000
+interview faking - borrowing,8,none,0,
+interview faking - constructing,7,none,0,
+interview faking - distancing,3,none,0,
+interview faking - embellishing,6,none,0,
+interview faking - fit enhancing,5,none,0,
+interview faking - inventing,4,none,0,
+interview faking - masking,7,none,0,
+interview faking - omitting,6,none,0,
+interview faking - opinion conforming,8,none,0,
+interview faking - other enhancing,4,none,0,
+interview faking - tailoring,6,none,0,
+intimate partner violence responsibility attribution,12,none,0,
+intolerance of ambiguity,16,none,0,
+intolerance of uncertainty s,12,fuzzy,11,10.1037/t01110-000;10.1037/t01560-000;10.1037/t12830-000;10.1037/t18919-000;10.1037/t32744-000;10.1037/t51415-000;10.1037/t57434-000;10.1037/t68443-000
+introspection,12,none,0,
+introversion,10,none,0,
+introversion2,10,none,0,
+intuitive-analytical judgment,27,none,0,
+irrational procrastination,9,core_exact,3,10.1037/t10403-000;10.1037/t69573-000;10.1037/t85663-000
+irresponsibility,7,none,0,
+islamophobia,35,core_exact,2,10.1037/t07074-000;10.1037/t79052-000
+item alcohol abusedependence screener,3,none,0,
+item mental health,22,none,0,
+jealousy,32,core_exact,2,10.1037/t32032-000;10.1037/t61914-000
+jenkins symptom,20,none,0,
+jewish contact,8,none,0,
+job involvement,20,core_exact,5,10.1037/t06050-000;10.1037/t07123-000;10.1037/t10293-000;10.1037/t30315-000;10.1037/t56484-000
+job satisfaction,8,core_exact,34,10.1037/t06889-000;10.1037/t08267-000;10.1037/t08600-000;10.1037/t09659-000;10.1037/t11468-000;10.1037/t11585-000;10.1037/t12351-000;10.1037/t15952-000
+johnson-lecci anti-white attitude,20,none,0,
+joyfulness,10,none,0,
+judgment/open-mindedness,9,none,0,
+justice sensitivity - observer,10,none,0,
+justice sensitivity - perpetrator,10,none,0,
+justice sensitivity - victim,10,none,0,
+juvenile love,30,none,0,
+k-10 distress,17,none,0,
+k-6 distress,11,none,0,
+kellner symptom - anger hostility,23,none,0,
+kellner symptom - anxiety,22,none,0,
+kellner symptom - depression,23,none,0,
+kellner symptom - somatic,23,none,0,
+kessler_psychological_distress_scale_k6,20,fuzzy,5,10.1037/t08324-000;10.1037/t08369-000;10.1037/t48757-000;10.1037/t68043-000;10.1037/t72766-000
+kindness/generosity,10,none,0,
+kmsk - alcohol,6,none,0,
+kmsk - cocaine,6,none,0,
+kmsk - heroin,7,none,0,
+kmsk - tobacco,7,none,0,
+kutcher generalized social anxiety,29,none,0,
+language discrimination,7,none,0,
+leader member social exchange,8,core_exact,1,10.1037/t68611-000
+leadership,10,core_exact,2,10.1037/t11699-000;10.1037/t18179-000
+leadership self-efficacy,21,core_exact,1,10.1037/t45196-000
+leadership2,10,none,0,
+leadership3,6,none,0,
+leadership4,12,none,0,
+leadership5,7,none,0,
+leadership6,10,none,0,
+learning behavior - attitude,7,none,0,
+learning behavior - competence motivation,11,none,0,
+learning organization - clpp,29,none,0,
+learning organization - leadership,8,none,0,
+learning organization - sle,14,none,0,
+leeds anxiety and depression,22,none,0,
+leg and foot ulcer,37,none,0,
+leighton moral exclusion,20,none,0,
+leipad - cognitive,5,none,0,
+leipad - depression anxiety,4,none,0,
+leipad - life satisfaction,6,none,0,
+leipad - physical,5,none,0,
+leipad - selfcare,6,none,0,
+leipad - sexual,2,none,0,
+leipad - social,3,none,0,
+"lesbian, gay, bisexual identity",27,core_exact,1,10.1037/t62800-000
+level of expressed emotion - attitude twds illness,14,none,0,
+level of expressed emotion - hostility,14,none,0,
+level of expressed emotion - intrusiveness,8,none,0,
+level of expressed emotion - tolerance,9,none,0,
+level of self-criticism,22,none,0,
+levels of self-criticism,22,core_exact,2,10.1037/t10954-000;10.1037/t72557-000
+levenson ipc,24,none,0,
+liberalism,10,none,0,
+liberalism2,9,none,0,
+lie,20,none,0,
+liebowitz social anxiety - eating,2,none,0,
+liebowitz social anxiety - interaction,12,none,0,
+liebowitz social anxiety - observation,5,none,0,
+liebowitz social anxiety - speaking,5,none,0,
+life depression,14,none,0,
+life events checklist,17,exact,4,10.1037/t26301-000;10.1037/t30810-000;10.1037/t32571-000;10.1037/t62737-000
+life orientation,19,core_exact,11,10.1037/t06287-000;10.1037/t08189-000;10.1037/t09267-000;10.1037/t14170-000;10.1037/t15317-000;10.1037/t21981-000;10.1037/t37946-000;10.1037/t38166-000
+life satisfaction,6,core_exact,21,10.1037/t05256-000;10.1037/t06249-000;10.1037/t06514-000;10.1037/t12589-000;10.1037/t12710-000;10.1037/t14725-000;10.1037/t17011-000;10.1037/t17097-000
+lifelong learning,11,none,0,
+likability,11,none,0,
+likes crowds,6,none,0,
+likes parties,5,none,0,
+likes people,6,none,0,
+liveliness,10,none,0,
+locus of control,14,core_exact,6,10.1037/t01671-000;10.1037/t09281-000;10.1037/t11839-000;10.1037/t13815-000;10.1037/t27608-000;10.1037/t70404-000
+loneliness and dissatisfaction,24,none,0,
+loneliness non-stud,60,none,0,
+loneliness stud s,20,none,0,
+loss,26,exact,3,10.1037/t09191-000;10.1037/t78302-000;10.1037/t80804-000
+loss of valued alternatives,4,none,0,
+love attitudes s,24,fuzzy,4,10.1037/t00409-000;10.1037/t02319-000;10.1037/t06386-000;10.1037/t86612-000
+love of learning,10,none,0,
+love schemas,6,none,0,
+low self-efficacy,9,none,0,
+luck,6,none,0,
+luck2,5,none,0,
+lung information needs,15,none,0,
+machiavellianism,11,core_exact,1,10.1037/t37016-000
+machiavellianism2,19,none,0,
+machismo,20,core_exact,1,10.1037/t04289-000
+machivallianism,20,none,0,
+maladaptive covert narcissism,23,none,0,
+male phys dating violence,12,none,0,
+male psych dating violence,15,none,0,
+male role attitudes,8,core_exact,2,10.1037/t39705-000;10.1037/t59953-000
+male role norms,30,core_exact,8,10.1037/t06406-000;10.1037/t09507-000;10.1037/t27377-000;10.1037/t27378-000;10.1037/t37580-000;10.1037/t58748-000;10.1037/t69797-000;10.1037/t79826-000
+male sexu dating violence,12,none,0,
+management cynicsim,5,none,0,
+manifest anxiety,50,core_exact,1,10.1037/t31296-000
+manipulativeness,6,none,0,
+marianismo beliefs - family pillar,5,none,0,
+marianismo beliefs - silencing,6,none,0,
+marianismo beliefs - spiritual,3,none,0,
+marianismo beliefs - subordinate,5,none,0,
+marianismo beliefs - virtuous,5,none,0,
+marijuana effect expectancy,6,core_exact,3,10.1037/t02334-000;10.1037/t52115-000;10.1037/t63880-000
+marijuana ladder,10,exact,1,10.1037/t03936-000
+marital adjustment,13,core_exact,4,10.1037/t02335-000;10.1037/t06110-000;10.1037/t32496-000;10.1037/t62758-000
+marital conventionalization,50,none,0,
+marital disillusionment,16,core_exact,1,10.1037/t42162-000
+marital forgiveness scale - dispositional,6,none,0,
+marital forgiveness – event,9,none,0,
+marital prediction,35,none,0,
+marital satisfaction,8,core_exact,17,10.1037/t03830-000;10.1037/t07884-000;10.1037/t13667-000;10.1037/t13969-000;10.1037/t14095-000;10.1037/t16008-000;10.1037/t23132-000;10.1037/t30521-000
+market ideology,6,none,0,
+masculine and feminine self-disclosure,41,fuzzy,1,10.1037/t08473-000
+masculine role - inhibited affection,7,none,0,
+masculine role - restrictive emotionality,13,none,0,
+masculine role - success preoccupation,5,none,0,
+maslach burnout - depersonalization,5,none,0,
+maslach burnout - emotional exhaustion,9,none,0,
+maslach burnout - involvement,3,none,0,
+maslach burnout - personal accomplishment,8,none,0,
+mastery,6,core_exact,3,10.1037/t11335-000;10.1037/t38479-000;10.1037/t58163-000
+mate attraction tactics,127,none,0,
+mate poaching - benefits,58,none,0,
+mate poaching - costs,48,none,0,
+mate poaching - tactics,81,none,0,
+mate preferences,18,core_exact,1,10.1037/t18967-000
+mate retention,104,core_exact,4,10.1037/t11438-000;10.1037/t53573-000;10.1037/t65594-000;10.1037/t66392-000
+materialism - centrality,7,none,0,
+materialism - happiness,5,none,0,
+materialism - success,7,none,0,
+math ability,6,none,0,
+mating effort - female,9,fuzzy,1,10.1037/t14666-000
+mating effort - male,9,core_exact,1,10.1037/t14666-000
+maudsley obsessional-compulsive inventory,30,exact,1,10.1037/t08347-000
+maudsley personality inventory,78,exact,1,10.1037/t17867-000
+maximizing,13,none,0,
+mcgill friendship,16,core_exact,1,10.1037/t86442-000
+mcgill friendship - functions,30,none,0,
+meaning in life,10,core_exact,11,10.1037/t01074-000;10.1037/t10833-000;10.1037/t51552-000;10.1037/t58646-000;10.1037/t58713-000;10.1037/t69844-000;10.1037/t72124-000;10.1037/t76558-000
+meaninglessness,7,core_exact,1,10.1037/t06148-000
+meaninglessness patient,16,none,0,
+measure of body apperception,10,none,0,
+medication use,16,none,0,
+melbourne decision making,23,core_exact,4,10.1037/t34428-000;10.1037/t37433-000;10.1037/t68356-000;10.1037/t75891-000
+memorial symptom,32,core_exact,6,10.1037/t18770-000;10.1037/t28905-000;10.1037/t41378-000;10.1037/t51005-000;10.1037/t71834-000;10.1037/t73556-000
+menopause qol - energy,4,none,0,
+menopause qol - feelings,11,none,0,
+menopause qol - home life,7,none,0,
+menopause qol - love life,5,none,0,
+menopause qol - memory,4,none,0,
+menopause qol - sleep,6,none,0,
+menopause qol - social life,6,none,0,
+menopause qol - work activities,7,none,0,
+mental health,5,core_exact,9,10.1037/t02354-000;10.1037/t41356-000;10.1037/t53116-000;10.1037/t55867-000;10.1037/t56733-000;10.1037/t59756-000;10.1037/t72232-000;10.1037/t76760-000
+mental health locus of control,22,fuzzy,2,10.1037/t00873-000;10.1037/t53856-000
+mental health locus of origin,20,none,0,
+men’s perceived inexpressiveness,10,none,0,
+metereopathy,11,none,0,
+methodicalness,10,none,0,
+mhi - anxiety,5,none,0,
+mhi - community,3,none,0,
+mhi - current health,9,none,0,
+mhi - depression,3,none,0,
+mhi - family/social,4,none,0,
+mhi - functional limitations,12,none,0,
+mhi - general health,3,none,0,
+mhi - health outlook,4,none,0,
+mhi - health worry,4,none,0,
+mhi - physical abilities,10,none,0,
+mhi - positive well-being,4,none,0,
+mhi - prior health,3,none,0,
+mhi - resistance,4,none,0,
+mhi - self-control,3,none,0,
+mhi - sickness orientation,2,none,0,
+mhi - social,3,none,0,
+mhi - vitality,4,none,0,
+military action in muslim countries,6,none,0,
+mindful attention awareness,15,core_exact,15,10.1037/t00326-000;10.1037/t03769-000;10.1037/t03771-000;10.1037/t04259-000;10.1037/t42326-000;10.1037/t46021-000;10.1037/t46931-000;10.1037/t50708-000
+mindful_attention_awareness_scale,15,exact,15,10.1037/t00326-000;10.1037/t03769-000;10.1037/t03771-000;10.1037/t04259-000;10.1037/t42326-000;10.1037/t46021-000;10.1037/t46931-000;10.1037/t50708-000
+mindfulness,39,core_exact,1,10.1037/t82396-000
+mini_brief_risk-resilience_index_for_screening,15,none,0,
+minstrelization of homosexuality,5,none,0,
+misanthropy,4,core_exact,2,10.1037/t02362-000;10.1037/t11093-000
+misantropy,5,none,0,
+misconduct,58,core_exact,1,10.1037/t10649-000
+mistrust,6,none,0,
+mmpi sexual,19,none,0,
+mobility inventory for agoraphobia,42,exact,2,10.1037/t03727-000;10.1037/t10566-000
+moderation,10,none,0,
+modern homonegativity - gay men,12,none,0,
+modern homonegativity - lesbian women,12,none,0,
+modern myths about sexual aggression,30,none,0,
+modesty,10,core_exact,1,10.1037/t70262-000
+modesty/humility,9,none,0,
+modesty2,10,none,0,
+money attitude - anxiety,6,none,0,
+money attitude - distrust,7,none,0,
+money attitude - power-prestige,9,none,0,
+money attitude - retention-time,7,none,0,
+montgomery & asberg depression,7,core_exact,3,10.1037/t04111-000;10.1037/t52316-000;10.1037/t73170-000
+"montgomery & asberg depression, reported sadness representing reports of depressed mood, regardless of whether it is reflected in appearance or not includes low spirits, despondency or the feeling of being beyond help and without hope rate according to intensity, duration and the extent to which the mood is reported to be influenced by events occasional sadness in keeping with the circumstances sad or low but brightens up without difficulty pervasive feelings of sadness or gloominess the mood is still influenced by external circumstances continuous or unvarying sadness",1,none,0,
+montgomery-asberg depression,10,core_exact,3,10.1037/t04111-000;10.1037/t52316-000;10.1037/t73170-000
+mood and anxiety symptom,28,core_exact,2,10.1037/t13679-000;10.1037/t73081-000
+mood disorder,37,core_exact,6,10.1037/t10961-000;10.1037/t29300-000;10.1037/t44383-000;10.1037/t59954-000;10.1037/t63217-000;10.1037/t70819-000
+"mood disorder,"" how much of a problem did any of these cause you — like being able to work; having family, money",1,none,0,
+mood disorders insight,14,fuzzy,1,10.1037/t10504-000
+mood introspection,16,core_exact,1,10.1037/t06259-000
+mood profile - feelings,9,none,0,
+mood profile - general health,6,none,0,
+mood profile - health daily activities,18,none,0,
+mood profile - pain,2,none,0,
+mood profile - quality of life,9,none,0,
+moral relativism,3,none,0,
+morale,17,core_exact,2,10.1037/t20180-000;10.1037/t32201-000
+moralistic,5,none,0,
+moralistic foundations,18,none,0,
+morality,10,core_exact,4,10.1037/t11624-000;10.1037/t39972-000;10.1037/t56341-000;10.1037/t78958-000
+morality2,10,none,0,
+morality3,12,none,0,
+moralization of everyday life,12,core_exact,1,10.1037/t63889-000
+moralized rationality,31,none,0,
+mos depression screener,9,none,0,
+mspss social support,12,none,0,
+multicultural masculinity,35,none,0,
+multicultural masculinity behavior,35,none,0,
+multidimensional_personality_questionnaire_control,24,none,0,
+multiple sclerosis self-management,24,core_exact,3,10.1037/t14339-000;10.1037/t81547-000;10.1037/t86257-000
+multiple stimulus types ambiguity tolerance,22,none,0,
+music,8,core_exact,2,10.1037/t14490-000;10.1037/t28202-000
+music mood regulation - anger,3,none,0,
+music mood regulation - calmness,3,none,0,
+music mood regulation - depression,3,none,0,
+music mood regulation - fatigue,2,none,0,
+music mood regulation - happiness,3,none,0,
+music mood regulation - tension,3,none,0,
+music mood regulation - vigor,3,none,0,
+music preferences,14,none,0,
+narcissistic admiration,9,none,0,
+narcissistic admiration and rivalry,18,core_exact,4,10.1037/t27810-000;10.1037/t28062-000;10.1037/t68091-000;10.1037/t82731-000
+narcissistic personality,70,core_exact,16,10.1037/t00001-000;10.1037/t09360-000;10.1037/t11867-000;10.1037/t12281-000;10.1037/t28884-000;10.1037/t35877-000;10.1037/t36539-000;10.1037/t37867-000
+narcissistic rivalry,9,none,0,
+narcistic,40,none,0,
+narcolepsy,8,none,0,
+nationalism,3,none,0,
+nature relatedness - experience,9,none,0,
+nature relatedness - perspective,8,none,0,
+nature relatedness - self,12,none,0,
+naval aviators human factors,23,fuzzy,1,10.1037/t42676-000
+need for closure,71,core_exact,5,10.1037/t00995-000;10.1037/t05775-000;10.1037/t10237-000;10.1037/t10616-000;10.1037/t78091-000
+need for cognition,34,exact,2,10.1037/t79820-000;10.1037/t79821-000
+need for drama,12,core_exact,1,10.1037/t53614-000
+need for entertainment,51,none,0,
+need for order and cleanliness,10,none,0,
+need for recovery,11,none,0,
+need for structure,11,none,0,
+need for touch,14,core_exact,2,10.1037/t02639-000;10.1037/t03154-000
+need to belong,12,core_exact,2,10.1037/t27154-000;10.1037/t85937-000
+need to evaluate,18,core_exact,1,10.1037/t09593-000
+negative affect,5,core_exact,10,10.1037/t19585-000;10.1037/t19746-000;10.1037/t21411-000;10.1037/t32332-000;10.1037/t36721-000;10.1037/t59324-000;10.1037/t59626-000;10.1037/t59733-000
+negative affectivity,21,core_exact,2,10.1037/t02384-000;10.1037/t17061-000
+negative attitudes toward overweight individuals,12,none,0,
+negative body talk,13,core_exact,1,10.1037/t15230-000
+negative event middle aged adults - children,3,none,0,
+negative event middle aged adults - coworkers,4,none,0,
+negative event middle aged adults - friends,3,none,0,
+negative event middle aged adults - health,4,none,0,
+negative event middle aged adults - household,6,none,0,
+negative event middle aged adults - money,4,none,0,
+negative event middle aged adults - parents,4,none,0,
+negative event middle aged adults - partner,5,none,0,
+negative event middle aged adults - relatives,4,none,0,
+negative event middle aged adults - supervisor,5,none,0,
+negative event middle aged adults - work,4,none,0,
+negative event students - academic,3,none,0,
+negative event students - children,3,none,0,
+negative event students - course,4,none,0,
+negative event students - friends,4,none,0,
+negative event students - health,4,none,0,
+negative event students - interest,2,none,0,
+negative event students - job,4,none,0,
+negative event students - money,5,none,0,
+negative event students - parents,4,none,0,
+negative event students - partner,6,none,0,
+negative event students - relatives,4,none,0,
+negative event students - students,4,none,0,
+negative event students - supervisor,4,none,0,
+negative event students - teachers,4,none,0,
+negative event students - work,4,none,0,
+negative expressivity,10,none,0,
+negative of positive affect,12,none,0,
+negative self-portrayal,26,core_exact,1,10.1037/t03332-000
+negative valence,10,none,0,
+nerdy personality,26,none,0,
+network of relationships - negative interactions,6,none,0,
+network of relationships - person,30,none,0,
+network of relationships - support,18,none,0,
+neurobehavioral rating,27,core_exact,2,10.1037/t11900-000;10.1037/t29145-000
+neurobehavioral rating revised,29,core_exact,2,10.1037/t11900-000;10.1037/t29145-000
+neuroticism,10,core_exact,1,10.1037/t21023-000
+neuroticism 10 item,10,none,0,
+neuroticism 20 item,20,none,0,
+neuroticism/stability,24,none,0,
+new ecological paradigm,16,core_exact,3,10.1037/t03127-000;10.1037/t43578-000;10.1037/t62100-000
+nicotine dependence,8,core_exact,2,10.1037/t01131-000;10.1037/t17492-000
+nicotine dependence syndrome,30,core_exact,2,10.1037/t04044-000;10.1037/t38174-000
+nih_perceived_stress_scale,10,none,0,
+no depression,6,fuzzy,2,10.1037/t04933-000;10.1037/t43214-000
+no guilt,6,none,0,
+no hostility,6,none,0,
+no social anxiety,6,none,0,
+no somatic complaints,6,fuzzy,3,10.1037/t04856-000;10.1037/t53246-000;10.1037/t80845-000
+non-perseverance,6,none,0,
+non-planfulness,6,none,0,
+nonverbal immediacy - observer,26,none,0,
+nonverbal immediacy - self,26,none,0,
+nordic age discrimination,6,none,0,
+nordic occupational safety climate m,22,fuzzy,1,10.1037/t59883-000
+nordic occupational safety climate w,28,fuzzy,1,10.1037/t59883-000
+norm violation,7,none,0,
+normalization of homosexuality,5,none,0,
+normative beliefs about aggression - general,8,none,0,
+normative beliefs about aggression - retaliation,20,none,0,
+norms for aggression and alternatives,10,none,0,
+north american depression inventories a,40,none,0,
+north american depression inventories c,25,none,0,
+not anxious,6,none,0,
+not autonomous,5,none,0,
+not spontaneous,6,none,0,
+nowicki strickland loc adult,40,none,0,
+nowicki strickland loc children,40,none,0,
+nurse practitioner satisfaction,28,fuzzy,1,10.1037/t71558-000
+nursing performance,52,none,0,
+nurturance,13,none,0,
+nyu online depression screening,10,none,0,
+obsessive compulsive inventory,41,exact,13,10.1037/t01258-000;10.1037/t10199-000;10.1037/t11987-000;10.1037/t32457-000;10.1037/t60445-000;10.1037/t60822-000;10.1037/t64232-000;10.1037/t64377-000
+"obsessive compulsive inventory, i think contact with bodily secretions perspiration, saliva, blood, urine",1,none,0,
+obsessive passion passion,7,none,0,
+obsessive-compulsive,12,core_exact,19,10.1037/t00707-000;10.1037/t01258-000;10.1037/t10199-000;10.1037/t11220-000;10.1037/t11987-000;10.1037/t13784-000;10.1037/t13785-000;10.1037/t32457-000
+obsessive-compulsive inventory,42,exact,13,10.1037/t01258-000;10.1037/t10199-000;10.1037/t11987-000;10.1037/t32457-000;10.1037/t60445-000;10.1037/t60822-000;10.1037/t64232-000;10.1037/t64377-000
+occupational driver behavior,12,core_exact,1,10.1037/t26112-000
+occupational self-efficacy,20,core_exact,5,10.1037/t15235-000;10.1037/t20422-000;10.1037/t53290-000;10.1037/t53536-000;10.1037/t83697-000
+occupational themes,48,none,0,
+ocd - checking,6,none,0,
+ocd - contamination,6,none,0,
+ocd - harm,3,none,0,
+ocd - hoarding,6,none,0,
+ocd - immoral,3,none,0,
+ocd - order,3,none,0,
+ocd family functioning,42,core_exact,1,10.1037/t03470-000
+offshore human factors,30,none,0,
+online gaming addiction - daily life,5,none,0,
+online gaming addiction - interpersonal,4,none,0,
+online gaming addiction - mental disorder,3,none,0,
+online gaming addiction - negative,5,none,0,
+online gaming addiction - physical,3,none,0,
+online gaming addiction - psychological,5,none,0,
+online gaming addiction - tolerance,5,none,0,
+open minded cognition - general,6,none,0,
+open minded cognition - political,6,none,0,
+open minded cognition - religious,6,none,0,
+openness,10,core_exact,2,10.1037/t21548-000;10.1037/t63058-000
+openness to experience 10 item,10,none,0,
+openness to experience 20 item,20,none,0,
+optimism,28,core_exact,4,10.1037/t14776-000;10.1037/t20827-000;10.1037/t47276-000;10.1037/t55885-000
+orderliness,10,none,0,
+orderliness2,10,none,0,
+orderliness3,10,none,0,
+orderliness4,10,none,0,
+orderliness5,10,none,0,
+organization,35,none,0,
+organization-based self-esteem,10,exact,1,10.1037/t24110-000
+organization2,10,none,0,
+organizational change - appropriateness,10,none,0,
+organizational change - beneficial,3,none,0,
+organizational change - change efficacy,6,none,0,
+organizational change - support,6,none,0,
+organizational citizenship behaviors,30,core_exact,6,10.1037/t09059-000;10.1037/t16469-000;10.1037/t35790-000;10.1037/t38581-000;10.1037/t42481-000;10.1037/t49972-000
+organizational deviance,12,none,0,
+organizational police stress - op,20,fuzzy,1,10.1037/t00338-000
+organizational police stress - org,20,fuzzy,1,10.1037/t00338-000
+original emotional contagion,18,none,0,
+originality/creativity,8,none,0,
+orthodoxy,12,core_exact,1,10.1037/t06175-000
+other as shamer,16,core_exact,3,10.1037/t13434-000;10.1037/t83130-000;10.1037/t83132-000
+outcome expectancy oes,33,none,0,
+outdoor recreation need for achievement,10,none,0,
+outside effort cost,4,none,0,
+overall anxiety severity,5,none,0,
+oxford happiness ohq,29,none,0,
+pain assessment - coping,10,core_exact,5,10.1037/t05861-000;10.1037/t11782-000;10.1037/t11889-000;10.1037/t14786-000;10.1037/t72662-000
+pain assessment - daily living,9,none,0,
+pain assessment - economic,6,none,0,
+pain assessment - emotional,5,none,0,
+pain assessment - social support,5,none,0,
+pain catastrophizing,13,core_exact,14,10.1037/t01304-000;10.1037/t11783-000;10.1037/t12257-000;10.1037/t17707-000;10.1037/t31002-000;10.1037/t43088-000;10.1037/t44340-000;10.1037/t54600-000
+panas,18,exact,11,10.1037/t03592-000;10.1037/t03818-000;10.1037/t10072-000;10.1037/t11169-000;10.1037/t22489-000;10.1037/t45659-000;10.1037/t49650-000;10.1037/t58959-000
+panic attack,127,core_exact,1,10.1037/t13524-000
+panic disorder severity,14,core_exact,6,10.1037/t37664-000;10.1037/t48934-000;10.1037/t60094-000;10.1037/t72681-000;10.1037/t73853-000;10.1037/t85998-000
+paranormal beliefs,8,core_exact,1,10.1037/t05680-000
+paranormal experiences,6,none,0,
+parent adult-child relationship,26,core_exact,2,10.1037/t69676-000;10.1037/t70979-000
+parent and peer attachment,53,fuzzy,4,10.1037/t03210-000;10.1037/t04510-000;10.1037/t44366-000;10.1037/t50073-000
+parent attribution test - original,14,none,0,
+parent attribution test - revised,27,core_exact,2,10.1037/t02422-000;10.1037/t02423-000
+parent emotional flooding,15,none,0,
+parent threat inventory,17,exact,1,10.1037/t20305-000
+parent_child_self_report_coercion_scale,9,none,0,
+parent_cognition_scale_measure,30,core_exact,3,10.1037/t00489-000;10.1037/t50768-000;10.1037/t50876-000
+parental belief in fate,10,none,0,
+parental beliefs about anxiety,17,core_exact,1,10.1037/t37301-000
+parental bonding,25,none,0,
+parental control,10,core_exact,4,10.1037/t15341-000;10.1037/t25973-000;10.1037/t36352-000;10.1037/t56952-000
+parental efficacy,10,none,0,
+parental health belief,30,fuzzy,1,10.1037/t57053-000
+parental punitiveness - aggression,45,none,0,
+parental responsibility,10,core_exact,1,10.1037/t60003-000
+parenting sense of competence,14,core_exact,5,10.1037/t01311-000;10.1037/t51096-000;10.1037/t57823-000;10.1037/t80874-000;10.1037/t83210-000
+parents young mania rating,11,none,0,
+parkinsons disease - bodily,3,none,0,
+parkinsons disease - cognitions,4,none,0,
+parkinsons disease - communication,3,none,0,
+parkinsons disease - daily living,6,none,0,
+parkinsons disease - emotional,5,none,0,
+parkinsons disease - mobility,10,none,0,
+parkinsons disease - social,3,none,0,
+parkinsons disease - stigma,3,none,0,
+partner interaction - negative behaviors,10,none,0,
+partner interaction - positive behaviors,10,none,0,
+partner's supportiveness,12,none,0,
+partner-focused prayer,4,core_exact,1,10.1037/t43165-000
+partying,5,none,0,
+passing as heterosexual,7,none,0,
+passionate love,15,core_exact,5,10.1037/t11423-000;10.1037/t11424-000;10.1037/t44603-000;10.1037/t58022-000;10.1037/t76812-000
+passionate love - behavioral,2,none,0,
+passionate love - cognitive,3,none,0,
+passionate love - emotional,5,none,0,
+passionate love form b,15,fuzzy,5,10.1037/t11423-000;10.1037/t11424-000;10.1037/t44603-000;10.1037/t58022-000;10.1037/t76812-000
+pathological video-game use,11,none,0,
+patience,10,core_exact,1,10.1037/t71045-000
+patient health,4,core_exact,35,10.1037/t02598-000;10.1037/t06164-000;10.1037/t06165-000;10.1037/t06166-000;10.1037/t06168-000;10.1037/t19590-000;10.1037/t28309-000;10.1037/t33946-000
+patient pain,16,none,0,
+patient safety climate,46,none,0,
+pearlin_mastery_scale,7,none,0,
+peculiarity,5,none,0,
+pediatrics feeding assessment,25,none,0,
+pedriatic peer relationship,15,none,0,
+peer dyadic loneliness,16,none,0,
+peer nomination - aggression,12,none,0,
+peer nomination - dependency,12,none,0,
+peer nomination - depression,12,fuzzy,1,10.1037/t02454-000
+peer nomination - likeability,8,none,0,
+peer nomination - socioeconomic,2,none,0,
+peer nomination - withdrawal,12,none,0,
+peer sexual victimization online,9,none,0,
+penn alcohol craving,5,core_exact,3,10.1037/t37823-000;10.1037/t51781-000;10.1037/t85684-000
+penn state worry,16,core_exact,11,10.1037/t01760-000;10.1037/t04345-000;10.1037/t13659-000;10.1037/t38170-000;10.1037/t38173-000;10.1037/t44130-000;10.1037/t48946-000;10.1037/t53368-000
+perceived family burden,24,core_exact,1,10.1037/t15693-000
+perceived gratitude,4,core_exact,1,10.1037/t65849-000
+perceived leadership integrity,9,fuzzy,2,10.1037/t15238-000;10.1037/t41418-000
+perceived parental acculturation behaviors,20,core_exact,1,10.1037/t57874-000
+perceived quality of medical care,6,none,0,
+perceived social inequity women,103,fuzzy,1,10.1037/t00424-000
+perceived social support in urban adolescents,12,none,0,
+perceived stress,14,core_exact,33,10.1037/t00425-000;10.1037/t02889-000;10.1037/t09086-000;10.1037/t10412-000;10.1037/t10467-000;10.1037/t12270-000;10.1037/t15878-000;10.1037/t25065-000
+perceived stress2,9,none,0,
+perceived support colquitt,6,none,0,
+perceived symptoms and disability in asthma,17,none,0,
+perceived technology integration knowledge - content,6,none,0,
+perceived technology integration knowledge - pedag,7,none,0,
+perceived technology integration knowledge - tech,11,none,0,
+perception of parental reciprocity,38,core_exact,1,10.1037/t07367-000
+perception of spousal reciprocity,18,core_exact,1,10.1037/t07368-000
+perception of support through gratitude,7,none,0,
+perception of university structure and support,21,none,0,
+perceptions of love and seks,17,none,0,
+perceptions of muslims as aggressive,5,none,0,
+perfectionism,16,core_exact,4,10.1037/t12436-000;10.1037/t30103-000;10.1037/t36207-000;10.1037/t51032-000
+perfectionism - concern over mistakes,9,none,0,
+perfectionism - parental criticism,4,none,0,
+perfectionism - parental expectations,5,none,0,
+perfectionism - personal standards,7,none,0,
+perfectionism and intrusive thoughts,10,none,0,
+perfectionsim2,13,none,0,
+peritraumatic distress,13,core_exact,2,10.1037/t00465-000;10.1037/t82648-000
+perma profile,23,none,0,
+personal evaluation,54,core_exact,2,10.1037/t18639-000;10.1037/t53351-000
+personal growth initiative,9,core_exact,2,10.1037/t04261-000;10.1037/t29712-000
+personal health,10,core_exact,1,10.1037/t37757-000
+personal report of spouse communication apprehension,50,fuzzy,2,10.1037/t27198-000;10.1037/t64283-000
+personality attitude - aggressive militarism,34,none,0,
+personality attitude - conciliation,34,none,0,
+perspective/wisdom,9,none,0,
+pet attitude,18,core_exact,1,10.1037/t71512-000
+pets,5,exact,2,10.1037/t35596-000;10.1037/t46057-000
+pgi intentional behavior,4,none,0,
+pgi planfulness,5,none,0,
+pgi readiness for change,4,none,0,
+pgi using resources,3,none,0,
+philadelphia mindfulness,20,core_exact,2,10.1037/t20686-000;10.1037/t86564-000
+philosophies - cynicism,6,none,0,
+physical activity and sport anxiety,16,core_exact,1,10.1037/t05403-000
+physical aggressiveness,12,none,0,
+physical attraction,6,none,0,
+physical attractiveness,9,core_exact,4,10.1037/t11397-000;10.1037/t15470-000;10.1037/t26366-000;10.1037/t27688-000
+physician empathy,27,none,0,
+physician trust,26,core_exact,1,10.1037/t10710-000
+pittsburgh sleep,25,none,0,
+pittsburgh sleep quality,12,core_exact,12,10.1037/t05178-000;10.1037/t24078-000;10.1037/t33807-000;10.1037/t41758-000;10.1037/t61916-000;10.1037/t65612-000;10.1037/t66421-000;10.1037/t66422-000
+planfulness,10,none,0,
+planfulness2,10,none,0,
+playfulness,10,none,0,
+pleasantness,12,none,0,
+poise,20,exact,1,10.1037/t42686-000
+politeness,21,core_exact,1,10.1037/t53768-000
+political anxiety,5,none,0,
+political/organizational,7,none,0,
+positive affect,5,core_exact,3,10.1037/t19324-000;10.1037/t38390-000;10.1037/t61286-000
+positive and negative affect,56,core_exact,15,10.1037/t00944-000;10.1037/t03592-000;10.1037/t03818-000;10.1037/t04754-000;10.1037/t06070-000;10.1037/t10072-000;10.1037/t11169-000;10.1037/t19768-000
+positive and negative ex-relationship thoughts,12,core_exact,1,10.1037/t43183-000
+positive and negative experience,12,fuzzy,6,10.1037/t03125-000;10.1037/t72155-000;10.1037/t74330-000;10.1037/t74516-000;10.1037/t82427-000;10.1037/t84696-000
+positive and negative syndrome,30,core_exact,4,10.1037/t05056-000;10.1037/t33498-000;10.1037/t52718-000;10.1037/t60856-000
+positive emotional memories,21,none,0,
+positive event middle aged adults - children,5,none,0,
+positive event middle aged adults - coworkers,4,none,0,
+positive event middle aged adults - household,6,none,0,
+positive event middle aged adults - parents,5,none,0,
+positive event middle aged adults - partner,6,none,0,
+positive event middle aged adults - social events,4,none,0,
+positive event middle aged adults - supervisor,5,none,0,
+positive event middle aged adults - work,4,none,0,
+positive event middle aged adults -friends,4,none,0,
+positive event students - course,4,none,0,
+positive event students - coworkers,5,none,0,
+positive event students - friends,4,none,0,
+positive event students - parents,5,none,0,
+positive event students - partner,6,none,0,
+positive event students - social events,4,none,0,
+positive event students - students,4,none,0,
+positive event students - teacher,5,none,0,
+positive event students - work,4,none,0,
+positive expressivity,9,none,0,
+positive generalization,16,core_exact,1,10.1037/t09751-000
+positive mental health,9,core_exact,4,10.1037/t74177-000;10.1037/t74178-000;10.1037/t79543-000;10.1037/t82556-000
+positive play scale,9,exact,2,10.1037/t77927-000;10.1037/t77928-000
+positive relational management,11,core_exact,1,10.1037/t59615-000
+positive teacher,23,none,0,
+positive_and_negative_affect_scheduled,20,none,0,
+postpartum depression,15,none,0,
+postraumatic stress screen ci,8,none,0,
+posttraumatic cognitions,33,core_exact,7,10.1037/t00499-000;10.1037/t55670-000;10.1037/t56135-000;10.1037/t57006-000;10.1037/t67241-000;10.1037/t71797-000;10.1037/t80539-000
+posttraumatic symptom - arousal cluster,6,none,0,
+posttraumatic symptom - avoidance cluster,7,none,0,
+posttraumatic symptom - reexperiencing cluster,4,none,0,
+power-seeking,10,none,0,
+powerful others loc,10,none,0,
+powerlessness,7,none,0,
+preference for solitude,24,core_exact,1,10.1037/t09472-000
+pregnancy experience,41,core_exact,2,10.1037/t06161-000;10.1037/t06162-000
+pregnancy-related beliefs,54,none,0,
+preoccupation,25,core_exact,1,10.1037/t50958-000
+preschool and primary internal-external control,34,none,0,
+preschool learning behavior,27,core_exact,2,10.1037/t00501-000;10.1037/t54981-000
+prestige,8,core_exact,2,10.1037/t09259-000;10.1037/t72593-000
+primary care anxiety and depression,12,none,0,
+primary psychopathy,16,none,0,
+privacy - general caution,6,none,0,
+privacy - technical protection,6,none,0,
+privacy concern,16,core_exact,1,10.1037/t44624-000
+private practices,3,none,0,
+private self-consciousness,10,core_exact,1,10.1037/t12957-000
+pro-anti-social behavior sport,20,none,0,
+proactive organizational behavior,16,none,0,
+problem recognition,25,core_exact,2,10.1037/t14823-000;10.1037/t14870-000
+problem solving - approach avoidance,16,none,0,
+problem solving - confidence,11,none,0,
+problem solving - personal control,5,none,0,
+problem video game playing,9,none,0,
+problematic internet use - comfort,13,none,0,
+problematic internet use - distraction,6,none,0,
+problematic internet use - impulse control,10,none,0,
+problematic internet use - lonely depressed,6,none,0,
+procrastination,15,core_exact,4,10.1037/t09250-000;10.1037/t10208-000;10.1037/t10403-000;10.1037/t42360-000
+procrastination non-stud,20,none,0,
+procrastination stud,20,none,0,
+production,10,none,0,
+professional self identity,9,core_exact,1,10.1037/t46030-000
+professor student rapport,44,core_exact,1,10.1037/t06751-000
+profile psychological abuse,21,none,0,
+propensity to plan - money,12,none,0,
+propensity to plan - time,12,none,0,
+prostate cancer quality of life,43,none,0,
+prostate cancer symptom distress,19,none,0,
+protestant ethic work values,116,none,0,
+provocativeness,11,none,0,
+proximal antecedents of violent episodes,20,fuzzy,1,10.1037/t01844-000
+prudence,9,none,0,
+prudence2,10,none,0,
+pspcsayc - cognitive competence,6,none,0,
+pspcsayc - maternal acceptance,6,none,0,
+pspcsayc - peer acceptance,6,none,0,
+pspcsayc - physical competence,6,none,0,
+psych contract colquitt,5,none,0,
+psychiatric evaluation profile - competence,8,none,0,
+psychiatric evaluation profile - denial of hostility,10,none,0,
+psychiatric evaluation profile - distress,18,none,0,
+psychiatric evaluation profile - distrust,12,none,0,
+psychiatric evaluation profile - great cause,4,none,0,
+psychiatric evaluation profile - optimism,8,none,0,
+psychiatric symptoms scale - anxiety,10,none,0,
+psychiatric symptoms scale - depression,7,none,0,
+psychological abuse,15,core_exact,3,10.1037/t22284-000;10.1037/t27997-000;10.1037/t71565-000
+psychological aggression,10,core_exact,1,10.1037/t17162-000
+psychological screening - alienation,25,none,0,
+psychological screening - defensiveness,20,none,0,
+psychological screening - discomfort,30,none,0,
+psychological screening - expression,30,none,0,
+psychological screening - social non-conformity,25,none,0,
+psychological well-being - autonomy,7,none,0,
+psychological well-being - environmental,7,none,0,
+psychological well-being - growth,7,none,0,
+psychological well-being - purpose,7,none,0,
+psychological well-being - relations,7,none,0,
+psychological well-being - self-acceptance,7,none,0,
+psychoneurotic,116,none,0,
+psychosis,8,none,0,
+psychoticism/socialisation,32,none,0,
+ptl - clear communication,11,none,0,
+ptl - fairness/honesty,4,none,0,
+ptl - training/cooperation,5,none,0,
+pts - trust,11,none,0,
+pts - trustworthy,10,none,0,
+ptsd dsm5,20,none,0,
+ptsd dsm5 interview,24,none,0,
+public practices,2,none,0,
+public self-consciousness,12,none,0,
+public speaking anxiety,34,core_exact,3,10.1037/t51140-000;10.1037/t54124-000;10.1037/t67092-000
+pure procrastination,12,core_exact,5,10.1037/t10499-000;10.1037/t62294-000;10.1037/t64675-000;10.1037/t73549-000;10.1037/t82276-000
+purposefulness,12,none,0,
+qd - depressive/pessimism,18,none,0,
+qd - drive,15,none,0,
+qd - somatic anxiety,8,none,0,
+qol adult cancer survivor,47,none,0,
+quality and safety self-efficacy - collaboration,9,none,0,
+quality and safety self-efficacy - patient,6,none,0,
+quality and safety self-efficacy - practice,4,none,0,
+quality and safety self-efficacy - safety,5,none,0,
+quality of end-of-life care and satisfaction with treatment,12,none,0,
+quality of life - bone marrow transplant,22,none,0,
+quality of life - bone marrow transplant - phys,18,none,0,
+quality of life - bone marrow transplant - psych,23,none,0,
+quality of life - bone marrow transplant - social,13,none,0,
+quality of life - bone marrow transplant - spiritual,10,none,0,
+quality of life - general life functioning,13,none,0,
+quality of life breast cancer,8,none,0,
+quality of life breast cancer - psych,24,none,0,
+quality of life breast cancer - social,9,none,0,
+quality of life breast cancer - spiritual,7,none,0,
+quality of life enjoyment,19,none,0,
+quality of life japanese students asthma,25,none,0,
+quality of life of insomnia,52,none,0,
+quality of life ostomy,43,none,0,
+quality of life ovarian cancer,9,none,0,
+quality of life ovarian cancer - psych,20,none,0,
+quality of life ovarian cancer - social,10,none,0,
+quality of life ovarian cancer - spiritual,8,none,0,
+quality of life scale cancer,9,core_exact,1,10.1037/t01822-000
+quality of life scale cancer - psych,20,none,0,
+quality of life scale cancer - social,8,none,0,
+quality of life scale cancer - spiritual,7,none,0,
+quality of life thyroid,14,none,0,
+quality of life thyroid - psych,24,none,0,
+quality of life thyroid - social,16,none,0,
+quality of life thyroid - spiritual,7,none,0,
+quality of relationship,11,core_exact,1,10.1037/t63031-000
+quick inventory of depressive symptomatology,149,exact,3,10.1037/t30869-000;10.1037/t49873-000;10.1037/t51259-000
+quickness,17,none,0,
+racial cohesion - agency,8,none,0,
+racial cohesion - psychological,8,none,0,
+racial dissonance,7,none,0,
+racial microaggressions,35,core_exact,2,10.1037/t29690-000;10.1037/t80573-000
+racial trust,4,none,0,
+racism scale for asian american,10,none,0,
+rage episodic decontrol,22,none,0,
+rand depression screener,7,none,0,
+rape myth acceptance,8,core_exact,4,10.1037/t25121-000;10.1037/t33203-000;10.1037/t61993-000;10.1037/t86561-000
+rasch type loneliness,27,none,0,
+rationality,14,none,0,
+reactive-proactive aggression,22,core_exact,7,10.1037/t08421-000;10.1037/t66296-000;10.1037/t68866-000;10.1037/t71784-000;10.1037/t77609-000;10.1037/t80133-000;10.1037/t87111-000
+reading,11,core_exact,3,10.1037/t26304-000;10.1037/t41854-000;10.1037/t78135-000
+reading motivation,21,core_exact,3,10.1037/t23360-000;10.1037/t56496-000;10.1037/t58451-000
+reasons for dissolving a friendship,100,none,0,
+reasons for having sex,235,none,0,
+rebelliousness,10,core_exact,3,10.1037/t15862-000;10.1037/t19145-000;10.1037/t28995-000
+recall of threat and submissiveness,15,none,0,
+recent appearance of depression,33,none,0,
+recent life experiences,41,fuzzy,1,10.1037/t07225-000
+recklessness,10,none,0,
+reclusiveness,10,none,0,
+reflection,22,core_exact,3,10.1037/t54540-000;10.1037/t58282-000;10.1037/t78324-000
+regret,5,core_exact,6,10.1037/t04703-000;10.1037/t18320-000;10.1037/t33132-000;10.1037/t37674-000;10.1037/t42706-000;10.1037/t81902-000
+regret and maximization - maximization,13,none,0,
+regret and maximization - regret,5,none,0,
+regret elements,10,core_exact,1,10.1037/t79726-000
+regulatory focus pride,11,none,0,
+regulatory mode,30,none,0,
+rejection sensitivity adult,27,none,0,
+relational assessment,30,none,0,
+relational identity,11,none,0,
+relational maintenance - advice,2,none,0,
+relational maintenance - assurances,8,none,0,
+relational maintenance - conflict management,5,none,0,
+relational maintenance - openness,7,none,0,
+relational maintenance - positivity,2,none,0,
+relational maintenance - shared tasks,5,none,0,
+relational maintenance - social networks,2,none,0,
+relational-interdependent self-construal,11,core_exact,4,10.1037/t04569-000;10.1037/t60444-000;10.1037/t66623-000;10.1037/t73316-000
+relationship assessment,7,core_exact,11,10.1037/t00437-000;10.1037/t02878-000;10.1037/t06938-000;10.1037/t10182-000;10.1037/t14727-000;10.1037/t40425-000;10.1037/t61019-000;10.1037/t61634-000
+relationship attribution,19,core_exact,2,10.1037/t01182-000;10.1037/t70398-000
+relationship disclosure,30,none,0,
+relationship efficacy,7,none,0,
+relationship incentive and threat sensitivity,11,core_exact,1,10.1037/t01623-000
+relationship insecurity,7,core_exact,1,10.1037/t24533-000
+religious commitment,10,core_exact,6,10.1037/t00512-000;10.1037/t04480-000;10.1037/t10720-000;10.1037/t27791-000;10.1037/t32310-000;10.1037/t52207-000
+religious fundamentalism,19,core_exact,4,10.1037/t04667-000;10.1037/t19216-000;10.1037/t62806-000;10.1037/t78819-000
+religious ideology,4,none,0,
+religious intensity,2,none,0,
+religious schema,3,core_exact,2,10.1037/t61811-000;10.1037/t61812-000
+religious support,21,core_exact,3,10.1037/t07937-000;10.1037/t59138-000;10.1037/t63230-000
+religious/spiritual practices,7,none,0,
+repetitive thinking,31,core_exact,2,10.1037/t13912-000;10.1037/t80553-000
+reserve,10,none,0,
+resilience,6,core_exact,34,10.1037/t06196-000;10.1037/t07443-000;10.1037/t07518-000;10.1037/t07521-000;10.1037/t11820-000;10.1037/t24805-000;10.1037/t34948-000;10.1037/t48263-000
+resilience2,10,none,0,
+resistance to change - cognitive rigidity,3,none,0,
+resistance to change - emotional reaction,6,none,0,
+resistance to change - routine,8,none,0,
+resistance to change - short-term focus,4,none,0,
+resistance to social change,10,none,0,
+resourcefulness,10,none,0,
+resourcefulness2,10,none,0,
+respect toward partner,6,core_exact,1,10.1037/t00440-000
+responding desirably,16,none,0,
+responses to stress,59,core_exact,5,10.1037/t30648-000;10.1037/t42230-000;10.1037/t43699-000;10.1037/t43746-000;10.1037/t48252-000
+responsibility,10,core_exact,4,10.1037/t07834-000;10.1037/t07894-000;10.1037/t19579-000;10.1037/t58894-000
+responsibility attitudes ras,26,none,0,
+responsibility interpretations riq,22,fuzzy,2,10.1037/t08351-000;10.1037/t48210-000
+responsibility2,10,none,0,
+responsive distress,10,none,0,
+responsive joy,10,none,0,
+retail service quality - interaction,9,none,0,
+retail service quality - physical,6,none,0,
+retail service quality - policy,5,none,0,
+retail service quality - problem solving,3,none,0,
+retail service quality - reliability,5,none,0,
+reward-responsiveness,6,core_exact,1,10.1037/t31412-000
+ribs - appreciation/performance,10,none,0,
+ribs - comfort,10,none,0,
+ribs - control,10,none,0,
+richmond humor,16,none,0,
+right-wing authoritarianism,22,core_exact,2,10.1037/t03561-000;10.1037/t04697-000
+rigidity,10,core_exact,2,10.1037/t01013-000;10.1037/t39506-000
+rimon's brief depression,8,core_exact,1,10.1037/t08519-000
+risk and consequences,34,none,0,
+risk and well-being in sex offender treatment,61,none,0,
+risk assessment and safety compliance,91,none,0,
+risk assessments and safety management,67,none,0,
+risk of adolescent sexual recidivism - assaults,9,none,0,
+risk of adolescent sexual recidivism - family environment,4,none,0,
+risk of adolescent sexual recidivism - interests,4,none,0,
+risk of adolescent sexual recidivism - psychosocial,6,none,0,
+risk of adolescent sexual recidivism - treatment,2,none,0,
+risk taking,5,core_exact,7,10.1037/t07688-000;10.1037/t12397-000;10.1037/t18662-000;10.1037/t34296-000;10.1037/t36004-000;10.1037/t62855-000;10.1037/t72214-000
+risk-attitude,50,core_exact,1,10.1037/t23103-000
+risk-avoidance,10,none,0,
+risk-taking,10,core_exact,7,10.1037/t07688-000;10.1037/t12397-000;10.1037/t18662-000;10.1037/t34296-000;10.1037/t36004-000;10.1037/t62855-000;10.1037/t72214-000
+road maintenance safety climate - actions,5,none,0,
+road maintenance safety climate - attitude,5,none,0,
+road maintenance safety climate - coworkers,6,none,0,
+road maintenance safety climate - errors,6,none,0,
+road maintenance safety climate - feedback,10,none,0,
+road maintenance safety climate - instruction,5,none,0,
+road maintenance safety climate - judgments,4,none,0,
+road maintenance safety climate - knowledge,5,none,0,
+road maintenance safety climate - skills,6,none,0,
+road maintenance safety climate - supervisors,6,none,0,
+romance,6,core_exact,1,10.1037/t66332-000
+romantic disinterest,6,none,0,
+romantic jealousy - behavioral,6,none,0,
+romantic jealousy - cognitive,5,none,0,
+romantic jealousy - emotional,7,none,0,
+romantic partner conflict,39,core_exact,1,10.1037/t16893-000
+romanticism,9,core_exact,1,10.1037/t16764-000
+rs-race,36,fuzzy,1,10.1037/t01836-000
+rsq rs,53,none,0,
+rudeness,7,core_exact,1,10.1037/t12241-000
+rumination,12,core_exact,2,10.1037/t30907-000;10.1037/t47774-000
+rwa,12,none,0,
+sadistic impulse,10,core_exact,1,10.1037/t05157-000
+safequest communication,5,none,0,
+safequest leadership,6,none,0,
+safequest safety systems,8,none,0,
+safequest teamwork,7,none,0,
+safequest workload,4,none,0,
+safety climate for road workers,22,none,0,
+safety standard,4,none,0,
+saftey behavior,8,none,0,
+santa clara brief compassion,5,core_exact,3,10.1037/t64291-000;10.1037/t73720-000;10.1037/t85846-000
+satisfaction,10,core_exact,12,10.1037/t15631-000;10.1037/t16283-000;10.1037/t19105-000;10.1037/t20697-000;10.1037/t29650-000;10.1037/t35977-000;10.1037/t37312-000;10.1037/t38499-000
+satisfaction with assistive technology (quest),13,none,0,
+satisfaction with life,5,core_exact,23,10.1037/t01069-000;10.1037/t32519-000;10.1037/t32729-000;10.1037/t37673-000;10.1037/t44838-000;10.1037/t44839-000;10.1037/t46946-000;10.1037/t51145-000
+satisfaction with life child,5,none,0,
+satisfaction with physician,3,core_exact,1,10.1037/t23552-000
+saving inventory revised,23,exact,1,10.1037/t11887-000
+school age depression,15,none,0,
+school physical activity,48,fuzzy,1,10.1037/t23559-000
+school physical activity - recess,27,none,0,
+science ability,6,none,0,
+screen for child anxiety,40,none,0,
+screen for posttraumatic stress symptoms,17,exact,1,10.1037/t07492-000
+screening affective,55,none,0,
+screening test for depression,13,fuzzy,1,10.1037/t70942-000
+sdo 1994,11,none,0,
+sdo7 - anti-egalitarian,8,none,0,
+sdo7 - trait dominance,8,none,0,
+sdt - machiavellianism,9,none,0,
+sdt - narcissism,9,none,0,
+sdt - psychopathy,9,none,0,
+seasonal pattern,21,core_exact,1,10.1037/t26640-000
+secondary psychopathy,10,none,0,
+security,10,core_exact,2,10.1037/t17560-000;10.1037/t68788-000
+selection-optimization-compensation questionnaire,96,fuzzy,5,10.1037/t03358-000;10.1037/t04704-000;10.1037/t42842-000;10.1037/t49468-000;10.1037/t70103-000
+self description,135,core_exact,5,10.1037/t01843-000;10.1037/t05090-000;10.1037/t06009-000;10.1037/t06103-000;10.1037/t23257-000
+self esteem,13,core_exact,14,10.1037/t05743-000;10.1037/t06960-000;10.1037/t10247-000;10.1037/t15059-000;10.1037/t22094-000;10.1037/t23955-000;10.1037/t30379-000;10.1037/t31059-000
+self focus,6,none,0,
+self harm,7,core_exact,4,10.1037/t03335-000;10.1037/t29543-000;10.1037/t31066-000;10.1037/t75098-000
+self other intergroup anxiety,20,core_exact,1,10.1037/t33727-000
+self-acceptance,8,core_exact,2,10.1037/t26041-000;10.1037/t42148-000
+self-beneficiality,7,none,0,
+self-compassion,12,core_exact,18,10.1037/t10177-000;10.1037/t10178-000;10.1037/t10179-000;10.1037/t46022-000;10.1037/t47752-000;10.1037/t47936-000;10.1037/t56503-000;10.1037/t62664-000
+self-concept clarity,12,core_exact,6,10.1037/t01115-000;10.1037/t12956-000;10.1037/t13681-000;10.1037/t44872-000;10.1037/t74867-000;10.1037/t82904-000
+self-confidence,6,core_exact,3,10.1037/t11508-000;10.1037/t21579-000;10.1037/t74435-000
+self-consciousness,10,core_exact,5,10.1037/t02566-000;10.1037/t14753-000;10.1037/t16721-000;10.1037/t36694-000;10.1037/t37981-000
+self-consciousness - private,10,none,0,
+self-consciousness - public,7,none,0,
+self-consciousness - social anxiety,6,none,0,
+self-consciousness2,23,none,0,
+self-construal,30,core_exact,10,10.1037/t09715-000;10.1037/t44672-000;10.1037/t50889-000;10.1037/t52326-000;10.1037/t54138-000;10.1037/t54377-000;10.1037/t55574-000;10.1037/t56967-000
+self-construal - independent,12,none,0,
+self-construal - interdependent,12,none,0,
+self-control,26,core_exact,40,10.1037/t01116-000;10.1037/t03590-000;10.1037/t06131-000;10.1037/t08509-000;10.1037/t11661-000;10.1037/t11991-000;10.1037/t15065-000;10.1037/t18078-000
+self-criticism,13,core_exact,1,10.1037/t23728-000
+self-curiosity attitude-interest,7,core_exact,2,10.1037/t71739-000;10.1037/t71752-000
+self-deception,10,core_exact,1,10.1037/t71278-000
+self-derogation,7,none,0,
+self-description,137,core_exact,5,10.1037/t01843-000;10.1037/t05090-000;10.1037/t06009-000;10.1037/t06103-000;10.1037/t23257-000
+self-discipline,10,none,0,
+self-discipline2,10,none,0,
+self-disclosure,10,core_exact,1,10.1037/t18175-000
+self-disclosure - body,10,none,0,
+self-disclosure - money,6,none,0,
+self-disclosure - personality,9,none,0,
+self-disclosure - work,10,none,0,
+self-disclosure attitudes/opinions,9,none,0,
+self-disclosure tastes/interests,8,none,0,
+self-disclosure2,10,none,0,
+self-efficacy,20,core_exact,34,10.1037/t01119-000;10.1037/t04467-000;10.1037/t11670-000;10.1037/t11875-000;10.1037/t12559-000;10.1037/t15804-000;10.1037/t16222-000;10.1037/t16346-000
+self-esteem,10,core_exact,14,10.1037/t05743-000;10.1037/t06960-000;10.1037/t10247-000;10.1037/t15059-000;10.1037/t22094-000;10.1037/t23955-000;10.1037/t30379-000;10.1037/t31059-000
+self-esteem - basic,38,none,0,
+self-esteem - earning,28,none,0,
+self-esteem s,8,none,0,
+self-estrangement,7,none,0,
+self-image,5,core_exact,2,10.1037/t06960-000;10.1037/t48482-000
+self-improvement,5,none,0,
+self-injurious thoughts and behaviors,166,core_exact,5,10.1037/t03674-000;10.1037/t33713-000;10.1037/t63129-000;10.1037/t71093-000;10.1037/t84222-000
+self-leadership - factor10,3,none,0,
+self-leadership - factor9,5,none,0,
+self-leadership - goal setting,5,none,0,
+self-leadership - relation reward,4,none,0,
+self-leadership - self-cueing,2,none,0,
+self-leadership - self-observation,7,none,0,
+self-leadership - self-punishment,4,none,0,
+self-leadership - self-reward,4,none,0,
+self-leadership - self-talk,3,none,0,
+self-leadership - task reward,6,none,0,
+self-leadership - visualizing,5,none,0,
+self-liking/competence,16,none,0,
+self-monitoring,22,core_exact,11,10.1037/t00892-000;10.1037/t01087-000;10.1037/t16696-000;10.1037/t20753-000;10.1037/t26219-000;10.1037/t26326-000;10.1037/t35345-000;10.1037/t46606-000
+self-monitoring - acting,5,none,0,
+self-monitoring - extraversion,6,none,0,
+self-monitoring - other directedness,11,none,0,
+self-monitoring expressive behavior,25,none,0,
+self-regulated practice behavior,38,core_exact,3,10.1037/t57090-000;10.1037/t57744-000;10.1037/t76571-000
+self-regulation assessment,24,core_exact,11,10.1037/t00522-000;10.1037/t01606-000;10.1037/t07172-000;10.1037/t17605-000;10.1037/t33219-000;10.1037/t50199-000;10.1037/t55317-000;10.1037/t55513-000
+self-regulation/self-control,11,none,0,
+self-report altruism,20,core_exact,3,10.1037/t06160-000;10.1037/t15204-000;10.1037/t77268-000
+self-report symptom - anxiety,11,none,0,
+self-report symptom - depression,12,none,0,
+self-report symptom - phobic anxiety,5,none,0,
+self-report symptom - somatization,4,none,0,
+self-sacrifice,10,core_exact,1,10.1037/t36113-000
+self-statement during public speaking,10,fuzzy,2,10.1037/t01339-000;10.1037/t07556-000
+self-statements,34,none,0,
+self-sufficiency,10,none,0,
+self-worth protection,44,none,0,
+senior leadership - cs,5,none,0,
+senior leadership - employee,5,none,0,
+senior leadership - hr,4,none,0,
+senior leadership - information,4,none,0,
+senior leadership - leadership,5,none,0,
+senior leadership - qm,5,none,0,
+senior leadership - qr,4,none,0,
+sensation seeking,34,core_exact,22,10.1037/t03439-000;10.1037/t04065-000;10.1037/t04251-000;10.1037/t07091-000;10.1037/t07996-000;10.1037/t09978-000;10.1037/t13952-000;10.1037/t14191-000
+sensation seeking 2,14,fuzzy,3,10.1037/t04065-000;10.1037/t13952-000;10.1037/t74080-000
+sense of competence - involvement,8,none,0,
+sense of competence - satisfaction,12,none,0,
+sense of competence - satisfaction2,1,none,0,
+sense of competence - satisfaction3,1,none,0,
+sense of competence - satisfaction4,1,none,0,
+sense of competence - satisfaction5,1,none,0,
+sense of competence - satisfaction6,1,none,0,
+sense of competence - satisfaction7,1,none,0,
+sense of competence - satisfaction8,1,none,0,
+sense/self-reg. behavior,11,none,0,
+sense/self-reg. digestion,11,none,0,
+sense/self-reg. hearing,4,none,0,
+sense/self-reg. orientation,14,none,0,
+sense/self-reg. taste,4,none,0,
+sense/self-reg. toilet training,4,none,0,
+sense/self-reg. touch,16,none,0,
+sense/self-reg. vision,2,none,0,
+sensitive,6,none,0,
+sensitivity,10,core_exact,1,10.1037/t03550-000
+sensitivity to put-down,20,core_exact,1,10.1037/t12437-000
+sentimentality,18,core_exact,1,10.1037/t10417-000
+sentimentality2,10,none,0,
+service engagement - availability,3,none,0,
+service engagement - collaboration,3,none,0,
+service engagement - help seeking,4,none,0,
+service engagement - treatment,4,none,0,
+service to others in sobriety,12,core_exact,1,10.1037/t30908-000
+servqual,20,exact,3,10.1037/t13079-000;10.1037/t63065-000;10.1037/t85906-000
+severity of violence against men,46,core_exact,1,10.1037/t02578-000
+severity of violence against women,46,core_exact,2,10.1037/t02579-000;10.1037/t69007-000
+sex role,43,core_exact,4,10.1037/t05973-000;10.1037/t08614-000;10.1037/t09236-000;10.1037/t09245-000
+sex-role orientation,35,none,0,
+sexual abuse,7,core_exact,2,10.1037/t08932-000;10.1037/t20693-000
+sexual assertiveness - initiation,6,none,0,
+sexual assertiveness - pregancy/std,6,none,0,
+sexual assertiveness - refusal,6,none,0,
+sexual attitudes,23,core_exact,6,10.1037/t00355-000;10.1037/t00726-000;10.1037/t30463-000;10.1037/t32301-000;10.1037/t51873-000;10.1037/t60212-000
+sexual coercion,14,core_exact,3,10.1037/t25133-000;10.1037/t38201-000;10.1037/t39946-000
+sexual compulsivity,10,core_exact,1,10.1037/t04027-000
+sexual double standard,16,core_exact,2,10.1037/t42637-000;10.1037/t71311-000
+sexual experiences,18,core_exact,16,10.1037/t02590-000;10.1037/t05421-000;10.1037/t06227-000;10.1037/t08294-000;10.1037/t08905-000;10.1037/t09601-000;10.1037/t13723-000;10.1037/t20313-000
+sexual experiences perpetration s,7,none,0,
+sexual experiences victimization s,7,fuzzy,1,10.1037/t09413-000
+sexual harassment,19,core_exact,3,10.1037/t05036-000;10.1037/t20304-000;10.1037/t64444-000
+sexual objectification - advances,4,none,0,
+sexual objectification - body evaluation,11,none,0,
+sexual orientation beliefs - discreetness,6,none,0,
+sexual orientation beliefs - entitativity,10,none,0,
+sexual orientation beliefs - importance,7,none,0,
+sexual orientation beliefs - naturalness,12,none,0,
+sexual orientation harassment,7,none,0,
+sexual orientation rejection sensitiviy minority women,16,none,0,
+sexual responsiveness,16,none,0,
+sexual self-concept,99,core_exact,4,10.1037/t09649-000;10.1037/t26173-000;10.1037/t26455-000;10.1037/t70974-000
+shopping,7,none,0,
+short mood and feelings,13,core_exact,8,10.1037/t15197-000;10.1037/t70340-000;10.1037/t72167-000;10.1037/t79064-000;10.1037/t80302-000;10.1037/t80303-000;10.1037/t81195-000;10.1037/t81428-000
+short use of creative cognition,5,core_exact,1,10.1037/t36621-000
+shorter promis - alcohol,10,none,0,
+shorter promis - caffeine,10,none,0,
+shorter promis - compulsive helping dominant,10,none,0,
+shorter promis - compulsive helping submissive,10,none,0,
+shorter promis - exercise,10,none,0,
+shorter promis - food bingeing,10,none,0,
+shorter promis - food starving,10,none,0,
+shorter promis - gambling,10,none,0,
+shorter promis - prescription drugs,10,none,0,
+shorter promis - recreational drugs,10,none,0,
+shorter promis - relationships dominant,10,none,0,
+shorter promis - relationships submissive,10,none,0,
+shorter promis - sex,10,none,0,
+shorter promis - shopping,10,none,0,
+shorter promis - tobacco,10,none,0,
+shorter promis - work,10,none,0,
+shyness,14,core_exact,1,10.1037/t13655-000
+sicw compliance index,3,none,0,
+sicw harrassment/discrimination,6,none,0,
+sicw job certainty,4,none,0,
+sicw job control,4,none,0,
+sicw job demands,2,none,0,
+sicw phys symptoms,4,none,0,
+sicw psych. symptoms,3,none,0,
+sicw safety climate,5,none,0,
+sicw social support,6,none,0,
+sicw training,4,none,0,
+siddiqui-shah depression,36,core_exact,1,10.1037/t68828-000
+sides_affect_dysregulation_scale,6,none,0,
+signs of depression,6,core_exact,2,10.1037/t71309-000;10.1037/t72739-000
+silver lining,38,core_exact,2,10.1037/t04263-000;10.1037/t64727-000
+similarity of the offender's spirituality,9,core_exact,1,10.1037/t01173-000
+simpson depression,7,none,0,
+sincerity,10,none,0,
+singing apprehension,20,none,0,
+sipaas - anxiety distress avoidance,44,none,0,
+sipaas - social phobia,17,none,0,
+situational communication apprehension,20,none,0,
+situational interdependence,30,core_exact,1,10.1037/t69611-000
+six factors - agreeableness,4,none,0,
+six factors - conscientiousness,4,none,0,
+six factors - extraversion,4,none,0,
+six factors - honesty/humility,4,none,0,
+six factors - neuroticism,4,none,0,
+six factors - openness,4,none,0,
+skepticism,6,core_exact,1,10.1037/t53769-000
+sleep - apnea,8,core_exact,1,10.1037/t33574-000
+sleep - circadian rythm,3,none,0,
+sleep - impact,7,none,0,
+sleep - insomnia,8,none,0,
+sleep - narcolepsy,5,none,0,
+sleep - rls,4,none,0,
+sleep - sleepwalking,3,none,0,
+sleep backgrounds information,14,none,0,
+sleep behaviors,31,none,0,
+sleep disorders - narcolepsy,15,none,0,
+sleep disorders - periodic limb movement,9,none,0,
+sleep disorders - psychiatric,9,none,0,
+sleep disorders - sleep apnea,12,none,0,
+sleep disturbance,16,core_exact,2,10.1037/t14720-000;10.1037/t66136-000
+sleep disturbances child,26,none,0,
+sleep-related self-maintenance habits,29,none,0,
+sluggish cognitive tempo,12,core_exact,1,10.1037/t01128-000
+smarq behaviors,23,none,0,
+smarq external motivation,23,none,0,
+smoking cessation,6,none,0,
+smu health,62,none,0,
+sociability,26,core_exact,2,10.1037/t18986-000;10.1037/t43777-000
+sociability2,10,none,0,
+sociability3,10,none,0,
+social and emotional loneliness,11,core_exact,3,10.1037/t05854-000;10.1037/t34648-000;10.1037/t79972-000
+social and separation anxiety - sep,5,none,0,
+social and separation anxiety - soc,5,none,0,
+social anxiety adolescents - fne,8,none,0,
+social anxiety adolescents - general,4,none,0,
+social anxiety adolescents - new,6,none,0,
+social anxiety adults,30,none,0,
+social anxiety student,15,none,0,
+social attraction,6,core_exact,3,10.1037/t13195-000;10.1037/t20176-000;10.1037/t59309-000
+social avoidance and distress,28,core_exact,2,10.1037/t10309-000;10.1037/t60146-000
+social boldness,10,none,0,
+social comparison orientation,11,core_exact,1,10.1037/t80418-000
+social desirability,20,core_exact,6,10.1037/t03607-000;10.1037/t19620-000;10.1037/t61182-000;10.1037/t66957-000;10.1037/t70650-000;10.1037/t83207-000
+social desirability 17,17,core_exact,2,10.1037/t03607-000;10.1037/t70650-000
+social desirability 2,10,fuzzy,6,10.1037/t03607-000;10.1037/t19620-000;10.1037/t61182-000;10.1037/t66957-000;10.1037/t70650-000;10.1037/t83207-000
+social desirability 3,5,fuzzy,6,10.1037/t03607-000;10.1037/t19620-000;10.1037/t61182-000;10.1037/t66957-000;10.1037/t70650-000;10.1037/t83207-000
+social discomfort,10,none,0,
+social dominance orientation,16,exact,1,10.1037/t74097-000
+social exchange relationship colquitt,13,none,0,
+social intelligence - awareness,7,none,0,
+social intelligence - info processing,7,none,0,
+social intelligence - skills,8,none,0,
+social interaction anxiety - cogn concerns,6,none,0,
+social interaction anxiety - interaction anxiety,19,none,0,
+social interaction anxiety - phobia,20,none,0,
+social interaction anxiety - phys concerns,6,none,0,
+social interaction anxiety - social concerns,6,none,0,
+social interaction screen toddler,30,none,0,
+social interaction self-statement - coping,3,none,0,
+social interaction self-statement - fear neg evaluation,4,none,0,
+social interaction self-statement - long,20,none,0,
+social interaction self-statement - positive anticipation,4,none,0,
+social interaction self-statement - self-depreciation,9,none,0,
+social interest - romantic relationship,24,none,0,
+social isolation,12,core_exact,6,10.1037/t12577-000;10.1037/t32563-000;10.1037/t62081-000;10.1037/t62453-000;10.1037/t72603-000;10.1037/t83000-000
+social justice - attitudes,11,none,0,
+social justice - control,5,none,0,
+social justice - intentions,4,none,0,
+social justice - norms,4,none,0,
+social media use integration,10,core_exact,1,10.1037/t28032-000
+social phobia,39,core_exact,11,10.1037/t03804-000;10.1037/t07364-000;10.1037/t07557-000;10.1037/t07672-000;10.1037/t35490-000;10.1037/t35491-000;10.1037/t49524-000;10.1037/t62693-000
+social physique anxiety,12,core_exact,6,10.1037/t07809-000;10.1037/t07814-000;10.1037/t15920-000;10.1037/t20536-000;10.1037/t21019-000;10.1037/t72297-000
+social provisions,24,core_exact,4,10.1037/t06213-000;10.1037/t30718-000;10.1037/t54317-000;10.1037/t63339-000
+social regulation of religion,5,none,0,
+social representations of indirect violence,36,none,0,
+social representations of physical violence,41,none,0,
+social representations of verbal violence,41,none,0,
+social responsibility,53,core_exact,3,10.1037/t01148-000;10.1037/t25560-000;10.1037/t35615-000
+social sexual awareness,30,core_exact,1,10.1037/t68816-000
+social skills rating,55,core_exact,6,10.1037/t02651-000;10.1037/t41357-000;10.1037/t50828-000;10.1037/t57972-000;10.1037/t65669-000;10.1037/t80076-000
+social sports experiences,8,none,0,
+social support for sojourners,18,none,0,
+social support inventory,20,exact,1,10.1037/t20639-000
+social system control,24,none,0,
+social trust,7,none,0,
+social understanding child - belief,4,none,0,
+social understanding child - desire,6,none,0,
+social understanding child - emotion,6,none,0,
+social understanding child - intention,7,none,0,
+social understanding child - knowledge,5,none,0,
+social understanding child - perception,6,none,0,
+social withdrawal,6,core_exact,1,10.1037/t01156-000
+social-confidence,10,core_exact,1,10.1037/t42422-000
+social-networking,5,core_exact,1,10.1037/t22657-000
+social/personal/emotional intelligence,7,none,0,
+socially supportive behaviors,40,fuzzy,2,10.1037/t02399-000;10.1037/t61897-000
+sociocommunicative style,20,none,0,
+sociotropy autonomy - fear of criticism rejection,16,none,0,
+sociotropy autonomy - independert goal attainment,11,none,0,
+sociotropy autonomy - preference for affiliation,11,none,0,
+sociotropy autonomy - sensitivity to thers control,17,none,0,
+socrates,19,exact,3,10.1037/t00536-000;10.1037/t19699-000;10.1037/t70298-000
+somatic symptom inventory,26,core_exact,4,10.1037/t61708-000;10.1037/t66128-000;10.1037/t83593-000;10.1037/t86942-000
+source credibility,18,core_exact,5,10.1037/t10988-000;10.1037/t19915-000;10.1037/t53806-000;10.1037/t66414-000;10.1037/t72607-000
+sources of social support,10,core_exact,2,10.1037/t31960-000;10.1037/t64841-000
+speciecism,6,none,0,
+spence children's anxiety - general,6,none,0,
+spence children's anxiety - ocd,6,fuzzy,7,10.1037/t10518-000;10.1037/t59109-000;10.1037/t67404-000;10.1037/t67918-000;10.1037/t69083-000;10.1037/t71582-000;10.1037/t83291-000
+spence children's anxiety - panic agoraphobia,9,none,0,
+spence children's anxiety - physical,5,none,0,
+spence children's anxiety - separation anxiety,6,none,0,
+spence children's anxiety - social phobia,6,none,0,
+spheres of control,30,core_exact,1,10.1037/t04867-000
+spiritual connection,48,core_exact,1,10.1037/t82680-000
+spiritual experience,6,none,0,
+spiritual health - nurse,31,none,0,
+spiritual health - patient,33,none,0,
+spiritual health locus of control,14,core_exact,1,10.1037/t19819-000
+spiritual well-being,12,core_exact,7,10.1037/t00534-000;10.1037/t12442-000;10.1037/t37636-000;10.1037/t45690-000;10.1037/t57480-000;10.1037/t59757-000;10.1037/t79654-000
+spiritual/relig dimensions - additional,6,none,0,
+spiritual/relig dimensions - alternative,15,none,0,
+spiritual/relig dimensions - christian,14,none,0,
+spirituality/religiousness,9,none,0,
+sport motivation,60,core_exact,7,10.1037/t20394-000;10.1037/t34480-000;10.1037/t55190-000;10.1037/t65925-000;10.1037/t69092-000;10.1037/t69096-000;10.1037/t79564-000
+sports,6,none,0,
+spouse abuse,30,none,0,
+spsrq,48,exact,1,10.1037/t04113-000
+st marys hospital sleep,17,none,0,
+stability,26,none,0,
+standord preschool internal-external,42,fuzzy,1,10.1037/t05737-000
+stanford acute stress - anxiety,10,none,0,
+stanford acute stress - dissociation,10,none,0,
+state driver aggression,5,none,0,
+state hope disease,10,none,0,
+state self-esteem,20,core_exact,3,10.1037/t01181-000;10.1037/t45804-000;10.1037/t70664-000
+statistical anxiety,50,core_exact,3,10.1037/t10930-000;10.1037/t62638-000;10.1037/t62688-000
+statistically unlikely pursuits (wassup),29,none,0,
+stellenbosch mood,24,none,0,
+stimulating-instrumental risk,17,none,0,
+stq - attitude to life,42,none,0,
+strain,51,core_exact,3,10.1037/t17215-000;10.1037/t36913-000;10.1037/t63443-000
+strain free negative affectivity,26,core_exact,1,10.1037/t05778-000
+strength of religious faith,3,none,0,
+strengths and difficulties,25,core_exact,15,10.1037/t00540-000;10.1037/t07042-000;10.1037/t18694-000;10.1037/t19893-000;10.1037/t20538-000;10.1037/t49752-000;10.1037/t58449-000;10.1037/t62600-000
+stroke aphasic depression,21,core_exact,2,10.1037/t35121-000;10.1037/t35123-000
+student teacher relationship,34,core_exact,4,10.1037/t11872-000;10.1037/t25835-000;10.1037/t72386-000;10.1037/t83449-000
+student university match,18,core_exact,1,10.1037/t07365-000
+student worry,30,core_exact,4,10.1037/t10703-000;10.1037/t13550-000;10.1037/t65523-000;10.1037/t84711-000
+students' life satisfaction,7,core_exact,4,10.1037/t21437-000;10.1037/t70887-000;10.1037/t71204-000;10.1037/t79908-000
+subclinical narcissism,32,none,0,
+subjective happiness,4,core_exact,11,10.1037/t01588-000;10.1037/t15855-000;10.1037/t46636-000;10.1037/t46918-000;10.1037/t54927-000;10.1037/t59406-000;10.1037/t73540-000;10.1037/t74172-000
+subjective sense of calling in childrearing,16,core_exact,1,10.1037/t41528-000
+submissiveness,6,none,0,
+subtle and overt psychological abuse of women,35,none,0,
+subtle racism,18,none,0,
+suicidal behaviours,25,none,0,
+suicidal ideation,19,core_exact,2,10.1037/t19592-000;10.1037/t62406-000
+summer activities,7,none,0,
+superiority of homosexuality,5,none,0,
+supernumerary personality,15,core_exact,1,10.1037/t11327-000
+supervisory relationship - commitment,10,none,0,
+supervisory relationship - formative feedback,11,none,0,
+supervisory relationship - reflective education,11,none,0,
+supervisory relationship - role model,12,none,0,
+supervisory relationship - safe base,15,none,0,
+supervisory relationship - structure,8,none,0,
+support,4,core_exact,2,10.1037/t32114-000;10.1037/t67433-000
+support for lesbian and gay human rights,25,core_exact,2,10.1037/t07456-000;10.1037/t58794-000
+suppressed anger,6,none,0,
+surface warfare officer,38,none,0,
+surgency/extraversion 10 item,10,none,0,
+surgency/extraversion 20 item,20,none,0,
+survey attitude,9,core_exact,11,10.1037/t05980-000;10.1037/t07897-000;10.1037/t12742-000;10.1037/t13328-000;10.1037/t14556-000;10.1037/t15571-000;10.1037/t26183-000;10.1037/t31492-000
+susceptibility to embarrassment,25,none,0,
+susceptibility to infidelity,12,none,0,
+susceptibility to temptation,11,none,0,
+swanson adhd,18,none,0,
+symbolic racism,8,none,0,
+symbolic racism 2000,7,core_exact,1,10.1037/t50164-000
+sympathetic magic in romantic relationships,5,none,0,
+sympathy,10,none,0,
+sympathy2,13,none,0,
+symptom checklist for major depressive disorders,23,none,0,
+symptom-sign inventory,10,exact,1,10.1037/t13048-000
+symptoms of stress,15,none,0,
+system justification – america,8,none,0,
+systemizing,60,none,0,
+systemizing quotient,75,exact,4,10.1037/t29100-000;10.1037/t64815-000;10.1037/t73009-000;10.1037/t73321-000
+tacit knowledge - self-motivation,8,none,0,
+tacit knowledge - self-organization,11,none,0,
+tacit knowledge - social interaction,2,none,0,
+tacit knowledge - tech skills,9,none,0,
+talkaholic,16,none,0,
+talkativeness,10,none,0,
+task attraction,6,none,0,
+task effort cost,5,none,0,
+team emergency assessment,11,core_exact,1,10.1037/t17818-000
+team learning behavior,14,none,0,
+team learning climate,6,none,0,
+technology readiness - discomfort,10,none,0,
+technology readiness - innovativeness,7,none,0,
+technology readiness - insecurity,9,none,0,
+technology readiness - optimism,10,none,0,
+temperance,10,none,0,
+temporal satisfaction with life,15,core_exact,3,10.1037/t73017-000;10.1037/t73111-000;10.1037/t86054-000
+temptations to drink,12,none,0,
+ten item personality,10,core_exact,10,10.1037/t07016-000;10.1037/t07017-000;10.1037/t42434-000;10.1037/t42949-000;10.1037/t51740-000;10.1037/t51858-000;10.1037/t70102-000;10.1037/t71256-000
+tenderness,13,none,0,
+tetradimensional depression - anergy,14,none,0,
+tetradimensional depression - depressive mood,22,none,0,
+texas social behavior,32,none,0,
+theocracy,2,none,0,
+theories_of_willpower_survey,12,none,0,
+therapeutic realizations - past insight,2,none,0,
+therapeutic realizations - present understanding,5,none,0,
+therapeutic realizations - remoralization,6,none,0,
+therapeutic realizations - unburdening,3,none,0,
+thought control - distraction,7,none,0,
+thought control - punishment,6,none,0,
+thought control - reappraisal,6,none,0,
+thought control - social,6,none,0,
+thought control - worry,6,none,0,
+three_factor_eating_questionnaire,18,exact,6,10.1037/t02178-000;10.1037/t15085-000;10.1037/t44324-000;10.1037/t48166-000;10.1037/t80113-000;10.1037/t80115-000
+thrill-seeking,7,none,0,
+time perspective,2,core_exact,2,10.1037/t54961-000;10.1037/t72649-000
+timidity,10,none,0,
+tinnitus reaction,26,none,0,
+tolerance,12,core_exact,4,10.1037/t17862-000;10.1037/t32327-000;10.1037/t83494-000;10.1037/t83495-000
+tolerance for disagreement,15,none,0,
+tolerance of atheists,3,none,0,
+tolerance of communists,3,none,0,
+tolerance of cultural diversity,5,none,0,
+tolerance of homosexuals,3,none,0,
+tolerance of muslims,8,none,0,
+tolerance of racists,3,none,0,
+tolerance2,9,none,0,
+tolerance3,9,none,0,
+toronto empathy,16,core_exact,3,10.1037/t01601-000;10.1037/t56682-000;10.1037/t85599-000
+toronto mindfulness,15,core_exact,1,10.1037/t05515-000
+total loc,20,none,0,
+touch apprehension,14,none,0,
+toughness,21,none,0,
+tpb class attendance,51,none,0,
+traditional family,14,none,0,
+traditionalism,10,none,0,
+traffic loc,17,none,0,
+training courses,4,none,0,
+trait emotional intelligence,30,core_exact,17,10.1037/t01607-000;10.1037/t04889-000;10.1037/t10934-000;10.1037/t12409-000;10.1037/t24034-000;10.1037/t50471-000;10.1037/t55209-000;10.1037/t57510-000
+trait forgiveness,9,none,0,
+tranquility,11,none,0,
+transactive memory system - coordination,5,none,0,
+transactive memory system - credibility,5,none,0,
+transactive memory system - specialization,5,none,0,
+transformational leadership,8,core_exact,5,10.1037/t11708-000;10.1037/t30236-000;10.1037/t54155-000;10.1037/t58351-000;10.1037/t60553-000
+transgender congruence,12,core_exact,1,10.1037/t07484-000
+transgression-related interpersonal motivations,18,core_exact,13,10.1037/t03960-000;10.1037/t25585-000;10.1037/t30045-000;10.1037/t34615-000;10.1037/t50226-000;10.1037/t51241-000;10.1037/t51485-000;10.1037/t58916-000
+transport narrative,12,none,0,
+trauma history screen,20,exact,1,10.1037/t03738-000
+trauma screening,10,core_exact,3,10.1037/t04710-000;10.1037/t39633-000;10.1037/t44617-000
+trauma symptom,40,core_exact,6,10.1037/t05185-000;10.1037/t05186-000;10.1037/t06631-000;10.1037/t63391-000;10.1037/t63824-000;10.1037/t74322-000
+trauma symptom children,54,fuzzy,4,10.1037/t06631-000;10.1037/t37177-000;10.1037/t44849-000;10.1037/t77165-000
+traumatic events,12,core_exact,5,10.1037/t00469-000;10.1037/t35142-000;10.1037/t36477-000;10.1037/t41072-000;10.1037/t65792-000
+travel,6,none,0,
+treatment participation,25,none,0,
+triangular love - commitment,12,none,0,
+triangular love - intimacy,12,none,0,
+triangular love - passion,12,none,0,
+trinity amputation and prosthesis - activities,12,none,0,
+trinity amputation and prosthesis - psychosocial,15,none,0,
+trust,16,exact,2,10.1037/t54159-000;10.1037/t84476-000
+trust in management,5,core_exact,3,10.1037/t14484-000;10.1037/t25419-000;10.1037/t54500-000
+trust in physician,11,core_exact,5,10.1037/t23406-000;10.1037/t23550-000;10.1037/t51852-000;10.1037/t59628-000;10.1037/t72190-000
+trust2,12,none,0,
+trusting,6,none,0,
+trusting relationship,18,core_exact,1,10.1037/t43933-000
+tv,7,none,0,
+twenty two psychiatric,22,none,0,
+twincity neighborhood,13,none,0,
+typical writing study - last day,17,none,0,
+typical writing study - richards,6,none,0,
+ubc cognitions - depression,18,none,0,
+ubc cognitions - panic,11,none,0,
+ubc cognitions - social fear,15,none,0,
+ubc cognitions - somatic,12,none,0,
+ubc cognitions - worry,8,none,0,
+unassuming-ingenuous,4,none,0,
+unassured-submissive,4,none,0,
+unconventionality,10,none,0,
+understanding,16,none,0,
+unit behaviors,16,none,0,
+univeristy satisfaction academic,16,none,0,
+univeristy satisfaction facilities,16,none,0,
+unlikely virtues,17,none,0,
+unpretentiousness,9,none,0,
+unusual beliefs,7,none,0,
+unusual experiences,7,none,0,
+upps impulsive - perserverance,10,none,0,
+upps impulsive - premeditation,11,none,0,
+upps impulsive - sensation seeking,12,none,0,
+upps impulsive - urgency,12,none,0,
+upps-p_impulsivity_survey,58,none,0,
+urban design walkability,23,none,0,
+us ethnocentrism,16,none,0,
+utilitarianism,12,core_exact,1,10.1037/t19929-000
+valor/bravery/courage,10,none,0,
+value orientation,36,core_exact,1,10.1037/t37906-000
+vancouver acculturation,20,fuzzy,5,10.1037/t03897-000;10.1037/t63921-000;10.1037/t68184-000;10.1037/t78858-000;10.1037/t78859-000
+vancouver ocd - checking,5,none,0,
+vancouver ocd - contamination,12,none,0,
+vancouver ocd - hoarding,7,none,0,
+vancouver ocd - indecisiveness,6,none,0,
+vancouver ocd - just right,12,none,0,
+vancouver ocd - obsessions,12,none,0,
+variability,3,none,0,
+variety-seeking,10,none,0,
+vehicles,4,none,0,
+vertical collectivism,8,none,0,
+vertical individualism,8,none,0,
+violent driving behavior,7,none,0,
+virtual team trust,11,none,0,
+virtuous,6,none,0,
+voices acceptance and action,31,core_exact,3,10.1037/t64086-000;10.1037/t72940-000;10.1037/t79398-000
+voices acceptance and action - acceptance,9,none,0,
+voices acceptance and action - action,3,none,0,
+voices acceptance and action - sectionb,8,none,0,
+volatility,10,none,0,
+vulnerability,10,none,0,
+vulnerable attachment style,22,core_exact,1,10.1037/t37633-000
+vulnerable personality,9,none,0,
+wakefield depression,12,none,0,
+wang depression,10,none,0,
+warm-agreeable,4,none,0,
+warmth,16,none,0,
+ways of coping - avoidance,10,none,0,
+ways of coping - blamed self,3,none,0,
+ways of coping - problem-focused,15,none,0,
+ways of coping - social support,6,none,0,
+ways of coping - wishful thinking,8,none,0,
+wechsler depression,28,none,0,
+well-being - anxiety,6,none,0,
+well-being - depression,6,none,0,
+well-being - positive,6,none,0,
+wellness beliefs,21,core_exact,1,10.1037/t31883-000
+west haven-yale pain,22,none,0,
+white privilege attitudes,28,core_exact,2,10.1037/t00550-000;10.1037/t65901-000
+who depressive disorders,40,none,0,
+wife abuse - physical,11,none,0,
+wife abuse - psychological,15,none,0,
+wife abuse - sexual,12,none,0,
+wife abuse - verbal,14,none,0,
+wilder collaboration - communication,9,none,0,
+wilder collaboration - context,10,none,0,
+wilder collaboration - function,8,none,0,
+wilder collaboration - leadership,9,none,0,
+wilder collaboration - members,12,none,0,
+wilder collaboration - process,9,none,0,
+wilder collaboration - resources,10,none,0,
+wilder collaboration - success,8,none,0,
+willingness to be vulnerable colquitt,7,none,0,
+willingness to communicate,20,none,0,
+willingness to intervene in partner violence,28,none,0,
+wisdom,40,core_exact,1,10.1037/t55665-000
+withdrawal,10,none,0,
+woman abuse,7,none,0,
+women’s experiences with battering,10,core_exact,1,10.1037/t02783-000
+women’s health initiative - sleep,10,none,0,
+work motivation,19,core_exact,5,10.1037/t16023-000;10.1037/t19807-000;10.1037/t20790-000;10.1037/t52760-000;10.1037/t54234-000
+work team outcomes,3,none,0,
+work-family conflict s,6,fuzzy,15,10.1037/t01575-000;10.1037/t01666-000;10.1037/t02785-000;10.1037/t08858-000;10.1037/t12036-000;10.1037/t16258-000;10.1037/t34739-000;10.1037/t40752-000
+work-family enrichment,18,core_exact,5,10.1037/t09194-000;10.1037/t28870-000;10.1037/t34131-000;10.1037/t41572-000;10.1037/t57737-000
+work-family positive spillover,22,none,0,
+workaholism,6,core_exact,3,10.1037/t01066-000;10.1037/t49172-000;10.1037/t82546-000
+working style superior,8,none,0,
+workplace age discrimination,26,none,0,
+worksite health promotion - activities,5,none,0,
+worksite health promotion - management,5,none,0,
+worksite health promotion - willingness,4,none,0,
+world-minded attitudes,32,none,0,
+writing apprehension,20,core_exact,3,10.1037/t48320-000;10.1037/t70560-000;10.1037/t73755-000
+writing/remembering,7,none,0,
+yale brown obsessive compulsive scale,19,exact,14,10.1037/t49591-000;10.1037/t56763-000;10.1037/t57044-000;10.1037/t57982-000;10.1037/t58181-000;10.1037/t58183-000;10.1037/t64352-000;10.1037/t67908-000
+yale food addiction,25,core_exact,12,10.1037/t03319-000;10.1037/t48787-000;10.1037/t53081-000;10.1037/t56278-000;10.1037/t59185-000;10.1037/t63904-000;10.1037/t66471-000;10.1037/t70179-000
+young child ptsd,43,none,0,
+young child ptsd screen,6,exact,1,10.1037/t72264-000
+youth quality of life s,15,none,0,
+youth risk behavior middle school,45,none,0,
+youth risk behavior national high school,85,none,0,
+youth risk behavior standard high school,79,none,0,
+youth-mentor - cope,3,none,0,
+youth-mentor - not dissatisfied,3,none,0,
+youth-mentor - not unhappy,6,none,0,
+youth-mentor - trust,6,none,0,
+zest/enthusiasm/vitality,9,none,0,
+zimbardo_time_perspective_survey,54,core_exact,12,10.1037/t01397-000;10.1037/t07377-000;10.1037/t14562-000;10.1037/t32210-000;10.1037/t42256-000;10.1037/t47049-000;10.1037/t50392-000;10.1037/t56510-000
+"zimbardo_time_perspective_survey, 47. life today is too complicated; i would prefer the simpler life of the past., https://scienceofbehaviorchange.org/measures, ; zimbardo_time_perspective_survey",1,none,0,
+zuckerman_sensation_seeking_survey,40,none,0,
+zung depression,19,core_exact,1,10.1037/t29347-000
+zung self-rating depression,20,core_exact,1,10.1037/t04095-000

@@ -1,0 +1,3 @@
+dataset,n_respondents,n_items,n_scales,n_scale_pairs,n_scale_item_memberships,n_reverse_memberships,embedding_norm_min,embedding_norm_max,keying_source
+pilot_holdout,493,418,113,6245,739,261,0.9999999164243156,1.0000000814609527,derived: hand-coded key of the first item per scale (scales.keyed) + sign of the empirical correlation of every other item with that first item (global_functions.R::find_reverse_items_by_first_item)
+validation_prolific,387,246,80,3119,374,78,0.9999999192964102,1.0000000896845402,documented per-item keying (mapping2.keyed)

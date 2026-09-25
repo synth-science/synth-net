@@ -1,0 +1,439 @@
+"DOI","Name","semanticnet_scale","n_items","usage_count","match_type","covered_synthnet","covered_hunt"
+"10.1037/t00044-000","bicultural self-efficacy scale","bicultural self-efficacy",26,11,"core_exact",TRUE,FALSE
+"10.1037/t00048-000","brief fear of negative evaluation scale","fear of negative evaluation",12,431,"core_exact",TRUE,FALSE
+"10.1037/t00078-000","color-blind racial attitudes scale","color-blind racial attitudes",20,138,"core_exact",TRUE,FALSE
+"10.1037/t00082-000","contingencies of self-worth scale","contingencies of self-worth",35,164,"core_exact",TRUE,FALSE
+"10.1037/t00338-000","police stress questionnaires","organizational police stress - op",20,0,"fuzzy",TRUE,FALSE
+"10.1037/t00355-000","brief sexual attitudes scale","sexual attitudes",23,71,"core_exact",TRUE,FALSE
+"10.1037/t00385-000","empathy/systemizing quotient - child","empathy/systemizing quotient (child)",55,1,"exact",TRUE,FALSE
+"10.1037/t00392-000","cambridge friendship questionnaire","friendship and relationship quotient",35,10,"exact",TRUE,FALSE
+"10.1037/t00393-000","general self-efficacy scale","general self-efficacy",10,0,"core_exact",TRUE,FALSE
+"10.1037/t00437-000","relationship assessment scale","relationship assessment",7,639,"core_exact",TRUE,FALSE
+"10.1037/t00440-000","respect toward partner scale","respect toward partner",6,7,"core_exact",TRUE,FALSE
+"10.1037/t00465-000","peritraumatic distress inventory","peritraumatic distress",13,164,"core_exact",TRUE,FALSE
+"10.1037/t00469-000","traumatic events questionnaire","traumatic events",12,153,"core_exact",TRUE,FALSE
+"10.1037/t00489-000","parent cognition scale","parent_cognition_scale_measure",30,14,"core_exact",TRUE,FALSE
+"10.1037/t00499-000","posttraumatic cognitions inventory","posttraumatic cognitions",33,460,"core_exact",TRUE,FALSE
+"10.1037/t00501-000","preschool learning behavior scale","preschool learning behavior",27,30,"core_exact",TRUE,FALSE
+"10.1037/t00512-000","religious commitment inventory-10","religious commitment",10,131,"core_exact",TRUE,FALSE
+"10.1037/t00514-000","revised children's manifest anxiety scale","children's manifest anxiety",42,969,"core_exact",TRUE,FALSE
+"10.1037/t00522-000","short self-regulation questionnaire","self-regulation assessment",24,49,"core_exact",TRUE,FALSE
+"10.1037/t00540-000","strengths and difficulties questionnaire","strengths and difficulties",25,6257,"core_exact",FALSE,TRUE
+"10.1037/t00550-000","white privilege attitudes scale","white privilege attitudes",28,12,"core_exact",TRUE,FALSE
+"10.1037/t00749-000","berkeley expressivity questionnaire","berkeley expressivity",16,91,"core_exact",FALSE,FALSE
+"10.1037/t00762-000","brief screen for depression","brief screen for depression",4,6,"exact",TRUE,FALSE
+"10.1037/t00779-000","fairness questionnaire","fairness",10,0,"core_exact",TRUE,FALSE
+"10.1037/t00794-000","fear of negative evaluation scale","fear of negative evaluation - fne",30,0,"fuzzy",TRUE,FALSE
+"10.1037/t00866-000","death anxiety questionnaire","death anxiety",15,29,"core_exact",TRUE,FALSE
+"10.1037/t00869-000","consideration of future consequences scale","consideration_of_future_consequences_scale",14,209,"exact",TRUE,FALSE
+"10.1037/t00873-000","fetal health locus of control scale","mental health locus of control",22,7,"fuzzy",TRUE,FALSE
+"10.1037/t00930-000","geriatric depression scale","geriatric depression",31,8709,"core_exact",TRUE,FALSE
+"10.1037/t00950-000","health locus of control scale","health locus of control",11,75,"core_exact",TRUE,FALSE
+"10.1037/t01013-000","rigidity test","rigidity",10,0,"core_exact",TRUE,FALSE
+"10.1037/t01031-000","dimensional obsessive-compulsive scale","dimensional obsessive compulsive scale",18,216,"exact",TRUE,FALSE
+"10.1037/t01043-000","disgust scale-revised","disgust",20,148,"core_exact",FALSE,FALSE
+"10.1037/t01069-000","satisfaction with life scale","satisfaction with life",5,7023,"core_exact",TRUE,FALSE
+"10.1037/t01074-000","meaning in life questionnaire","meaning in life",10,728,"core_exact",TRUE,FALSE
+"10.1037/t01115-000","self-concept clarity scale","self-concept clarity",12,279,"core_exact",TRUE,FALSE
+"10.1037/t01128-000","sluggish cognitive tempo scale","sluggish cognitive tempo",12,27,"core_exact",TRUE,FALSE
+"10.1037/t01148-000","social responsibility scale","social responsibility",53,60,"core_exact",TRUE,FALSE
+"10.1037/t01156-000","social withdrawal scale","social withdrawal",6,27,"core_exact",TRUE,FALSE
+"10.1037/t01173-000","similarity of the offender's spirituality scale","similarity of the offender's spirituality",9,1,"core_exact",TRUE,FALSE
+"10.1037/t01181-000","state self-esteem scale","state self-esteem",20,332,"core_exact",TRUE,FALSE
+"10.1037/t01292-000","generalized expectancy for success scale","generalized expectancy for success",31,14,"core_exact",TRUE,FALSE
+"10.1037/t01304-000","pain catastrophizing scale","pain catastrophizing",13,1579,"core_exact",TRUE,FALSE
+"10.1037/t01311-000","parenting sense of competence scale","parenting sense of competence",14,443,"core_exact",FALSE,FALSE
+"10.1037/t01397-000","zimbardo time perspective inventory","zimbardo_time_perspective_survey",54,332,"core_exact",TRUE,FALSE
+"10.1037/t01588-000","subjective happiness scale","subjective happiness",4,761,"core_exact",TRUE,FALSE
+"10.1037/t01598-000","short grit scale","grit_scale_survey",8,142,"core_exact",TRUE,FALSE
+"10.1037/t01601-000","toronto empathy questionnaire","toronto empathy",16,112,"core_exact",TRUE,FALSE
+"10.1037/t01605-000","hong psychological reactance scale","hong psychological reactance",14,54,"core_exact",FALSE,FALSE
+"10.1037/t01623-000","relationship incentive and threat sensitivity scales","relationship incentive and threat sensitivity",11,3,"core_exact",TRUE,FALSE
+"10.1037/t01666-000","work-family conflict scale","work-family conflict s",6,0,"fuzzy",TRUE,FALSE
+"10.1037/t01671-000","rotter's internal-external control scale","internal-external control",24,0,"core_exact",TRUE,FALSE
+"10.1037/t01681-000","measures to assess collapse of compassion","compassion",20,0,"core_exact",TRUE,FALSE
+"10.1037/t01756-000","edinburgh postnatal depression scale","edinburgh postnatal depression",10,3750,"core_exact",FALSE,FALSE
+"10.1037/t01760-000","penn state worry questionnaire","penn state worry",16,2149,"core_exact",FALSE,FALSE
+"10.1037/t01825-000","cross racial identity scale","cross racial identity",50,64,"core_exact",TRUE,FALSE
+"10.1037/t01835-000","inspiration scale","inspiration",4,19,"core_exact",TRUE,FALSE
+"10.1037/t01843-000","self description questionnaire-i","self description",135,77,"core_exact",FALSE,FALSE
+"10.1037/t01844-000","proximal antecedents to violent episodes scale","proximal antecedents of violent episodes",20,6,"fuzzy",TRUE,FALSE
+"10.1037/t02003-000","agoraphobic cognitions questionnaire","agoraphobic cognitions",14,260,"core_exact",FALSE,FALSE
+"10.1037/t02025-000","beck anxiety inventory","beck anxiety",23,7597,"core_exact",TRUE,FALSE
+"10.1037/t02083-000","children's impact of traumatic events scale b-revised","children's impact of traumatic events",78,8,"fuzzy",FALSE,FALSE
+"10.1037/t02161-000","almost perfect scale-revised","almost perfect",23,196,"core_exact",FALSE,FALSE
+"10.1037/t02162-000","allophilia scale","allophilia",17,24,"core_exact",TRUE,FALSE
+"10.1037/t02335-000","marital adjustment test","marital adjustment",13,333,"core_exact",FALSE,FALSE
+"10.1037/t02384-000","negative affectivity scale","negative affectivity",21,27,"core_exact",TRUE,FALSE
+"10.1037/t02399-000","inventory of socially supportive behaviors","socially supportive behaviors",40,115,"fuzzy",TRUE,FALSE
+"10.1037/t02423-000","parent attribution test","parent attribution test - revised",27,17,"core_exact",FALSE,FALSE
+"10.1037/t02454-000","peer nomination inventory of depression","peer nomination - depression",12,1,"fuzzy",TRUE,FALSE
+"10.1037/t02578-000","severity of violence against men scale","severity of violence against men",46,8,"core_exact",FALSE,FALSE
+"10.1037/t02579-000","severity of violence against women scale","severity of violence against women",46,125,"core_exact",FALSE,FALSE
+"10.1037/t02624-000","brief betrayal-trauma survey","betrayal trauma",12,112,"core_exact",TRUE,FALSE
+"10.1037/t02639-000","need for touch scale-short version","need for touch",14,1,"core_exact",FALSE,FALSE
+"10.1037/t02749-000","acceptance of modern myths about sexual aggression","acceptance of modern myths about sexual aggression",30,11,"exact",TRUE,FALSE
+"10.1037/t02783-000","women's experiences with battering scale","women’s experiences with battering",10,13,"core_exact",FALSE,FALSE
+"10.1037/t02889-000","perceived stress scale","perceived stress",14,6494,"core_exact",FALSE,FALSE
+"10.1037/t03125-000","scale of positive and negative experience","positive and negative experience",12,180,"fuzzy",TRUE,FALSE
+"10.1037/t03126-000","flourishing scale","flourishing",8,346,"core_exact",TRUE,FALSE
+"10.1037/t03127-000","new ecological paradigm scale","new ecological paradigm",16,166,"core_exact",TRUE,FALSE
+"10.1037/t03171-000","compensatory health beliefs scale","compensatory health belief",17,12,"fuzzy",TRUE,FALSE
+"10.1037/t03210-000","inventory of parent and peer attachment-revised","parent and peer attachment",53,53,"fuzzy",TRUE,FALSE
+"10.1037/t03319-000","yale food addiction scale","yale food addiction",25,234,"core_exact",TRUE,FALSE
+"10.1037/t03332-000","negative self-portrayal scale","negative self-portrayal",26,17,"core_exact",TRUE,FALSE
+"10.1037/t03345-000","food preoccupation questionnaire","food preoccupation",26,7,"core_exact",TRUE,FALSE
+"10.1037/t03470-000","ocd family functioning scale","ocd family functioning",42,10,"core_exact",TRUE,FALSE
+"10.1037/t03500-000","family almost perfect scale","family almost perfect",17,9,"core_exact",TRUE,FALSE
+"10.1037/t03589-000","hospital anxiety and depression scale","hospital anxiety and depression",14,12134,"core_exact",FALSE,FALSE
+"10.1037/t03607-000","social desirability scale-17","social desirability",20,102,"core_exact",TRUE,FALSE
+"10.1037/t03629-000","herth hope scale","herth hope",30,43,"core_exact",TRUE,FALSE
+"10.1037/t03674-000","self-injurious thoughts and behaviors interview","self-injurious thoughts and behaviors",166,251,"core_exact",FALSE,FALSE
+"10.1037/t03755-000","indecisiveness scale","indecisiveness",20,52,"core_exact",TRUE,FALSE
+"10.1037/t03897-000","vancouver index of acculturation","vancouver acculturation",20,179,"fuzzy",TRUE,FALSE
+"10.1037/t03936-000","marijuana ladder","marijuana ladder",10,6,"exact",TRUE,FALSE
+"10.1037/t04019-000","alcoholics anonymous involvement scale","alcoholics anonymous involvement",13,28,"core_exact",TRUE,FALSE
+"10.1037/t04027-000","sexual compulsivity scale","sexual compulsivity",10,219,"core_exact",FALSE,FALSE
+"10.1037/t04065-000","sensation seeking scale, form v","sensation seeking",34,171,"core_exact",TRUE,FALSE
+"10.1037/t04095-000","self-rating depression scale","zung self-rating depression",20,933,"core_exact",TRUE,FALSE
+"10.1037/t04111-000","montgomery-asberg depression rating scale","montgomery-asberg depression",10,7238,"core_exact",FALSE,TRUE
+"10.1037/t04259-000","mindful attention awareness scale","mindful attention awareness",15,1121,"core_exact",TRUE,FALSE
+"10.1037/t04261-000","personal growth initiative scale","personal growth initiative",9,0,"core_exact",TRUE,FALSE
+"10.1037/t04263-000","silver lining questionnaire","silver lining",38,11,"core_exact",TRUE,FALSE
+"10.1037/t04289-000","machismo scale","machismo",20,9,"core_exact",TRUE,FALSE
+"10.1037/t04305-000","geriatric hopelessness scale","geriatric hopelessness",30,10,"core_exact",TRUE,FALSE
+"10.1037/t04509-000","desirability of control scale","desirability of control",20,43,"core_exact",TRUE,FALSE
+"10.1037/t04569-000","relational-interdependent self-construal scale","relational-interdependent self-construal",11,92,"core_exact",TRUE,FALSE
+"10.1037/t04703-000","regret scale","regret",5,40,"core_exact",TRUE,FALSE
+"10.1037/t04710-000","trauma screening questionnaire","trauma screening",10,167,"core_exact",TRUE,FALSE
+"10.1037/t04751-000","daily stress inventory","daily stress",59,97,"core_exact",FALSE,FALSE
+"10.1037/t04754-000","positive and negative affect schedule--expanded version","positive and negative affect",56,233,"core_exact",TRUE,FALSE
+"10.1037/t04867-000","spheres of control scale","spheres of control",30,27,"core_exact",TRUE,FALSE
+"10.1037/t04889-000","trait emotional intelligence questionnaire","trait emotional intelligence",30,183,"core_exact",FALSE,FALSE
+"10.1037/t04905-000","attitudes toward women scale for adolescents","attitudes toward women - adolescents",12,30,"fuzzy",FALSE,FALSE
+"10.1037/t04973-000","davidson trauma scale","davidson trauma",17,445,"core_exact",FALSE,TRUE
+"10.1037/t04993-000","hare psychopathy checklist-revised","hare psychopathy",20,405,"core_exact",FALSE,FALSE
+"10.1037/t05056-000","positive and negative syndrome scale","positive and negative syndrome",30,13316,"core_exact",FALSE,TRUE
+"10.1037/t05157-000","short sadistic impulse scale","sadistic impulse",10,52,"core_exact",TRUE,FALSE
+"10.1037/t05186-000","trauma symptom checklist-40","trauma symptom",40,149,"core_exact",FALSE,FALSE
+"10.1037/t05400-000","coping measure","coping",6,15,"core_exact",FALSE,FALSE
+"10.1037/t05403-000","physical activity and sport anxiety scale","physical activity and sport anxiety",16,5,"core_exact",TRUE,FALSE
+"10.1037/t05421-000","revised sexual experiences survey","sexual experiences",18,47,"core_exact",TRUE,FALSE
+"10.1037/t05515-000","toronto mindfulness scale","toronto mindfulness",15,191,"core_exact",FALSE,FALSE
+"10.1037/t05661-000","barratt impulsiveness scale-11","barratt impulsiveness",30,1340,"core_exact",TRUE,FALSE
+"10.1037/t05729-000","intellectual achievement responsibility scale","intellectual achievement responsibility",104,4,"core_exact",FALSE,FALSE
+"10.1037/t05778-000","strain-free negative affectivity scale","strain free negative affectivity",26,5,"core_exact",TRUE,FALSE
+"10.1037/t05810-000","computer anxiety scale","computer anxiety",19,37,"core_exact",TRUE,FALSE
+"10.1037/t05854-000","social and emotional loneliness scale for adults","social and emotional loneliness",11,46,"core_exact",TRUE,FALSE
+"10.1037/t05973-000","sex role survey","sex role",43,0,"core_exact",FALSE,FALSE
+"10.1037/t06050-000","job involvement scale","job involvement",20,0,"core_exact",TRUE,FALSE
+"10.1037/t06078-000","fear of crime measure","fear of crime",4,0,"core_exact",FALSE,FALSE
+"10.1037/t06142-000","affect intensity measure","affect intensity",50,170,"core_exact",TRUE,FALSE
+"10.1037/t06160-000","self-report altruism scale","self-report altruism",20,122,"core_exact",FALSE,FALSE
+"10.1037/t06161-000","pregnancy experience scale","pregnancy experience",41,16,"core_exact",TRUE,FALSE
+"10.1037/t06168-000","patient health questionnaire-4","patient health",4,544,"core_exact",TRUE,FALSE
+"10.1037/t06207-000","interpersonal support evaluation list","interpersonal support evaluation",40,626,"fuzzy",FALSE,TRUE
+"10.1037/t06213-000","social provisions scale","social provisions",24,570,"core_exact",FALSE,TRUE
+"10.1037/t06259-000","brief mood introspection scale","mood introspection",16,194,"core_exact",TRUE,FALSE
+"10.1037/t06346-000","connor-davidson resilience scale","connor-davidson resilience",25,935,"core_exact",FALSE,TRUE
+"10.1037/t06406-000","male role norms scale","male role norms",30,81,"core_exact",TRUE,FALSE
+"10.1037/t06463-000","emotion regulation questionnaire","emotion_regulation_questionnaire",10,1569,"exact",FALSE,TRUE
+"10.1037/t06514-000","life satisfaction rating scales","life satisfaction",6,4,"core_exact",TRUE,FALSE
+"10.1037/t06617-000","cohen-hoberman inventory of physical symptoms","cohen-hoberman physical symptoms",33,81,"fuzzy",FALSE,FALSE
+"10.1037/t06631-000","trauma symptom checklist for children","trauma symptom children",54,500,"fuzzy",FALSE,FALSE
+"10.1037/t06664-000","acceptance of interpersonal violence scale","acceptance of interpersonal violence",6,31,"core_exact",TRUE,FALSE
+"10.1037/t06852-000","emotional empathy questionnaire","emotional empathy",33,12,"core_exact",FALSE,FALSE
+"10.1037/t06960-000","self-esteem scale","self esteem",13,0,"core_exact",FALSE,FALSE
+"10.1037/t07010-000","homophobia scale","homophobia",25,0,"core_exact",FALSE,FALSE
+"10.1037/t07016-000","ten-item personality inventory","ten item personality",10,981,"core_exact",TRUE,FALSE
+"10.1037/t07081-000","epworth sleepiness scale","epworth sleepiness",9,4041,"core_exact",FALSE,TRUE
+"10.1037/t07225-000","survey of recent life experiences","recent life experiences",41,0,"fuzzy",FALSE,FALSE
+"10.1037/t07327-000","alabama parenting questionnaire--short form","alabama parenting s",9,43,"fuzzy",TRUE,FALSE
+"10.1037/t07365-000","student university match scale","student university match",18,0,"core_exact",TRUE,FALSE
+"10.1037/t07367-000","perception of parental reciprocity scale","perception of parental reciprocity",38,14,"core_exact",TRUE,FALSE
+"10.1037/t07368-000","perception of spousal reciprocity scale","perception of spousal reciprocity",18,1,"core_exact",TRUE,FALSE
+"10.1037/t07456-000","support for lesbian and gay human rights scale","support for lesbian and gay human rights",25,7,"core_exact",FALSE,FALSE
+"10.1037/t07492-000","screen for posttraumatic stress symptoms","screen for posttraumatic stress symptoms",17,32,"exact",TRUE,FALSE
+"10.1037/t07556-000","self-statements during public speaking scale","self-statement during public speaking",10,33,"fuzzy",TRUE,FALSE
+"10.1037/t07688-000","risk taking index","risk taking",5,0,"core_exact",FALSE,FALSE
+"10.1037/t07728-000","body esteem scale","body esteem",28,0,"core_exact",FALSE,FALSE
+"10.1037/t07809-000","social physique anxiety scale","social physique anxiety",12,185,"core_exact",FALSE,FALSE
+"10.1037/t07937-000","religious support scale","religious support",21,35,"core_exact",FALSE,FALSE
+"10.1037/t07987-000","emotional contagion scale","emotional contagion",14,92,"core_exact",FALSE,FALSE
+"10.1037/t08203-000","marks fear questionnaire","fear",24,0,"core_exact",TRUE,FALSE
+"10.1037/t08347-000","maudsley obsessional-compulsive inventory","maudsley obsessional-compulsive inventory",30,124,"exact",TRUE,FALSE
+"10.1037/t08351-000","responsibility interpretations questionnaire","responsibility interpretations riq",22,23,"fuzzy",TRUE,FALSE
+"10.1037/t08399-000","general decision-making scale","general decision making style",25,9,"core_exact",TRUE,FALSE
+"10.1037/t08473-000","masculine and feminine self-disklosure scale","masculine and feminine self-disclosure",41,0,"fuzzy",FALSE,FALSE
+"10.1037/t08519-000","rimon's brief depression scale","rimon's brief depression",8,5,"core_exact",TRUE,FALSE
+"10.1037/t08654-000","measure of attachment qualities","attachment qualities",14,20,"fuzzy",TRUE,FALSE
+"10.1037/t08962-000","clinician-administered ptsd scale for children and adolescents","clinician-administered ptsd",30,115,"core_exact",FALSE,FALSE
+"10.1037/t09194-000","work-family enrichment scale","work-family enrichment",18,59,"core_exact",TRUE,FALSE
+"10.1037/t09290-000","interaction anxiousness scale","interaction anxiousness",15,88,"core_exact",FALSE,FALSE
+"10.1037/t09325-000","conscientiousness scale","conscientiousness",10,128,"core_exact",TRUE,FALSE
+"10.1037/t09367-000","acceptance of stereotyping questionnaire","acceptance of stereotyping",12,6,"core_exact",TRUE,FALSE
+"10.1037/t09484-000","hypersensitive narcissism scale","hypersensitive narcissism",10,199,"core_exact",TRUE,FALSE
+"10.1037/t09556-000","curiosity and exploration inventory--ii","curiosity and exploration",10,58,"core_exact",TRUE,FALSE
+"10.1037/t09593-000","need to evaluate scale","need to evaluate",18,32,"core_exact",TRUE,FALSE
+"10.1037/t09716-000","childhood trauma questionnaire--short form","childhood trauma",19,656,"core_exact",TRUE,FALSE
+"10.1037/t09751-000","positive generalization scale","positive generalization",16,1,"core_exact",TRUE,FALSE
+"10.1037/t09862-000","empathy index","empathy",16,0,"core_exact",TRUE,FALSE
+"10.1037/t09922-000","anxiety scale","anxiety",10,0,"core_exact",TRUE,FALSE
+"10.1037/t09943-000","audience anxiousness scale","audience anxiousness",12,13,"core_exact",TRUE,FALSE
+"10.1037/t10022-000","connectedness to nature scale","connectedness to nature",14,105,"core_exact",TRUE,FALSE
+"10.1037/t10027-000","cope inventory","cope inventory",60,562,"exact",FALSE,FALSE
+"10.1037/t10148-000","following affective states test","following affective states",16,9,"core_exact",TRUE,FALSE
+"10.1037/t10199-000","obsessive-compulsive inventory","obsessive-compulsive inventory",42,209,"exact",FALSE,FALSE
+"10.1037/t10208-000","procrastination scale","procrastination",15,55,"core_exact",TRUE,FALSE
+"10.1037/t10309-000","social avoidance and distress scale","social avoidance and distress",28,256,"core_exact",TRUE,FALSE
+"10.1037/t10343-000","general procrastination scale","general procrastination",20,0,"core_exact",TRUE,FALSE
+"10.1037/t10350-000","anxiety sensitivity index--revised","anxiety sensitivity index-revised",36,86,"exact",TRUE,FALSE
+"10.1037/t10499-000","pure procrastination scale","pure procrastination",12,29,"core_exact",TRUE,FALSE
+"10.1037/t10703-000","student worry questionnaire-30","student worry",30,1,"core_exact",FALSE,FALSE
+"10.1037/t10721-000","anxiety sensitivity profile","anxiety sensitivity profile",60,19,"exact",TRUE,FALSE
+"10.1037/t10761-000","brief edinburgh depression scale","edinburgh depression",6,11,"core_exact",TRUE,FALSE
+"10.1037/t10829-000","modified affect balance scale","affect balance",10,0,"core_exact",TRUE,FALSE
+"10.1037/t10954-000","levels of self-criticism scale","levels of self-criticism",22,36,"core_exact",TRUE,FALSE
+"10.1037/t11093-000","misanthropy scale","misanthropy",4,0,"core_exact",TRUE,FALSE
+"10.1037/t11289-000","core self-evaluations scale","core self-evaluations",12,224,"core_exact",FALSE,FALSE
+"10.1037/t11424-000","passionate love scale--short version","passionate love",15,0,"core_exact",TRUE,FALSE
+"10.1037/t11661-000","self-control scale","brief_self_control_survey",13,0,"core_exact",TRUE,FALSE
+"10.1037/t11782-000","pain coping measure","pain assessment - coping",10,0,"core_exact",TRUE,FALSE
+"10.1037/t11789-000","deferment of gratification measure","deferment_of_gratification_scale",12,0,"core_exact",TRUE,FALSE
+"10.1037/t11872-000","student-teacher relationship scale","student teacher relationship",34,456,"core_exact",FALSE,TRUE
+"10.1037/t11887-000","saving inventory-revised","saving inventory revised",23,271,"exact",TRUE,FALSE
+"10.1037/t11904-000","dysfunctional beliefs and attitudes about sleep scale","dysfunctional beliefs and attitudes about sleep2",30,166,"fuzzy",TRUE,FALSE
+"10.1037/t12062-000","blushing propensity scale","blushing propensity",14,23,"core_exact",TRUE,FALSE
+"10.1037/t12263-000","eating behavior assessment","eating behavior",11,6,"core_exact",TRUE,FALSE
+"10.1037/t12351-000","job satisfaction scale","job satisfaction",8,0,"core_exact",FALSE,FALSE
+"10.1037/t12437-000","sensitivity to put-down scale","sensitivity to put-down",20,2,"core_exact",TRUE,FALSE
+"10.1037/t12560-000","fibrofatigue scale","fibrofatigue",11,6,"core_exact",TRUE,FALSE
+"10.1037/t12830-000","intolerance of uncertainty scale--short version","intolerance of uncertainty s",12,43,"fuzzy",TRUE,FALSE
+"10.1037/t12957-000","private self-consciousness measure","private self-consciousness",10,0,"core_exact",TRUE,FALSE
+"10.1037/t12972-000","internet self-efficacy measure","internet self efficacy",8,0,"core_exact",TRUE,FALSE
+"10.1037/t13018-000","cognitive avoidance questionnaire--english version","cognitive avoidance",25,3,"core_exact",TRUE,FALSE
+"10.1037/t13048-000","symptom-sign inventory","symptom-sign inventory",10,0,"exact",FALSE,FALSE
+"10.1037/t13195-000","social attraction measure","social attraction",6,0,"core_exact",TRUE,FALSE
+"10.1037/t13434-000","other as shamer scale","other as shamer",16,90,"core_exact",TRUE,FALSE
+"10.1037/t13498-000","distress tolerance scale","distress tolerance",16,512,"core_exact",FALSE,TRUE
+"10.1037/t13912-000","repetitive thinking questionnaire","repetitive thinking",31,34,"core_exact",TRUE,FALSE
+"10.1037/t14339-000","multiple sclerosis self-management scale-revised","multiple sclerosis self-management",24,0,"core_exact",TRUE,FALSE
+"10.1037/t14348-000","attentional resource allocation scale","attentional resource allocation",15,2,"core_exact",TRUE,FALSE
+"10.1037/t14351-000","illness/injury sensitivity index--revised","illness/injury sensitivity",9,13,"core_exact",TRUE,FALSE
+"10.1037/t14461-000","death depression scale","death depression",17,15,"core_exact",FALSE,FALSE
+"10.1037/t14484-000","trust in management measure","trust in management",5,0,"core_exact",TRUE,FALSE
+"10.1037/t14647-000","functional behavior profile","functional behavior profile",27,9,"exact",TRUE,FALSE
+"10.1037/t14663-000","bochumer bindungsfragebogen","experiences in close relationships",36,0,"exact",TRUE,FALSE
+"10.1037/t14666-000","mating-effort scale--male version","mating effort - female",9,0,"fuzzy",TRUE,FALSE
+"10.1037/t14823-000","problem recognition questionnaire","problem recognition",25,11,"core_exact",TRUE,FALSE
+"10.1037/t15085-000","eating inventory","three_factor_eating_questionnaire",18,112,"exact",FALSE,FALSE
+"10.1037/t15197-000","short mood and feelings questionnaire","short mood and feelings",13,529,"core_exact",FALSE,TRUE
+"10.1037/t15230-000","negative body talk scale","negative body talk",13,15,"core_exact",FALSE,FALSE
+"10.1037/t15283-000","autism parenting stress index","autism parenting stress",13,23,"core_exact",TRUE,FALSE
+"10.1037/t15504-000","body awareness questionnaire","body awareness",18,54,"core_exact",FALSE,FALSE
+"10.1037/t15693-000","perceived family burden scale","perceived family burden",24,15,"core_exact",TRUE,FALSE
+"10.1037/t16008-000","marital satisfaction measure","marital satisfaction",8,0,"core_exact",FALSE,FALSE
+"10.1037/t16493-000","impression management survey","impression-management",20,0,"core_exact",FALSE,FALSE
+"10.1037/t16764-000","romanticism scale","romanticism",9,0,"core_exact",TRUE,FALSE
+"10.1037/t16889-000","adolescent femininity ideology scale","adolescent femininity ideology",20,14,"core_exact",FALSE,FALSE
+"10.1037/t16893-000","romantic partner conflict scale","romantic partner conflict",39,13,"core_exact",TRUE,FALSE
+"10.1037/t17162-000","psychological aggression scale","psychological aggression",10,30,"core_exact",TRUE,FALSE
+"10.1037/t17165-000","alcohol ladder","alcohol ladder",10,4,"exact",TRUE,FALSE
+"10.1037/t17438-000","imagination questionnaire","imagination",10,1,"core_exact",FALSE,FALSE
+"10.1037/t17492-000","nicotine dependence measure","nicotine dependence",8,0,"core_exact",TRUE,FALSE
+"10.1037/t17818-000","team emergency assessment measure","team emergency assessment",11,3,"core_exact",TRUE,FALSE
+"10.1037/t18179-000","leadership questionnaire","leadership",10,0,"core_exact",TRUE,FALSE
+"10.1037/t18293-000","cultural estrangement inventory--adapted","cultural estrangement",10,0,"core_exact",FALSE,FALSE
+"10.1037/t18639-000","personal evaluation inventory","personal evaluation",54,6,"core_exact",TRUE,FALSE
+"10.1037/t18894-000","ambiguity tolerance scale","ambiguity tolerance",21,11,"core_exact",TRUE,FALSE
+"10.1037/t19334-000","hiv stigma scale","hiv stigma",40,223,"core_exact",FALSE,FALSE
+"10.1037/t19585-000","negative affect measure","negative affect",5,0,"core_exact",FALSE,FALSE
+"10.1037/t19754-000","attitudes toward mental illness survey","attitudes towards mental illness",39,0,"fuzzy",FALSE,FALSE
+"10.1037/t19807-000","work motivation measure","work motivation",19,0,"core_exact",FALSE,FALSE
+"10.1037/t20283-000","impulsive-premeditated aggression scales","impulsive/premeditated aggression",26,17,"core_exact",TRUE,FALSE
+"10.1037/t20305-000","parent threat inventory","parent threat inventory",17,3,"exact",TRUE,FALSE
+"10.1037/t20639-000","social support inventory","social support inventory",20,73,"exact",FALSE,FALSE
+"10.1037/t20686-000","philadelphia mindfulness scale","philadelphia mindfulness",20,143,"core_exact",TRUE,FALSE
+"10.1037/t20693-000","sexual abuse questionnaire","sexual abuse",7,24,"core_exact",FALSE,FALSE
+"10.1037/t20877-000","internal locus of control scale","internal locus of control",3,24,"core_exact",TRUE,FALSE
+"10.1037/t20915-000","cognitive-somatic anxiety questionnaire","cognitive-somatic anxiety",14,23,"core_exact",FALSE,FALSE
+"10.1037/t21011-000","acceptance of cosmetic surgery scale","acceptance of cosmetic surgery",15,54,"core_exact",TRUE,FALSE
+"10.1037/t21023-000","neuroticism scale","neuroticism",10,190,"core_exact",TRUE,FALSE
+"10.1037/t22284-000","psychological abuse scale","psychological abuse",15,17,"core_exact",TRUE,FALSE
+"10.1037/t23360-000","reading motivation scale","reading motivation",21,9,"core_exact",TRUE,FALSE
+"10.1037/t23406-000","trust in physician scale","trust in physician",11,89,"core_exact",TRUE,FALSE
+"10.1037/t23552-000","satisfaction with physician measure","satisfaction with physician",3,0,"core_exact",TRUE,FALSE
+"10.1037/t23559-000","preschool physical activity questionnaire","school physical activity",48,1,"fuzzy",TRUE,FALSE
+"10.1037/t24110-000","organization-based self-esteem","organization-based self-esteem",10,15,"exact",TRUE,FALSE
+"10.1037/t26112-000","occupational driver behavior questionnaire","occupational driver behavior",12,5,"core_exact",TRUE,FALSE
+"10.1037/t26388-000","fear of happiness scale","fear of happiness",5,15,"core_exact",TRUE,FALSE
+"10.1037/t26640-000","seasonal pattern assessment questionnaire","seasonal pattern",21,218,"core_exact",FALSE,FALSE
+"10.1037/t26667-000","altruism scale","altruism",10,0,"core_exact",TRUE,FALSE
+"10.1037/t26693-000","culture questionnaire--measure of individual perceptions and conceptions","culture",10,0,"core_exact",FALSE,FALSE
+"10.1037/t27154-000","need to belong scale","need to belong",12,164,"core_exact",TRUE,FALSE
+"10.1037/t27810-000","narcissistic admiration and rivalry questionnaire","narcissistic admiration and rivalry",18,116,"core_exact",TRUE,FALSE
+"10.1037/t28032-000","social media use integration scale","social media use integration",10,16,"core_exact",TRUE,FALSE
+"10.1037/t28042-000","anhedonia scale","anhedonia",6,8,"core_exact",TRUE,FALSE
+"10.1037/t28570-000","apathy evaluation scale","apathy evaluation",18,451,"core_exact",TRUE,FALSE
+"10.1037/t28680-000","decision regret scale","decision regret",5,59,"core_exact",FALSE,FALSE
+"10.1037/t29145-000","neurobehavioral rating scale","neurobehavioral rating revised",29,76,"core_exact",TRUE,FALSE
+"10.1037/t30045-000","transgression-related interpersonal motivations inventory--revised","transgression-related interpersonal motivations",18,2,"core_exact",FALSE,FALSE
+"10.1037/t30328-000","arizona sexual experience scale","arizona sexual experiences",5,176,"fuzzy",FALSE,FALSE
+"10.1037/t30423-000","environmental concern measure","environmental concern",5,24,"core_exact",TRUE,FALSE
+"10.1037/t30908-000","service to others in sobriety questionnaire","service to others in sobriety",12,5,"core_exact",TRUE,FALSE
+"10.1037/t31314-000","future time perspective scale","future_time_perspective_survey",10,148,"core_exact",TRUE,FALSE
+"10.1037/t31412-000","reward responsiveness scale","reward-responsiveness",6,17,"core_exact",TRUE,FALSE
+"10.1037/t31524-000","drug use questionnaire","drug use",30,97,"core_exact",FALSE,FALSE
+"10.1037/t31528-000","efficiency index","efficiency",11,2,"core_exact",TRUE,FALSE
+"10.1037/t31847-000","internalized homonegativity inventory","internalized homonegativity",23,46,"core_exact",TRUE,FALSE
+"10.1037/t31883-000","wellness beliefs scale","wellness beliefs",21,2,"core_exact",TRUE,FALSE
+"10.1037/t31960-000","sources of social support scale","sources of social support",10,14,"core_exact",TRUE,FALSE
+"10.1037/t32628-000","delinquent activities scale","delinquent activities",40,8,"core_exact",FALSE,FALSE
+"10.1037/t32893-000","coparenting relationship scale","coparenting relationship",35,63,"core_exact",TRUE,FALSE
+"10.1037/t33694-000","extrinsic contingency focus scale","extrinsic contingency focus",20,7,"core_exact",TRUE,FALSE
+"10.1037/t33727-000","self other intergroup anxiety scale","self other intergroup anxiety",20,2,"core_exact",TRUE,FALSE
+"10.1037/t33900-000","bergen insomnia scale","bergen insomnia",6,91,"core_exact",TRUE,FALSE
+"10.1037/t34428-000","melbourne decision making questionnaire","melbourne decision making",23,66,"core_exact",TRUE,FALSE
+"10.1037/t34494-000","food acceptance and action questionnaire","food acceptance and awareness",10,4,"core_exact",TRUE,FALSE
+"10.1037/t35123-000","stroke aphasic depression questionnaire","stroke aphasic depression",21,20,"core_exact",TRUE,FALSE
+"10.1037/t35442-000","commitment scale","commitment",3,0,"core_exact",TRUE,FALSE
+"10.1037/t35957-000","glasgow content of thoughts inventory","glasgow content of thoughts",25,10,"core_exact",FALSE,FALSE
+"10.1037/t36241-000","deservingness of bad outcomes scale--ii","deservingness of bad outcomes",9,0,"core_exact",TRUE,FALSE
+"10.1037/t36621-000","use of creative cognition scale","short use of creative cognition",5,3,"core_exact",TRUE,FALSE
+"10.1037/t36853-000","consideration of future consequences--14 scale","consideration of future consequences",12,2,"exact",TRUE,FALSE
+"10.1037/t37301-000","parental beliefs about anxiety questionnaire","parental beliefs about anxiety",17,8,"core_exact",FALSE,FALSE
+"10.1037/t37319-000","caregiver quality of life index--cancer","caregiver quality of life cancer",35,39,"core_exact",FALSE,FALSE
+"10.1037/t37633-000","vulnerable attachment style questionnaire","vulnerable attachment style",22,25,"core_exact",TRUE,FALSE
+"10.1037/t37704-000","homeless engagement and acceptance scale","homeless engagement and acceptance",5,2,"core_exact",TRUE,FALSE
+"10.1037/t38201-000","sexual coercion inventory--revised","sexual coercion",14,0,"core_exact",FALSE,FALSE
+"10.1037/t38619-000","experience of shame scale--adapted","experience of shame",25,0,"core_exact",TRUE,FALSE
+"10.1037/t39705-000","male role attitudes scale","male role attitudes",8,34,"core_exact",FALSE,FALSE
+"10.1037/t41179-000","flexibility measure","flexibility",10,0,"core_exact",FALSE,FALSE
+"10.1037/t41381-000","communication competence scale","communication competence",12,0,"core_exact",FALSE,FALSE
+"10.1037/t41728-000","actively open-minded thinking scale--short form","actively open-minded thinking",7,5,"core_exact",TRUE,FALSE
+"10.1037/t41758-000","pittsburgh sleep quality index-short version","pittsburgh sleep quality",12,1,"core_exact",FALSE,FALSE
+"10.1037/t41854-000","reading rating form","reading",11,1,"core_exact",FALSE,FALSE
+"10.1037/t41957-000","consciousness of social face scale","consciousness of social face",11,2,"core_exact",TRUE,FALSE
+"10.1037/t41976-000","family role performance scale","family role performance",8,2,"core_exact",TRUE,FALSE
+"10.1037/t42162-000","marital disillusionment scale","marital disillusionment",16,4,"core_exact",TRUE,FALSE
+"10.1037/t42222-000","short anger measure","anger",10,3,"core_exact",TRUE,FALSE
+"10.1037/t43165-000","partner-focused prayer measure","partner-focused prayer",4,1,"core_exact",TRUE,FALSE
+"10.1037/t43183-000","positive and negative ex-relationship thoughts scale","positive and negative ex-relationship thoughts",12,0,"core_exact",TRUE,FALSE
+"10.1037/t43537-000","fanship scale","fanship",11,3,"core_exact",FALSE,FALSE
+"10.1037/t43699-000","responses to stress questionnaire--cancer version","responses to stress",59,3,"core_exact",FALSE,FALSE
+"10.1037/t43933-000","trusting relationship questionnaire--child version","trusting relationship",18,3,"core_exact",FALSE,FALSE
+"10.1037/t43970-000","homophily measure","homophily",8,0,"core_exact",TRUE,FALSE
+"10.1037/t44215-000","civic participation scale","civic participation",5,14,"core_exact",FALSE,FALSE
+"10.1037/t44850-000","fatalism scale","fatalism",24,0,"core_exact",TRUE,FALSE
+"10.1037/t46030-000","professional self identity questionnaire","professional self identity",9,1,"core_exact",FALSE,FALSE
+"10.1037/t46293-000","collective self-esteem scales--modified","collective self-esteem",16,2,"core_exact",FALSE,FALSE
+"10.1037/t46344-000","critical processing of beauty images scale","critical processing of beauty images",22,3,"core_exact",FALSE,FALSE
+"10.1037/t46512-000","caregiver burden scale-15","caregiver burden",15,2,"core_exact",FALSE,FALSE
+"10.1037/t46692-000","impression management measure","impression management",6,0,"core_exact",TRUE,FALSE
+"10.1037/t46783-000","appraisal of diabetes scale","appraisal of diabetes",7,10,"core_exact",FALSE,FALSE
+"10.1037/t47107-000","employment hope scale","employment hope",13,7,"core_exact",FALSE,FALSE
+"10.1037/t47310-000","environmental action scale","environmental action",18,4,"core_exact",TRUE,FALSE
+"10.1037/t47878-000","child sexual abuse attitude and belief scale","child sexual abuse attitude and belief",36,2,"core_exact",FALSE,FALSE
+"10.1037/t48846-000","forgiveness scale","forgiveness",13,0,"core_exact",FALSE,FALSE
+"10.1037/t49653-000","cognitive and affective mindfulness scale--revised","cognitive and affective mindfulness",12,181,"core_exact",FALSE,FALSE
+"10.1037/t50164-000","symbolic racism 2000 scale","symbolic racism 2000",7,30,"core_exact",FALSE,FALSE
+"10.1037/t51781-000","penn alcohol craving scale","penn alcohol craving",5,241,"core_exact",FALSE,FALSE
+"10.1037/t51926-000","comprehension scale","comprehension",10,0,"core_exact",TRUE,FALSE
+"10.1037/t52667-000","columbia-suicide severity rating scale","columbia suicide severity",60,1135,"core_exact",FALSE,TRUE
+"10.1037/t53536-000","occupational self-efficacy scale","occupational self-efficacy",20,75,"core_exact",TRUE,FALSE
+"10.1037/t53614-000","need for drama scale","need for drama",12,3,"core_exact",TRUE,FALSE
+"10.1037/t54382-000","flow state scale","flow state",36,93,"core_exact",FALSE,FALSE
+"10.1037/t56444-000","depression-happiness scale","depression-happiness",25,28,"core_exact",FALSE,FALSE
+"10.1037/t56874-000","driving anger scale--short version","driving anger",14,3,"core_exact",FALSE,FALSE
+"10.1037/t57053-000","parental health beliefs survey","parental health belief",30,1,"fuzzy",FALSE,FALSE
+"10.1037/t57685-000","big three perfectionism scale","big three perfectionism",45,12,"core_exact",TRUE,FALSE
+"10.1037/t57744-000","self-regulated practice behavior scale","self-regulated practice behavior",38,1,"core_exact",FALSE,FALSE
+"10.1037/t57874-000","perceived parental acculturation behaviors scale","perceived parental acculturation behaviors",20,3,"core_exact",FALSE,FALSE
+"10.1037/t58163-000","mastery scale--revised","mastery",6,1,"core_exact",FALSE,FALSE
+"10.1037/t58427-000","information avoidance scale","information avoidance",8,12,"core_exact",TRUE,FALSE
+"10.1037/t58830-000","community attitudes toward sex offenders--modified version","community attitudes toward sex offenders",20,1,"exact",FALSE,FALSE
+"10.1037/t58894-000","responsibility scale for children","responsibility",10,0,"core_exact",FALSE,FALSE
+"10.1037/t59143-000","hopelessness depression symptom questionnaire","hopelessness depression symptom",32,39,"core_exact",FALSE,FALSE
+"10.1037/t59615-000","positive relational management scale","positive relational management",11,6,"core_exact",TRUE,FALSE
+"10.1037/t60955-000","gratitude resentment and appreciation test","gratitude resentment appreciation",44,26,"fuzzy",FALSE,FALSE
+"10.1037/t61286-000","positive affect index","positive affect",5,57,"core_exact",FALSE,FALSE
+"10.1037/t61642-000","activities of daily living in hoarding scale","activities of daily living - hoarding",15,6,"fuzzy",TRUE,FALSE
+"10.1037/t61807-000","integrative self-knowledge scale","integrative self-knowledge",12,34,"core_exact",TRUE,FALSE
+"10.1037/t61921-000","familism scale","familism",9,0,"core_exact",TRUE,FALSE
+"10.1037/t61993-000","rape myth acceptance scale","rape myth acceptance",8,139,"core_exact",TRUE,FALSE
+"10.1037/t62210-000","conduct disorder rating scale","conduct disorder - parent",20,8,"core_exact",TRUE,FALSE
+"10.1037/t62236-000","bipolar recovery questionnaire","bipolar recovery",36,13,"core_exact",TRUE,FALSE
+"10.1037/t62453-000","social isolation inventory","social isolation",12,0,"core_exact",FALSE,FALSE
+"10.1037/t62607-000","child mania rating scale--parent version","child mania",21,17,"core_exact",TRUE,FALSE
+"10.1037/t62636-000","forensic evidence evaluation bias scale","forensic evidence evaluation bias",10,2,"core_exact",TRUE,FALSE
+"10.1037/t62654-000","clinically useful depression outcome scale","clinically useful depression outcome",18,43,"core_exact",FALSE,FALSE
+"10.1037/t62704-000","internal state scale","internal state",17,96,"core_exact",FALSE,FALSE
+"10.1037/t62732-000","dieting beliefs scale","dieting beliefs",16,6,"core_exact",TRUE,FALSE
+"10.1037/t62737-000","life events checklist--kurdish version","life events checklist",17,1,"exact",FALSE,FALSE
+"10.1037/t63102-000","creativity scale","creativity",31,0,"core_exact",FALSE,FALSE
+"10.1037/t63420-000","fantasy engagement scale","fantasy engagement",8,2,"core_exact",TRUE,FALSE
+"10.1037/t63820-000","dispositional contempt scale","dispositional contempt",10,3,"core_exact",TRUE,FALSE
+"10.1037/t63880-000","marijuana effect expectancy questionnaire--brief","marijuana effect expectancy",6,7,"core_exact",TRUE,FALSE
+"10.1037/t64086-000","voices acceptance and action scale","voices acceptance and action",31,21,"core_exact",FALSE,FALSE
+"10.1037/t64291-000","santa clara brief compassion scale","santa clara brief compassion",5,46,"core_exact",FALSE,FALSE
+"10.1037/t64486-000","belief in a just world scale--self","belief in a just world - self",8,1,"core_exact",TRUE,FALSE
+"10.1037/t64815-000","systemizing quotient--adult","systemizing quotient",75,46,"exact",FALSE,FALSE
+"10.1037/t65367-000","alcohol expectancy questionnaire--adolescent version; brief version","alcohol expectancy adolsescent",7,1,"fuzzy",TRUE,FALSE
+"10.1037/t65551-000","belief in a just world scale--others","belief in a just world - others",8,0,"core_exact",TRUE,FALSE
+"10.1037/t65708-000","body odor disgust scale","body odor disgust",12,3,"core_exact",FALSE,FALSE
+"10.1037/t65978-000","customer inspiration scale","customer inspiration",10,1,"core_exact",FALSE,FALSE
+"10.1037/t66296-000","reactive-proactive aggression questionnaire","reactive-proactive aggression",22,246,"core_exact",FALSE,FALSE
+"10.1037/t66392-000","mate retention inventory","mate retention",104,26,"core_exact",FALSE,FALSE
+"10.1037/t66413-000","individualized trust scale","individualized trust",15,16,"core_exact",FALSE,FALSE
+"10.1037/t66414-000","source-credibility scale","source credibility",18,51,"core_exact",TRUE,FALSE
+"10.1037/t66957-000","social desirability measure","social desirability 3",5,0,"fuzzy",TRUE,FALSE
+"10.1037/t67079-000","early memories of warmth and safeness scale","early memories of warmth and safeness",21,19,"core_exact",FALSE,FALSE
+"10.1037/t67918-000","spence children's anxiety scale--brief versions","spence children's anxiety - ocd",6,0,"fuzzy",TRUE,FALSE
+"10.1037/t67968-000","affectometer 2","affectometer",40,24,"exact",FALSE,FALSE
+"10.1037/t68611-000","leader-member social exchange scale","leader member social exchange",8,4,"core_exact",FALSE,FALSE
+"10.1037/t68737-000","adolescent masculinity ideology in relationships scale","adolescent masculinity ideology in relationships",12,24,"core_exact",TRUE,FALSE
+"10.1037/t68816-000","social sexual awareness scale","social sexual awareness",30,1,"core_exact",FALSE,FALSE
+"10.1037/t68828-000","siddiqui-shah depression scale","siddiqui-shah depression",36,8,"core_exact",TRUE,FALSE
+"10.1037/t68994-000","disordered eating attitude scale","disordered eating attitude",26,10,"core_exact",TRUE,FALSE
+"10.1037/t69013-000","consumers' need for uniqueness scale","consumers need for uniqueness",31,19,"core_exact",FALSE,FALSE
+"10.1037/t69146-000","humor styles questionnaire--context version","humor styles",32,0,"core_exact",TRUE,FALSE
+"10.1037/t69217-000","cancer treatment survey","cancer treatment",29,0,"core_exact",FALSE,FALSE
+"10.1037/t69611-000","situational interdependence scale","situational interdependence",30,1,"core_exact",TRUE,FALSE
+"10.1037/t69946-000","fear of loss of vigilance questionnaire","fear of loss of vigilance",14,6,"core_exact",FALSE,FALSE
+"10.1037/t70204-000","bergen-yale sex addiction scale","bergen yale sex addiction",6,2,"core_exact",TRUE,FALSE
+"10.1037/t70979-000","parent adult-child relationship questionnaire","parent adult-child relationship",26,5,"core_exact",TRUE,FALSE
+"10.1037/t71045-000","patience scale","patience",10,7,"core_exact",FALSE,FALSE
+"10.1037/t71304-000","brief experience of caregiving inventory","brief experience of caregiving",21,1,"core_exact",TRUE,FALSE
+"10.1037/t71512-000","pet attitude scale","pet attitude",18,40,"core_exact",FALSE,FALSE
+"10.1037/t71558-000","nurse practitioners satisfaction survey","nurse practitioner satisfaction",28,0,"fuzzy",FALSE,FALSE
+"10.1037/t71752-000","self-curiosity attitude-interest scale","self-curiosity attitude-interest",7,3,"core_exact",FALSE,FALSE
+"10.1037/t71834-000","memorial symptom assessment scale--modified version","memorial symptom",32,3,"core_exact",FALSE,FALSE
+"10.1037/t72264-000","young child ptsd screen","young child ptsd screen",6,4,"exact",FALSE,FALSE
+"10.1037/t72432-000","health behavior measure","health behavior",6,0,"core_exact",FALSE,FALSE
+"10.1037/t72593-000","prestige measure","prestige",8,2,"core_exact",FALSE,FALSE
+"10.1037/t72739-000","signs of depression scale","signs of depression",6,3,"core_exact",FALSE,FALSE
+"10.1037/t73004-000","conspiracy mentality scale","conspiracy mentality",12,19,"core_exact",TRUE,FALSE
+"10.1037/t73111-000","temporal satisfaction with life scale","temporal satisfaction with life",15,54,"core_exact",FALSE,FALSE
+"10.1037/t73560-000","condensed memorial symptom assessment scale","condensed memorial symptom",14,12,"core_exact",FALSE,FALSE
+"10.1037/t73755-000","writing apprehension scale","writing apprehension",20,2,"core_exact",FALSE,FALSE
+"10.1037/t74178-000","positive mental health scale","positive mental health",9,52,"core_exact",TRUE,FALSE
+"10.1037/t74363-000","awe experience scale","awe experience",30,9,"core_exact",TRUE,FALSE
+"10.1037/t75098-000","self-harm scale","self harm",7,11,"core_exact",FALSE,FALSE
+"10.1037/t75606-000","cynical distrust scale","cynical distrust",8,27,"core_exact",TRUE,FALSE
+"10.1037/t75702-000","femininity scale","femininity",8,14,"core_exact",TRUE,FALSE
+"10.1037/t76760-000","mental health questionnaire","mental health",5,61,"core_exact",FALSE,FALSE
+"10.1037/t77067-000","eating disorder examination--avoidant/restrictive food intake disorder module","eating disorder examination",28,0,"exact",FALSE,FALSE
+"10.1037/t79470-000","adaptability scale","adaptability",8,33,"core_exact",TRUE,FALSE
+"10.1037/t79493-000","attachment style interview","attachment style",15,44,"core_exact",FALSE,FALSE
+"10.1037/t79726-000","regret elements scale","regret elements",10,4,"core_exact",TRUE,FALSE
+"10.1037/t80418-000","social comparison orientation scale--adapted version","social comparison orientation",11,0,"core_exact",TRUE,FALSE
+"10.1037/t80888-000","birchwood insight scale","insight",10,124,"core_exact",FALSE,FALSE
+"10.1037/t81079-000","anger expression scale for children","anger expression children",26,17,"fuzzy",FALSE,FALSE
+"10.1037/t81291-000","calling scale","calling",12,10,"core_exact",FALSE,FALSE
+"10.1037/t81549-000","emotion regulation strategies scale","emotion_regulation_strategies_scale",21,0,"exact",TRUE,FALSE
+"10.1037/t81812-000","behavioral inhibition questionnaire","behavioral inhibition",30,53,"core_exact",FALSE,FALSE
+"10.1037/t81933-000","activism orientation scale","activism orientation",35,15,"core_exact",FALSE,FALSE
+"10.1037/t82099-000","generalized self-efficacy scale--twi version","generalized_self_efficacy_scale",12,0,"exact",TRUE,FALSE
+"10.1037/t83207-000","social desirability questionnaire","social desirability 2",10,25,"fuzzy",TRUE,FALSE
+"10.1037/t85130-000","headache-specific locus of control scale","headache specific locus of control",33,18,"core_exact",FALSE,FALSE
+"10.1037/t85906-000","servqual instrument--adapted version","servqual",20,0,"exact",FALSE,FALSE

@@ -1,0 +1,105 @@
+"DOI","Name","meta_instrument_name","n_items","usage_count","mtype","covered_synthnet","covered_hunt","covered_semnet"
+"10.1037/t00032-000","antisocial process screening device","Antisocial Process Screening Device (20-item) (APSD)",20,397,"exact",TRUE,FALSE,FALSE
+"10.1037/t00034-000","anxiety sensitivity index-3","ASI-3",17,623,"exact",TRUE,FALSE,FALSE
+"10.1037/t00522-000","short self-regulation questionnaire","Self-Regulation Questionnaire (SSRQ)",30,49,"core",TRUE,FALSE,FALSE
+"10.1037/t00540-000","strengths and difficulties questionnaire","Strengths and Difficulties Questionnaire (25-item) (SDQ)",25,6257,"exact",FALSE,TRUE,FALSE
+"10.1037/t00644-000","acute stress disorder scale","Acute Stress Disorder Scale",20,153,"exact",TRUE,FALSE,FALSE
+"10.1037/t00741-000","beck depression inventory","Beck Depression Inventory (21-item)(BDI)",84,25118,"exact",FALSE,TRUE,FALSE
+"10.1037/t00869-000","consideration of future consequences scale","Consideration of Future Consequences Scale",14,209,"exact",TRUE,FALSE,FALSE
+"10.1037/t01038-000","rosenberg self-esteem scale","Rosenberg Self-esteem Scale (10-item) (RSE)",10,10896,"exact",TRUE,FALSE,FALSE
+"10.1037/t01069-000","satisfaction with life scale","Satisfaction with Life Scale (5-item) (SWLS)",5,7023,"exact",TRUE,FALSE,FALSE
+"10.1037/t01074-000","meaning in life questionnaire","Meaning in Life Questionnaire (MLQ)",10,728,"exact",TRUE,FALSE,FALSE
+"10.1037/t01397-000","zimbardo time perspective inventory","Zimbardo Time Perspective Inventory",56,332,"exact",TRUE,FALSE,FALSE
+"10.1037/t01408-000","world health organization quality of life-bref","The World Health Organization Quality of Life (WHOQOL-BREF)",30,1642,"core",TRUE,FALSE,FALSE
+"10.1037/t01528-000","alcohol use disorders identification test","Alcohol Use Disorders Identification Test (10-item) (AUDIT-10)",10,8513,"exact",FALSE,FALSE,FALSE
+"10.1037/t01688-000","oldenburg burnout inventory","Oldenburg Burnout Inventory",16,299,"exact",TRUE,FALSE,FALSE
+"10.1037/t01756-000","edinburgh postnatal depression scale","Edinburgh Postnatal Depression Scale (10-item) (EPDS)",10,3750,"exact",FALSE,FALSE,TRUE
+"10.1037/t01771-000","perceived wellness survey","Perceived Wellness Survey (PWS)",36,26,"exact",TRUE,FALSE,FALSE
+"10.1037/t01786-000","geriatric depression scale-short form","Geriatric Depression Scale (Short Version) (15-items)",15,595,"exact",TRUE,FALSE,FALSE
+"10.1037/t01837-000","gratitude questionnaire-6","Gratitude Questionnaire (GQ-6)",6,320,"exact",TRUE,FALSE,FALSE
+"10.1037/t01856-000","juvenile victimization questionnaire","The Juvenile Victimization Questionnaire",26,297,"core",FALSE,FALSE,FALSE
+"10.1037/t02357-000","michigan alcoholism screening test","Michigan Alcoholism Screening Test (MAST)",27,783,"exact",FALSE,TRUE,FALSE
+"10.1037/t02380-000","multidimensional scale of perceived social support","Multidimensional Scale of Perceived Social Support (MSPSS)",12,847,"exact",TRUE,FALSE,FALSE
+"10.1037/t02622-000","ptsd checklist-civilian version","PTSD Checklist Civilian Version",17,1402,"exact",FALSE,TRUE,FALSE
+"10.1037/t02942-000","center for epidemiological studies depression scale","Center for Epidemiologic Studies Depression Scale (CES-D)",24,4876,"exact",TRUE,FALSE,FALSE
+"10.1037/t03589-000","hospital anxiety and depression scale","Hospital Anxiety and Depression Scale (14-item)(HADS)",13,12134,"exact",FALSE,FALSE,TRUE
+"10.1037/t03592-000","positive and negative affect schedule","Positive and Negative Affect Schedule (PANAS)",20,6313,"exact",TRUE,FALSE,FALSE
+"10.1037/t03593-000","physical health questionnaire","Physical Health Index",17,117,"core",TRUE,FALSE,FALSE
+"10.1037/t03609-000","job content questionnaire","Job Content Questionnaire",14,845,"exact",TRUE,FALSE,FALSE
+"10.1037/t03749-000","combat exposure scale","Combat Exposure Scale",7,0,"exact",TRUE,FALSE,FALSE
+"10.1037/t03907-000","revised neo personality inventory","NEO Personality Inventory (NEO-PI)",276,380,"exact",FALSE,FALSE,FALSE
+"10.1037/t04534-000","life stressor checklist--revised","Life Stressor Checklist - Revised",33,200,"exact",TRUE,FALSE,FALSE
+"10.1037/t04710-000","trauma screening questionnaire","Trauma Screening Questionnaire (TSQ)",12,167,"exact",TRUE,FALSE,FALSE
+"10.1037/t04751-000","daily stress inventory","Daily Stress Inventory",60,97,"exact",FALSE,FALSE,TRUE
+"10.1037/t05188-000","effort-reward imbalance questionnaire","The Effort-Reward Imbalance Questionnaire (ERI)",21,158,"core",FALSE,FALSE,FALSE
+"10.1037/t05192-000","professional quality of life scale","Professional Quality of Life Scale (Compassion Satisfaction and Compassion Fatigue Version)",30,266,"exact",TRUE,FALSE,FALSE
+"10.1037/t05556-000","home observation for measurement of the environment inventory","Home Observation for Measurement of the Environment",45,96,"core",FALSE,FALSE,FALSE
+"10.1037/t05974-000","ucla loneliness scale","UCLA Loneliness Scale",20,1519,"exact",FALSE,FALSE,FALSE
+"10.1037/t06165-000","patient health questionnaire-9","Patient Health Questionnaire (8-item + impact question) (PHQ-8)",10,9492,"exact",FALSE,FALSE,FALSE
+"10.1037/t06168-000","patient health questionnaire-4","Patient Health Questionnaire-4 (PHQ-4)",4,544,"exact",TRUE,FALSE,FALSE
+"10.1037/t06346-000","connor-davidson resilience scale","The Connor-Davidson Resilience Scale",25,935,"core",FALSE,TRUE,FALSE
+"10.1037/t06463-000","emotion regulation questionnaire","Emotion Regulation Questionnaire",10,1569,"exact",FALSE,TRUE,FALSE
+"10.1037/t06466-000","subjective vitality scale","Subjective Vitality Scale (Individual Difference Level Version)",7,262,"exact",FALSE,FALSE,FALSE
+"10.1037/t06496-000","state-trait anxiety inventory for adults","State-Trait Anxiety Inventory (State Anxiety only) (20-item) (STAI)",20,141,"exact",FALSE,FALSE,FALSE
+"10.1037/t07021-000","12-item short form health survey","Short-Form Health Survey (12-item) (SF-12)",12,2304,"exact",FALSE,TRUE,FALSE
+"10.1037/t07466-000","stressful life events screening questionnaire","Stressful Life Events Screening Questionnaire (SLESQ)",13,200,"exact",FALSE,FALSE,FALSE
+"10.1037/t07488-000","brief trauma questionnaire","Brief Trauma Questionnaire",10,97,"exact",FALSE,FALSE,FALSE
+"10.1037/t07835-000","standardized assessment of personality--abbreviated scale","Standardised Assessment of Personality Abbreviated Scale (8-item) (SAPAS)",8,0,"exact",FALSE,FALSE,FALSE
+"10.1037/t08001-000","short leyton obsessional inventory--child version","Short Leyton Obsessional Inventory - Child Version (SLOI-SV)",11,3,"exact",TRUE,FALSE,FALSE
+"10.1037/t09121-000","bergen burnout inventory - 9","Bergen Burnout Inventory",9,7,"exact",TRUE,FALSE,FALSE
+"10.1037/t09267-000","revised life orientation test","Life Orientation Test-Revised (LOT-R)",10,603,"exact",TRUE,FALSE,FALSE
+"10.1037/t09716-000","childhood trauma questionnaire--short form","Childhood Trauma Questionnaire � Short Form",28,656,"exact",TRUE,FALSE,FALSE
+"10.1037/t10013-000","emotional health scale","Emotional Health Index",11,0,"core",TRUE,FALSE,FALSE
+"10.1037/t10139-000","pregnancy-related anxiety scale","Pregnancy Related Anxiety-Scale",10,0,"exact",TRUE,FALSE,FALSE
+"10.1037/t10179-000","self-compassion scale--short form","Self-compassion Scale short form (SCS-SF)",12,418,"exact",TRUE,FALSE,FALSE
+"10.1037/t10760-000","snaith-hamilton pleasure scale","Snaith-Hamilton Pleasure Scale (SHAPS)",14,379,"exact",FALSE,FALSE,FALSE
+"10.1037/t10829-000","modified affect balance scale","Affect Balance Scale (ABS) (10-item)",10,0,"exact",TRUE,FALSE,FALSE
+"10.1037/t11566-000","drug abuse screening test for adolescents","Drug Abuse Screening Test (DAST)",28,16,"exact",TRUE,FALSE,FALSE
+"10.1037/t11661-000","self-control scale","Brief Self-Control Survey",13,0,"core",TRUE,FALSE,FALSE
+"10.1037/t12109-000","cardiac anxiety questionnaire","Cardiac Anxiety Questionnaire (CAQ)",18,46,"exact",TRUE,FALSE,FALSE
+"10.1037/t13026-000","activities-specific balance confidence scale","The Activities-Specific Balance Confidence Scale (ABC)",17,308,"core",FALSE,FALSE,FALSE
+"10.1037/t14086-000","scoff questionnaire--us version","SCOFF Questionnaire",5,7,"exact",TRUE,FALSE,FALSE
+"10.1037/t14562-000","zimbardo time perspective inventory--short version","Zimbardo Time Perspective Scale",13,18,"core",FALSE,FALSE,FALSE
+"10.1037/t14931-000","faces pain scale","The Faces Pain Scale - Revised (FPS-R)",1,0,"core",TRUE,FALSE,FALSE
+"10.1037/t15085-000","eating inventory","Three Factor Eating Questionnaire",18,112,"exact",FALSE,FALSE,TRUE
+"10.1037/t15197-000","short mood and feelings questionnaire","Mood and Feelings Questionnaire (13-item) (MFQ) (Short version)",13,529,"core",FALSE,TRUE,FALSE
+"10.1037/t16072-000","coping competence questionnaire","Coping Competence Questionnaire (CCQ)",12,6,"exact",TRUE,FALSE,FALSE
+"10.1037/t16705-000","general self-efficacy scale-12 item","The General Self-Efficacy Scale (GSE)",10,5,"core",TRUE,FALSE,FALSE
+"10.1037/t17202-000","substance use risk profile scale","Substance Use Risk Profile Scale (23-item) (SURPS)",23,161,"exact",TRUE,FALSE,FALSE
+"10.1037/t18260-000","roland morris disability questionnaire","Roland-Morris Disability Questionnaire (RDQ)",24,10,"exact",FALSE,FALSE,FALSE
+"10.1037/t19590-000","15-item patient health questionnaire","Patient Health Questionnaire (9-item) (PHQ-9)",18,1,"exact",TRUE,FALSE,FALSE
+"10.1037/t19699-000","stages of change readiness and treatment eagerness scale--revised diabetes version","Stages of Change Readiness and Treatment Eagerness Scale (SOCRATES)",38,0,"exact",TRUE,FALSE,FALSE
+"10.1037/t23288-000","psychological inflexibility in pain scale","The Psychological Inflexibility in Pain Scale (PIPS)",12,47,"core",FALSE,FALSE,FALSE
+"10.1037/t24543-000","fagerstrom test for nicotine dependence--revised","Fagerstrom Test for Nicotine Dependence (FTND)",7,15,"exact",TRUE,FALSE,FALSE
+"10.1037/t24614-000","collective efficacy scale--revised","Collective Efficacy Scale",14,0,"exact",FALSE,FALSE,FALSE
+"10.1037/t25065-000","perceived stress scale--revised","Perceived Stress Scale",10,0,"exact",TRUE,FALSE,FALSE
+"10.1037/t25488-000","central sensitization inventory","Central Sensitization Inventory (CSI)",25,36,"exact",TRUE,FALSE,FALSE
+"10.1037/t26957-000","adverse childhood experiences study questionnaire","Adverse Childhood Experiences Study Questionnaire",17,113,"exact",TRUE,FALSE,FALSE
+"10.1037/t31314-000","future time perspective scale","Future Time Perspective Scale (FTPS)",8,148,"exact",TRUE,FALSE,FALSE
+"10.1037/t31330-000","international physical activity questionnaire","International Physical Activity Questionnaire Long (IPAQL)",29,2074,"core",FALSE,TRUE,FALSE
+"10.1037/t32746-000","medical outcomes study sleep scale","Medical Outcomes Study-Sleep Scale",12,157,"exact",FALSE,FALSE,FALSE
+"10.1037/t38453-000","control, autonomy, self-realization, pleasure questionnaire-19","Control, Autonomy, Self- realization, Pleasure (CASP- 19)",19,13,"core",TRUE,FALSE,FALSE
+"10.1037/t38593-000","opening minds scale for health care providers","Opening Minds for Health Care Providers (OMS-HC-15)",15,16,"core",TRUE,FALSE,FALSE
+"10.1037/t39952-000","stress overload scale","Stress Overload Scale",24,16,"exact",TRUE,FALSE,FALSE
+"10.1037/t41758-000","pittsburgh sleep quality index-short version","Pittsburgh Sleep Quality Index",19,1,"exact",FALSE,FALSE,TRUE
+"10.1037/t45826-000","multidimensional assessment of interoceptive awareness","Multidimensional Assessment of Interoceptive Awareness (MAIA)",37,113,"exact",TRUE,FALSE,FALSE
+"10.1037/t48193-000","multidimensional inventory of subjective cognitive impairment","Multidimensional Inventory of Subjective Cognitive Impairment (MISCI)",10,7,"exact",TRUE,FALSE,FALSE
+"10.1037/t49653-000","cognitive and affective mindfulness scale--revised","Cognitive and Affective Mindfulness Scale – Revised (CAMS-R)",12,181,"exact",FALSE,FALSE,TRUE
+"10.1037/t51188-000","stanford acute stress reaction questionnaire--modified","The Stanford Acute Stress Reaction Questionnaire",20,0,"core",FALSE,FALSE,FALSE
+"10.1037/t52615-000","measure of sickle cell stigma","Measure of Sickle Cell Stigma (MoSCS)",11,3,"exact",TRUE,FALSE,FALSE
+"10.1037/t53541-000","psychological well-being scale--modified","Psychological Well Being Scale",12,0,"exact",FALSE,FALSE,FALSE
+"10.1037/t59866-000","rosenberg self-esteem scale--modified","Rosenberg Self-Esteem Scale (6-item) (RSE)",6,0,"exact",FALSE,FALSE,FALSE
+"10.1037/t63848-000","eq-5d-5l","EQ-5D-5L (5-item)",5,486,"exact",FALSE,TRUE,FALSE
+"10.1037/t65121-000","brief assessment of recovery capital-10","Brief Assessment of Recovery Capital (BARC-10)",10,4,"exact",TRUE,FALSE,FALSE
+"10.1037/t65236-000","hdqlife concern with death and dying scale","HDQLIFE Concern with Death and Dying",12,0,"core",FALSE,FALSE,FALSE
+"10.1037/t66797-000","health of the nation outcome scales for people with learning disabilities","Health of the Nation Outcome Scales (11-item) (HoNOS)",20,13,"exact",FALSE,FALSE,FALSE
+"10.1037/t69085-000","overall anxiety severity and impairment questionnaire","Overall Anxiety Severity and Impairment Scale (OASIS)",5,239,"core",FALSE,FALSE,FALSE
+"10.1037/t71687-000","12-item zarit caregiver burden interview","Zarit Caregiver Burden Scale � short form",12,3,"core",TRUE,FALSE,FALSE
+"10.1037/t75388-000","pediatric quality of life enjoyment and satisfaction questionnaire","Pediatric Quality of Life Enjoyment and Satisfaction Questionnaire (PQ-LES-Q)",15,39,"exact",TRUE,FALSE,FALSE
+"10.1037/t75610-000","traumatic brain injury-caregiver quality of life (careqol) caregiver vigilance","TBI-CareQOL Caregiver Vigilance",18,0,"exact",TRUE,FALSE,FALSE
+"10.1037/t78044-000","meaning in life measure","Meaning in Life Scale",7,11,"core",TRUE,FALSE,FALSE
+"10.1037/t78784-000","acceptance and action questionnaire--substance abuse","Acceptance and Action Questionnaire – Substance Abuse (AAQ-SA)",18,5,"exact",TRUE,FALSE,FALSE
+"10.1037/t82099-000","generalized self-efficacy scale--twi version","Generalized Self-Efficacy Scale",12,0,"exact",TRUE,FALSE,FALSE
+"10.1037/t82462-000","telehealth usability questionnaire--adapted version","Telehealth Usability Questionnaire (TUQ)",22,1,"exact",TRUE,FALSE,FALSE
+"10.1037/t82606-000","religious coping scale","Brief Religious Coping (RCOPE)",14,59,"core",FALSE,FALSE,FALSE
+"10.1037/t84319-000","parent risk and impact screening measure","Parent Risk and Impact Screening Measure (PRISM)",13,2,"exact",FALSE,FALSE,FALSE
